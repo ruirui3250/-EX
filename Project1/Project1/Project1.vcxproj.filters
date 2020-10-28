@@ -28,6 +28,9 @@
     <Filter Include="ソース ファイル\主人公機">
       <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\ボス">
+      <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -105,6 +108,9 @@
     <ClInclude Include="ObjHero.h">
       <Filter>ソース ファイル\主人公機</Filter>
     </ClInclude>
+    <ClInclude Include="ObjEnemyBoss.h">
+      <Filter>ソース ファイル\ボス</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -181,6 +187,9 @@
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
       <Filter>ソース ファイル\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemyBoss.cpp">
+      <Filter>ソース ファイル\ボス</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

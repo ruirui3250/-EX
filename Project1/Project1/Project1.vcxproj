@@ -155,6 +155,7 @@
     <ClInclude Include="ObjBullet.h" />
     <ClInclude Include="ObjClearBack.h" />
     <ClInclude Include="ObjClearVirus.h" />
+    <ClInclude Include="ObjEnemyBoss.h" />
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjSceneMain.h" />
@@ -182,6 +183,7 @@
     <ClCompile Include="ObjBullet.cpp" />
     <ClCompile Include="ObjClearBack.cpp" />
     <ClCompile Include="ObjClearVirus.cpp" />
+    <ClCompile Include="ObjEnemyBoss.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjSceneMain.cpp" />
