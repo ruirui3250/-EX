@@ -25,6 +25,9 @@
     <Filter Include="ソース ファイル\背景画面">
       <UniqueIdentifier>{43c0adca-4ccc-4088-9a6d-a4b0e04d4b2f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\主人公機">
+      <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -96,6 +99,12 @@
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\背景画面</Filter>
     </ClInclude>
+    <ClInclude Include="ObjBullet.h">
+      <Filter>ソース ファイル\主人公機</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHero.h">
+      <Filter>ソース ファイル\主人公機</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -166,6 +175,12 @@
     </ClCompile>
     <ClCompile Include="SceneMain.cpp">
       <Filter>ソース ファイル\背景画面</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBullet.cpp">
+      <Filter>ソース ファイル\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero.cpp">
+      <Filter>ソース ファイル\主人公機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
