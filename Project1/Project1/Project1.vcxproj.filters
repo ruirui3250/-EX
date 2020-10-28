@@ -34,6 +34,9 @@
     <Filter Include="ソース ファイル\敵機">
       <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\UtilityModule">
+      <UniqueIdentifier>{b8bd0c5b-55f6-402f-9546-4b2441dba8f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -126,6 +129,9 @@
     <ClInclude Include="ObjEnemy.h">
       <Filter>ソース ファイル\敵機</Filter>
     </ClInclude>
+    <ClInclude Include="UtilityModule.h">
+      <Filter>ソース ファイル\UtilityModule</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -217,6 +223,9 @@
     </ClCompile>
     <ClCompile Include="ObjEnemy.cpp">
       <Filter>ソース ファイル\敵機</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityModule.cpp">
+      <Filter>ソース ファイル\UtilityModule</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
