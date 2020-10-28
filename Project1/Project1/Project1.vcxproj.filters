@@ -19,6 +19,9 @@
     <Filter Include="ソース ファイル\ゲームオーバー画面">
       <UniqueIdentifier>{d9d9a909-c054-4649-aa32-7ca95bf6f98d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\タイトル変更">
+      <UniqueIdentifier>{92a346d8-d5af-4066-a47c-f109edf5d3a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -78,6 +81,12 @@
     <ClInclude Include="SceneGameOver.h">
       <Filter>ソース ファイル\ゲームオーバー画面</Filter>
     </ClInclude>
+    <ClInclude Include="ObjTitle.h">
+      <Filter>ソース ファイル\タイトル変更</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneTitle.h">
+      <Filter>ソース ファイル\タイトル変更</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -136,6 +145,12 @@
     </ClCompile>
     <ClCompile Include="SceneGameOver.cpp">
       <Filter>ソース ファイル\ゲームオーバー画面</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTitle.cpp">
+      <Filter>ソース ファイル\タイトル変更</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneTitle.cpp">
+      <Filter>ソース ファイル\タイトル変更</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
