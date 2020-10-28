@@ -16,6 +16,9 @@
     <Filter Include="ソース ファイル\クリア画面">
       <UniqueIdentifier>{9e484e8d-a0ae-4b00-b99d-88ac2749cd43}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\ゲームオーバー画面">
+      <UniqueIdentifier>{d9d9a909-c054-4649-aa32-7ca95bf6f98d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -69,6 +72,12 @@
     <ClInclude Include="winscene.h">
       <Filter>ソース ファイル\クリア画面</Filter>
     </ClInclude>
+    <ClInclude Include="ObjGameOver.h">
+      <Filter>ソース ファイル\ゲームオーバー画面</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver.h">
+      <Filter>ソース ファイル\ゲームオーバー画面</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -121,6 +130,12 @@
     </ClCompile>
     <ClCompile Include="winscene.cpp">
       <Filter>ソース ファイル\クリア画面</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver.cpp">
+      <Filter>ソース ファイル\ゲームオーバー画面</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver.cpp">
+      <Filter>ソース ファイル\ゲームオーバー画面</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
