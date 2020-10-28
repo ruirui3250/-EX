@@ -152,6 +152,10 @@
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="ObjClearBack.h" />
+    <ClInclude Include="ObjClearVirus.h" />
+    <ClInclude Include="Objwin.h" />
+    <ClInclude Include="winscene.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp" />
@@ -167,6 +171,10 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
+    <ClCompile Include="ObjClearBack.cpp" />
+    <ClCompile Include="ObjClearVirus.cpp" />
+    <ClCompile Include="Objwin.cpp" />
+    <ClCompile Include="winscene.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
