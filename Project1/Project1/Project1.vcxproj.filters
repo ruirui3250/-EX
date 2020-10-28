@@ -31,6 +31,9 @@
     <Filter Include="ソース ファイル\ボス">
       <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\敵機">
+      <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -111,6 +114,18 @@
     <ClInclude Include="ObjEnemyBoss.h">
       <Filter>ソース ファイル\ボス</Filter>
     </ClInclude>
+    <ClInclude Include="CObjBulletEnemy.h">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjSinEnemy.h">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttackEnemy.h">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemy.h">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -190,6 +205,18 @@
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss.cpp">
       <Filter>ソース ファイル\ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjBulletEnemy.cpp">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjSinEnemy.cpp">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttackEnemy.cpp">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemy.cpp">
+      <Filter>ソース ファイル\敵機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
