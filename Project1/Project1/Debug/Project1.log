@@ -1,5 +1,4 @@
 ﻿  CObjBulletEnemy.cpp
-  CObjSinEnemy.cpp
   GameL_Main.cpp
   ObjAttackEnemy.cpp
   ObjBlock.cpp

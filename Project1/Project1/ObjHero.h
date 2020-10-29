@@ -12,10 +12,10 @@ public:
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
-	void SetX(float x);//位置情報X変更用
+	float GetX() ;	   //位置情報X変更用
+	float GetY() ; 	   //位置情報X変更用
+	void SetX(float x) ;//位置情報X変更用
 	void SetY(float y);//位置情報X変更用
-	float GetX();	   //位置情報X変更用
-	float GetY();	   //位置情報X変更用
 private:
 	float m_x;//主人公機のx方向の位置変数
 	float m_y;//主人公機のy方向の位置変数

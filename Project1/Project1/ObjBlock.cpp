@@ -2,6 +2,7 @@
 #include "GameL\DrawTexture.h"
 #include "GameL\WinInputs.h"
 #include "GameL\SceneManager.h"
+#include "GameL\SceneObjManager.h"
 #include "GameHead.h"
 
 //使用するヘッダーファイル（作成物）
@@ -33,7 +34,31 @@ void CObjBlock::Init()
 //アクション
 void CObjBlock::Action()
 {
+	////主人公の位置を取得
+	//CObjHero* hero = (CObjHero*)Objs::GetObj(OBJ_HERO);
+	//float hx = hero->GetX();
+	//float hy = hero->GetY();
 
+	////m_mapの全要素のアクセス。
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	for (int j = 0; j < 10; j++)
+	//	{
+	//		if (m_map[i][j] > 0)
+	//		{
+	//			//要素番号を座標に変更
+	//			float x = j * 64.0f;
+	//			float y = i * 64.0f;
+
+	//			//ブロックの当たり判定
+	//			if ((hx+64.0f>x)&&(hx<x+64.0f)&&(hy+64.0f>y)&&(hy<y+64.0f))
+	//			{
+	//				//当たっている場合
+	//				;
+	//			}
+	//		}
+	//	}
+	//}
 }
 //ドロー
 void CObjBlock::Draw()
