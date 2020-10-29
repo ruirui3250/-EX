@@ -19,9 +19,6 @@
     <Filter Include="ソース ファイル\ゲームオーバー画面">
       <UniqueIdentifier>{d9d9a909-c054-4649-aa32-7ca95bf6f98d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\タイトル変更">
-      <UniqueIdentifier>{92a346d8-d5af-4066-a47c-f109edf5d3a7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\背景画面">
       <UniqueIdentifier>{43c0adca-4ccc-4088-9a6d-a4b0e04d4b2f}</UniqueIdentifier>
     </Filter>
@@ -36,6 +33,9 @@
     </Filter>
     <Filter Include="ソース ファイル\UtilityModule">
       <UniqueIdentifier>{b8bd0c5b-55f6-402f-9546-4b2441dba8f1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\タイトル画面">
+      <UniqueIdentifier>{92a346d8-d5af-4066-a47c-f109edf5d3a7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -97,10 +97,10 @@
       <Filter>ソース ファイル\ゲームオーバー画面</Filter>
     </ClInclude>
     <ClInclude Include="ObjTitle.h">
-      <Filter>ソース ファイル\タイトル変更</Filter>
+      <Filter>ソース ファイル\タイトル画面</Filter>
     </ClInclude>
     <ClInclude Include="SceneTitle.h">
-      <Filter>ソース ファイル\タイトル変更</Filter>
+      <Filter>ソース ファイル\タイトル画面</Filter>
     </ClInclude>
     <ClInclude Include="ObjSceneMain.h">
       <Filter>ソース ファイル\背景画面</Filter>
@@ -192,10 +192,10 @@
       <Filter>ソース ファイル\ゲームオーバー画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjTitle.cpp">
-      <Filter>ソース ファイル\タイトル変更</Filter>
+      <Filter>ソース ファイル\タイトル画面</Filter>
     </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
-      <Filter>ソース ファイル\タイトル変更</Filter>
+      <Filter>ソース ファイル\タイトル画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjSceneMain.cpp">
       <Filter>ソース ファイル\背景画面</Filter>
