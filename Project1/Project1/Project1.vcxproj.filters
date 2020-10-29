@@ -37,6 +37,9 @@
     <Filter Include="ソース ファイル\タイトル画面">
       <UniqueIdentifier>{92a346d8-d5af-4066-a47c-f109edf5d3a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\障害物">
+      <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
