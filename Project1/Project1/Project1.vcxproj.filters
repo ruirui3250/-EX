@@ -135,6 +135,9 @@
     <ClInclude Include="UtilityModule.h">
       <Filter>ソース ファイル\UtilityModule</Filter>
     </ClInclude>
+    <ClInclude Include="ObjBlock.h">
+      <Filter>ソース ファイル\障害物</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -229,6 +232,9 @@
     </ClCompile>
     <ClCompile Include="UtilityModule.cpp">
       <Filter>ソース ファイル\UtilityModule</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBlock.cpp">
+      <Filter>ソース ファイル\障害物</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

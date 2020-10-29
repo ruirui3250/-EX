@@ -155,6 +155,7 @@
     <ClInclude Include="GameL\WinInputs.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
+    <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBullet.h" />
     <ClInclude Include="ObjClearBack.h" />
     <ClInclude Include="ObjClearVirus.h" />
@@ -188,6 +189,7 @@
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
     <ClCompile Include="ObjAttackEnemy.cpp" />
+    <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjBullet.cpp" />
     <ClCompile Include="ObjClearBack.cpp" />
     <ClCompile Include="ObjClearVirus.cpp" />
