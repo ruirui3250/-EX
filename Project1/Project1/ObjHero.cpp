@@ -19,7 +19,7 @@ void CObjHero::Init()
 void CObjHero::Action()
 {
 	//ålŒö‹@‚Ì’eŠÛ”­Ë
-	if (Input::GetVKey('Z') == true)
+	if (Input::GetVKey('S') == true)
 	{
 		if (m_f == true)
 		{
