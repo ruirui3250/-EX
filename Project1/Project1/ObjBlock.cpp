@@ -34,31 +34,47 @@ void CObjBlock::Init()
 //アクション
 void CObjBlock::Action()
 {
-	////主人公の位置を取得
-	//CObjHero* hero = (CObjHero*)Objs::GetObj(OBJ_HERO);
-	//float hx = hero->GetX();
-	//float hy = hero->GetY();
+	//主人公の位置を取得
+	CObjHero* hero = (CObjHero*)Objs::GetObj(OBJ_HERO);
+	float hx = hero->GetX();
+	float hy = hero->GetY();
 
-	////m_mapの全要素のアクセス。
-	//for (int i = 0; i < 10; i++)
-	//{
-	//	for (int j = 0; j < 10; j++)
-	//	{
-	//		if (m_map[i][j] > 0)
-	//		{
-	//			//要素番号を座標に変更
-	//			float x = j * 64.0f;
-	//			float y = i * 64.0f;
+	//m_mapの全要素のアクセス。
+	for (int i = 0; i < 10; i++)
+	{
+		for (int j = 0; j < 10; j++)
+		{
+			if (m_map[i][j] > 0)
+			{
+				//要素番号を座標に変更
+				float x = j * 64.0f;
+				float y = i * 64.0f;
 
-	//			//ブロックの当たり判定
-	//			if ((hx+64.0f>x)&&(hx<x+64.0f)&&(hy+64.0f>y)&&(hy<y+64.0f))
-	//			{
-	//				//当たっている場合
-	//				;
-	//			}
-	//		}
-	//	}
-	//}
+				//ブロックの当たり判定
+				if ((hx+64.0f>x)&&(hx<x+64.0f)&&(hy+64.0f>y)&&(hy<y+64.0f))
+				{
+					//上下左右判定
+					float vx = hx - x;
+					float vy = hy - y;
+
+					//長さを求める
+					float len = sqrt(vx * vx + vy * vy);
+
+					//角度を求める
+					float r = atan2(vy, vx);
+					r = r * 180.0f/3.14f;
+
+					if(r<=0.0)
+						//続きはここ
+
+
+					//当たっている場合
+					hero->SetX(hx);
+					hero->SetY(0.0f);
+				}
+			}
+		}
+	}
 }
 //ドロー
 void CObjBlock::Draw()

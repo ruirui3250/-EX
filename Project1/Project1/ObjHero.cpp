@@ -88,7 +88,9 @@ void CObjHero::Action()
 		Scene::SetScene(new CSceneGameOver());
 	}
 
-
+	//位置の更新
+	m_px += m_vx;
+	m_py += m_vy;
 }
 //ドロー
 void CObjHero::Draw()
