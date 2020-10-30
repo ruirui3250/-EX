@@ -64,8 +64,23 @@ void CObjBlock::Action()
 					float r = atan2(vy, vx);
 					r = r * 180.0f/3.14f;
 
-					if(r<=0.0)
+					if (r <= 0.0)
 						//続きはここ
+						r = abs(r);
+					else
+						r = 360.0f - abs(r);
+					//角度が当たっている場合
+					if (45 && r > 0 || r > 315)
+					{
+						//右
+					}
+					if (r > 45 && r < 135)
+					{
+						//上
+						hero->SetY(y - 64.0f);//blockの位置 主人公の幅
+					}
+
+
 
 
 					//当たっている場合
