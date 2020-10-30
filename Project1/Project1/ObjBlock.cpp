@@ -39,6 +39,12 @@ void CObjBlock::Action()
 	float hx = hero->GetX();
 	float hy = hero->GetY();
 
+	//主人公の衝突状態確認用フラグの初期化
+	hero->SetUp(false);
+	hero->SetDown(false);
+	hero->SetLeft(false);
+	hero->SetRight(false);
+
 	//m_mapの全要素のアクセス。
 	for (int i = 0; i < 10; i++)
 	{
@@ -65,27 +71,30 @@ void CObjBlock::Action()
 					r = r * 180.0f/3.14f;
 
 					if (r <= 0.0)
-						//続きはここ
+					//	続きはここ
 						r = abs(r);
 					else
 						r = 360.0f - abs(r);
 					//角度が当たっている場合
 					if (45 && r > 0 || r > 315)
 					{
-						//右
+					//	右
 					}
 					if (r > 45 && r < 135)
 					{
-						//上
-						hero->SetY(y - 64.0f);//blockの位置 主人公の幅
+					//	上
+						hero->SetDown(true);//主人公から見て、下部分が衝突
+						hero->SetY(y - 32.0f);//blockの位置 主人公の幅
+						hero->SetVY(0.0f);
 					}
-
-
-
-
-					//当たっている場合
-					hero->SetX(hx);
-					hero->SetY(0.0f);
+					if (r > 45 && r < 255)
+					{
+						//左
+					}
+					if (r > 225 && r < 315)
+					{
+						//↓
+					}
 				}
 			}
 		}
