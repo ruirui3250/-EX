@@ -65,7 +65,7 @@ void CObjAngleBulletHero::Action()
 	//hit->SetPos(m_x, m_y);//HitBoxの位置を敵機弾丸の位置に更新
 
 	//敵機拡散弾丸が完全に領域外から出たら主人公機拡散弾丸を破棄する
-	bool check = CheakWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
+	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
 	if (check == false)
 	{
 		this->SetStatus(false);//自身に削除命令を出す
@@ -122,11 +122,10 @@ void CObjAngleBulletHero::Draw()
 	//描画カラー情報　R=RED G=GREEN B=BLUE A=ALPHA(透過情報）
 	float c[4] = { 1.0f,1.0f ,1.0f ,1.0f };
 	RECT_F dst;//描画先表示
-
-	//表示位置の設定
+		//切り取り位置の設定
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
-	dst.m_right = 46.0f + m_x;
+	dst.m_right = 32.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
 	//6番目に登録したグラフィックをsrc・ｄｓｔ・ｃの情報をもとに描画
 	Draw::Draw(6, &m_eff, &dst, c, m_r);
