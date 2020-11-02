@@ -26,6 +26,7 @@ void CObjAngleBulletHero::Init()
 	m_ani_time = 0;
 	m_del = false;
 
+
 	m_vx = cos(3.14f / 180.0f * m_r);
 	m_vy = sin(3.14f / 180.0f * m_r);
 	//移動用ベクトルの正規化
