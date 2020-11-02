@@ -43,7 +43,7 @@ void CObjAngleBulletHero::Action()
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
 	//Resources‚Ì•`‰æ•¨‚ÌRECT
-	m_eff = GetBulletEffec(&m_ani, &m_ani_time, m_del, 2);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
 	//’eŠÛÁ–Å‘•’u--------
 	if (m_del == true)
 	{
