@@ -71,7 +71,6 @@ void CObjBlock::Action()
 					r = r * 180.0f/3.14f;
 
 					if (r <= 0.0)
-					//	続きはここ
 						r = abs(r);
 					else
 						r = 360.0f - abs(r);
@@ -84,21 +83,21 @@ void CObjBlock::Action()
 							//	右
 							hero->SetRight(true);//主人公から見て、下部分が衝突
 							hero->SetX(x + 32.0f);//blockの位置 主人公の幅
-							//hero->SetVX(-hero->GetVX()*0.1f);
+							hero->SetVX(-hero->GetVX()*0.1f);
 						}
 						if (r > 45 && r < 135)
 						{
 							//	上
 							hero->SetDown(true);//主人公から見て、下部分が衝突
 							hero->SetY(y - 32.0f);//blockの位置 主人公の幅
-							//hero->SetVY(0.0f);
+							hero->SetVY(0.0f);
 						}
 						if (r > 135 && r < 255)
 						{
 							//左
 							hero->SetLeft(true);//主人公から見て、下部分が衝突
 							hero->SetX(x - 64.0f);//blockの位置 主人公の幅
-							//hero->SetVY(0.0f);
+							hero->SetVX(-hero->GetVX() * 0.1f);
 
 						}
 						if (r > 225 && r < 315)
@@ -106,6 +105,7 @@ void CObjBlock::Action()
 							//↓
 							hero->SetUp(true);//主人公から見て、上の部分が衝突している。
 							hero->SetY(y + 64.0f);//blockの位置＋主人公の幅
+							hero->SetVY(0.0f);
 						}
 					}
 				}

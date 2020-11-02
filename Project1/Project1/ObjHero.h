@@ -13,11 +13,16 @@ public:
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
+
 	float GetX() { return m_px; }	   //位置情報X変更用
 	float GetY() { return m_py; } 	   //位置情報X変更用
+	float GetVY() { return m_vy; }	//blockobject操作用メソッド
+	float GetVX() { return m_vx; }
+
 	void SetX(float x) { m_px = x; }//位置情報X変更用
 	void SetY(float y) { m_py = y; }//位置情報X変更用
 	void SetVY(float vy) { m_vy = vy; }//位置情報更新宣言
+	void SetVX(float vx) { m_vx = vx; }//位置情報更新宣言
 	
 	void SetUp(bool b) { m_hit_up = b; }//衝突状態変更宣言上
 	void SetDown(bool b) { m_hit_down = b; }//下

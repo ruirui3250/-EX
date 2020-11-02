@@ -13,6 +13,12 @@ void CObjHero::Init()
 	m_x = 6;
 	//当たり判定用hitboxを作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 100);
+
+	//blockの衝突状態の確認用
+	m_hit_up=false;
+	m_hit_down=false;
+	m_hit_left=false;
+	m_hit_right=false;
 }
 
 //アクション
@@ -93,17 +99,6 @@ void CObjHero::Action()
 		m_x = 0.0f;
 	}
 
-	//blockとの衝突状態確認用
-	m_hit_up = false;
-	m_hit_down = false;
-	m_hit_left = false;
-	m_hit_right = false;
-
-
-	//位置の更新
-	m_px += m_vx;
-	m_py += m_vy;
-
 
 	//HITboxの内容を更新
 	CHitBox* hit = Hits::GetHitBox(this); //作成したhitBox更新用の入り口を取り出す
@@ -117,6 +112,9 @@ void CObjHero::Action()
 		//主人公機消滅でシーンをゲームオーバーに移行する
 		Scene::SetScene(new CSceneGameOver());
 	}
+	//位置の更新
+	m_px += m_vx;
+	m_py += m_vy;
 }
 //ドロー
 void CObjHero::Draw()
