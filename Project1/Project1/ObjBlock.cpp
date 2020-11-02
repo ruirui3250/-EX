@@ -15,7 +15,7 @@ using namespace GameL;
 void CObjBlock::Init()
 {
 	//マップ情報
-	int block_data[10][10] =
+	int block_data[10][100] =
 	{
 		{0,0,0,0,0,0,1,1,1,0},
 		{0,0,0,0,0,0,1,1,1,0},
@@ -48,7 +48,7 @@ void CObjBlock::Action()
 	//m_mapの全要素のアクセス。
 	for (int i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < 100; j++)
 		{
 			if (m_map[i][j] > 0)
 			{
@@ -117,7 +117,7 @@ void CObjBlock::Draw()
 
 	for (int i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 10; j++)
+		for (int j = 0; j < 100; j++)
 		{
 			if (m_map[i][j] > 0)
 			{
