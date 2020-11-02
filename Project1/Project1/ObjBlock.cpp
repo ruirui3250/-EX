@@ -79,6 +79,10 @@ void CObjBlock::Action()
 						//ã
 						hero->SetY(y - 64.0f);//block‚ÌˆÊ’u ŽålŒö‚Ì•
 					}
+					if (r > 225 && r < 315)
+					{
+						//‰º
+					}
 
 
 
