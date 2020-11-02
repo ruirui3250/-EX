@@ -74,6 +74,7 @@ void CObjHero::Action()
 	{
 		m_y += 6.0f;
 	}
+
 	//ŽålŒö‚ª—ÌˆæŠO‚És‚©‚È‚¢ˆ—
 	if (m_x + 32.0 > 800.0f)
 	{
