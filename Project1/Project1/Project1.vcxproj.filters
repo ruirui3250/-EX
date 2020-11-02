@@ -43,6 +43,9 @@
     <Filter Include="ソース ファイル\基本データ\ボス">
       <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\test1">
+      <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
