@@ -248,5 +248,8 @@
     <ClCompile Include="CObjAngleBulletHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
+    <ClCompile Include="dfgdsgfvisk.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
