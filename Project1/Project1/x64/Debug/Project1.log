@@ -1,9 +1,4 @@
-﻿  ObjHero.cpp
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\ObjHero.cpp(45,81): error C2661: 'CObjAngleBulletHero::CObjAngleBulletHero': 2 個の引数を伴うオーバーロードされた関数はありません。
-  winscene.cpp
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\winscene.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\winscene.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-  コードを生成中...
+﻿  ObjBlock.cpp
+C:\Users\GA1A\Desktop\game7\Project1\Project1\ObjBlock.cpp(67,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\game7\Project1\Project1\ObjBlock.cpp(70,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
   Project1.vcxproj -> C:\Users\GA1A\Desktop\game7\Project1\x64\Debug\Project1.exe
