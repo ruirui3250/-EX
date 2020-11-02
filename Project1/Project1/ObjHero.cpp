@@ -42,7 +42,7 @@ void CObjHero::Action()
 		{
 
 			//弾丸オブジェクト作成
-			CObjAngleBulletHero* obj_b = new CObjAngleBulletHero (m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
+			CObjAngleBulletHero* obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_ANGLEBULLET_HERO, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
