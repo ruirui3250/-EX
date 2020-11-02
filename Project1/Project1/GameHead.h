@@ -80,6 +80,7 @@ struct UserData
 #include"ObjEnemy.h"
 #include "ObjEnemyBoss.h"
 #include"CObjAngleBulletHero.h"
+#include"ObjEnemyBoss2.h"
 //ブロック関連
 #include"ObjBlock.h"
 //------------------------------------------------

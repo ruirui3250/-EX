@@ -46,6 +46,9 @@
     <Filter Include="ソース ファイル\test1">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
+      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -147,6 +150,9 @@
     <ClInclude Include="CObjAngleBulletHero.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
+    <ClInclude Include="ObjEnemyBoss2.h">
+      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -247,6 +253,9 @@
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemyBoss2.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
