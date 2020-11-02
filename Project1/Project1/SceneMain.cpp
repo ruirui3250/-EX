@@ -37,6 +37,8 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
 	Draw::LoadImage(L"障害物.png", 0, TEX_SIZE_512);
+
+	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 

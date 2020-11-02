@@ -141,6 +141,9 @@
     <ClInclude Include="ObjBlock.h">
       <Filter>ソース ファイル\基本データ\障害物</Filter>
     </ClInclude>
+    <ClInclude Include="CObjAngleBulletHero.h">
+      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -238,6 +241,9 @@
     </ClCompile>
     <ClCompile Include="ObjBlock.cpp">
       <Filter>ソース ファイル\基本データ\障害物</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjAngleBulletHero.cpp">
+      <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

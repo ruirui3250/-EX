@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
     <ClInclude Include="CObjSinEnemy.h" />
     <ClInclude Include="GameHead.h" />
@@ -173,6 +174,7 @@
     <ClInclude Include="winscene.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjSinEnemy.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />

@@ -16,10 +16,11 @@ void CObjHero::Init()
 }
 
 //アクション
+/*--------------------主人公の弾------------------------------*/
 void CObjHero::Action()
 {
 	//主人公機の弾丸発射
-	if (Input::GetVKey('S') == true)
+	if (Input::GetVKey('Z') == true)
 	{
 		if (m_f == true)
 		{
@@ -34,7 +35,24 @@ void CObjHero::Action()
 	{
 		m_f = true;
 	}
+	//主人公機の拡散弾丸発射
+	if (Input::GetVKey('X') == true)
+	{
+		if (m_f == true)
+		{
 
+			//弾丸オブジェクト作成
+			CObjAngleBulletHero* obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_ANGLEBULLET_HERO, 100);//作った弾丸オブジェクト
+			m_f = false;
+		}
+		else
+		{
+			m_f = true;
+		}
+
+	}
+	/*-------------------------主人公の移動---------------------*/
 	//主人公機の移動
 	if (Input::GetVKey(VK_RIGHT) == true)
 	{

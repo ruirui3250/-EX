@@ -107,6 +107,6 @@ void CObjBullet::Draw()
 	dst.m_right = 32.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
 
-	//0番目に登録したグラフィックを描画。
+	//2番目に登録したグラフィックを描画。
 	Draw::Draw(2, &m_eff, &dst, c, 0.0f);
 }
