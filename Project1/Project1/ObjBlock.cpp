@@ -75,6 +75,7 @@ void CObjBlock::Action()
 						r = abs(r);
 					else
 						r = 360.0f - abs(r);
+					//len‚ª‚ ‚éˆê’è‚Ì’·‚³‚Ì‚æ‚è’Z‚¢
 					//Šp“x‚ª“–‚½‚Á‚Ä‚¢‚éê‡
 					if (45 && r > 0 || r > 315)
 					{
