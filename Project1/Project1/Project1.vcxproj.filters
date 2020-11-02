@@ -16,9 +16,6 @@
     <Filter Include="ソース ファイル\背景画面">
       <UniqueIdentifier>{43c0adca-4ccc-4088-9a6d-a4b0e04d4b2f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\ボス">
-      <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ">
       <UniqueIdentifier>{68a4d7e8-59ea-4c32-9d23-ae590839dc3d}</UniqueIdentifier>
     </Filter>
@@ -42,6 +39,9 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面">
       <UniqueIdentifier>{9e484e8d-a0ae-4b00-b99d-88ac2749cd43}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス">
+      <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -121,7 +121,7 @@
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss.h">
-      <Filter>ソース ファイル\ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス</Filter>
     </ClInclude>
     <ClInclude Include="CObjBulletEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機</Filter>
@@ -219,7 +219,7 @@
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss.cpp">
-      <Filter>ソース ファイル\ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス</Filter>
     </ClCompile>
     <ClCompile Include="CObjBulletEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機</Filter>

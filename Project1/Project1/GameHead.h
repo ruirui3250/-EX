@@ -17,9 +17,10 @@ enum OBJ_NAME
 	OBJ_ENEMY,
 	OBJ_ATTACK_ENEMY,
 	OBJ_BULLET_ENEMY,
-	/*OBJ_SIN_ENEMY,*/
+	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
-	OBJ_BLOCK
+	OBJ_BLOCK,
+
 };
 //------------------------------------------------
 
@@ -65,28 +66,29 @@ struct UserData
 //ゲームシーンオブジェクトヘッダ------------------
 #include "Objwin.h"
 #include "ObjClearBack.h"
-#include"ObjClearVirus.h"
-#include"ObjTitle.h"
-#include"ObjSceneMain.h"
-#include"CObjBulletEnemy.h"
-#include"ObjBullet.h"
+#include "ObjClearVirus.h"
+#include "ObjTitle.h"
+#include "ObjSceneMain.h"
+#include "CObjBulletEnemy.h"
+#include "ObjBullet.h"
 //#include"CObjSinEnemy.h"
-#include"ObjAttackEnemy.h"
-#include"ObjClearBack.h"
-#include"ObjGameOver.h"
-#include"ObjSceneMain.h"
-#include"ObjHero.h"
-#include"ObjEnemy.h"
+#include "ObjAttackEnemy.h"
+#include "ObjClearBack.h"
+#include "ObjGameOver.h"
+#include "ObjSceneMain.h"
+#include "ObjHero.h"
+#include "ObjEnemy.h"
 #include "ObjEnemyBoss.h"
+
 //ブロック関連
-#include"ObjBlock.h"
+#include "ObjBlock.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
-#include"winscene.h"
-#include"SceneTitle.h"
-#include"SceneMain.h"
-#include"SceneGameOver.h"
+#include "winscene.h"
+#include "SceneTitle.h"
+#include "SceneMain.h"
+#include "SceneGameOver.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
