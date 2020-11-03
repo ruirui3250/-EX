@@ -1,2 +1,6 @@
-﻿  ObjHero.cpp
+﻿  ObjBlock.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBlock.cpp(67,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBlock.cpp(70,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjHero.cpp
+  コードを生成中...
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe
