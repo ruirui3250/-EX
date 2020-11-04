@@ -1,3 +1,4 @@
+//test
 #pragma once
 //使用するヘッダー
 #include"GameL\SceneObjManager.h"
