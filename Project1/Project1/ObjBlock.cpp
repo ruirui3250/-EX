@@ -4,6 +4,7 @@
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
 #include "GameHead.h"
+#include"GameL\HitBoxManager.h"
 
 //使用するヘッダーファイル（作成物）
 #include "ObjBlock.h"
@@ -31,6 +32,9 @@ void CObjBlock::Init()
 	};
 	//マップデータをコピー
 	memcpy(m_map, block_data, sizeof(int) * (10 * 100));
+
+	//当たり用HitBox作成
+	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_BLOCK, 0);
 }
 //アクション
 void CObjBlock::Action()
@@ -46,72 +50,72 @@ void CObjBlock::Action()
 	hero->SetLeft(false);
 	hero->SetRight(false);
 
-	//m_mapの全要素のアクセス。
-	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < 100; j++)
-		{
-			if (m_map[i][j] > 0)
-			{
-				//要素番号を座標に変更
-				float x = j * 32.0f;
-				float y = i * 32.0f;
-				//ブロックの当たり判定
-				if ((hx+32.0f>x)&&(hx<x+32.0f)&&(hy+32.0f>y)&&(hy<y+32.0f))
-				{
-					//上下左右判定
-					float vx = hx - x;
-					float vy = hy - y;
+	////m_mapの全要素のアクセス。
+	//for (int i = 0; i < 10; i++)
+	//{
+	//	for (int j = 0; j < 100; j++)
+	//	{
+	//		if (m_map[i][j] > 0)
+	//		{
+	//			//要素番号を座標に変更
+	//			float x = j * 32.0f;
+	//			float y = i * 32.0f;
+	//			//ブロックの当たり判定
+	//			if ((hx+32.0f>x)&&(hx<x+32.0f)&&(hy+32.0f>y)&&(hy<y+32.0f))
+	//			{
+	//				//上下左右判定
+	//				float vx = hx - x;
+	//				float vy = hy - y;
 
-					//長さを求める
-					float len = sqrt(vx * vx + vy * vy);
+	//				//長さを求める
+	//				float len = sqrt(vx * vx + vy * vy);
 
-					//角度を求める
-					float r = atan2(vy, vx);
-					r = r * 180.0f/3.14f;
+	//				//角度を求める
+	//				float r = atan2(vy, vx);
+	//				r = r * 180.0f/3.14f;
 
-					if (r <= 0.0)
-						r = abs(r);
-					else
-						r = 360.0f - abs(r);
-					//lenがある一定の長さのより短い場合
-					if (len < 88.0f)
-					{
-						//角度が当たっている場合
-						if (45 && r > 0 || r > 315)
-						{
-							//	右
-							hero->SetRight(true);//主人公から見て、下部分が衝突
-							hero->SetX(x + 16.0f);//blockの位置 主人公の幅
-							hero->SetVX(-hero->GetVX()*0.1f);
-						}
-						if (r > 45 && r < 135)
-						{
-							//	上
-							hero->SetDown(true);//主人公から見て、下部分が衝突
-							hero->SetY(y - 16.0f);//blockの位置 主人公の幅
-							hero->SetVY(0.0f);
-						}
-						if (r > 135 && r < 255)
-						{
-							//左
-							hero->SetLeft(true);//主人公から見て、下部分が衝突
-							hero->SetX(x - 32.0f);//blockの位置 主人公の幅
-							hero->SetVX(-hero->GetVX() * 0.1f);
+	//				if (r <= 0.0)
+	//					r = abs(r);
+	//				else
+	//					r = 360.0f - abs(r);
+	//				//lenがある一定の長さのより短い場合
+	//				if (len < 88.0f)
+	//				{
+	//					//角度が当たっている場合
+	//					if (45 && r > 0 || r > 315)
+	//					{
+	//						//	右
+	//						hero->SetRight(true);//主人公から見て、下部分が衝突
+	//						hero->SetX(x + 16.0f);//blockの位置 主人公の幅
+	//						hero->SetVX(-hero->GetVX()*0.1f);
+	//					}
+	//					if (r > 45 && r < 135)
+	//					{
+	//						//	上
+	//						hero->SetDown(true);//主人公から見て、下部分が衝突
+	//						hero->SetY(y - 16.0f);//blockの位置 主人公の幅
+	//						hero->SetVY(0.0f);
+	//					}
+	//					if (r > 135 && r < 255)
+	//					{
+	//						//左
+	//						hero->SetLeft(true);//主人公から見て、下部分が衝突
+	//						hero->SetX(x - 32.0f);//blockの位置 主人公の幅
+	//						hero->SetVX(-hero->GetVX() * 0.1f);
 
-						}
-						if (r > 225 && r < 315)
-						{
-							//↓
-							hero->SetUp(true);//主人公から見て、上の部分が衝突している。
-							hero->SetY(y + 32.0f);//blockの位置＋主人公の幅
-							hero->SetVY(0.0f);
-						}
-					}
-				}
-			}
-		}
-	}
+	//					}
+	//					if (r > 225 && r < 315)
+	//					{
+	//						//↓
+	//						hero->SetUp(true);//主人公から見て、上の部分が衝突している。
+	//						hero->SetY(y + 32.0f);//blockの位置＋主人公の幅
+	//						hero->SetVY(0.0f);
+	//					}
+	//				}
+	//			}
+	//		}
+	//	}
+	//}
 }
 //ドロー
 void CObjBlock::Draw()
