@@ -43,11 +43,11 @@
     <Filter Include="ソース ファイル\基本データ\ボス">
       <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\test1">
-      <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
       <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\アイテム">
+      <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -153,6 +153,9 @@
     <ClInclude Include="ObjEnemyBoss2.h">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>ソース ファイル\アイテム</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -256,6 +259,9 @@
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss2.cpp">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>ソース ファイル\アイテム</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
