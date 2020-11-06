@@ -36,7 +36,7 @@ void CSceneWin::InitScene()
 	Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
 	Font::SetStrTex(L"You Win!");
-	Font::SetStrTex(L"エンターキーでタイトルに戻る。");
+	Font::SetStrTex(L"エンターキーでタイトル戻る。");
 
 	//クリアオブジェクト登録
 	CObjWin* obj = new CObjWin();//クリアオブジェクト作成

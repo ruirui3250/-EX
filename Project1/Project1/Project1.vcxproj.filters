@@ -156,6 +156,12 @@
     <ClInclude Include="Item.h">
       <Filter>ソース ファイル\アイテム</Filter>
     </ClInclude>
+    <ClInclude Include="Objwin2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -262,6 +268,12 @@
     </ClCompile>
     <ClCompile Include="Item.cpp">
       <Filter>ソース ファイル\アイテム</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

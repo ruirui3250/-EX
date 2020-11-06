@@ -7,6 +7,7 @@ enum OBJ_NAME
 	//ゲームで使うオブジェクトの名前
 	//OBJ_○○と表記
 	OBJ_WIN,
+	OBJ_WIN2,
 	OBJ_CLEAR_BACK,
 	OBJ_CLEAR_VIRUS,
 	OBJ_TITLE,
@@ -64,11 +65,14 @@ struct UserData
 //------------------------------------------------
 
 //ゲームシーンオブジェクトヘッダ------------------
+//画面関連
 #include "Objwin.h"
+#include"Objwin2.h"
 #include "ObjClearBack.h"
 #include"ObjClearVirus.h"
 #include"ObjTitle.h"
 #include"ObjSceneMain.h"
+//敵関連
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
 //#include"CObjSinEnemy.h"
@@ -87,6 +91,7 @@ struct UserData
 
 //ゲームシーンクラスヘッダ------------------------
 #include"winscene.h"
+#include"winscene2.h"
 #include"SceneTitle.h"
 #include"SceneMain.h"
 #include"SceneGameOver.h"
