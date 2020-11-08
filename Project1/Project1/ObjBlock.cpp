@@ -4,8 +4,6 @@
 #include "GameL\SceneManager.h"
 #include "GameL\SceneObjManager.h"
 #include "GameHead.h"
-#include"GameL\HitBoxManager.h"
-#include"UtilityModule.h"
 
 //使用するヘッダーファイル（作成物）
 #include "ObjBlock.h"
@@ -51,47 +49,92 @@ void CObjBlock::Action()
 	float hx = hero->GetX();
 	float hy = hero->GetY();
 
+	if (hx < 80)
+	{
+		hero->SetX(80);
+		m_scroll -= hero->GetVX();
+	}
+	if (hx > 300)
+	{
+		hero->SetX(300);
+		m_scroll -= hero->GetVX();
+	}
+
 	//主人公の衝突状態確認用フラグの初期化
 	hero->SetUp(false);
 	hero->SetDown(false);
 	hero->SetLeft(false);
 	hero->SetRight(false);
 
-	//主人公とブロックとの当たり判定
-	if ((hx + 64.0f > x) && (hx < x + 64.0f))
+	hero->SetBT(0);
+
+	//m_mapの全要素アクセス
+	for (int i = 0; i < 10; i++)
 	{
+		for (int j = 0; j < 100; j++)
+		{
+			if (m_map[i][j] > 0)
+			{
+				//要素番号を座標変更
+				float x = j * 64.0f;
+				float y = i * 64.0f;
+				//主人公とブロックとの当たり判定
+				if ((hx + (-m_scroll) + 64.0f > x) && (hx + (-m_scroll) < x + 64.0f) && (hy + 64.0f > y) && (hy < y + 64.0f))
+				{
+					float vx = (hx + (-m_scroll)) - x;
+					float vy = hy - y;
+
+					float len = sqrt(vx * vx + vy * vy);
+
+					float r = atan2(vy, vx);
+					r = r * 180.0f / 3.14f;
+
+					if (r <= 0.0f)
+						r = abs(r);
+					else
+						r = 360.0f - abs(r);
+
+					if (len < 88.0f)
+					{
+						if ((r < 45 && r>0) || r > 315)
+						{
+							hero->SetRight(true);
+							hero->SetX(x + 64.0f + (m_scroll));
+							hero->SetVX(-hero->GetVX() * 0.1f);
+						}
+
+						if (r > 45 && r < 135)
+						{
+							hero->SetDown(true);
+							hero->SetY(y - 64.0f);
+							if (m_map[i][j] >= 2)
+								hero->SetBT(m_map[i][j]);
+							hero->SetVY(0.0f);
+						}
+						if (r > 135 && r < 225)
+						{
+							hero->SetLeft(true);
+							hero->SetX(x - 64.0f + (m_scroll));
+							hero->SetVX(-hero->GetVX() * 0.1f);
+						}
+						if (r > 255 && r < 315)
+						{
+							hero->SetUp(true);
+							hero->SetY(y + 64.0f);
+							if (hero->GetVY() < 0)
+							{
+								hero->SetVY(0.0f);
+							}
+						}
+					}
+				}
+			}
+			else if (m_map[i][j] == 3)
+			{
+
+			}
+		}
 	}
-
-	//移動方向
-	//m_vx = 1.0f;
-	//m_vy = 0.0f;
-	
-	//移動ベクトルの正規化
-	//UnitVec(&m_vy, &m_vx);
-
-	//速度を求める
-	//m_vx *= 1.5f;
-	//m_vy *= 1.5f;
-	
-	//移動ベクトル
-	//m_x += m_vx;
-	//m_y += m_vy;
-
-	//HITboxの内容を更新
-	//CHitBox* hit = Hits::GetHitBox(this); //作成したhitBox更新用の入り口を取り出す
-	//hit->SetPos(m_x, m_y);				  //入り口から新しい位置（主人公機の位置）情報に置き換える
-	
-	//領域外に行くとブロックは消える
-	//bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
-	//主人公が障害物に当たれば死ぬプログラム作成
-	//if (check == false)
-	//{
-	//	this->SetStatus(false);//相手に削除命令を出す
-	//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
-
-	//	return;
-	//}
-
 }
 //ドロー
 void CObjBlock::Draw()
@@ -107,8 +150,11 @@ void CObjBlock::Draw()
 	src.m_left = 0.0f;
 	src.m_right = 64.0f;
 	src.m_bottom = 64.0f;
-
-	m_scroll -= 3.0f;//スクロール実験
+	//表示位置の設定
+	dst.m_top = 0.0f;
+	dst.m_left = 0.0f;
+	dst.m_right = 800.0f;
+	dst.m_bottom = 600.0f;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -121,8 +167,31 @@ void CObjBlock::Draw()
 				dst.m_left = j * 64.0f + m_scroll;
 				dst.m_right = dst.m_left + 64.0f;
 				dst.m_bottom = dst.m_top + 64.0f;
-				//描画
-				Draw::Draw(0, &src, &dst, c, 0.0f);
+				if (m_map[i][j] == 2)
+				{
+					src.m_top = 0.0f;
+					src.m_left = 320.0f + 64.0f;
+					src.m_right = src.m_top + 64.0f;
+					src.m_bottom = src.m_top + 64.0f;
+					//描画
+					Draw::Draw(0, &src, &dst, c, 0.0f);
+				}
+				else if (m_map[i][j] == 3)
+				{
+					src.m_top = 0.0f;
+					src.m_left = 320.0f + 64.0f;
+					src.m_right = src.m_left + 64.0f;
+					src.m_bottom = src.m_top + 64.0f;
+					Draw::Draw(0, &src, &dst, c, 0.0f);
+				}
+				else
+				{
+					src.m_top = 0.0f;
+					src.m_left = 320.0f;
+					src. m_right = src.m_left + 64.0f;
+					src.m_bottom = src.m_top + 64.0f;
+					Draw::Draw(0, &src, &dst, c, 0.0f);
+				}
 			}
 		}
 	}

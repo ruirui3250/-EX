@@ -1,2 +1,43 @@
-﻿  ObjBlock.cpp
+﻿  CObjAngleBulletHero.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjAngleBulletHero.cpp(52,17): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
+  CObjBulletEnemy.cpp
+  GameL_Main.cpp
+  ObjAttackEnemy.cpp
+  ObjBlock.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBlock.cpp(87,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBlock.cpp(89,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjBullet.cpp
+  ObjClearBack.cpp
+  ObjClearVirus.cpp
+  ObjEnemy.cpp
+  ObjEnemyBoss.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjEnemyBoss.cpp(79,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjGameOver.cpp
+  ObjHero.cpp
+  ObjSceneMain.cpp
+  ObjTitle.cpp
+  Objwin.cpp
+  Objwin2.cpp
+  SceneGameOver.cpp
+  SceneMain.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  SceneTitle.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneTitle.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  winscene.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  コードを生成中...
+  コンパイル中...
+  winscene2.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  コードを生成中...
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe

@@ -28,6 +28,7 @@ public:
 	void SetDown(bool b) { m_hit_down = b; }//下
 	void SetLeft(bool b) { m_hit_left = b; }//左
 	void SetRight(bool b) { m_hit_right = b; }//右
+	void SetBT(bool b) { m_hit_bt = b; }
 private:
 	float m_x;//主人公機のx方向の位置変数
 	float m_y;//主人公機のy方向の位置変数
@@ -45,4 +46,5 @@ private:
 	bool m_hit_down;
 	bool m_hit_left;
 	bool m_hit_right;
+	bool m_hit_bt;
 };
