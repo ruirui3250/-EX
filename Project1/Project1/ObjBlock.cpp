@@ -5,6 +5,7 @@
 #include "GameL\SceneObjManager.h"
 #include "GameHead.h"
 #include"GameL\HitBoxManager.h"
+#include"UtilityModule.h"
 
 //使用するヘッダーファイル（作成物）
 #include "ObjBlock.h"
@@ -12,11 +13,20 @@
 //使用するネームスペース
 using namespace GameL;
 
+
+
 //イニシャライズ
 void CObjBlock::Init()
 {
+
+	//m_vx = 0.0f;
+	//m_vy = 0.0f;
+
+	//当たり用HitBox作成
+	//Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_BLOCK, 0);
+
 	m_scroll = 0.0f;
-	//マップ情
+	//マップ情報
 	int block_data[10][100] =
 	{
 		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
@@ -30,11 +40,8 @@ void CObjBlock::Init()
 		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
 		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
 	};
-	//マップデータをコピー
+	////マップデータをコピー
 	memcpy(m_map, block_data, sizeof(int) * (10 * 100));
-
-	//当たり用HitBox作成
-	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_BLOCK, 0);
 }
 //アクション
 void CObjBlock::Action()
@@ -50,72 +57,41 @@ void CObjBlock::Action()
 	hero->SetLeft(false);
 	hero->SetRight(false);
 
-	////m_mapの全要素のアクセス。
-	//for (int i = 0; i < 10; i++)
+	//主人公とブロックとの当たり判定
+	if ((hx + 64.0f > x) && (hx < x + 64.0f))
+	{
+	}
+
+	//移動方向
+	//m_vx = 1.0f;
+	//m_vy = 0.0f;
+	
+	//移動ベクトルの正規化
+	//UnitVec(&m_vy, &m_vx);
+
+	//速度を求める
+	//m_vx *= 1.5f;
+	//m_vy *= 1.5f;
+	
+	//移動ベクトル
+	//m_x += m_vx;
+	//m_y += m_vy;
+
+	//HITboxの内容を更新
+	//CHitBox* hit = Hits::GetHitBox(this); //作成したhitBox更新用の入り口を取り出す
+	//hit->SetPos(m_x, m_y);				  //入り口から新しい位置（主人公機の位置）情報に置き換える
+	
+	//領域外に行くとブロックは消える
+	//bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
+	//主人公が障害物に当たれば死ぬプログラム作成
+	//if (check == false)
 	//{
-	//	for (int j = 0; j < 100; j++)
-	//	{
-	//		if (m_map[i][j] > 0)
-	//		{
-	//			//要素番号を座標に変更
-	//			float x = j * 32.0f;
-	//			float y = i * 32.0f;
-	//			//ブロックの当たり判定
-	//			if ((hx+32.0f>x)&&(hx<x+32.0f)&&(hy+32.0f>y)&&(hy<y+32.0f))
-	//			{
-	//				//上下左右判定
-	//				float vx = hx - x;
-	//				float vy = hy - y;
+	//	this->SetStatus(false);//相手に削除命令を出す
+	//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
-	//				//長さを求める
-	//				float len = sqrt(vx * vx + vy * vy);
-
-	//				//角度を求める
-	//				float r = atan2(vy, vx);
-	//				r = r * 180.0f/3.14f;
-
-	//				if (r <= 0.0)
-	//					r = abs(r);
-	//				else
-	//					r = 360.0f - abs(r);
-	//				//lenがある一定の長さのより短い場合
-	//				if (len < 88.0f)
-	//				{
-	//					//角度が当たっている場合
-	//					if (45 && r > 0 || r > 315)
-	//					{
-	//						//	右
-	//						hero->SetRight(true);//主人公から見て、下部分が衝突
-	//						hero->SetX(x + 16.0f);//blockの位置 主人公の幅
-	//						hero->SetVX(-hero->GetVX()*0.1f);
-	//					}
-	//					if (r > 45 && r < 135)
-	//					{
-	//						//	上
-	//						hero->SetDown(true);//主人公から見て、下部分が衝突
-	//						hero->SetY(y - 16.0f);//blockの位置 主人公の幅
-	//						hero->SetVY(0.0f);
-	//					}
-	//					if (r > 135 && r < 255)
-	//					{
-	//						//左
-	//						hero->SetLeft(true);//主人公から見て、下部分が衝突
-	//						hero->SetX(x - 32.0f);//blockの位置 主人公の幅
-	//						hero->SetVX(-hero->GetVX() * 0.1f);
-
-	//					}
-	//					if (r > 225 && r < 315)
-	//					{
-	//						//↓
-	//						hero->SetUp(true);//主人公から見て、上の部分が衝突している。
-	//						hero->SetY(y + 32.0f);//blockの位置＋主人公の幅
-	//						hero->SetVY(0.0f);
-	//					}
-	//				}
-	//			}
-	//		}
-	//	}
+	//	return;
 	//}
+
 }
 //ドロー
 void CObjBlock::Draw()

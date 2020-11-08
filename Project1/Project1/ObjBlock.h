@@ -17,6 +17,9 @@ public:
 	float GetScroll() { return m_scroll; }
 	float m_x;
 	float m_y;
+	float m_vx;
+	float m_vy;
+	float x;
 private:
 	int m_map[10][100];//ƒ}ƒbƒvî•ñ(‰¼)
 
