@@ -31,10 +31,6 @@ void CObjHero::Action()
 			m_f = false;
 		}
 	}
-	else
-	{
-		m_f = true;
-	}
 	//主人公機の拡散弾丸発射
 	if (Input::GetVKey('X') == true)
 	{
@@ -42,15 +38,15 @@ void CObjHero::Action()
 		{
 
 			//弾丸オブジェクト作成
-			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			CObjAngleBulletHero* obj_b = new CObjAngleBulletHero (m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_ANGLEBULLET_HERO, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
 		else
 		{
 			m_f = true;
 		}
-
+		
 	}
 	/*-------------------------主人公の移動---------------------*/
 	//主人公機の移動

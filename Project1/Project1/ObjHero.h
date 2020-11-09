@@ -30,6 +30,7 @@ private:
 	float m_vy;//主人公機のy方向のベクトル用変数
 	float m_hp;//主人公の体力
 	bool m_f;//弾丸発射
+	
 
 	float m_px;//主人公位置取得X座標
 	float m_py;//主人公位置取得Y座標
@@ -40,4 +41,6 @@ private:
 	bool m_hit_down;
 	bool m_hit_left;
 	bool m_hit_right;
+
+
 };

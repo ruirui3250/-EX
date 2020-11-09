@@ -4,7 +4,7 @@
 #include"GameHead.h"
 #include"CObjAngleBulletHero.h"
 #include "UtilityModule.h"
-#include"GameL\Audio.h"
+//#include"GameL\Audio.h"
 //使用するネームスペース
 using namespace GameL;
 
@@ -107,7 +107,7 @@ void CObjAngleBulletHero::Action()
 	//敵機オブジェクトと接触したら拡散弾丸削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
-		Audio::Start(3);
+	/*	Audio::Start(3);*/
 		//m_del = true;//消滅実行
 		//hit->SetInvincibility(true);//敵機弾丸が所有するHitBoxに削除する。
 		this->SetStatus(false);
