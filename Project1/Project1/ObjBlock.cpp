@@ -49,9 +49,9 @@ void CObjBlock::Action()
 	float hx = hero->GetX();
 	float hy = hero->GetY();
 
-	if (hx < 80)
+	if (hx < 64)
 	{
-		hero->SetX(80);
+		hero->SetX(64);
 		m_scroll -= hero->GetVX();
 	}
 	if (hx > 300)
@@ -94,7 +94,7 @@ void CObjBlock::Action()
 					else
 						r = 360.0f - abs(r);
 
-					if (len < 88.0f)
+					if (len < 64.0f)
 					{
 						if ((r < 45 && r>0) || r > 315)
 						{
@@ -153,8 +153,8 @@ void CObjBlock::Draw()
 	//ï\é¶à íuÇÃê›íË
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 800.0f;
-	dst.m_bottom = 600.0f;
+	dst.m_right = 64.0f;
+	dst.m_bottom = 64.0f;
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -170,19 +170,19 @@ void CObjBlock::Draw()
 				if (m_map[i][j] == 2)
 				{
 					src.m_top = 0.0f;
-					src.m_left = 320.0f + 64.0f;
-					src.m_right = src.m_top + 64.0f;
+					src.m_left = 0.0f;
+					src.m_right = src.m_left + 64.0f;
 					src.m_bottom = src.m_top + 64.0f;
 					//ï`âÊ
-					Draw::Draw(0, &src, &dst, c, 0.0f);
+					Draw::Draw(9, &src, &dst, c, 0.0f);
 				}
 				else if (m_map[i][j] == 3)
 				{
 					src.m_top = 0.0f;
-					src.m_left = 320.0f + 64.0f;
+					src.m_left = 0.0f;
 					src.m_right = src.m_left + 64.0f;
 					src.m_bottom = src.m_top + 64.0f;
-					Draw::Draw(0, &src, &dst, c, 0.0f);
+					Draw::Draw(9, &src, &dst, c, 0.0f);
 				}
 				else
 				{
@@ -190,7 +190,7 @@ void CObjBlock::Draw()
 					src.m_left = 320.0f;
 					src. m_right = src.m_left + 64.0f;
 					src.m_bottom = src.m_top + 64.0f;
-					Draw::Draw(0, &src, &dst, c, 0.0f);
+					Draw::Draw(9, &src, &dst, c, 0.0f);
 				}
 			}
 		}

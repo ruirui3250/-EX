@@ -34,9 +34,6 @@
     <Filter Include="ソース ファイル\基本データ\主人公機">
       <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\敵機">
-      <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面">
       <UniqueIdentifier>{9e484e8d-a0ae-4b00-b99d-88ac2749cd43}</UniqueIdentifier>
     </Filter>
@@ -51,6 +48,9 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\回転">
       <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\敵機">
+      <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -133,16 +133,16 @@
       <Filter>ソース ファイル\基本データ\ボス</Filter>
     </ClInclude>
     <ClInclude Include="CObjBulletEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClInclude>
     <ClInclude Include="CObjSinEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClInclude>
     <ClInclude Include="ObjAttackEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClInclude>
     <ClInclude Include="UtilityModule.h">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
@@ -252,16 +252,16 @@
       <Filter>ソース ファイル\基本データ\ボス</Filter>
     </ClCompile>
     <ClCompile Include="CObjBulletEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClCompile>
     <ClCompile Include="CObjSinEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClCompile>
     <ClCompile Include="ObjAttackEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
+      <Filter>ソース ファイル\敵機</Filter>
     </ClCompile>
     <ClCompile Include="UtilityModule.cpp">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
