@@ -29,6 +29,7 @@ private:
 	float m_vx;//主人公機のx方向のベクトル用変数
 	float m_vy;//主人公機のy方向のベクトル用変数
 	float m_hp;//主人公の体力
+	float m_ka;//主人公の拡散弾用
 	bool m_f;//弾丸発射
 	
 
