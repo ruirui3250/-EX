@@ -1,197 +1,78 @@
-//使用するヘッダーファイル(リソース)
+//使用ヘッダー
 #include "GameL\DrawTexture.h"
-#include "GameL\WinInputs.h"
-#include "GameL\SceneManager.h"
-#include "GameL\SceneObjManager.h"
-#include "GameHead.h"
-
-//使用するヘッダーファイル（作成物）
+#include"GameL\HitBoxManager.h"
+#include"GameHead.h"
 #include "ObjBlock.h"
-
+#include"UtilityModule.h"
 //使用するネームスペース
 using namespace GameL;
-
-
-
+//コンストラクタ
+CObjBlock::CObjBlock(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
 //イニシャライズ
 void CObjBlock::Init()
 {
-	m_scroll = 0.0f;
-	//マップ情報
-	int block_data[10][100] =
-	{
-		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,1,1,1,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1},
-		{0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,0,0,0,0,0,0,1,1,1,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1},
-	};
-	////マップデータをコピー
-	memcpy(m_map, block_data, sizeof(int) * (10 * 100));
+	m_vx = 0.0f;
+	m_vy = 0.0f;
+
+	//当たり判定用HitBox作成
+	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_BLOCK, 1);
 }
 //アクション
 void CObjBlock::Action()
 {
-	//主人公の位置を取得
-	CObjHero* hero = (CObjHero*)Objs::GetObj(OBJ_HERO);
-	float hx = hero->GetX();
-	float hy = hero->GetY();
+	//移動方向
+	m_vx = -1.0f;
+	m_vy = 0.0f;
 
+	//移動ベクトルの正規化
+	UnitVec(&m_vy, &m_vx);
 
-	if (hx < 80)
+	//速度を求める
+	m_vx *= 1.5f;
+	m_vy *= 1.5f;
+	//移動ベクトルを座標に加算する。
+	m_x += m_vx;
+	m_y += m_vy;
+	//HitBoxの内容更新
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);
+	//領域外に出たら敵機を破棄。
+	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
+	if (check == false)
 	{
-		hero->SetX(80);
-		m_scroll -= hero->GetVX();
-	}
-	if (hx > 300)
-	{
-		hero->SetX(300);
-		m_scroll -= hero->GetVX();
+		this->SetStatus(false); //自身に削除命令を出す。
+		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
+		return;
 	}
 
-	//主人公の衝突状態確認用フラグの初期化
-	hero->SetUp(false);
-	hero->SetDown(false);
-	hero->SetLeft(false);
-	hero->SetRight(false);
-
-	hero->SetBT(0);
-
-	//m_mapの全要素アクセス
-	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < 100; j++)
-		{
-			if (m_map[i][j] > 0)
-			{
-				//要素番号を座標変更
-				float x = j * 64.0f;
-				float y = i * 64.0f;
-				//主人公とブロックとの当たり判定
-				if ((hx + (-m_scroll) + 64.0f > x) && (hx + (-m_scroll) < x + 64.0f) && (hy + 64.0f > y) && (hy < y + 64.0f))
-				{
-					float vx = (hx + (-m_scroll)) - x;
-					float vy = hy - y;
-					float len = sqrt(vx * vx + vy * vy);
-
-					float r = atan2(vy, vx);
-					r = r * 180.0f / 3.14f;
-
-					if (r <= 0.0f)
-						r = abs(r);
-					else
-						r = 360.0f - abs(r);
-
-					//ある一定のサイズより小さければ無視
-					if (len < 88.0f)
-					{
-						if ((r < 45 && r>0) || r > 315)
-						{
-							//右
-							hero->SetRight(true);//主人公の左衝突
-							hero->SetX(x + 64.0f + (m_scroll));//blockの位置主人公の幅
-							hero->SetVX(-hero->GetVX() * 0.1f);//-VX反発係数
-						}
-
-						if (r > 45 && r < 135)
-						{
-							//上
-							hero->SetDown(true);//主人公の下の部分が衝突している。
-							hero->SetY(y - 64.0f);//blockの位置＋主人公の幅
-							if (m_map[i][j] >= 2)
-								hero->SetBT(m_map[i][j]);
-							hero->SetVY(0.0f);
-						}
-						if (r > 135 && r < 225)
-						{
-							//左
-							hero->SetLeft(true);//主人公が右の位置に衝突している。
-							hero->SetX(x - 64.0f + (m_scroll));//blockの位置＋主人公の幅
-							hero->SetVX(-hero->GetVX() * 0.1f);
-						}
-						if (r > 255 && r < 315)
-						{
-							hero->SetUp(true);
-							hero->SetY(y + 64.0f);
-							if (hero->GetVY() < 0)
-							{
-								hero->SetVY(0.0f);
-							}
-						}
-					}
-				}
-			}
-			else if (m_map[i][j] == 3)
-			{
-
-			}
-		}
-	}
 }
+
 //ドロー
 void CObjBlock::Draw()
 {
-	//描画カラー情報
+	//描画カラー情報　R-RED G=GREEN B=BLUE A=ALPHA(透過情報)
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
-	RECT_F src;//描画先切り取り位置
-	RECT_F dst;//描画先表示位置
+	RECT_F src; //描画切り取り位置
+	RECT_F dst;//描画先表示
 
 	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 64.0f;
-	src.m_bottom = 64.0f;
-	//表示位置の設定
-	dst.m_top = 0.0f;
-	dst.m_left = 0.0f;
-	dst.m_right = 64.0f;
-	dst.m_bottom = 64.0f;
-	Draw::Draw(9, &src, &dst, c, 0.0f);
+	src.m_bottom =64.0f;
 
-	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < 100; j++)
-		{
-			if (m_map[i][j] > 0)
-			{
-				//表示位置の設定
-				dst.m_top = i * 64.0f;
-				dst.m_left = j * 64.0f + m_scroll;
-				dst.m_right = dst.m_left + 64.0f;
-				dst.m_bottom = dst.m_top + 64.0f;
-				if (m_map[i][j] == 2)
-				{
-					src.m_top = 0.0f;
-					src.m_left = 320.0f+64.0f;
-					src.m_right = src.m_left + 64.0f;
-					src.m_bottom = src.m_top + 64.0f;
-					//描画
-					Draw::Draw(9, &src, &dst, c, 0.0f);
-				}
-				else if (m_map[i][j] == 3)
-				{
-					src.m_top = 0.0f;
-					src.m_left = 0.0f;
-					src.m_right = src.m_left + 64.0f;
-					src.m_bottom = src.m_top + 64.0f;
-					Draw::Draw(9, &src, &dst, c, 0.0f);
-				}
-				else
-				{
-					src.m_top = 0.0f;
-					src.m_left = 320.0f;
-					src. m_right = src.m_left + 64.0f;
-					src.m_bottom = src.m_top + 64.0f;
-					Draw::Draw(9, &src, &dst, c, 0.0f);
-				}
-			}
-		}
-	}
+	//表示位置の設定
+	dst.m_top = 0.0f + m_y;
+	dst.m_left = 0.0f + m_x;
+	dst.m_right = 64.0f + m_x;
+	dst.m_bottom = 64.0f + m_y;
+
+	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
+	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 }

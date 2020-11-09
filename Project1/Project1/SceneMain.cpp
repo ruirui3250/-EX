@@ -36,18 +36,18 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png",9, TEX_SIZE_512);
 
-	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
+	Draw::LoadImage(L"拡散弾丸.png",6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
-	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
+	//Draw::LoadImage(L"BossBack.png",TEX_SIZE_512);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
 
 	//blockオブジェクト作成
-	CObjBlock* objb = new CObjBlock();
+	CObjBlock* objb = new CObjBlock(2,3);
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
 		//クリア時背景オブジェクト作成
@@ -96,6 +96,16 @@ void CSceneMain::Scene()
 		CObjAttackEnemy* obj2;
 		obj2 = new CObjAttackEnemy(799, 400);
 		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
+
+	}
+	else if (m_time == 500)
+	{
+		CObjBlock* objb;
+		objb = new CObjBlock(799.0f, 400);
+		Objs::InsertObj(objb, OBJ_ENEMY, 50);
+		CObjBlock* objb;
+		objb = new CObjBlock(799.0f, 410);
+		Objs::InsertObj(objb, OBJ_ENEMY, 50);
 
 	}
 	else if (m_time == 550)

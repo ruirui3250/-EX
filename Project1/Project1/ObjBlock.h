@@ -1,27 +1,21 @@
 #pragma once
 //使用するヘッダー
-#include"GameL\SceneObjManager.h"
-//使用するネームスぺース
+#include "GameL\SceneObjManager.h"
+//使用するネームスペース
 using namespace GameL;
 
-//オブジェクト:ブロック&背景
-class CObjBlock :public CObj
+//オブジェクト敵機
+class CObjBlock : public CObj
 {
 public:
-	CObjBlock() {};
-	~CObjBlock() {};
-	void Init();//イニシャライズ
-	void Action();//アクション
+	CObjBlock(float x, float y) {};//コンストラクタ位置をもらう
+	~CObjBlock();
+	void Init(); //イニシャライズ
+	void Action(); //アクション
 	void Draw();//ドロー
-	void SetScroll(float s) { m_scroll = s; }
-	float GetScroll() { return m_scroll; }
-	float m_x;
-	float m_y;
-	float m_vx;
-	float m_vy;
-	float x;
 private:
-	int m_map[10][100];//マップ情報(仮)
-
-	float m_scroll;//左右スクロール
+	float m_x;//敵機のx方向の位置
+	float m_y;//敵機のy方向の位置
+	float m_vx;//敵移動のベクトルx
+	float m_vy;//敵移動のベクトルy
 };
