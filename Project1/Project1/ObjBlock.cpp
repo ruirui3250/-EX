@@ -7,7 +7,7 @@
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
-CObjBlock::CObjBlock(float x, float y)
+CObjBlock::CObjBlock(float x,float y)
 {
 	m_x = x;
 	m_y = y;
