@@ -16,13 +16,6 @@ using namespace GameL;
 //イニシャライズ
 void CObjBlock::Init()
 {
-
-	//m_vx = 0.0f;
-	//m_vy = 0.0f;
-
-	//当たり用HitBox作成
-	//Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_BLOCK, 0);
-
 	m_scroll = 0.0f;
 	//マップ情報
 	int block_data[10][100] =
@@ -49,9 +42,10 @@ void CObjBlock::Action()
 	float hx = hero->GetX();
 	float hy = hero->GetY();
 
-	if (hx < 64)
+
+	if (hx < 80)
 	{
-		hero->SetX(64);
+		hero->SetX(80);
 		m_scroll -= hero->GetVX();
 	}
 	if (hx > 300)
@@ -83,7 +77,6 @@ void CObjBlock::Action()
 				{
 					float vx = (hx + (-m_scroll)) - x;
 					float vy = hy - y;
-
 					float len = sqrt(vx * vx + vy * vy);
 
 					float r = atan2(vy, vx);
@@ -94,27 +87,31 @@ void CObjBlock::Action()
 					else
 						r = 360.0f - abs(r);
 
-					if (len < 64.0f)
+					//ある一定のサイズより小さければ無視
+					if (len < 88.0f)
 					{
 						if ((r < 45 && r>0) || r > 315)
 						{
-							hero->SetRight(true);
-							hero->SetX(x + 64.0f + (m_scroll));
-							hero->SetVX(-hero->GetVX() * 0.1f);
+							//右
+							hero->SetRight(true);//主人公の左衝突
+							hero->SetX(x + 64.0f + (m_scroll));//blockの位置主人公の幅
+							hero->SetVX(-hero->GetVX() * 0.1f);//-VX反発係数
 						}
 
 						if (r > 45 && r < 135)
 						{
-							hero->SetDown(true);
-							hero->SetY(y - 64.0f);
+							//上
+							hero->SetDown(true);//主人公の下の部分が衝突している。
+							hero->SetY(y - 64.0f);//blockの位置＋主人公の幅
 							if (m_map[i][j] >= 2)
 								hero->SetBT(m_map[i][j]);
 							hero->SetVY(0.0f);
 						}
 						if (r > 135 && r < 225)
 						{
-							hero->SetLeft(true);
-							hero->SetX(x - 64.0f + (m_scroll));
+							//左
+							hero->SetLeft(true);//主人公が右の位置に衝突している。
+							hero->SetX(x - 64.0f + (m_scroll));//blockの位置＋主人公の幅
 							hero->SetVX(-hero->GetVX() * 0.1f);
 						}
 						if (r > 255 && r < 315)
@@ -155,6 +152,7 @@ void CObjBlock::Draw()
 	dst.m_left = 0.0f;
 	dst.m_right = 64.0f;
 	dst.m_bottom = 64.0f;
+	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 	for (int i = 0; i < 10; i++)
 	{
@@ -170,7 +168,7 @@ void CObjBlock::Draw()
 				if (m_map[i][j] == 2)
 				{
 					src.m_top = 0.0f;
-					src.m_left = 0.0f;
+					src.m_left = 320.0f+64.0f;
 					src.m_right = src.m_left + 64.0f;
 					src.m_bottom = src.m_top + 64.0f;
 					//描画

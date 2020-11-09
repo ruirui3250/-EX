@@ -1,4 +1,4 @@
 ﻿  ObjBlock.cpp
-C:\Users\GA1A\Desktop\-EX\Project1\Project1\ObjBlock.cpp(87,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\GA1A\Desktop\-EX\Project1\Project1\ObjBlock.cpp(89,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX\Project1\Project1\ObjBlock.cpp(80,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX\Project1\Project1\ObjBlock.cpp(82,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
   Project1.vcxproj -> C:\Users\GA1A\Desktop\-EX\Project1\x64\Debug\Project1.exe
