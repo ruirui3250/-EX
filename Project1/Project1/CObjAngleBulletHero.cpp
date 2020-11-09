@@ -4,7 +4,6 @@
 #include"GameHead.h"
 #include"CObjAngleBulletHero.h"
 #include "UtilityModule.h"
-//#include"GameL\Audio.h"
 //使用するネームスペース
 using namespace GameL;
 
@@ -26,14 +25,13 @@ void CObjAngleBulletHero::Init()
 	m_ani_time = 0;
 	m_del = false;
 
-
 	m_vx = cos(3.14f / 180.0f * m_r);
 	m_vy = sin(3.14f / 180.0f * m_r);
 	//移動用ベクトルの正規化
 	UnitVec(&m_vy, &m_vx);
 
 	//当たり判定用HitBoxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_BULLET, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_ANGLE_BULLET_HERO, 1);
 }
 
 //アクション
@@ -43,8 +41,6 @@ void CObjAngleBulletHero::Action()
 	//HitBoxの内容を更新
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
-	//Resourcesの描画物のRECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
 	//弾丸消滅装置--------
 	if (m_del == true)
 	{
@@ -61,11 +57,12 @@ void CObjAngleBulletHero::Action()
 	m_x += m_vx * m_speed;
 	m_y -= m_vy * m_speed;
 
-	////主人公機弾丸のHitBox更新用ポインター取得
-	//CHitBox* hit = Hits::GetHitBox(this);
-	//hit->SetPos(m_x, m_y);//HitBoxの位置を敵機弾丸の位置に更新
+	//主人公機弾丸のHitBox更新用ポインター取得
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);//HitBoxの位置を敵機弾丸の位置に更新
 
-	//敵機拡散弾丸が完全に領域外から出たら主人公機拡散弾丸を破棄する
+
+	//領域外に出たら弾丸破棄
 	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
 	if (check == false)
 	{
@@ -107,8 +104,6 @@ void CObjAngleBulletHero::Action()
 	//敵機オブジェクトと接触したら拡散弾丸削除
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
-	/*	Audio::Start(3);*/
-		//m_del = true;//消滅実行
 		//hit->SetInvincibility(true);//敵機弾丸が所有するHitBoxに削除する。
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
@@ -132,3 +127,7 @@ void CObjAngleBulletHero::Draw()
 	Draw::Draw(6, &m_eff, &dst, c, m_r);
 
 }
+
+
+
+

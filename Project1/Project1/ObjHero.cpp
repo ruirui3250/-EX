@@ -37,7 +37,7 @@ void CObjHero::Action()
 			m_f = false;
 		}
 	}
-	//ålŒö‹@‚ÌŠgU’eŠÛ”­Ë
+	//ålŒö‹@‚ÌŠgU’e”­Ë
 	if (Input::GetVKey('X') == true)
 	{
 		if (m_f == true)

@@ -21,7 +21,8 @@ enum OBJ_NAME
 	/*OBJ_SIN_ENEMY,*/
 	OBJ_BOSS_ENEMY,
 	OBJ_BLOCK,
-	OBJ_ANGLEBULLET_HERO,
+	OBJ_ANGLE_BULLET_HERO,
+	OBJ_DIFFUSION_HERO,
 };
 //------------------------------------------------
 
@@ -82,11 +83,13 @@ struct UserData
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
 #include"ObjEnemy.h"
-#include "ObjEnemyBoss.h"
+#include"ObjDiffusionHero.h"
+#include"ObjEnemyBoss.h"
 #include"CObjAngleBulletHero.h"
 #include"ObjEnemyBoss2.h"
 //ブロック関連
 #include"ObjBlock.h"
+
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------

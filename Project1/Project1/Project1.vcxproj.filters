@@ -168,6 +168,9 @@
     <ClInclude Include="Kaiten.h">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClInclude>
+    <ClInclude Include="ObjDiffusionHero.h">
+      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -283,6 +286,9 @@
     </ClCompile>
     <ClCompile Include="Kaiten.cpp">
       <Filter>ソース ファイル\基本データ\回転</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDiffusionHero.cpp">
+      <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
