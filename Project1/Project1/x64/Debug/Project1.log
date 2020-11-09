@@ -4,36 +4,25 @@ C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjAngleBulletHero.cpp(29,12):
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjAngleBulletHero.cpp(48,17): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjAngleBulletHero.cpp(61,11): error C2374: 'hit': 再定義されています。2 回以上初期化されています。
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjAngleBulletHero.cpp(42): message : 'hit' の宣言を確認してください
-  CObjBulletEnemy.cpp
-  ObjBlock.cpp
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(55,21): error C2039: 'GetVX': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(60,21): error C2039: 'GetVX': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(69,8): error C2039: 'SetBT': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(87,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(89,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(103,14): error C2039: 'SetVX': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(103,27): error C2039: 'GetVX': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(111,15): error C2039: 'SetBT': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(118,14): error C2039: 'SetVX': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(118,27): error C2039: 'GetVX': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBlock.cpp(124,18): error C2039: 'GetVY': 'CObjHero' のメンバーではありません
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.h(8): message : 'CObjHero' の宣言を確認してください
-  ObjBullet.cpp
-  ObjDiffusionEnemy.cpp
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjDiffusionEnemy.cpp(22,57): error C2065: 'OBJ_DIFFUSION_ENEMY': 定義されていない識別子です。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjDiffusionEnemy.cpp(38,46): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjDiffusionEnemy.cpp(73,15): error C3861: 'CheakWindow': 識別子が見つかりませんでした
   ObjHero.cpp
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(47,82): error C2661: 'CObjAngleBulletHero::CObjAngleBulletHero': 2 個の引数を伴うオーバーロードされた関数はありません。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(48,27): error C2065: 'OBJ_ANGLEBULLET_HERO': 定義されていない識別子です。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(51,31): warning C4804: '>=': 演算中の 'bool' 型の使用方法が安全ではありません
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(148,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(148,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(153,30): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(153,30): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(158,27): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(158,27): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(164,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(164,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(169,28): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(169,28): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(174,27): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(174,27): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(179,26): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(179,26): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(184,25): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(184,25): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
   ObjSceneMain.cpp
   winscene.cpp
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
