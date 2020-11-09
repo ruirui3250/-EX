@@ -43,8 +43,14 @@
     <Filter Include="ソース ファイル\基本データ\ボス">
       <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\test1">
+    <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
+      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\アイテム">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\回転">
+      <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -147,6 +153,21 @@
     <ClInclude Include="CObjAngleBulletHero.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
+    <ClInclude Include="ObjEnemyBoss2.h">
+      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="Item.h">
+      <Filter>ソース ファイル\基本データ\アイテム</Filter>
+    </ClInclude>
+    <ClInclude Include="Objwin2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClInclude>
+    <ClInclude Include="Kaiten.h">
+      <Filter>ソース ファイル\基本データ\回転</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -247,6 +268,21 @@
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemyBoss2.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="Item.cpp">
+      <Filter>ソース ファイル\基本データ\アイテム</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+    </ClCompile>
+    <ClCompile Include="Kaiten.cpp">
+      <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -13,6 +13,15 @@ public:
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
+	void SetScroll(float s) { m_scroll = s; }
+	float GetScroll() { return m_scroll; }
+	float m_x;
+	float m_y;
+	float m_vx;
+	float m_vy;
+	float x;
 private:
 	int m_map[10][100];//マップ情報(仮)
+
+	float m_scroll;//左右スクロール
 };
