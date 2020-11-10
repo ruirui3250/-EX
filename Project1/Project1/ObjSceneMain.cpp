@@ -34,6 +34,7 @@ void CObjSceneMain::Action()
 	float r = 3.14 / 180.0f;//Šp“x1
 	if (ar < br)
 	{
+		//‘—‚é‚æ‚¤‚ÉƒRƒƒ“ƒg
 		//ˆÚ“®•ûŒü‚É+1‚ð‰Á‚¦‚é
 		m_vx = m_vx * cos(r) - m_vy * sin(r);
 		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
