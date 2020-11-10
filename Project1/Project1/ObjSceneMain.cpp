@@ -2,6 +2,8 @@
 #include "GameL\DrawTexture.h"
 #include"GameHead.h"
 #include"ObjSceneMain.h"
+#include"UtilityModule.h"
+#include<math.h>
 
 //使用するネームスペース
 using namespace GameL;
@@ -23,6 +25,7 @@ void CObjSceneMain::Action()
 	m_x2 -= 10.0f;
 	if (m_x2 < -800.0f)
 		m_x2 = 800;
+	
 }
 
 //ドロー
