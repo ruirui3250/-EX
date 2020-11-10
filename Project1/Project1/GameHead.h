@@ -18,13 +18,14 @@ enum OBJ_NAME
 	OBJ_ENEMY,
 	OBJ_ATTACK_ENEMY,
 	OBJ_BULLET_ENEMY,
-	/*OBJ_SIN_ENEMY,*/
+	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
 	OBJ_BLOCK,
 	OBJ_ANGLE_BULLET_HERO,
 	OBJ_DIFFUSION_HERO,
 	OBJ_HOMING_ENEMY,
 	OBJ_DIFFUSION_ENEMY,
+	OBJ_HOMING_BULLET,
 };
 //------------------------------------------------
 
@@ -78,7 +79,7 @@ struct UserData
 //敵関連
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
-//#include"CObjSinEnemy.h"
+#include"CObjSinEnemy.h"
 #include"ObjAttackEnemy.h"
 #include"ObjClearBack.h"
 #include"ObjGameOver.h"
@@ -90,6 +91,7 @@ struct UserData
 #include"CObjAngleBulletHero.h"
 #include"ObjEnemyBoss2.h"
 #include"CObjHomingEnemy.h"
+#include"CObjHomingBullet.h"
 //ブロック関連
 #include"ObjBlock.h"
 
