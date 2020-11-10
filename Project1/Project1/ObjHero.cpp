@@ -5,12 +5,12 @@
 #include "ObjHero.h"
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
-#include"CObjAngleBulletHero.h"
+#include"ObjAngleBulletHero.h"
 
 //イニシャライズ
 void CObjHero::Init()
 {
-
+	m_la = 100;
 	m_hp = 3;
 	m_ka = 5;
 	m_x = 6;
@@ -22,6 +22,27 @@ void CObjHero::Init()
 //アクション
 void CObjHero::Action()
 {
+	/*---------------主人公機のレーザー弾丸発射-------------------------*/
+	if (Input::GetVKey('A') == true)
+	{
+		if (m_la >= 0)
+		{
+			//弾丸オブジェクト作成
+			CObjLaserBullet* obj_b = new CObjLaserBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJLASER_BULLET, 100);//作った弾丸オブジェクト
+			m_la--;
+		}
+
+		//if (m_f == true)
+		//{
+
+		//	//弾丸オブジェクト作成
+		//	CObjⅬaserBullet* obj_b = new CObjⅬaserBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
+		//	Objs::InsertObj(obj_b, OBJⅬASER_BULLET, 100);//作った弾丸オブジェクト
+		//}
+
+	}
+	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
 		if (m_f == true)
@@ -147,51 +168,129 @@ void CObjHero::Draw()
 	//Font::StrDraw(str, 50, 20, 30, c);
 
 	/*---------HP表示---------------------*/
+
 	if (m_hp == 3)
 	{
 		swprintf_s(str, L"♥♥♥", m_hp);
-		Font::StrDraw(str, 30, 60, 60, c);
+		Font::StrDraw(str, 155, 20, 60, c);
 	}
 	if (m_hp == 2)
 	{
 		swprintf_s(str, L"♥♥♡", m_hp);
-		Font::StrDraw(str, 30, 60, 60, c);
+		Font::StrDraw(str, 155, 20, 60, c);
 	}
 	if (m_hp == 1)
 	{
 		swprintf_s(str, L"♥♡♡", m_hp);
-		Font::StrDraw(str, 30, 60, 60, c);
+		Font::StrDraw(str, 155, 20, 60, c);
 	}
 	/*-------------------拡散団残りメーター-----------------*/
+	swprintf_s(str, L"拡散弾丸：", m_hp);
+	Font::StrDraw(str, 20, 70, 30, c);
+
 	if (m_ka == 5)
 	{
 		swprintf_s(str, L"★★★★★", m_ka);
-		Font::StrDraw(str, 20, 30, 40, c);
+		Font::StrDraw(str, 150, 70, 40, c);
 	}
 	if (m_ka == 4)
 	{
 		swprintf_s(str, L"★★★★☆", m_ka);
-		Font::StrDraw(str, 20, 30, 40, c);
+		Font::StrDraw(str, 150, 70, 40, c);
 	}
 	if (m_ka == 3)
 	{
 		swprintf_s(str, L"★★★☆☆", m_ka);
-		Font::StrDraw(str, 20, 30, 40, c);
+		Font::StrDraw(str, 150, 70, 40, c);
 	}
 	if (m_ka == 2)
 	{
 		swprintf_s(str, L"★★☆☆☆", m_ka);
-		Font::StrDraw(str, 20, 30, 40, c);
+		Font::StrDraw(str, 150, 70, 40, c);
 	}
 	if (m_ka == 1)
 	{
 		swprintf_s(str, L"★☆☆☆☆", m_ka);
-		Font::StrDraw(str, 20, 30, 40, c);
+		Font::StrDraw(str, 150, 70, 40, c);
+	}
+	if (m_ka == 0)
+	{
+		swprintf_s(str, L"☆☆☆☆☆", m_ka);
+		Font::StrDraw(str, 150, 70, 40, c);
 	}
 	if (m_ka <= 0)
 	{
 		swprintf_s(str, L"Eroor", m_ka);
-		Font::StrDraw(str, 20, 30, 40, c);
+		Font::StrDraw(str, 150, 70, 40, c);
+	}
+
+	/*-------------レーザーゲージ-------------------*/
+	swprintf_s(str, L"レーザー：", m_hp);
+	Font::StrDraw(str, 20, 110, 30, c);
+	if (m_la == 100)
+	{
+		swprintf_s(str, L"■■■■■■■■■■", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 90)
+	{
+		swprintf_s(str, L"■■■■■■■■■□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 80)
+	{
+		swprintf_s(str, L"■■■■■■■■□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 70)
+	{
+		swprintf_s(str, L"■■■■■■■□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 60)
+	{
+		swprintf_s(str, L"■■■■■■□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 50)
+	{
+		swprintf_s(str, L"■■■■■□□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 40)
+	{
+		swprintf_s(str, L"■■■■□□□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 30)
+	{
+		swprintf_s(str, L"■■■□□□□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 20)
+	{
+		swprintf_s(str, L"■■□□□□□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 10)
+	{
+		swprintf_s(str, L"■□□□□□□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la >= 0)
+	{
+		swprintf_s(str, L"□□□□□□□□□□", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la == -1)
+	{
+		swprintf_s(str, L"Error", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+	}
+	if (m_la <= -1)
+	{
+		swprintf_s(str, L"Error", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
 	}
 	RECT_F src;//描画元切り取り位置
 	RECT_F dst;//描画先表示位置
