@@ -150,6 +150,6 @@ void CObjHomingBullet::Draw()
         r = GetAtan2Angle(x, -y);
 
         //0番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
-        Draw::Draw(0, &m_eff, &dst, c, r);
+        Draw::Draw(3, &m_eff, &dst, c, r);
     }
 }

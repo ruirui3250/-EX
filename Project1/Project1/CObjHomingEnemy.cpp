@@ -25,7 +25,7 @@ void CObjHomingEnemy::Init()
     m_time = 0;
 
     //当たり判定用HitBoxを作成
-    Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_HOMING_ENEMY, 1);
+    Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_HOMING_BULLET, 1);
 }
 
 //アクション
@@ -35,9 +35,9 @@ void CObjHomingEnemy::Action()
     if (m_time > 100)
     {
         m_time = 0;
-        ////誘導弾丸オブジェクト作成
-        //CObjHomingBullet* obj_homing_bullet = new CObjHomingBullet(m_x, m_y);
-        //Objs::InsertObj(obj_homing_bullet, OBJ_HOMING_BULLET, 100);
+        //誘導弾丸オブジェクト作成
+        CObjHomingBullet* obj_homing_bullet = new CObjHomingBullet(m_x, m_y);
+        Objs::InsertObj(obj_homing_bullet, OBJ_HOMING_BULLET, 100);
     }
 
     //移動方向
@@ -106,5 +106,5 @@ void CObjHomingEnemy::Draw()
     dst.m_bottom = 32.0f + m_y;
 
     //0番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
-    Draw::Draw(0, &src, &dst, c, 0.0f);
+    Draw::Draw(3, &src, &dst, c, 0.0f);
 }
