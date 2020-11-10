@@ -28,6 +28,7 @@ enum OBJ_NAME
 	OBJ_HOMING_BULLET,
 	OBJ_ITEM,
 	OBJLASER_BULLET,
+	OBJ_ANGLE_BULLET,
 };
 //------------------------------------------------
 
@@ -95,6 +96,7 @@ struct UserData
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
 #include"ObjLaserBullet.h"
+#include"CObjAngleBullet.h"
 //ブロック関連
 #include"ObjBlock.h"
 //アイテム関連
