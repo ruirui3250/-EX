@@ -49,7 +49,7 @@ void CObjBlock::Action()
 				float x = j * 64.0f;
 				float y = i * 64.0f;
 				//主人公とブロックの当たり判定
-				if (1)
+				if ((hx + 64.0f > x) && (hy + 64.0f > y) && (hy < y + 64.0f))
 				{
 					;//当たっている場合反応
 					//確認用として作成。
