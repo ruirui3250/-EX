@@ -154,12 +154,15 @@
     <ClInclude Include="GameL\SetWindow.h" />
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
+    <ClInclude Include="Item.h" />
+    <ClInclude Include="Kaiten.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
     <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBullet.h" />
     <ClInclude Include="ObjClearBack.h" />
     <ClInclude Include="ObjClearVirus.h" />
+    <ClInclude Include="ObjDiffusionHero.h" />
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjEnemyBoss.h" />
     <ClInclude Include="ObjEnemyBoss2.h" />
@@ -168,11 +171,13 @@
     <ClInclude Include="ObjSceneMain.h" />
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="Objwin.h" />
+    <ClInclude Include="Objwin2.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="UtilityModule.h" />
     <ClInclude Include="winscene.h" />
+    <ClInclude Include="winscene2.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
@@ -191,11 +196,14 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
+    <ClCompile Include="Item.cpp" />
+    <ClCompile Include="Kaiten.cpp" />
     <ClCompile Include="ObjAttackEnemy.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjBullet.cpp" />
     <ClCompile Include="ObjClearBack.cpp" />
     <ClCompile Include="ObjClearVirus.cpp" />
+    <ClCompile Include="ObjDiffusionHero.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="ObjEnemyBoss.cpp" />
     <ClCompile Include="ObjEnemyBoss2.cpp" />
@@ -204,11 +212,13 @@
     <ClCompile Include="ObjSceneMain.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="Objwin.cpp" />
+    <ClCompile Include="Objwin2.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="UtilityModule.cpp" />
     <ClCompile Include="winscene.cpp" />
+    <ClCompile Include="winscene2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
