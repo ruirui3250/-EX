@@ -5,8 +5,7 @@
 #include "ObjHero.h"
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
-
-
+#include"CObjAngleBulletHero.h"
 
 //イニシャライズ
 void CObjHero::Init()
@@ -19,10 +18,10 @@ void CObjHero::Init()
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 100);
 }
 
+
 //アクション
 void CObjHero::Action()
 {
-	//主人公機の弾丸発射
 	if (Input::GetVKey('Z') == true)
 	{
 		if (m_f == true)
@@ -33,32 +32,36 @@ void CObjHero::Action()
 			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
+
+	}
+	else
+	{
+		m_f = true;
 	}
 
-	//主人公機の弾丸発射
+	//主人公機の拡散弾丸弾発射
+	/*------------------------これは一回のみ発射可能------------------*/
+	//主人公機の拡散弾丸発射
 	if (Input::GetVKey('X') == true)
 	{
 		m_ka -= 1;
 		if (m_ka <= 0 == false)
-
 			if (m_f == true)
 			{
-
-				//弾丸オブジェクト作成
-				CObjAngleBulletHero* obj_b = new CObjAngleBulletHero(m_x + 3.0f, m_y + 3.0f);//弾丸オブジェクト
-				Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);//作った弾丸オブジェクト
-				m_f = false;
+				//19発同時発射
+				CObjAngleBulletHero* obj_b;
+				for (int i = 0; i < 360; i += 20)
+				{
+					obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
+					Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
+					m_f = false;
+				}
 			}
-		if (Input::GetVKey('X') >= 5)
-		{
-			m_f = false;
 
-		}
-	}
-
-	else
-	{
-		m_f = true;
+			else
+			{
+				m_f = true;
+			}
 	}
 	//主人公機の移動
 	if (Input::GetVKey(VK_RIGHT) == true)
@@ -146,46 +149,50 @@ void CObjHero::Draw()
 	/*---------HP表示---------------------*/
 	if (m_hp == 3)
 	{
-		swprintf_s(str, L"♡♡♡", m_hp);
-		Font::StrDraw(str, 20, 10, 60, c);
+		swprintf_s(str, L"♥♥♥", m_hp);
+		Font::StrDraw(str, 30, 60, 60, c);
 	}
 	if (m_hp == 2)
 	{
-		swprintf_s(str, L"♡♡", m_hp);
-		Font::StrDraw(str, 20, 10, 60, c);
+		swprintf_s(str, L"♥♥♡", m_hp);
+		Font::StrDraw(str, 30, 60, 60, c);
 	}
 	if (m_hp == 1)
 	{
-		swprintf_s(str, L"♡", m_hp);
-		Font::StrDraw(str, 20, 10, 60, c);
+		swprintf_s(str, L"♥♡♡", m_hp);
+		Font::StrDraw(str, 30, 60, 60, c);
 	}
 	/*-------------------拡散団残りメーター-----------------*/
 	if (m_ka == 5)
 	{
-		swprintf_s(str, L"*****", m_ka);
-		Font::StrDraw(str, 40, 30, 60, c);
+		swprintf_s(str, L"★★★★★", m_ka);
+		Font::StrDraw(str, 20, 30, 40, c);
 	}
 	if (m_ka == 4)
 	{
-		swprintf_s(str, L"****", m_ka);
-		Font::StrDraw(str, 40, 30, 60, c);
+		swprintf_s(str, L"★★★★☆", m_ka);
+		Font::StrDraw(str, 20, 30, 40, c);
 	}
 	if (m_ka == 3)
 	{
-		swprintf_s(str, L"***", m_ka);
-		Font::StrDraw(str, 40, 30, 60, c);
+		swprintf_s(str, L"★★★☆☆", m_ka);
+		Font::StrDraw(str, 20, 30, 40, c);
 	}
 	if (m_ka == 2)
 	{
-		swprintf_s(str, L"**", m_ka);
-		Font::StrDraw(str, 40, 30, 60, c);
+		swprintf_s(str, L"★★☆☆☆", m_ka);
+		Font::StrDraw(str, 20, 30, 40, c);
 	}
 	if (m_ka == 1)
 	{
-		swprintf_s(str, L"*", m_ka);
-		Font::StrDraw(str, 40, 30, 60, c);
+		swprintf_s(str, L"★☆☆☆☆", m_ka);
+		Font::StrDraw(str, 20, 30, 40, c);
 	}
-
+	if (m_ka <= 0)
+	{
+		swprintf_s(str, L"Eroor", m_ka);
+		Font::StrDraw(str, 20, 30, 40, c);
+	}
 	RECT_F src;//描画元切り取り位置
 	RECT_F dst;//描画先表示位置
 	//切り取り位置の設定

@@ -11,6 +11,8 @@ public:
 	void Init();//イニシャライズ
 	void Action();
 	void Draw();
+	void SetScroll(float s) { m_scroll = s; }
 private:
-	int m_map[10][100];
+	int m_map[10][100];//マップ情報
+	float m_scroll;//左右スクロール
 };
