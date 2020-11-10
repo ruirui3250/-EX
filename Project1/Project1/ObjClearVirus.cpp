@@ -1,18 +1,18 @@
-////使用するヘッダーファイル
+//////使用するヘッダーファイル
 //#include "GameL\DrawTexture.h"
 //#include "GameHead.h"
 //
 //#include"ObjClearVirus.h"
 //
-////使用するネームスペース
+//////使用するネームスペース
 //using namespace GameL;
 //
-////イニシャライズ
+//////イニシャライズ
 //void CObjClearvirus::Init()
 //{
 //
 //}
-//
+
 ////アクション
 //void CObjClearvirus::Action()
 //{

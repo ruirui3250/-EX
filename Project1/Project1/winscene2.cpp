@@ -31,12 +31,9 @@ CSceneWin2::~CSceneWin2()
 void CSceneWin2::InitScene()
 {
 	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"win画面(使).png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"win画面2.png", 0, TEX_SIZE_512);
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
-
-	Font::SetStrTex(L"You Win!");
-	Font::SetStrTex(L"エンターで次のステージへ!!");
 
 	//クリアオブジェクト登録
 	CObjWin2* obj = new CObjWin2();//クリアオブジェクト作成
