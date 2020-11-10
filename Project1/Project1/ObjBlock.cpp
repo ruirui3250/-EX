@@ -49,13 +49,19 @@ void CObjBlock::Action()
 				float x = j * 64.0f;
 				float y = i * 64.0f;
 				//主人公とブロックの当たり判定
-				if (1)
+				if ((hx + 64.0f > x) && (hy + 64.0f > y) && (hy < y + 64.0f))
 				{
-					;//当たっている場合反応
-					//確認用として作成。
-					hero->SetX(hx);
-					hero->SetY(0.0f);
-					hero->SetVY(0.0f);
+					//上下左右設定
+
+					//vectorの作成
+					float vx = hx - x;
+					float vy = hy - y;
+
+					//長さを求める。
+					float len = sqrt((vx * vx + vy * vy));
+					//角度を求める
+					float r = atan2(vy, vx);
+					r = r * 180.0f / 3.14f;
 				}
 			}
 		}

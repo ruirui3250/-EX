@@ -2,6 +2,8 @@
 #include "GameL\DrawTexture.h"
 #include"GameHead.h"
 #include"ObjSceneMain.h"
+#include"UtilityModule.h"
+#include<math.h>
 
 //使用するネームスペース
 using namespace GameL;
@@ -23,6 +25,20 @@ void CObjSceneMain::Action()
 	m_x2 -= 10.0f;
 	if (m_x2 < -800.0f)
 		m_x2 = 800;
+	//画面を回転させる
+	float ar = 170.0f;
+
+	//現在の方向の角度を獲得
+	float br = 180.0f;
+
+	float r = 3.14 / 180.0f;//角度1
+	if (ar < br)
+	{
+		//移動方向に+1を加える
+		m_vx = m_vx * cos(r) - m_vy * sin(r);
+		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
+	}
+	
 }
 
 //ドロー

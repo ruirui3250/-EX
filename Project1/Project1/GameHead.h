@@ -22,6 +22,8 @@ enum OBJ_NAME
 	OBJ_BOSS_ENEMY,
 	OBJ_BLOCK,
 	OBJ_ANGLE_BULLET_HERO,
+	OBJ_DIFFUSION_HERO,
+	OBJ_HOMING_ENEMY,
 	OBJ_DIFFUSION_ENEMY,
 };
 //------------------------------------------------
@@ -87,6 +89,7 @@ struct UserData
 #include"ObjEnemyBoss.h"
 #include"CObjAngleBulletHero.h"
 #include"ObjEnemyBoss2.h"
+#include"CObjHomingEnemy.h"
 //ブロック関連
 #include"ObjBlock.h"
 
