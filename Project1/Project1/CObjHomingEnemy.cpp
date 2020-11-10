@@ -35,9 +35,9 @@ void CObjHomingEnemy::Action()
     if (m_time > 100)
     {
         m_time = 0;
-        //誘導弾丸オブジェクト作成
-        CObjHomingBullet* obj_homing_bullet = new CObjHomingBullet(m_x, m_y);
-        Objs::InsertObj(obj_homing_bullet, OBJ_HOMING_BULLET, 100);
+        ////誘導弾丸オブジェクト作成
+        //CObjHomingBullet* obj_homing_bullet = new CObjHomingBullet(m_x, m_y);
+        //Objs::InsertObj(obj_homing_bullet, OBJ_HOMING_BULLET, 100);
     }
 
     //移動方向

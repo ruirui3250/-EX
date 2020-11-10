@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
+    <ClInclude Include="CObjHomingBullet.h" />
     <ClInclude Include="CObjHomingEnemy.h" />
     <ClInclude Include="CObjSinEnemy.h" />
     <ClInclude Include="GameHead.h" />
@@ -183,6 +184,7 @@
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
+    <ClCompile Include="CObjHomingBullet.cpp" />
     <ClCompile Include="CObjHomingEnemy.cpp" />
     <ClCompile Include="CObjSinEnemy.cpp" />
     <ClCompile Include="GameL\Audio.cpp" />
