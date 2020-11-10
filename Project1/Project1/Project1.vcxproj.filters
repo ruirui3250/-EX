@@ -180,6 +180,9 @@
     <ClInclude Include="CObjAngleBullet.h">
       <Filter>ソース ファイル\敵機</Filter>
     </ClInclude>
+    <ClInclude Include="ObjLaserBullet.h">
+      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -307,6 +310,9 @@
     </ClCompile>
     <ClCompile Include="CObjAngleBullet.cpp">
       <Filter>ソース ファイル\敵機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjLaserBullet.cpp">
+      <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
