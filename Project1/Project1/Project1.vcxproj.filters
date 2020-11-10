@@ -171,6 +171,9 @@
     <ClInclude Include="ObjDiffusionHero.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
+    <ClInclude Include="CObjHomingEnemy.h">
+      <Filter>ソース ファイル\敵機</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -289,6 +292,9 @@
     </ClCompile>
     <ClCompile Include="ObjDiffusionHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjHomingEnemy.cpp">
+      <Filter>ソース ファイル\敵機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
