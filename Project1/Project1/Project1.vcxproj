@@ -178,6 +178,7 @@
     <ClInclude Include="ObjLaserBullet.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h" />
+    <ClInclude Include="SceneMain2.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="UtilityModule.h" />
     <ClInclude Include="winscene.h" />
@@ -223,6 +224,7 @@
     <ClCompile Include="ObjLaserBullet.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp" />
+    <ClCompile Include="SceneMain2.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="UtilityModule.cpp" />
     <ClCompile Include="winscene.cpp" />

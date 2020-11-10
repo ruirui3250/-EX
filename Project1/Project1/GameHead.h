@@ -29,6 +29,7 @@ enum OBJ_NAME
 	OBJ_ITEM,
 	OBJLASER_BULLET,
 	OBJ_ANGLE_BULLET,
+	OBJ_SCENE_MAIN2,
 };
 //------------------------------------------------
 
@@ -97,6 +98,7 @@ struct UserData
 #include"CObjHomingBullet.h"
 #include"ObjLaserBullet.h"
 #include"CObjAngleBullet.h"
+
 //ブロック関連
 #include"ObjBlock.h"
 //アイテム関連
@@ -110,6 +112,7 @@ struct UserData
 #include"SceneTitle.h"
 #include"SceneMain.h"
 #include"SceneGameOver.h"
+#include"SceneMain2.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------

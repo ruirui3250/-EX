@@ -18,19 +18,19 @@ void CObjWin2::Init()
 //アクション
 void CObjWin2::Action()
 {
-	//エンターキーを押して次の面に移行する
-	//if (Input::GetVKey(VK_RETURN) == true)
-	//{
-	//	if (m_key_flag == true)
-	//	{
-	//		Scene::SetScene(new CSceneMain2());
-	//		m_key_flag = false;
-	//	}
-	//}
-	//else
-	//{
-	//	m_key_flag = true;
-	//}
+	/*エンターキーを押して次の面に移行する*/
+	if (Input::GetVKey(VK_RETURN) == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new CSceneMain2());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
 }
 
 //ドロー
