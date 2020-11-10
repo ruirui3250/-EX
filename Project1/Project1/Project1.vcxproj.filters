@@ -168,7 +168,7 @@
     <ClInclude Include="Kaiten.h">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClInclude>
-    <ClInclude Include="ObjDiffusionHero.h">
+    <ClInclude Include="ObjDiffusionEnemy.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
   </ItemGroup>
@@ -287,7 +287,7 @@
     <ClCompile Include="Kaiten.cpp">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClCompile>
-    <ClCompile Include="ObjDiffusionHero.cpp">
+    <ClCompile Include="ObjDiffusionEnemy.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
   </ItemGroup>
