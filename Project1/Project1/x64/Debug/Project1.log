@@ -12,10 +12,8 @@ C:\Users\GA1A\source\repos\-EX3\Project1\Project1\ObjBlock.cpp(70,14): warning C
   ObjEnemy.cpp
   ObjEnemyBoss.cpp
 C:\Users\GA1A\source\repos\-EX3\Project1\Project1\ObjEnemyBoss.cpp(79,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  ObjEnemyBoss2.cpp
   ObjGameOver.cpp
   ObjHero.cpp
-  ObjSceneMain.cpp
   ObjTitle.cpp
   Objwin.cpp
   SceneGameOver.cpp
@@ -27,10 +25,5 @@ C:\Users\GA1A\source\repos\-EX3\Project1\Project1\SceneMain.cpp(3): message : '_
   SceneTitle.cpp
 C:\Users\GA1A\source\repos\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\GA1A\source\repos\-EX3\Project1\Project1\SceneTitle.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-  winscene.cpp
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\winscene.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\GA1A\source\repos\-EX3\Project1\Project1\winscene.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
   コードを生成中...
   Project1.vcxproj -> C:\Users\GA1A\source\repos\-EX3\Project1\x64\Debug\Project1.exe
