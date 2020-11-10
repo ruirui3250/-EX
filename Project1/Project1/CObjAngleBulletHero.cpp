@@ -60,60 +60,62 @@ void CObjAngleBulletHero::Action()
 	//主人公機弾丸のHitBox更新用ポインター取得
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);//HitBoxの位置を敵機弾丸の位置に更新
-
-
-	//領域外に出たら弾丸破棄
-	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
-	if (check == false)
-	{
-		this->SetStatus(false);//自身に削除命令を出す
-		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxに削除する。
-	}
-
-	if (m_del == true)
 	{
 
-		//アニメーションRECT情報
-		RECT_F ani_src[4] =
-		{
-			{32,0,32,64},
-			{32,32,64,64},
-			{32,64,96,64},
-			{32,96,128,64},
-		};
-		//アニメーションのコマ感覚制御
-		if (m_ani_time > 2)
-		{
-			m_ani++;
-			m_ani_time = 0;
 
-			m_eff = ani_src[m_ani];//アニメーションのRECT配列からm_ani番目のRECT情報取得
-		}
-		else
+		//領域外に出たら弾丸破棄
+		bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
+		if (check == false)
 		{
-			m_ani_time++;
+			this->SetStatus(false);//自身に削除命令を出す
+			Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxに削除する。
 		}
-		//着弾アニメーション終了で本当にオブジェクトの破棄
-		if (m_ani == 4)
+
+		if (m_del == true)
 		{
+
+			//アニメーションRECT情報
+			RECT_F ani_src[4] =
+			{
+				{32,0,32,64},
+				{32,32,64,64},
+				{32,64,96,64},
+				{32,96,128,64},
+			};
+			//アニメーションのコマ感覚制御
+			if (m_ani_time > 2)
+			{
+				m_ani++;
+				m_ani_time = 0;
+
+				m_eff = ani_src[m_ani];//アニメーションのRECT配列からm_ani番目のRECT情報取得
+			}
+			else
+			{
+				m_ani_time++;
+			}
+			//着弾アニメーション終了で本当にオブジェクトの破棄
+			if (m_ani == 4)
+			{
+				this->SetStatus(false);
+				Hits::DeleteHitBox(this);
+			}
+			return;//消滅処理は、ここでアクションメソッドを終了させる
+		}
+		//敵機オブジェクトと接触したら拡散弾丸削除
+		if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
+		{
+			//hit->SetInvincibility(true);//敵機弾丸が所有するHitBoxに削除する。
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 		}
-		return;//消滅処理は、ここでアクションメソッドを終了させる
+
+
+
 	}
-	//敵機オブジェクトと接触したら拡散弾丸削除
-	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
-	{
-		//hit->SetInvincibility(true);//敵機弾丸が所有するHitBoxに削除する。
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-	}
-
-
-
 }
 //ドロー
-void CObjAngleBulletHero::Draw()
+	void CObjAngleBulletHero::Draw()
 {
 	//描画カラー情報　R=RED G=GREEN B=BLUE A=ALPHA(透過情報）
 	float c[4] = { 1.0f,1.0f ,1.0f ,1.0f };
