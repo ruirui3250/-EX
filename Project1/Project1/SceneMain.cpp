@@ -47,7 +47,7 @@ void CSceneMain::InitScene()
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
 
 	//blockオブジェクト作成
-	CObjBlock* objb = new CObjBlock(2,3);
+	CObjBlock* objb = new CObjBlock();
 	Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
 		//クリア時背景オブジェクト作成
@@ -96,16 +96,6 @@ void CSceneMain::Scene()
 		CObjAttackEnemy* obj2;
 		obj2 = new CObjAttackEnemy(799, 400);
 		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
-
-	}
-	else if (m_time == 500)
-	{
-		CObjBlock* objb;
-		objb = new CObjBlock(799.0f, 400);
-		Objs::InsertObj(objb, OBJ_ENEMY, 50);
-		CObjBlock* objb;
-		objb = new CObjBlock(799.0f, 410);
-		Objs::InsertObj(objb, OBJ_ENEMY, 50);
 
 	}
 	else if (m_time == 550)
