@@ -25,6 +25,19 @@ void CObjSceneMain::Action()
 	m_x2 -= 10.0f;
 	if (m_x2 < -800.0f)
 		m_x2 = 800;
+	//‰æ–Ê‚ð‰ñ“]‚³‚¹‚é
+	float ar = 170.0f;
+
+	//Œ»Ý‚Ì•ûŒü‚ÌŠp“x‚ðŠl“¾
+	float br = 180.0f;
+
+	float r = 3.14 / 180.0f;//Šp“x1
+	if (ar < br)
+	{
+		//ˆÚ“®•ûŒü‚É+1‚ð‰Á‚¦‚é
+		m_vx = m_vx * cos(r) - m_vy * sin(r);
+		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
+	}
 	
 }
 
