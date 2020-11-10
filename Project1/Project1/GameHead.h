@@ -26,6 +26,7 @@ enum OBJ_NAME
 	OBJ_HOMING_ENEMY,
 	OBJ_DIFFUSION_ENEMY,
 	OBJ_HOMING_BULLET,
+	OBJ_ITEM,
 };
 //------------------------------------------------
 
@@ -94,6 +95,8 @@ struct UserData
 #include"CObjHomingBullet.h"
 //ブロック関連
 #include"ObjBlock.h"
+//アイテム関連
+#include"Item.h"
 
 //------------------------------------------------
 

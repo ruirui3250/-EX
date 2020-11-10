@@ -7,7 +7,7 @@ using namespace GameL;
 class CObjItem :public CObj
 {
 public:
-	CObjItem() {};
+	CObjItem(float x,float y) ;
 	~CObjItem() {};
 	void Init();//イニシャライズ
 	void Action();//アクション
