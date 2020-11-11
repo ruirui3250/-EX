@@ -9,14 +9,14 @@
 using namespace GameL;
 
 //コンスタラスタ
-CObjHomingBullet::CObjHomingBullet(float x, float y)
+CObjHomingEnemy::CObjHomingEnemy(float x, float y)
 {
     m_x = x;
     m_y = y;
 }
 
 //イニシャライズ
-void CObjHomingBullet::Init()
+void CObjHomingEnemy::Init()
 {
     m_eff.m_top = 32;
     m_eff.m_left = 0;
@@ -36,101 +36,60 @@ void CObjHomingBullet::Init()
 }
 
 //アクション
-void CObjHomingBullet::Action()
+void CObjHomingEnemy::Action()
 {
-    //Resourcesの描写物のRECT
-    m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
+   //主人公機と誘導弾丸で角度を取る
+    float ar = 170.0f;
 
-    //弾丸消滅処理
-    if (m_del == true)
+    //弾丸と現在の向いている方向を取る。
+    float br = 180.0f;
+
+    float r = 3.14 / 180.0f;//角度1
+
+    if (ar < br)
     {
-
-
-        //着弾アニメーション終了で本当にオブジェクト破棄
-        if (m_ani == 4)
-        {
-            this->SetStatus(false);
-            Hits::DeleteHitBox(this);
-        }
-
-        return;//消滅処理は、ここでアクションメソッドを終了させる
+        //移動方向に1加える。
+        m_vx = m_vx * cos(r) - m_vy * sin(r);
+        m_vy = m_vy * cos(r) +m_vx * sin(r);
     }
-
-    //主人公機と誘導弾丸で角度を取る
-    CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
-
-    //主人公機が存在する場合、誘導角度の計算する
-    if (obj != nullptr)
+    else
     {
-        float x = obj->GetX() - m_x;
-        float y = obj->GetY() - m_y;
-        float ar = GetAtan2Angle(x, -y);
-
-
-        //弾丸の現在の向いている角度を取る
-        float br = GetAtan2Angle(m_vx, -m_vy);
-
-        //主人公機と敵機角度があまりにもかけ離れたら
-        if (ar - br > 20)
-        {
-            //移動方向を主人公機の方向にする
-            m_vx = cos(3.14 / 180 * ar);
-            m_vy = -sin(3.14 / 180 * ar);
-        }
-
-        float r = 3.14 / 180.0f;   //角度1°
-        if (ar < br)
-        {
-            //移動方向に+1°加える
-            m_vx = m_vx * cos(r) - m_vy * sin(r);
-            m_vy = m_vy * cos(r) + m_vx * sin(r);
-        }
-        else
-        {
-            //移動方向に-1°加える
-            m_vx = m_vx * cos(-r) - m_vy * sin(-r);
-            m_vy = m_vy * cos(-r) + m_vx * sin(-r);
-        }
-
-        UnitVec(&m_vx, &m_vy);
+        //移動方向に-1加える。
+        m_vx = m_vx * cos(-r) - m_vy * sin(-r);
+        m_vy = m_vy * cos(-r) + m_vx * sin(-r);
     }
+    m_x = m_vx * 5.0f;
+    m_y = m_vy * 5.0f;
 
-    //移動
-    m_x += m_vx * 5.0f;
-    m_y += m_vy * 5.0f;
-
-    //HitBoxの内容を更新
+    //誘導弾丸のHitBoxの更新用ポインター獲得
     CHitBox* hit = Hits::GetHitBox(this);
-    hit->SetPos(m_x, m_y);
+    hit->SetPos(m_x, m_y);//HitBoxの位置を更新
 
-    //領域外に出たら弾丸を破壊する
-    bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
+    //誘導弾丸の完全に領域外に出た場合誘導弾丸を破棄
+    bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, -800.0f, 600.0f);
     if (check == false)
     {
-        this->SetStatus(false);
-        Hits::DeleteHitBox(this);
-
-        return;
+        this->SetStatus(false);//自信に削除命令出す
+        Hits::DeleteHitBox(this);//誘導弾丸オブジェクトHITBOｘ削除
     }
 
-
-
-    //弾丸と接触しているかどうか調べる
-    if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-    {
-        m_del = true;                 //消滅実行
-        hit->SetInvincibility(true);//当たり判定無効
-    }
 }
 
 //ドロー
-void CObjHomingBullet::Draw()
+void CObjHomingEnemy::Draw()
 {
     //描画カラー情報　R=RED　G=GREEN　B=BLUE　A=ALPHA（透過情報）
     float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
+    RECT_F src;//描画先切り取り位置
     RECT_F dst;//描画先表示位置
+    
 
+       //表示位置の設定
+    src.m_top = 0.0f;
+    src.m_left = 0.0f;
+    src.m_right = 32.0f;
+    src.m_bottom = 32.0f;
 
     //表示位置の設定
     dst.m_top = 0.0f + m_y;

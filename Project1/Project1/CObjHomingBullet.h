@@ -6,11 +6,11 @@
 using namespace GameL;
 
 //オブジェクト：弾丸
-class CObjHomingBullet :public CObj
+class CObjHomingEnemy :public CObj
 {
 public:
-	CObjHomingBullet(float x, float y);   //コンストラクタ
-	~CObjHomingBullet() {};
+	CObjHomingEnemy(float x, float y);   //コンストラクタ
+	~CObjHomingEnemy() {};
 	void Init();     //イニシャライズ
 	void Action();   //アクション
 	void Draw();     //ドロー
