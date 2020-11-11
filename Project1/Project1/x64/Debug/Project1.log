@@ -1,1 +1,12 @@
-﻿  Project1.vcxproj -> C:\Users\GA1A\Desktop\新しいフォルダー\Project1\x64\Debug\Project1.exe
+﻿  SceneMain2.cpp
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\SceneMain2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\SceneMain2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\SceneMain2.cpp(133,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\SceneMain2.cpp(142,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\SceneMain2.cpp(151,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\SceneMain2.cpp(160,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  SceneMain4.cpp
+  コードを生成中...
+  Project1.vcxproj -> C:\Users\GA1A\Desktop\新しいフォルダー\Project1\x64\Debug\Project1.exe
