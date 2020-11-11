@@ -13,9 +13,6 @@ void CObjSceneMain::Init()
 {
 	m_x1 = 0.0f;
 	m_x2 = 800.0f;
-
-	//移動ベクトルの正規化
-	UnitVec(&m_vy, &m_vx);
 }
 //アクション
 void CObjSceneMain::Action()
@@ -24,28 +21,34 @@ void CObjSceneMain::Action()
 	m_x1 -= 10.0f;
 	if (m_x1 < -800.0f)
 		m_x1 = 800;
-	//主人公機と背景で距離を取る
 
-	float ar = 170.0f;
+	////移動ベクトルの正規化
+	//UnitVec(&m_vy, &m_vx);
 
-	//現在の向いている角度を取る。
-	float br = 180.0f;
-	if (ar<br)
-	{
-		//移動方向に1を加える。
-		m_vx = m_vx * cos(r) - m_vy * sin(r);
-		m_vy = m_vy * cos(r) + m_vx * sin(r);
-	}
-	else
-	{
-		//移動方向に-1加える
-	}
+	////主人公機と背景で距離を取る
+
+	//float ar = 170.0f;
+
+	////現在の向いている角度を取る。
+	//float br = 180.0f;
+
+	//float r = 3.14 / 180.0f;//角度１
+	//if (ar<br)
+	//{
+	//	//移動方向に1を加える。
+	//	m_vx = m_vx * cos(r) - m_vy * sin(r);
+	//	m_vy = m_vy * cos(r) + m_vx * sin(r);
+	//}
+	//else
+	//{
+	//	m_vx = m_vx * cos(-r) - m_vy * sin(-r);
+	//	m_vy = m_vy * cos(-r) + m_vx * sin(-r);
+	//}
 
 	//背景2の操作
 	m_x2 -= 10.0f;
 	if (m_x2 < -800.0f)
 		m_x2 = 800;
-	
 }
 
 //ドロー
