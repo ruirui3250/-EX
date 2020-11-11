@@ -4,7 +4,7 @@
 
 //GameL使用するヘッダー
 #include "GameL\SceneObjManager.h"
-#include "GameL\DrawFont.h"
+//#include "GameL\DrawFont.h"
 #include"GameL\DrawTexture.h"
 
 //使用するネームスペース
@@ -31,7 +31,7 @@ CSceneWin::~CSceneWin()
 void CSceneWin::InitScene()
 {
 	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"win画面(使)2", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"Win画面２.png", 0, TEX_SIZE_512);
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
@@ -45,7 +45,7 @@ void CSceneWin::InitScene()
 
 		//クリア時背景オブジェクト作成
 	CObjClearback* back = new CObjClearback();
-	Objs::InsertObj(back, OBJ_CLEAR_BACK, 1);
+	Objs::InsertObj(back, OBJ_CLEAR_BACK, 0);
 
 	////クリアウイルス作成
 	//CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成
