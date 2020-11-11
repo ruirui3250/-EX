@@ -40,6 +40,6 @@ void CObjClearback::Draw()
 	dst.m_bottom = 600.0f;
 
 	//‰æ‘œ•\Ž¦
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(1, &src, &dst, c, 0.0f);
 
 }
