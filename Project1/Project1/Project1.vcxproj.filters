@@ -61,6 +61,12 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3">
       <UniqueIdentifier>{72a20a17-9bf4-4ed8-89cc-8fafd03240a8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面1">
+      <UniqueIdentifier>{05f466dc-fe3d-4768-878e-e2cbd4acb1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\背景画面\背景画面1">
+      <UniqueIdentifier>{4f73c276-a2b3-4f3d-a316-1649422875f6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -108,9 +114,6 @@
     <ClInclude Include="ObjClearVirus.h">
       <Filter>ソース ファイル\基本データ\クリア画面</Filter>
     </ClInclude>
-    <ClInclude Include="Objwin.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
     <ClInclude Include="ObjGameOver.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
     </ClInclude>
@@ -124,9 +127,6 @@
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClInclude>
     <ClInclude Include="ObjSceneMain.h">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\背景画面</Filter>
     </ClInclude>
     <ClInclude Include="ObjBullet.h">
@@ -198,8 +198,14 @@
     <ClInclude Include="winscene3.h">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
     </ClInclude>
+    <ClInclude Include="Objwin.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClInclude>
     <ClInclude Include="winscene.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain.h">
+      <Filter>ソース ファイル\背景画面\背景画面1</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -248,9 +254,6 @@
     <ClCompile Include="ObjClearVirus.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面</Filter>
     </ClCompile>
-    <ClCompile Include="Objwin.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
     <ClCompile Include="ObjGameOver.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
     </ClCompile>
@@ -264,9 +267,6 @@
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjSceneMain.cpp">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMain.cpp">
       <Filter>ソース ファイル\背景画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjBullet.cpp">
@@ -338,8 +338,14 @@
     <ClCompile Include="winscene3.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
     </ClCompile>
+    <ClCompile Include="Objwin.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClCompile>
     <ClCompile Include="winscene.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル\背景画面\背景画面1</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
