@@ -1,21 +1,297 @@
-﻿  SceneMain2.cpp
+﻿  CObjAngleBullet.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjAngleBullet.cpp(31,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjAngleBullet.cpp(32,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  CObjAngleBulletHero.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjAngleBulletHero.cpp(28,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjAngleBulletHero.cpp(29,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjAngleBulletHero.cpp(46,17): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
+  CObjBulletEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  CObjHomingBullet.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(12,18): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(13,1): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(14,5): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(15,5): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(16,1): warning C4508: '{ctor}': 関数に戻り値の型が指定されていません。戻り値を void 型と見なします。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(19,23): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(21,5): error C2065: 'm_eff': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(22,5): error C2065: 'm_eff': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(23,5): error C2065: 'm_eff': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(24,5): error C2065: 'm_eff': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(25,5): error C2065: 'm_ani': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(26,5): error C2065: 'm_ani_time': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(27,5): error C2065: 'm_del': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(29,5): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(30,5): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(32,14): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(32,21): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(35,21): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(35,27): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(35,32): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(39,23): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(47,28): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(52,9): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(52,16): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(52,32): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(53,9): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(53,16): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(53,31): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(58,9): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(58,16): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(58,33): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(59,9): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(59,16): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(59,33): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(61,14): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(61,21): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(62,5): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(62,11): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(63,5): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(63,11): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(66,36): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(67,17): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(67,22): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(70,30): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(70,35): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(73,9): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(74,28): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(80,23): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(96,24): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(97,25): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(98,27): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(99,28): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(108,33): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(109,33): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.cpp(113,24): error C2065: 'm_eff': 定義されていない識別子です。
+  CObjHomingEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(14,18): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(15,1): error C4430: 型指定子がありません - int と仮定しました。メモ: C++ は int を既定値としてサポートしていません
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(16,5): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(17,5): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(18,1): warning C4508: '{ctor}': 関数に戻り値の型が指定されていません。戻り値を void 型と見なします。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(21,23): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(23,5): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(24,5): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(27,21): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(27,27): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(27,32): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(31,23): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(34,5): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(35,5): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(39,9): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(39,16): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(39,23): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(39,30): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(40,13): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(50,9): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(50,27): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(51,9): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(51,27): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(54,5): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(55,5): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(58,5): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(58,12): error C2065: 'm_vx': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(59,5): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(59,12): error C2065: 'm_vy': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(62,36): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(63,17): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(63,22): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(66,9): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(68,9): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(69,28): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(74,9): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(75,28): error C2355: 'this': 静的でないメンバー関数の内部または静的でないデータ メンバー初期化子においてのみ参照できます
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(80,23): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(95,24): error C2065: 'm_y': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(96,26): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(97,26): error C2065: 'm_x': 定義されていない識別子です。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(98,28): error C2065: 'm_y': 定義されていない識別子です。
+  CObjSinEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjSinEnemy.cpp(37,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  GameL_Main.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  Item.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  Kaiten.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\Kaiten.cpp(28,13): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\Kaiten.cpp(29,13): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+  ObjAttackEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjBullet.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjClearBack.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjDiffusionEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjDiffusionEnemy.cpp(41,46): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  ObjEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjEnemyBoss.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjEnemyBoss.cpp(79,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjGameOver.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjHero.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(15,1): error C2084: 関数 'void CObjHero::SetX(float)' は既に本体を持っています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.h(18): message : 'SetX' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(20,1): error C2084: 関数 'void CObjHero::SetY(float)' は既に本体を持っています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.h(19): message : 'SetY' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(100,64): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(198,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(198,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(203,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(203,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(208,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(208,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(212,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(212,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(217,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(217,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(222,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(222,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(227,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(227,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(232,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(232,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(237,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(237,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(242,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(242,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(247,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(247,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(252,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(252,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(256,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(256,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(261,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(261,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(266,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(266,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(271,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(271,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(276,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(276,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(281,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(281,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(286,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(286,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(291,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(291,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(296,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(296,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(301,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(301,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(306,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(306,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(311,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(311,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(316,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjHero.cpp(316,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+  ObjLaserBullet.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjSceneMain.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  ObjTitle.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  コードを生成中...
+  コンパイル中...
+  Objwin.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  Objwin2.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  Objwin3.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  SceneGameOver.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  SceneMain.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(133,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(142,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(151,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(160,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(171,38): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  SceneMain2.cpp
 C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
 C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(133,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(142,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(151,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(160,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(171,38): error C2027: 認識できない型 'CObjHomingEnemy' が使われています。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
   SceneTitle.cpp
 C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\souhu\Desktop\game3\Project1\Project1\SceneTitle.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  winscene.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
+  winscene2.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\winscene2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
   winscene3.cpp
 C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
 C:\Users\souhu\Desktop\game3\Project1\Project1\winscene3.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
 C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\souhu\Desktop\game3\Project1\Project1\winscene3.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingBullet.h(9,23): error C2011: 'CObjHomingEnemy': 'class' 型の再定義
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.h(8): message : 'CObjHomingEnemy' の宣言を確認してください
   コードを生成中...
-CObjHomingBullet.obj : error LNK2019: 未解決の外部シンボル "public: float __thiscall CObjHero::GetX(void)" (?GetX@CObjHero@@QAEMXZ) が関数 "public: virtual void __thiscall CObjHomingBullet::Action(void)" (?Action@CObjHomingBullet@@UAEXXZ) で参照されました
-CObjHomingBullet.obj : error LNK2019: 未解決の外部シンボル "public: float __thiscall CObjHero::GetY(void)" (?GetY@CObjHero@@QAEMXZ) が関数 "public: virtual void __thiscall CObjHomingBullet::Action(void)" (?Action@CObjHomingBullet@@UAEXXZ) で参照されました
-C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe : fatal error LNK1120: 2 件の未解決の外部参照
