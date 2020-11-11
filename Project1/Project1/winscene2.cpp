@@ -31,12 +31,9 @@ CSceneWin2::~CSceneWin2()
 void CSceneWin2::InitScene()
 {
 	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"kekkan.png", 0, TEX_SIZE_512);
-	//外部グラフィック読み込む1番
-	Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
-
-	Font::SetStrTex(L"You Win!");
-	Font::SetStrTex(L"エンターで次のステージへ!!");
+	Draw::LoadImage(L"Win画面２.png", 0, TEX_SIZE_512);
+	////外部グラフィック読み込む1番
+	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
 	//クリアオブジェクト登録
 	CObjWin2* obj = new CObjWin2();//クリアオブジェクト作成
@@ -47,9 +44,9 @@ void CSceneWin2::InitScene()
 	CObjClearback* back = new CObjClearback();
 	Objs::InsertObj(back, OBJ_CLEAR_BACK, 0);
 
-	//クリアウイルス作成
-	CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成
-	Objs::InsertObj(obj2, OBJ_CLEAR_VIRUS, 1);//クリアウイルス登録
+	////クリアウイルス作成
+	//CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成
+	//Objs::InsertObj(obj2, OBJ_CLEAR_VIRUS, 1);//クリアウイルス登録
 
 }
 

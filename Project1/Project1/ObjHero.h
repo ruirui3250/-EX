@@ -13,8 +13,8 @@ public:
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
-	float GetX() { return m_px; }	   //位置情報X変更用
-	float GetY() { return m_py; } 	   //位置情報X変更用
+	float GetX();	   //位置情報X変更用
+	float GetY();	   //位置情報X変更用
 	void SetX(float x) { m_px = x; }//位置情報X変更用
 	void SetY(float y) { m_py = y; }//位置情報X変更用
 	void SetVY(float vy) { m_vy = vy; }//位置情報更新宣言

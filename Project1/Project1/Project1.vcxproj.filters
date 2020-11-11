@@ -13,14 +13,8 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="ソース ファイル\背景画面">
-      <UniqueIdentifier>{43c0adca-4ccc-4088-9a6d-a4b0e04d4b2f}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ">
       <UniqueIdentifier>{68a4d7e8-59ea-4c32-9d23-ae590839dc3d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\障害物">
-      <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\UtilityModule">
       <UniqueIdentifier>{b8bd0c5b-55f6-402f-9546-4b2441dba8f1}</UniqueIdentifier>
@@ -46,11 +40,74 @@
     <Filter Include="ソース ファイル\基本データ\アイテム">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\回転">
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面2">
+      <UniqueIdentifier>{bb78d73e-0a8a-4002-b53a-e7091e4e963a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3">
+      <UniqueIdentifier>{72a20a17-9bf4-4ed8-89cc-8fafd03240a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面1">
+      <UniqueIdentifier>{05f466dc-fe3d-4768-878e-e2cbd4acb1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公機\主人公縦スクロール用">
+      <UniqueIdentifier>{5bde97c6-ab90-44c5-8d23-84954088e845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\回転もう関係ない触れるな">
       <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\敵機">
+    <Filter Include="ソース ファイル\基本データ\ボス\三面ボス">
+      <UniqueIdentifier>{12302125-8bd7-474f-a566-f6291902b23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\四面ボス">
+      <UniqueIdentifier>{30810d5c-b6c1-4f0f-89cc-d44b3e51e9f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\ごめんボス">
+      <UniqueIdentifier>{8e01bcf1-e6c5-4d33-9bc6-fa2ab037a596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面４">
+      <UniqueIdentifier>{49747bd2-c20c-4fa9-a505-442488b375c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面5">
+      <UniqueIdentifier>{769db9b4-1eb5-401d-9b5a-d1215adbc10c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\アイテム\マスク">
+      <UniqueIdentifier>{f554bb5d-d69b-441e-8d05-01a85a539ee8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\アイテム\赤血球">
+      <UniqueIdentifier>{68f91d50-88ef-4558-808e-f63ac30f39aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\アイテム\白血球">
+      <UniqueIdentifier>{23295e39-3056-4bf4-a13b-10b08682205a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\一面ボス">
+      <UniqueIdentifier>{b747bcf3-b476-4dec-8b0d-f999126d19d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト">
+      <UniqueIdentifier>{cb6a329e-338a-4ffb-be94-90c62c43ed33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機">
       <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\障害物">
+      <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\背景画面">
+      <UniqueIdentifier>{43c0adca-4ccc-4088-9a6d-a4b0e04d4b2f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\背景画面\背景画面2">
+      <UniqueIdentifier>{8582f6ef-b3a9-4bb3-9265-68eee5854fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\背景画面\背景画面1">
+      <UniqueIdentifier>{4f73c276-a2b3-4f3d-a316-1649422875f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\背景画面\背景画面３">
+      <UniqueIdentifier>{25c3bc13-c9a2-4bff-b4ba-82eef300e555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\背景画面\背景画面4">
+      <UniqueIdentifier>{bad25e46-3aaa-47f9-acab-9a178f98fb70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\背景画面\背景画面５">
+      <UniqueIdentifier>{96c607a1-890a-4ab3-a55c-7a5bd8c2b477}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -93,18 +150,6 @@
     <ClInclude Include="GameL\WinInputs.h">
       <Filter>リソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjClearBack.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjClearVirus.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
-    <ClInclude Include="Objwin.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
-    <ClInclude Include="winscene.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
     <ClInclude Include="ObjGameOver.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
     </ClInclude>
@@ -117,38 +162,29 @@
     <ClInclude Include="SceneTitle.h">
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClInclude>
-    <ClInclude Include="ObjSceneMain.h">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMain.h">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClInclude>
     <ClInclude Include="ObjBullet.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjHero.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
-    <ClInclude Include="ObjEnemyBoss.h">
-      <Filter>ソース ファイル\基本データ\ボス</Filter>
-    </ClInclude>
     <ClInclude Include="CObjBulletEnemy.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="CObjSinEnemy.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="ObjAttackEnemy.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="UtilityModule.h">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
     </ClInclude>
     <ClInclude Include="ObjBlock.h">
-      <Filter>ソース ファイル\基本データ\障害物</Filter>
+      <Filter>ソース ファイル\基本データ\敵機\障害物</Filter>
     </ClInclude>
     <ClInclude Include="CObjAngleBulletHero.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
@@ -159,29 +195,62 @@
     <ClInclude Include="Item.h">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClInclude>
-    <ClInclude Include="Objwin2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
-    <ClInclude Include="winscene2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
     <ClInclude Include="Kaiten.h">
-      <Filter>ソース ファイル\基本データ\回転</Filter>
+      <Filter>ソース ファイル\基本データ\回転もう関係ない触れるな</Filter>
     </ClInclude>
     <ClInclude Include="ObjDiffusionEnemy.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="CObjHomingEnemy.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="CObjHomingBullet.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="CObjAngleBullet.h">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="ObjLaserBullet.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain2.h">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="Objwin2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="Objwin3.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene3.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClInclude>
+    <ClInclude Include="Objwin.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain.h">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain4.h">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面4</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSceneMain.h">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemyBoss.h">
+      <Filter>ソース ファイル\基本データ\ボス\一面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjClearBack.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjClearVirus.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -224,18 +293,6 @@
     <ClCompile Include="GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="ObjClearBack.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjClearVirus.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
-    <ClCompile Include="Objwin.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
-    <ClCompile Include="winscene.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
     <ClCompile Include="ObjGameOver.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
     </ClCompile>
@@ -248,38 +305,29 @@
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClCompile>
-    <ClCompile Include="ObjSceneMain.cpp">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClCompile>
-    <ClCompile Include="SceneMain.cpp">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClCompile>
     <ClCompile Include="ObjBullet.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
-    <ClCompile Include="ObjEnemyBoss.cpp">
-      <Filter>ソース ファイル\基本データ\ボス</Filter>
-    </ClCompile>
     <ClCompile Include="CObjBulletEnemy.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="CObjSinEnemy.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="ObjAttackEnemy.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemy.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="UtilityModule.cpp">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
     </ClCompile>
     <ClCompile Include="ObjBlock.cpp">
-      <Filter>ソース ファイル\基本データ\障害物</Filter>
+      <Filter>ソース ファイル\基本データ\敵機\障害物</Filter>
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
@@ -290,29 +338,62 @@
     <ClCompile Include="Item.cpp">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClCompile>
-    <ClCompile Include="Objwin2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
-    <ClCompile Include="winscene2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
     <ClCompile Include="Kaiten.cpp">
-      <Filter>ソース ファイル\基本データ\回転</Filter>
+      <Filter>ソース ファイル\基本データ\回転もう関係ない触れるな</Filter>
     </ClCompile>
     <ClCompile Include="ObjDiffusionEnemy.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="CObjHomingEnemy.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="CObjHomingBullet.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="CObjAngleBullet.cpp">
-      <Filter>ソース ファイル\敵機</Filter>
+      <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClCompile>
     <ClCompile Include="ObjLaserBullet.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain2.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin3.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene3.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain4.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面4</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSceneMain.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemyBoss.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\一面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjClearBack.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjClearVirus.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

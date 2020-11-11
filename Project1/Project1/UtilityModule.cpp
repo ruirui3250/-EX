@@ -26,7 +26,7 @@ bool UnitVec(float* vx, float* vy)
     }
     else
     {
-        //³“–‰»‚ğs‚¤
+        //³‹K‰»‚ğs‚¤
         (*vx) = 1.0f / r * (*vx);
         (*vy) = 1.0f / r * (*vy);
     }

@@ -28,11 +28,11 @@ CSceneMain::~CSceneMain()
 void CSceneMain::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
-	Draw::LoadImage(L"SceneMain.png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"背景(使).png", 5, TEX_SIZE_512);
 
-	Draw::LoadImage(L"image.png", 3, TEX_SIZE_512);
+	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
 
-	Draw::LoadImage(L"主人公機.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器(使).png", 1, TEX_SIZE_512);
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
