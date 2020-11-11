@@ -19,9 +19,6 @@
     <Filter Include="ソース ファイル\基本データ">
       <UniqueIdentifier>{68a4d7e8-59ea-4c32-9d23-ae590839dc3d}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\障害物">
-      <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\UtilityModule">
       <UniqueIdentifier>{b8bd0c5b-55f6-402f-9546-4b2441dba8f1}</UniqueIdentifier>
     </Filter>
@@ -45,9 +42,6 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\アイテム">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\回転">
-      <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\敵機">
       <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
@@ -75,6 +69,18 @@
     </Filter>
     <Filter Include="ソース ファイル\背景画面\背景画面５">
       <UniqueIdentifier>{96c607a1-890a-4ab3-a55c-7a5bd8c2b477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\敵機\障害物">
+      <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公機\主人公縦スクロール用">
+      <UniqueIdentifier>{5bde97c6-ab90-44c5-8d23-84954088e845}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\回転もう関係ない触れるな">
+      <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\三面ボス">
+      <UniqueIdentifier>{12302125-8bd7-474f-a566-f6291902b23e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +166,7 @@
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
     </ClInclude>
     <ClInclude Include="ObjBlock.h">
-      <Filter>ソース ファイル\基本データ\障害物</Filter>
+      <Filter>ソース ファイル\敵機\障害物</Filter>
     </ClInclude>
     <ClInclude Include="CObjAngleBulletHero.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
@@ -172,7 +178,7 @@
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClInclude>
     <ClInclude Include="Kaiten.h">
-      <Filter>ソース ファイル\基本データ\回転</Filter>
+      <Filter>ソース ファイル\基本データ\回転もう関係ない触れるな</Filter>
     </ClInclude>
     <ClInclude Include="ObjDiffusionEnemy.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
@@ -303,7 +309,7 @@
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
     </ClCompile>
     <ClCompile Include="ObjBlock.cpp">
-      <Filter>ソース ファイル\基本データ\障害物</Filter>
+      <Filter>ソース ファイル\敵機\障害物</Filter>
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
@@ -315,7 +321,7 @@
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClCompile>
     <ClCompile Include="Kaiten.cpp">
-      <Filter>ソース ファイル\基本データ\回転</Filter>
+      <Filter>ソース ファイル\基本データ\回転もう関係ない触れるな</Filter>
     </ClCompile>
     <ClCompile Include="ObjDiffusionEnemy.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
