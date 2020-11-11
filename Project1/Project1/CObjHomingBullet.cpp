@@ -26,8 +26,8 @@ void CObjHomingBullet::Init()
     m_ani_time = 0;
     m_del = false;
 
-    m_vx = 0.0f;
-    m_vy = 1.0f;
+    m_vx = 1.0f;
+    m_vy = 0.0f;
     //ˆÚ“®ƒxƒNƒgƒ‹‚Ì³‹K‰»
     UnitVec(&m_vy, &m_vx);
 
