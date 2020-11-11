@@ -135,9 +135,6 @@
     <ClInclude Include="SceneTitle.h">
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClInclude>
-    <ClInclude Include="ObjSceneMain.h">
-      <Filter>ソース ファイル\背景画面</Filter>
-    </ClInclude>
     <ClInclude Include="ObjBullet.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
@@ -216,6 +213,12 @@
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\背景画面\背景画面1</Filter>
     </ClInclude>
+    <ClInclude Include="SceneMain4.h">
+      <Filter>ソース ファイル\背景画面\背景画面4</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSceneMain.h">
+      <Filter>ソース ファイル\背景画面\背景画面1</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -274,9 +277,6 @@
     </ClCompile>
     <ClCompile Include="SceneTitle.cpp">
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjSceneMain.cpp">
-      <Filter>ソース ファイル\背景画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjBullet.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
@@ -354,6 +354,12 @@
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain.cpp">
+      <Filter>ソース ファイル\背景画面\背景画面1</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain4.cpp">
+      <Filter>ソース ファイル\背景画面\背景画面4</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSceneMain.cpp">
       <Filter>ソース ファイル\背景画面\背景画面1</Filter>
     </ClCompile>
   </ItemGroup>

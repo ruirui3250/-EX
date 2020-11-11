@@ -52,7 +52,7 @@ void CSceneMain2::InitScene()
 
 	//クリア時背景オブジェクト作成
 	CObjSceneMain* back = new CObjSceneMain();
-	Objs::InsertObj(back, OBJ_SCENE_MAIN2, 5);
+	Objs::InsertObj(back, OBJ_SCENE_MAIN, 5);
 
 	//タイム初期化
 	m_time = 0;
