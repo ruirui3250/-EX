@@ -1,6 +1,138 @@
-﻿  winscene3.cpp
+﻿  CObjAngleBullet.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjAngleBullet.cpp(31,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjAngleBullet.cpp(32,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  CObjAngleBulletHero.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjAngleBulletHero.cpp(28,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjAngleBulletHero.cpp(29,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjAngleBulletHero.cpp(46,17): warning C4806: '==': 安全でない演算: 'bool' 型から 'int' 型への上位変換を行うと与えられた定数に等しくなりません
+  CObjBulletEnemy.cpp
+  CObjHomingBullet.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(77,23): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(78,20): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(81,32): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(85,34): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(86,34): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(91,35): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjHomingBullet.cpp(92,35): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  CObjHomingEnemy.cpp
+  CObjSinEnemy.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\CObjSinEnemy.cpp(37,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  GameL_Main.cpp
+  Item.cpp
+  Kaiten.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\Kaiten.cpp(28,13): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\Kaiten.cpp(29,13): warning C4244: '=': 'double' から 'int' への変換です。データが失われる可能性があります。
+  ObjAttackEnemy.cpp
+  ObjBlock.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjBlock.cpp(61,16): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjBlock.cpp(63,14): warning C4244: '初期化中': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjBullet.cpp
+  ObjClearBack.cpp
+  ObjDiffusionEnemy.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjDiffusionEnemy.cpp(41,46): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  ObjEnemy.cpp
+  ObjEnemyBoss.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjEnemyBoss.cpp(79,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjGameOver.cpp
+  ObjHero.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(76,64): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(174,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(174,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(179,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(179,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(184,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(184,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(188,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(188,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(193,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(193,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(198,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(198,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(203,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(203,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(208,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(208,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(213,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(213,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(218,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(218,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(223,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(223,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(228,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(228,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(232,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(232,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(237,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(237,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(242,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(242,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(247,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(247,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(252,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(252,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(257,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(257,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(262,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(262,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(267,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(267,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(272,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(272,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(277,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(277,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(282,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(282,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(287,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(287,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(292,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjHero.cpp(292,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+  ObjLaserBullet.cpp
+  ObjSceneMain.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjSceneMain.cpp(34,25): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjSceneMain.cpp(38,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\ObjSceneMain.cpp(39,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  コードを生成中...
+  コンパイル中...
+  ObjTitle.cpp
+  Objwin.cpp
+  Objwin2.cpp
+  Objwin3.cpp
+  SceneGameOver.cpp
+  SceneMain.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain.cpp(133,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain.cpp(142,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain.cpp(151,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain.cpp(160,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  SceneMain2.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain2.cpp(133,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain2.cpp(142,39): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain2.cpp(151,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneMain2.cpp(160,34): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+  SceneTitle.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\SceneTitle.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  winscene.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\winscene.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\winscene.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  winscene2.cpp
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\winscene2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\Desktop\-EX3\Project1\Project1\winscene2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  winscene3.cpp
 C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
 C:\Users\GA1A\Desktop\-EX3\Project1\Project1\winscene3.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
 C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\GA1A\Desktop\-EX3\Project1\Project1\winscene3.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  コードを生成中...
   Project1.vcxproj -> C:\Users\GA1A\Desktop\-EX3\Project1\x64\Debug\Project1.exe
