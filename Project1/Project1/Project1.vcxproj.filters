@@ -52,6 +52,9 @@
     <Filter Include="ソース ファイル\敵機">
       <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\背景画面\背景画面2">
+      <UniqueIdentifier>{8582f6ef-b3a9-4bb3-9265-68eee5854fc4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -183,6 +186,9 @@
     <ClInclude Include="ObjLaserBullet.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
+    <ClInclude Include="SceneMain2.h">
+      <Filter>ソース ファイル\背景画面\背景画面2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -313,6 +319,9 @@
     </ClCompile>
     <ClCompile Include="ObjLaserBullet.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain2.cpp">
+      <Filter>ソース ファイル\背景画面\背景画面2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
