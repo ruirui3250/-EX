@@ -67,6 +67,15 @@
     <Filter Include="ソース ファイル\背景画面\背景画面1">
       <UniqueIdentifier>{4f73c276-a2b3-4f3d-a316-1649422875f6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\背景画面\背景画面３">
+      <UniqueIdentifier>{25c3bc13-c9a2-4bff-b4ba-82eef300e555}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\背景画面\背景画面4">
+      <UniqueIdentifier>{bad25e46-3aaa-47f9-acab-9a178f98fb70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\背景画面\背景画面５">
+      <UniqueIdentifier>{96c607a1-890a-4ab3-a55c-7a5bd8c2b477}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
