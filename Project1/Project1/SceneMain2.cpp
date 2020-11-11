@@ -14,18 +14,18 @@ using namespace GameL;
 #include"SceneMain2.h"
 #include"GameHead.h"
 //コンストラクタ
-CSceneMain::CSceneMain()
+CSceneMain2::CSceneMain2()
 {
 
 }
 //デストラクタ
-CSceneMain::~CSceneMain()
+CSceneMain2::~CSceneMain2()
 {
 
 }
 
 //ゲームメイン初期化メソッド
-void CSceneMain::InitScene()
+void CSceneMain2::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
 	Draw::LoadImage(L"SceneMain.png", 5, TEX_SIZE_512);
@@ -52,7 +52,7 @@ void CSceneMain::InitScene()
 
 	//クリア時背景オブジェクト作成
 	CObjSceneMain* back = new CObjSceneMain();
-	Objs::InsertObj(back, OBJ_SCENE_MAIN, 5);
+	Objs::InsertObj(back, OBJ_SCENE_MAIN2, 5);
 
 	//タイム初期化
 	m_time = 0;
@@ -60,7 +60,7 @@ void CSceneMain::InitScene()
 }
 
 //ゲームシーン実行中メソッド
-void CSceneMain::Scene()
+void CSceneMain2::Scene()
 {
 	m_time++;
 

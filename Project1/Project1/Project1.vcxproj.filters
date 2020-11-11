@@ -55,6 +55,12 @@
     <Filter Include="ソース ファイル\背景画面\背景画面2">
       <UniqueIdentifier>{8582f6ef-b3a9-4bb3-9265-68eee5854fc4}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面2">
+      <UniqueIdentifier>{bb78d73e-0a8a-4002-b53a-e7091e4e963a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3">
+      <UniqueIdentifier>{72a20a17-9bf4-4ed8-89cc-8fafd03240a8}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -162,12 +168,6 @@
     <ClInclude Include="Item.h">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClInclude>
-    <ClInclude Include="Objwin2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
-    <ClInclude Include="winscene2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClInclude>
     <ClInclude Include="Kaiten.h">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClInclude>
@@ -188,6 +188,18 @@
     </ClInclude>
     <ClInclude Include="SceneMain2.h">
       <Filter>ソース ファイル\背景画面\背景画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="Objwin2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="Objwin3.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene3.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -296,12 +308,6 @@
     <ClCompile Include="Item.cpp">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClCompile>
-    <ClCompile Include="Objwin2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
-    <ClCompile Include="winscene2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面</Filter>
-    </ClCompile>
     <ClCompile Include="Kaiten.cpp">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClCompile>
@@ -322,6 +328,18 @@
     </ClCompile>
     <ClCompile Include="SceneMain2.cpp">
       <Filter>ソース ファイル\背景画面\背景画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin3.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene3.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

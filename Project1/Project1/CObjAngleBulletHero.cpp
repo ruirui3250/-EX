@@ -38,9 +38,7 @@ void CObjAngleBulletHero::Init()
 
 void CObjAngleBulletHero::Action()
 {
-	//HitBoxの内容を更新
-	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
+	
 	//弾丸消滅装置--------
 	if (m_del == true)
 	{
