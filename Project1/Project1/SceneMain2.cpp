@@ -28,11 +28,11 @@ CSceneMain2::~CSceneMain2()
 void CSceneMain2::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
-	Draw::LoadImage(L"SceneMain.png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"背景(使).png", 5, TEX_SIZE_512);
 
-	Draw::LoadImage(L"image.png", 3, TEX_SIZE_512);
+	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
 
-	Draw::LoadImage(L"主人公機.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器(使).png", 1, TEX_SIZE_512);
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
@@ -40,7 +40,7 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
-	Draw::LoadImage(L"BossBack.png", 4, TEX_SIZE_512);
+	Draw::LoadImage(L"ボス2.png", 4, TEX_SIZE_512);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
@@ -52,7 +52,7 @@ void CSceneMain2::InitScene()
 
 	//クリア時背景オブジェクト作成
 	CObjSceneMain* back = new CObjSceneMain();
-	Objs::InsertObj(back, OBJ_SCENE_MAIN2, 5);
+	Objs::InsertObj(back, OBJ_SCENE_MAIN, 5);
 
 	//タイム初期化
 	m_time = 0;
