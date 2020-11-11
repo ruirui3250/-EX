@@ -81,7 +81,13 @@ void CObjBulletEnemy::Draw()
 {
 	//描画カラー情報
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	RECT_F src;//切り取り位置
 	RECT_F dst;//描画先表示
+
+	src.m_top = 0.0f ;
+	src.m_left = 0.0f;
+	src.m_right = 32.0f;
+	src.m_bottom = 32.0f;
 
 	//切り取り位置の設定
 	dst.m_top = 0.0f + m_y;
@@ -90,5 +96,5 @@ void CObjBulletEnemy::Draw()
 	dst.m_bottom = 32.0f + m_y;
 
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(3, &m_eff, &dst, c, 180.0f);
+	Draw::Draw(3,&src,&dst,c,32.0f);
 }

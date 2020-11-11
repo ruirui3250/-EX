@@ -15,6 +15,8 @@ enum OBJ_NAME
 	OBJ_GAME_OVER,
 	OBJ_HERO,
 	OBJ_SCENE_MAIN,
+	OBJ_SCENE_MAIN2,
+	OBJ_SCENE_MAIN4,
 	OBJ_BULLET,
 	OBJ_ENEMY,
 	OBJ_ATTACK_ENEMY,
@@ -30,7 +32,6 @@ enum OBJ_NAME
 	OBJ_ITEM,
 	OBJLASER_BULLET,
 	OBJ_ANGLE_BULLET,
-	OBJ_SCENE_MAIN2,
 };
 //------------------------------------------------
 
@@ -116,6 +117,7 @@ struct UserData
 #include"SceneMain.h"
 #include"SceneGameOver.h"
 #include"SceneMain2.h"
+#include"SceneMain4.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------

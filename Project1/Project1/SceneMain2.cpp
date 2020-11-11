@@ -28,7 +28,7 @@ CSceneMain2::~CSceneMain2()
 void CSceneMain2::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
-	Draw::LoadImage(L"背景(使).png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"背景(使).png", 9, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
 
@@ -36,7 +36,7 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 9, TEX_SIZE_512);
+	//Draw::LoadImage(L"障害物.png", 9, TEX_SIZE_512);
 
 	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
