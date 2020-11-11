@@ -34,9 +34,6 @@
     <Filter Include="ソース ファイル\基本データ\ボス">
       <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
-      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\アイテム">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
     </Filter>
@@ -108,6 +105,9 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\背景画面\背景画面５">
       <UniqueIdentifier>{96c607a1-890a-4ab3-a55c-7a5bd8c2b477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
+      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
