@@ -26,7 +26,7 @@ void CObjBoss4::Init()
     m_vy = 0.0f;
 
     //当たり判定用HitBoxを作成
-    Hits::SetHitBox(this, m_x + 100, m_y + 0, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_ENEMY4, 4);
+    Hits::SetHitBox(this, m_x + 10, m_y + 0, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_ENEMY4, 4);
 }
 
 //アクション
@@ -35,11 +35,11 @@ void CObjBoss4::Action()
     m_time++;
 
     //通常弾発射
-    if (m_time % 50 == 0)
+    if (m_time % 20 == 0)
     {
         //弾丸敵機オブジェクト
-        CObjBulletEnemy* obj_b = new CObjBulletEnemy(m_x + 68, m_y + 114);//弾丸敵機オブジェクト作成
-        Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
+        CObjEnemyBossBullet4* obj_b = new CObjEnemyBossBullet4(m_x + 68, m_y + 114);//弾丸敵機オブジェクト作成
+        Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
     }
     //360度弾丸発射
     if (m_time % 200 == 0)
@@ -87,7 +87,7 @@ void CObjBoss4::Action()
 
     //HitBoxの内容を更新
     CHitBox* hit = Hits::GetHitBox(this);
-    hit->SetPos(m_x + 100, m_y + 50);
+    hit->SetPos(m_x + 10, m_y + 10);
 
     //領域外に出たら弾丸を破壊する
     bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
@@ -134,7 +134,7 @@ void CObjBoss4::Draw()
     //表示位置の設定
     dst.m_top = 0.0f + m_y;
     dst.m_left = 0.0f + m_x;
-    dst.m_right = 10.0f + m_x;
+    dst.m_right =10.0f + m_x;
     dst.m_bottom = 10.0f + m_y;
 
     //1番目に登録したグラフィックをsrc・dst・cの情報をもとに描画

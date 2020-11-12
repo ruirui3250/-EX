@@ -179,6 +179,6 @@ void CSceneMain4::Scene()
 
 		CObjBoss* obj;
 		obj = new CObjBoss(300, 100);
-		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
+		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 50);
 	}
 }

@@ -255,7 +255,7 @@
     <ClInclude Include="ObjEnemyBoss4.h">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClInclude>
-    <ClInclude Include="ObjEnemyBossBullet4.h">
+    <ClInclude Include="CObjEnemyBossBullet4.h">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClInclude>
   </ItemGroup>
@@ -404,7 +404,7 @@
     <ClCompile Include="ObjEnemyBoss4.cpp">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClCompile>
-    <ClCompile Include="ObjEnemyBossBullet4.cpp">
+    <ClCompile Include="CObjEnemyBossBullet4.cpp">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClCompile>
   </ItemGroup>

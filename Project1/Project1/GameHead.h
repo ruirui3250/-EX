@@ -21,6 +21,7 @@ enum OBJ_NAME
 	OBJ_ENEMY,
 	OBJ_ATTACK_ENEMY,
 	OBJ_BULLET_ENEMY,
+	OBJ_BOSS_BULLET_ENEMY,
 	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
 	OBJ_BOSS_ENEMY4,
@@ -97,6 +98,7 @@ struct UserData
 #include"ObjDiffusionEnemy.h"
 #include"ObjEnemyBoss.h"
 #include"ObjEnemyBoss4.h"
+#include"CObjEnemyBossBullet4.h"
 #include"CObjAngleBulletHero.h"
 #include"ObjEnemyBoss2.h"
 #include"CObjHomingEnemy.h"
@@ -124,5 +126,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneTitle
+#define SET_GAME_START CSceneMain4
 //-----------------------------------------------
