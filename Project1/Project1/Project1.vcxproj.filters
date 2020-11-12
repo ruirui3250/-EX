@@ -252,6 +252,12 @@
     <ClInclude Include="ObjClearVirus.h">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClInclude>
+    <ClInclude Include="ObjEnemyBoss4.h">
+      <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemyBossBullet4.h">
+      <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -394,6 +400,12 @@
     </ClCompile>
     <ClCompile Include="ObjClearVirus.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemyBoss4.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemyBossBullet4.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
