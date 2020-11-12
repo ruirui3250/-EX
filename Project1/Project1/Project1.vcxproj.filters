@@ -31,12 +31,6 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面">
       <UniqueIdentifier>{9e484e8d-a0ae-4b00-b99d-88ac2749cd43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス">
-      <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
-      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\アイテム">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
     </Filter>
@@ -55,15 +49,6 @@
     <Filter Include="ソース ファイル\基本データ\回転もう関係ない触れるな">
       <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス\三面ボス">
-      <UniqueIdentifier>{12302125-8bd7-474f-a566-f6291902b23e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス\四面ボス">
-      <UniqueIdentifier>{30810d5c-b6c1-4f0f-89cc-d44b3e51e9f0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス\ごめんボス">
-      <UniqueIdentifier>{8e01bcf1-e6c5-4d33-9bc6-fa2ab037a596}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面４">
       <UniqueIdentifier>{49747bd2-c20c-4fa9-a505-442488b375c0}</UniqueIdentifier>
     </Filter>
@@ -78,9 +63,6 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\アイテム\白血球">
       <UniqueIdentifier>{23295e39-3056-4bf4-a13b-10b08682205a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\ボス\一面ボス">
-      <UniqueIdentifier>{b747bcf3-b476-4dec-8b0d-f999126d19d3}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト">
       <UniqueIdentifier>{cb6a329e-338a-4ffb-be94-90c62c43ed33}</UniqueIdentifier>
@@ -108,6 +90,24 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\背景画面\背景画面５">
       <UniqueIdentifier>{96c607a1-890a-4ab3-a55c-7a5bd8c2b477}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\ボス">
+      <UniqueIdentifier>{e605b3d5-79e8-44bf-abe6-24c59194f626}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\ボス\二面ボス">
+      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\ボス\三面ボス">
+      <UniqueIdentifier>{12302125-8bd7-474f-a566-f6291902b23e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\ボス\四面ボス">
+      <UniqueIdentifier>{30810d5c-b6c1-4f0f-89cc-d44b3e51e9f0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\ボス\ごめんボス">
+      <UniqueIdentifier>{8e01bcf1-e6c5-4d33-9bc6-fa2ab037a596}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\ボス\一面ボス">
+      <UniqueIdentifier>{b747bcf3-b476-4dec-8b0d-f999126d19d3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -190,7 +190,7 @@
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss2.h">
-      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\敵機\ボス\二面ボス</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
@@ -244,7 +244,7 @@
       <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss.h">
-      <Filter>ソース ファイル\基本データ\ボス\一面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\敵機\ボス\一面ボス</Filter>
     </ClInclude>
     <ClInclude Include="ObjClearBack.h">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
@@ -333,7 +333,7 @@
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss2.cpp">
-      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\敵機\ボス\二面ボス</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
@@ -387,7 +387,7 @@
       <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss.cpp">
-      <Filter>ソース ファイル\基本データ\ボス\一面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\敵機\ボス\一面ボス</Filter>
     </ClCompile>
     <ClCompile Include="ObjClearBack.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
