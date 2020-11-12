@@ -1,3 +1,2 @@
-﻿  ObjEnemyBoss4.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\ObjEnemyBoss4.cpp(79,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+﻿  ObjEnemyBossBullet4.cpp
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe
