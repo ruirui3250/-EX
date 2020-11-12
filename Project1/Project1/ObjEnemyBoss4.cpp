@@ -26,7 +26,7 @@ void CObjBoss4::Init()
     m_vy = 0.0f;
 
     //当たり判定用HitBoxを作成
-    Hits::SetHitBox(this, m_x + 10, m_y + 0, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_ENEMY4, 4);
+    Hits::SetHitBox(this, m_x + 10, m_y + 10, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_ENEMY4, 4);
 }
 
 //アクション
@@ -138,5 +138,5 @@ void CObjBoss4::Draw()
     dst.m_bottom = 10.0f + m_y;
 
     //1番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
-    Draw::Draw(4, &src, &dst, c, 0.0f);
+    Draw::Draw(4, &src, &dst, c, 10.0f);
 }
