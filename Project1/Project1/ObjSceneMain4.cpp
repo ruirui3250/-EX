@@ -18,14 +18,14 @@ void CObjSceneMain4::Init()
 void CObjSceneMain4::Action()
 {
 	//”wŒi‚P‚Ì‘€ì
-	m_x1 -= 10.0f;
-	if (m_x1 < -800.0f)
-		m_x1 = 800;
+	m_y1 -= 10.0f;
+	if (m_y1 < -800.0f)
+		m_y1 = 800;
 
 	//”wŒi2‚Ì‘€ì
-	m_x2 -= 10.0f;
-	if (m_x2 < -800.0f)
-		m_x2 = 800;
+	m_y2 -= 10.0f;
+	if (m_y2 < -800.0f)
+		m_y2 = 800;
 
 }
 
@@ -54,19 +54,19 @@ void CObjSceneMain4::Draw()
 	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 	//”wŒi‚P‚ğİ’è•`‰æ
-	dst.m_top = 0.0f;
-	dst.m_left = 0.0f + m_x1;
-	dst.m_right = 1000.0f + m_x1;
-	dst.m_bottom = 600.0f;
+	dst.m_top = 1000.0f+m_y1;
+	dst.m_left = 0.0f+m_x1;
+	dst.m_right = 0.0f+m_x1;
+	dst.m_bottom = 600.0f+m_y1;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æB
 	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 	//”wŒi2‚ğİ’è•`‰æ
-	dst.m_top = 0.0f;
+	dst.m_top = 1000.0f+m_y2;
 	dst.m_left = 0.0f + m_x2;
-	dst.m_right = 1000.0f + m_x2;
-	dst.m_bottom = 600.0f;
+	dst.m_right =0.0f + m_x2;
+	dst.m_bottom = 600.0f+m_y2;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æB
 	Draw::Draw(9, &src, &dst, c, 0.0f);
