@@ -258,6 +258,9 @@
     <ClInclude Include="CObjEnemyBossBullet4.h">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClInclude>
+    <ClInclude Include="ObjSceneMain4.h">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面4</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -406,6 +409,9 @@
     </ClCompile>
     <ClCompile Include="CObjEnemyBossBullet4.cpp">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSceneMain4.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\背景画面4</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
