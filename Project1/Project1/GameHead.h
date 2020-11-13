@@ -85,6 +85,7 @@ struct UserData
 #include"ObjClearVirus.h"
 #include"ObjTitle.h"
 #include"ObjSceneMain.h"
+#include"ObjSceneMain4.h"
 //“GŠÖ˜A
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
