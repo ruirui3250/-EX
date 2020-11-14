@@ -39,7 +39,7 @@ void CObjEnemyBossBullet4::Init()
 void CObjEnemyBossBullet4::Action()
 {
 	//Resourcesの描画物RECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 4);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 21);
 
 	//弾丸消滅処理
 	if (m_del == true)
@@ -96,5 +96,5 @@ void CObjEnemyBossBullet4::Draw()
 	dst.m_bottom = 10.0f + m_y;
 
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(4, &src, &dst, c, 0.0f);
+	Draw::Draw(21, &src, &dst, c, 0.0f);
 }

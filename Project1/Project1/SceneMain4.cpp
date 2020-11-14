@@ -40,7 +40,7 @@ void CSceneMain4::InitScene()
 
 	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
-	Draw::LoadImage(L"ボス4.png", 4, TEX_SIZE_512);
+	Draw::LoadImage(L"ボス4.png", 22, TEX_SIZE_512);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
@@ -177,8 +177,8 @@ void CSceneMain4::Scene()
 		//Audio::Stop(0);//0曲ストップ
 		//Audio::Start(1);//1曲目スタート
 
-		CObjBoss* obj;
-		obj = new CObjBoss(300, 100);
+		CObjBoss4* obj;
+		obj = new CObjBoss4(799, 300);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
 	}
 }
