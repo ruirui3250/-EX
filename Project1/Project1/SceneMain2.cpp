@@ -177,8 +177,8 @@ void CSceneMain2::Scene()
 		//Audio::Stop(0);//0曲ストップ
 		//Audio::Start(1);//1曲目スタート
 
-		CObjBoss* obj;
-		obj = new CObjBoss(300, 100);
-		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
+		CObjBoss2* obj;
+		obj = new CObjBoss2(300, 100);
+		Objs::InsertObj(obj, OBJ_BOSS_ENEMY2, 50);
 	}
 }

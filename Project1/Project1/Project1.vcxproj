@@ -142,7 +142,6 @@
     <ClInclude Include="CObjAngleBullet.h" />
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
-    <ClInclude Include="CObjEnemyBoss2.h" />
     <ClInclude Include="CObjHomingBullet.h" />
     <ClInclude Include="CObjHomingEnemy.h" />
     <ClInclude Include="CObjSinEnemy.h" />
@@ -195,7 +194,6 @@
     <ClCompile Include="CObjAngleBullet.cpp" />
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
-    <ClCompile Include="CObjEnemyBoss2.cpp" />
     <ClCompile Include="CObjHomingBullet.cpp" />
     <ClCompile Include="CObjHomingEnemy.cpp" />
     <ClCompile Include="CObjSinEnemy.cpp" />
