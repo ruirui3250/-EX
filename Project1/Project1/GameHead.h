@@ -92,7 +92,6 @@ struct UserData
 #include"ObjBullet.h"
 #include"CObjSinEnemy.h"
 #include"ObjAttackEnemy.h"
-#include"ObjClearBack.h"
 #include"ObjGameOver.h"
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
