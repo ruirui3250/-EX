@@ -9,6 +9,7 @@ enum OBJ_NAME
 	OBJ_WIN,
 	OBJ_WIN2,
 	OBJ_WIN3,
+	OBJ_WIN4,
 	OBJ_CLEAR_BACK,
 	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
@@ -82,6 +83,7 @@ struct UserData
 #include "Objwin.h"
 #include"Objwin2.h"
 #include"Objwin3.h"
+#include"Objwin4.h"
 #include "ObjClearBack.h"
 #include"ObjClearBack2.h"
 #include"ObjTitle.h"

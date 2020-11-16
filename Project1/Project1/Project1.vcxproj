@@ -180,6 +180,7 @@
     <ClInclude Include="Objwin2.h" />
     <ClInclude Include="ObjLaserBullet.h" />
     <ClInclude Include="Objwin3.h" />
+    <ClInclude Include="Objwin4.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="SceneMain2.h" />
@@ -189,6 +190,7 @@
     <ClInclude Include="winscene.h" />
     <ClInclude Include="winscene2.h" />
     <ClInclude Include="winscene3.h" />
+    <ClInclude Include="WinScene4.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObjAngleBullet.cpp" />
@@ -232,6 +234,7 @@
     <ClCompile Include="Objwin2.cpp" />
     <ClCompile Include="ObjLaserBullet.cpp" />
     <ClCompile Include="Objwin3.cpp" />
+    <ClCompile Include="Objwin4.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="SceneMain2.cpp" />
@@ -241,6 +244,7 @@
     <ClCompile Include="winscene.cpp" />
     <ClCompile Include="winscene2.cpp" />
     <ClCompile Include="winscene3.cpp" />
+    <ClCompile Include="WinScene4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

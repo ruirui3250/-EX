@@ -261,6 +261,12 @@
     <ClInclude Include="ObjClearBack2.h">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClInclude>
+    <ClInclude Include="Objwin4.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClInclude>
+    <ClInclude Include="WinScene4.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -412,6 +418,12 @@
     </ClCompile>
     <ClCompile Include="ObjClearBack2.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin4.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+    </ClCompile>
+    <ClCompile Include="WinScene4.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
