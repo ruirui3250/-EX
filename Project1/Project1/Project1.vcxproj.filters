@@ -249,9 +249,6 @@
     <ClInclude Include="ObjClearBack.h">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClInclude>
-    <ClInclude Include="ObjClearVirus.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
-    </ClInclude>
     <ClInclude Include="ObjEnemyBoss4.h">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClInclude>
@@ -260,6 +257,9 @@
     </ClInclude>
     <ClInclude Include="ObjSceneMain4.h">
       <Filter>ソース ファイル\基本データ\背景画面\背景画面4</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjClearBack2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -401,9 +401,6 @@
     <ClCompile Include="ObjClearBack.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClCompile>
-    <ClCompile Include="ObjClearVirus.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
-    </ClCompile>
     <ClCompile Include="ObjEnemyBoss4.cpp">
       <Filter>ソース ファイル\基本データ\敵機\ボス\四面ボス</Filter>
     </ClCompile>
@@ -412,6 +409,9 @@
     </ClCompile>
     <ClCompile Include="ObjSceneMain4.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\背景画面4</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjClearBack2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

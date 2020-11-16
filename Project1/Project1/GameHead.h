@@ -10,7 +10,7 @@ enum OBJ_NAME
 	OBJ_WIN2,
 	OBJ_WIN3,
 	OBJ_CLEAR_BACK,
-	OBJ_CLEAR_VIRUS,
+	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
 	OBJ_HERO,
@@ -83,7 +83,7 @@ struct UserData
 #include"Objwin2.h"
 #include"Objwin3.h"
 #include "ObjClearBack.h"
-#include"ObjClearVirus.h"
+#include"ObjClearBack2.h"
 #include"ObjTitle.h"
 #include"ObjSceneMain.h"
 #include"ObjSceneMain4.h"
@@ -128,5 +128,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneMain2
+#define SET_GAME_START CSceneTitle
 //-----------------------------------------------
