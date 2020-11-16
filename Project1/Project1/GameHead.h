@@ -10,6 +10,7 @@ enum OBJ_NAME
 	OBJ_WIN2,
 	OBJ_WIN3,
 	OBJ_WIN4,
+	OBJ_WIN5,
 	OBJ_CLEAR_BACK,
 	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
@@ -84,6 +85,7 @@ struct UserData
 #include"Objwin2.h"
 #include"Objwin3.h"
 #include"Objwin4.h"
+#include"ObjWin5.h"
 #include "ObjClearBack.h"
 #include"ObjClearBack2.h"
 #include"ObjTitle.h"
@@ -121,6 +123,8 @@ struct UserData
 #include"winscene.h"
 #include"winscene2.h"
 #include"winscene3.h"
+#include"WinScene4.h"
+#include"WinScene5.h"
 #include"SceneTitle.h"
 #include"SceneMain.h"
 #include"SceneGameOver.h"

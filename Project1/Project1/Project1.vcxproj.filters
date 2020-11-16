@@ -97,16 +97,16 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面\5面後クリア画面">
       <UniqueIdentifier>{05f466dc-fe3d-4768-878e-e2cbd4acb1ae}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面1">
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面１面後">
       <UniqueIdentifier>{bb78d73e-0a8a-4002-b53a-e7091e4e963a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面2">
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面2面後">
       <UniqueIdentifier>{72a20a17-9bf4-4ed8-89cc-8fafd03240a8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3">
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3面後">
       <UniqueIdentifier>{49747bd2-c20c-4fa9-a505-442488b375c0}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面4">
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面4面後">
       <UniqueIdentifier>{769db9b4-1eb5-401d-9b5a-d1215adbc10c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -217,16 +217,16 @@
       <Filter>ソース ファイル\基本データ\背景画面\背景画面2</Filter>
     </ClInclude>
     <ClInclude Include="Objwin2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面１面後</Filter>
     </ClInclude>
     <ClInclude Include="Objwin3.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2面後</Filter>
     </ClInclude>
     <ClInclude Include="winscene2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面１面後</Filter>
     </ClInclude>
     <ClInclude Include="winscene3.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2面後</Filter>
     </ClInclude>
     <ClInclude Include="Objwin.h">
       <Filter>ソース ファイル\基本データ\クリア画面\5面後クリア画面</Filter>
@@ -262,10 +262,16 @@
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClInclude>
     <ClInclude Include="Objwin4.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3面後</Filter>
     </ClInclude>
     <ClInclude Include="WinScene4.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3面後</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjWin5.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面4面後</Filter>
+    </ClInclude>
+    <ClInclude Include="WinScene5.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面4面後</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -375,16 +381,16 @@
       <Filter>ソース ファイル\基本データ\背景画面\背景画面2</Filter>
     </ClCompile>
     <ClCompile Include="Objwin2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面１面後</Filter>
     </ClCompile>
     <ClCompile Include="Objwin3.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2面後</Filter>
     </ClCompile>
     <ClCompile Include="winscene2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面１面後</Filter>
     </ClCompile>
     <ClCompile Include="winscene3.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2面後</Filter>
     </ClCompile>
     <ClCompile Include="Objwin.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\5面後クリア画面</Filter>
@@ -420,10 +426,16 @@
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面オブジェクト</Filter>
     </ClCompile>
     <ClCompile Include="Objwin4.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3面後</Filter>
     </ClCompile>
     <ClCompile Include="WinScene4.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3面後</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjWin5.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面4面後</Filter>
+    </ClCompile>
+    <ClCompile Include="WinScene5.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面4面後</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
