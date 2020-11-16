@@ -34,26 +34,11 @@
     <Filter Include="ソース ファイル\基本データ\アイテム">
       <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面2">
-      <UniqueIdentifier>{bb78d73e-0a8a-4002-b53a-e7091e4e963a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3">
-      <UniqueIdentifier>{72a20a17-9bf4-4ed8-89cc-8fafd03240a8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面1">
-      <UniqueIdentifier>{05f466dc-fe3d-4768-878e-e2cbd4acb1ae}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\主人公機\主人公縦スクロール用">
       <UniqueIdentifier>{5bde97c6-ab90-44c5-8d23-84954088e845}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\回転もう関係ない触れるな">
       <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面４">
-      <UniqueIdentifier>{49747bd2-c20c-4fa9-a505-442488b375c0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面5">
-      <UniqueIdentifier>{769db9b4-1eb5-401d-9b5a-d1215adbc10c}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\アイテム\マスク">
       <UniqueIdentifier>{f554bb5d-d69b-441e-8d05-01a85a539ee8}</UniqueIdentifier>
@@ -108,6 +93,21 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\敵機\ボス\一面ボス">
       <UniqueIdentifier>{b747bcf3-b476-4dec-8b0d-f999126d19d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\5面後クリア画面">
+      <UniqueIdentifier>{05f466dc-fe3d-4768-878e-e2cbd4acb1ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面1">
+      <UniqueIdentifier>{bb78d73e-0a8a-4002-b53a-e7091e4e963a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面2">
+      <UniqueIdentifier>{72a20a17-9bf4-4ed8-89cc-8fafd03240a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面3">
+      <UniqueIdentifier>{49747bd2-c20c-4fa9-a505-442488b375c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\クリア画面4">
+      <UniqueIdentifier>{769db9b4-1eb5-401d-9b5a-d1215adbc10c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -217,22 +217,22 @@
       <Filter>ソース ファイル\基本データ\背景画面\背景画面2</Filter>
     </ClInclude>
     <ClInclude Include="Objwin2.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
     </ClInclude>
     <ClInclude Include="Objwin3.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
-    </ClInclude>
-    <ClInclude Include="winscene2.h">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
     </ClInclude>
+    <ClInclude Include="winscene2.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClInclude>
     <ClInclude Include="winscene3.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
     </ClInclude>
     <ClInclude Include="Objwin.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\5面後クリア画面</Filter>
     </ClInclude>
     <ClInclude Include="winscene.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\5面後クリア画面</Filter>
     </ClInclude>
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
@@ -369,22 +369,22 @@
       <Filter>ソース ファイル\基本データ\背景画面\背景画面2</Filter>
     </ClCompile>
     <ClCompile Include="Objwin2.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
     </ClCompile>
     <ClCompile Include="Objwin3.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
-    </ClCompile>
-    <ClCompile Include="winscene2.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
     </ClCompile>
+    <ClCompile Include="winscene2.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+    </ClCompile>
     <ClCompile Include="winscene3.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面3</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面2</Filter>
     </ClCompile>
     <ClCompile Include="Objwin.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\5面後クリア画面</Filter>
     </ClCompile>
     <ClCompile Include="winscene.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\クリア画面1</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\5面後クリア画面</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\背景画面1</Filter>
