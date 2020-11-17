@@ -70,48 +70,137 @@ void CSceneMain::Scene()
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 80)
-	{
-		CObjEnemy* obj = new CObjEnemy(799.0f, 300);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 120)
-	{
-		CObjEnemy* obj = new CObjEnemy(799.0f, 200);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 200)
-	{
-		CObjEnemy* obj;
-		obj = new CObjEnemy(799.0f, 100);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-		obj = new CObjEnemy(799.0f, 500);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 400)
-	{
-		CObjEnemy* obj1;
-		obj1 = new CObjEnemy(799.0f, 300);
-		Objs::InsertObj(obj1, OBJ_ENEMY, 50);
+
+		CObjAttackEnemy* obj1;
+		obj1 = new CObjAttackEnemy(799, 230);
+		Objs::InsertObj(obj1, OBJ_ATTACK_ENEMY, 50);
 
 		CObjAttackEnemy* obj2;
-		obj2 = new CObjAttackEnemy(799, 400);
+		obj2 = new CObjAttackEnemy(799, 330);
 		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
 
+		CObjEnemy* obj3 = new CObjEnemy(650.0f, 130);
+		Objs::InsertObj(obj3, OBJ_ENEMY, 50);
+
+		CObjEnemy* obj4 = new CObjEnemy(799.0f, 160);
+		Objs::InsertObj(obj4, OBJ_ENEMY, 50);
+
 	}
-	else if (m_time == 550)
+	else if (m_time == 40)
 	{
-		CObjEnemy* obj1;
-		obj1 = new CObjEnemy(799.0f, 400);
-		Objs::InsertObj(obj1, OBJ_ENEMY, 50);
+		//block object create
+	/*	CObjBlock* obj = new CObjBlock(799.0f, 0);
+		Objs::InsertObj(obj, OBJ_BLOCK, 50);
 
-		CObjAttackEnemy* obj2;
-		obj2 = new CObjAttackEnemy(799, 300);
-		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
+		CObjBlock* obj1 = new CObjBlock(766, 0);
+		Objs::InsertObj(obj1, OBJ_BLOCK, 50);
 
+		CObjBlock* obj2 = new CObjBlock(733, 0);
+		Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+
+		CObjBlock* obj3 = new CObjBlock(799.0f, 33);
+		Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+
+		CObjBlock* obj4 = new CObjBlock(766,33);
+		Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+
+		CObjBlock* obj5 = new CObjBlock(733,33);
+		Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+		CObjBlock* obj6 = new CObjBlock (799.0f, 66);
+		Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+
+		CObjBlock* obj7 = new CObjBlock(766, 66);
+		Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+
+		CObjBlock* obj8 = new CObjBlock(733, 66);
+		Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+
+		CObjBlock* obj9 = new CObjBlock (733, 566);
+		Objs::InsertObj(obj9, OBJ_BLOCK, 50);
+
+		CObjBlock* obj10 = new CObjBlock(766, 566);
+		Objs::InsertObj(obj10, OBJ_BLOCK, 50);
+
+		CObjBlock* obj11 = new CObjBlock(799.0f, 566);
+		Objs::InsertObj(obj11, OBJ_BLOCK, 50);
+
+		CObjBlock* obj12 = new CObjBlock(733, 533);
+		Objs::InsertObj(obj12, OBJ_BLOCK, 50);
+
+		CObjBlock* obj13 = new CObjBlock(766, 533);
+		Objs::InsertObj(obj13, OBJ_BLOCK, 50);
+
+		CObjBlock* obj14 = new CObjBlock(799.0f, 533);
+		Objs::InsertObj(obj14, OBJ_BLOCK, 50);
+
+		CObjBlock* obj15 = new CObjBlock(733, 500);
+		Objs::InsertObj(obj15, OBJ_BLOCK, 50);
+
+		CObjBlock* obj16 = new CObjBlock(766, 500);
+		Objs::InsertObj(obj16, OBJ_BLOCK, 50);
+
+		CObjBlock* obj17 = new CObjBlock(799.0f, 500);
+		Objs::InsertObj(obj17, OBJ_BLOCK, 50);*/
 	}
-	else if (m_time == 680)
+
+	else if (m_time == 110)
+	{
+		//CObjBlock* obj = new CObjBlock(799.0f, 0);
+		//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj1 = new CObjBlock(766, 0);
+		//Objs::InsertObj(obj1, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj2 = new CObjBlock(733, 0);
+		//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj3 = new CObjBlock(799.0f, 33);
+		//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj4 = new CObjBlock(766, 33);
+		//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj5 = new CObjBlock(733, 33);
+		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj6 = new CObjBlock(799.0f, 66);
+		//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj7 = new CObjBlock(766, 66);
+		//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj8 = new CObjBlock(733, 66);
+		//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj9 = new CObjBlock(733, 566);
+		//Objs::InsertObj(obj9, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj10 = new CObjBlock(766, 566);
+		//Objs::InsertObj(obj10, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj11 = new CObjBlock(799.0f, 566);
+		//Objs::InsertObj(obj11, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj12 = new CObjBlock(733, 533);
+		//Objs::InsertObj(obj12, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj13 = new CObjBlock(766, 533);
+		//Objs::InsertObj(obj13, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj14 = new CObjBlock(799.0f, 533);
+		//Objs::InsertObj(obj14, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj15 = new CObjBlock(733, 500);
+		//Objs::InsertObj(obj15, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj16 = new CObjBlock(766, 500);
+		//Objs::InsertObj(obj16, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj17 = new CObjBlock(799.0f, 500);
+		//Objs::InsertObj(obj17, OBJ_BLOCK, 50);
+	}
+	else if (m_time == 450)
 	{
 		CObjEnemy* obj;
 		obj = new CObjEnemy(799.0f, 300);
@@ -120,67 +209,111 @@ void CSceneMain::Scene()
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 		obj = new CObjEnemy(799.0f, 250);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+
+		CObjAttackEnemy* obj2;
+		obj2 = new CObjAttackEnemy(799.0f, 200);
+		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
+		obj2 = new CObjAttackEnemy(799.0f, 400);
+		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
 	}
-	else if (m_time == 750)
+	else if (m_time == 550)
 	{
-		CObjAttackEnemy* obj;
-		obj = new CObjAttackEnemy(799, 300);
-		Objs::InsertObj(obj, OBJ_ATTACK_ENEMY, 50);
+	//CObjBlock* obj = new CObjBlock(799.0f, 0);
+	//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj1 = new CObjBlock(766, 0);
+	//Objs::InsertObj(obj1, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj2 = new CObjBlock(733, 0);
+	//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj3 = new CObjBlock(799.0f, 33);
+	//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj4 = new CObjBlock(766, 33);
+	//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj5 = new CObjBlock(733, 33);
+	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj6 = new CObjBlock(799.0f, 66);
+	//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj7 = new CObjBlock(766, 66);
+	//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj8 = new CObjBlock(733, 66);
+	//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj9 = new CObjBlock(733, 566);
+	//Objs::InsertObj(obj9, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj10 = new CObjBlock(766, 566);
+	//Objs::InsertObj(obj10, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj11 = new CObjBlock(799.0f, 566);
+	//Objs::InsertObj(obj11, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj12 = new CObjBlock(733, 533);
+	//Objs::InsertObj(obj12, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj13 = new CObjBlock(766, 533);
+	//Objs::InsertObj(obj13, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj14 = new CObjBlock(799.0f, 533);
+	//Objs::InsertObj(obj14, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj15 = new CObjBlock(733, 500);
+	//Objs::InsertObj(obj15, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj16 = new CObjBlock(766, 500);
+	//Objs::InsertObj(obj16, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj17 = new CObjBlock(799.0f, 500);
+	//Objs::InsertObj(obj17, OBJ_BLOCK, 50);
+
 	}
-	else if (m_time == 1000)
+	else if (m_time == 780)
 	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
+	//CObjBlock* obj = new CObjBlock(799.0f, 300);
+	//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+	//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
+	//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+	//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
+	//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+	//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
+	//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+	//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
+	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+	//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
+	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+	//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
+	//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+	//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
+	//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+	//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
+	//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+
+
 	}
-	else if (m_time == 1100)
+	else if (m_time == 890)
 	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32 + 64);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
+	CObjAttackEnemy* obj;
+	obj = new CObjAttackEnemy(799.0f, 450);
+	}
+	else if (m_time == 850)
+	{
+	CObjEnemy* obj;
+	obj = new CObjEnemy(799.0, 305);
 	}
 	else if (m_time == 1200)
-	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
-	}
-	else if (m_time == 1300)
-	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
-
-		CObjDiffusionEnemy* obj2;
-		obj2 = new CObjDiffusionEnemy(799, 300);
-		Objs::InsertObj(obj2, OBJ_DIFFUSION_ENEMY, 50);
-	}
-	else if (m_time == 1500)
-	{
-		CObjHomingEnemy* obj;
-		obj = new CObjHomingEnemy(799, 500);
-		Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
-	}
-	else if (m_time == 2000)
 	{
 		//音楽チェンジ
 		//Audio::Stop(0);//0曲ストップ
 		//Audio::Start(1);//1曲目スタート
 
 		CObjBoss* obj;
-		obj = new CObjBoss(300, 100);
+		obj = new CObjBoss(300, 250);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
 	}
 }
