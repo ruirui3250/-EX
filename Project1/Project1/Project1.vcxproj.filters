@@ -48,23 +48,8 @@
     <Filter Include="ソース ファイル\基本データ\敵機">
       <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\敵機\一面ボス">
-      <UniqueIdentifier>{5082f4c7-f770-4f71-a786-a389878f18fc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\敵機\二面ボス">
-      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\敵機\3面ボス">
-      <UniqueIdentifier>{3c632ea8-ea48-4751-aaac-5599ba3a5c88}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\敵機\3面敵">
       <UniqueIdentifier>{02687793-d0f9-48e6-b45e-84855614a5ca}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\敵機\4面ボス">
-      <UniqueIdentifier>{c91b5eed-07ae-4dfc-a30c-7a31f228b06c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\敵機\5面ボス">
-      <UniqueIdentifier>{8b291023-19c1-44d7-a573-cbf447977116}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\背景画面">
       <UniqueIdentifier>{43c0adca-4ccc-4088-9a6d-a4b0e04d4b2f}</UniqueIdentifier>
@@ -105,6 +90,21 @@
     <Filter Include="ソース ファイル\ヘッダー ファイル">
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\一面ボス">
+      <UniqueIdentifier>{5082f4c7-f770-4f71-a786-a389878f18fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\二面ボス">
+      <UniqueIdentifier>{2c130980-8696-46dd-93dc-0461e4755669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\3面ボス">
+      <UniqueIdentifier>{3c632ea8-ea48-4751-aaac-5599ba3a5c88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\4面ボス">
+      <UniqueIdentifier>{c91b5eed-07ae-4dfc-a30c-7a31f228b06c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボス\5面ボス">
+      <UniqueIdentifier>{8b291023-19c1-44d7-a573-cbf447977116}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -241,7 +241,7 @@
       <Filter>ソース ファイル\基本データ\背景画面\4面</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss.h">
-      <Filter>ソース ファイル\基本データ\敵機\一面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\一面ボス</Filter>
     </ClInclude>
     <ClInclude Include="ObjWin5.h">
       <Filter>ソース ファイル\基本データ\クリア画面\4面終了</Filter>
@@ -271,10 +271,10 @@
       <Filter>ソース ファイル\基本データ\敵機</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss2.h">
-      <Filter>ソース ファイル\基本データ\敵機\二面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateBoss.h">
-      <Filter>ソース ファイル\基本データ\敵機\3面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\3面ボス</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
@@ -286,10 +286,10 @@
       <Filter>ソース ファイル\ヘッダー ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss4.h">
-      <Filter>ソース ファイル\基本データ\敵機\4面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClInclude>
     <ClInclude Include="CObjEnemyBossBullet4.h">
-      <Filter>ソース ファイル\基本データ\敵機\4面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClInclude>
     <ClInclude Include="SceneMain2.h">
       <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
@@ -432,7 +432,7 @@
       <Filter>ソース ファイル\基本データ\背景画面\4面</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss.cpp">
-      <Filter>ソース ファイル\基本データ\敵機\一面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\一面ボス</Filter>
     </ClCompile>
     <ClCompile Include="ObjWin5.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\4面終了</Filter>
@@ -465,10 +465,10 @@
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss2.cpp">
-      <Filter>ソース ファイル\基本データ\敵機\二面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateBoss.cpp">
-      <Filter>ソース ファイル\基本データ\敵機\3面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\3面ボス</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
@@ -477,10 +477,10 @@
       <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss4.cpp">
-      <Filter>ソース ファイル\基本データ\敵機\4面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClCompile>
     <ClCompile Include="CObjEnemyBossBullet4.cpp">
-      <Filter>ソース ファイル\基本データ\敵機\4面ボス</Filter>
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain2.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
