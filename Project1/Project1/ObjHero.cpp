@@ -3,8 +3,9 @@
 #include "GameL\WinInputs.h"
 #include "GameHead.h"
 #include "ObjHero.h"
-#include"GameL\HitBoxManager.h"
+#include "GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
+#include"UtilityModule.h"
 //#include "ObjAngleBulletHero.h"
 
 //イニシャライズ

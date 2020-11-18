@@ -74,6 +74,12 @@ void CObjHomingEnemy::Action()
         this->SetStatus(false);
         Hits::DeleteHitBox(this);
     }
+    //機体が接触しているか調べる。
+    if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+    {
+        this->SetStatus(false);
+        Hits::DeleteHitBox(this);
+    }
 }
 
 //ドロー
