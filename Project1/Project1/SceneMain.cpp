@@ -44,6 +44,8 @@ void CSceneMain::InitScene()
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	Draw::LoadImage(L"Boss1(使).png",4,TEX_SIZE_512);
 
+	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
@@ -89,116 +91,117 @@ void CSceneMain::Scene()
 	else if (m_time == 40)
 	{
 		//block object create
-	/*	CObjBlock* obj = new CObjBlock(799.0f, 0);
-		Objs::InsertObj(obj, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 0);
+		Objs::InsertObj(obj, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj1 = new CObjBlock(766, 0);
-		Objs::InsertObj(obj1, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj1 = new CObjYokoKesen(766, 0);
+		Objs::InsertObj(obj1, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj2 = new CObjBlock(733, 0);
-		Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj2 = new CObjYokoKesen(733, 0);
+		Objs::InsertObj(obj2, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj3 = new CObjBlock(799.0f, 33);
-		Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj3 = new CObjYokoKesen(799.0f, 33);
+		Objs::InsertObj(obj3, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj4 = new CObjBlock(766,33);
-		Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj4 = new CObjYokoKesen(766,33);
+		Objs::InsertObj(obj4, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj5 = new CObjBlock(733,33);
-		Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj5 = new CObjYokoKesen(733,33);
+		Objs::InsertObj(obj5, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj6 = new CObjBlock (799.0f, 66);
-		Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj6 = new CObjYokoKesen(799.0f, 66);
+		Objs::InsertObj(obj6, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj7 = new CObjBlock(766, 66);
-		Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj7 = new CObjYokoKesen(766, 66);
+		Objs::InsertObj(obj7, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj8 = new CObjBlock(733, 66);
-		Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj8 = new CObjYokoKesen(733, 66);
+		Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj9 = new CObjBlock (733, 566);
-		Objs::InsertObj(obj9, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj9 = new CObjYokoKesen(733, 566);
+		Objs::InsertObj(obj9, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj10 = new CObjBlock(766, 566);
-		Objs::InsertObj(obj10, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj10 = new CObjYokoKesen(766, 566);
+		Objs::InsertObj(obj10, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj11 = new CObjBlock(799.0f, 566);
-		Objs::InsertObj(obj11, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj11 = new CObjYokoKesen(799.0f, 566);
+		Objs::InsertObj(obj11, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj12 = new CObjBlock(733, 533);
-		Objs::InsertObj(obj12, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj12 = new CObjYokoKesen(733, 533);
+		Objs::InsertObj(obj12, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj13 = new CObjBlock(766, 533);
-		Objs::InsertObj(obj13, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj13 = new CObjYokoKesen(766, 533);
+		Objs::InsertObj(obj13, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj14 = new CObjBlock(799.0f, 533);
-		Objs::InsertObj(obj14, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj14 = new CObjYokoKesen(799.0f, 533);
+		Objs::InsertObj(obj14, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj15 = new CObjBlock(733, 500);
-		Objs::InsertObj(obj15, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj15 = new CObjYokoKesen(733, 500);
+		Objs::InsertObj(obj15, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj16 = new CObjBlock(766, 500);
-		Objs::InsertObj(obj16, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj16 = new CObjYokoKesen(766, 500);
+		Objs::InsertObj(obj16, OBJ_YOKO_KESEN, 50);
 
-		CObjBlock* obj17 = new CObjBlock(799.0f, 500);
-		Objs::InsertObj(obj17, OBJ_BLOCK, 50);*/
+		CObjYokoKesen* obj17 = new CObjYokoKesen(799.0f, 500);
+		Objs::InsertObj(obj17, OBJ_YOKO_KESEN, 50);
 	}
 
 	else if (m_time == 110)
 	{
-		//CObjBlock* obj = new CObjBlock(799.0f, 0);
-		//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+		//block object create
+		CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 0);
+		Objs::InsertObj(obj, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj1 = new CObjBlock(766, 0);
-		//Objs::InsertObj(obj1, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj1 = new CObjYokoKesen(766, 0);
+		Objs::InsertObj(obj1, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj2 = new CObjBlock(733, 0);
-		//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj2 = new CObjYokoKesen(733, 0);
+		Objs::InsertObj(obj2, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj3 = new CObjBlock(799.0f, 33);
-		//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj3 = new CObjYokoKesen(799.0f, 33);
+		Objs::InsertObj(obj3, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj4 = new CObjBlock(766, 33);
-		//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj4 = new CObjYokoKesen(766, 33);
+		Objs::InsertObj(obj4, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj5 = new CObjBlock(733, 33);
-		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj5 = new CObjYokoKesen(733, 33);
+		Objs::InsertObj(obj5, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj6 = new CObjBlock(799.0f, 66);
-		//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj6 = new CObjYokoKesen(799.0f, 66);
+		Objs::InsertObj(obj6, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj7 = new CObjBlock(766, 66);
-		//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj7 = new CObjYokoKesen(766, 66);
+		Objs::InsertObj(obj7, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj8 = new CObjBlock(733, 66);
-		//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj8 = new CObjYokoKesen(733, 66);
+		Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj9 = new CObjBlock(733, 566);
-		//Objs::InsertObj(obj9, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj9 = new CObjYokoKesen(733, 566);
+		Objs::InsertObj(obj9, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj10 = new CObjBlock(766, 566);
-		//Objs::InsertObj(obj10, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj10 = new CObjYokoKesen(766, 566);
+		Objs::InsertObj(obj10, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj11 = new CObjBlock(799.0f, 566);
-		//Objs::InsertObj(obj11, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj11 = new CObjYokoKesen(799.0f, 566);
+		Objs::InsertObj(obj11, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj12 = new CObjBlock(733, 533);
-		//Objs::InsertObj(obj12, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj12 = new CObjYokoKesen(733, 533);
+		Objs::InsertObj(obj12, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj13 = new CObjBlock(766, 533);
-		//Objs::InsertObj(obj13, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj13 = new CObjYokoKesen(766, 533);
+		Objs::InsertObj(obj13, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj14 = new CObjBlock(799.0f, 533);
-		//Objs::InsertObj(obj14, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj14 = new CObjYokoKesen(799.0f, 533);
+		Objs::InsertObj(obj14, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj15 = new CObjBlock(733, 500);
-		//Objs::InsertObj(obj15, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj15 = new CObjYokoKesen(733, 500);
+		Objs::InsertObj(obj15, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj16 = new CObjBlock(766, 500);
-		//Objs::InsertObj(obj16, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj16 = new CObjYokoKesen(766, 500);
+		Objs::InsertObj(obj16, OBJ_YOKO_KESEN, 50);
 
-		//CObjBlock* obj17 = new CObjBlock(799.0f, 500);
-		//Objs::InsertObj(obj17, OBJ_BLOCK, 50);
+		CObjYokoKesen* obj17 = new CObjYokoKesen(799.0f, 500);
+		Objs::InsertObj(obj17, OBJ_YOKO_KESEN, 50);
 	}
 	else if (m_time == 450)
 	{
@@ -218,81 +221,90 @@ void CSceneMain::Scene()
 	}
 	else if (m_time == 550)
 	{
-	//CObjBlock* obj = new CObjBlock(799.0f, 0);
-	//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+	//block object create
+	CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 0);
+	Objs::InsertObj(obj, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj1 = new CObjBlock(766, 0);
-	//Objs::InsertObj(obj1, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj1 = new CObjYokoKesen(766, 0);
+	Objs::InsertObj(obj1, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj2 = new CObjBlock(733, 0);
-	//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj2 = new CObjYokoKesen(733, 0);
+	Objs::InsertObj(obj2, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj3 = new CObjBlock(799.0f, 33);
-	//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj3 = new CObjYokoKesen(799.0f, 33);
+	Objs::InsertObj(obj3, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj4 = new CObjBlock(766, 33);
-	//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj4 = new CObjYokoKesen(766, 33);
+	Objs::InsertObj(obj4, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj5 = new CObjBlock(733, 33);
-	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj5 = new CObjYokoKesen(733, 33);
+	Objs::InsertObj(obj5, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj6 = new CObjBlock(799.0f, 66);
-	//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj6 = new CObjYokoKesen(799.0f, 66);
+	Objs::InsertObj(obj6, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj7 = new CObjBlock(766, 66);
-	//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj7 = new CObjYokoKesen(766, 66);
+	Objs::InsertObj(obj7, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj8 = new CObjBlock(733, 66);
-	//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj8 = new CObjYokoKesen(733, 66);
+	Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj9 = new CObjBlock(733, 566);
-	//Objs::InsertObj(obj9, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj9 = new CObjYokoKesen(733, 566);
+	Objs::InsertObj(obj9, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj10 = new CObjBlock(766, 566);
-	//Objs::InsertObj(obj10, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj10 = new CObjYokoKesen(766, 566);
+	Objs::InsertObj(obj10, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj11 = new CObjBlock(799.0f, 566);
-	//Objs::InsertObj(obj11, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj11 = new CObjYokoKesen(799.0f, 566);
+	Objs::InsertObj(obj11, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj12 = new CObjBlock(733, 533);
-	//Objs::InsertObj(obj12, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj12 = new CObjYokoKesen(733, 533);
+	Objs::InsertObj(obj12, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj13 = new CObjBlock(766, 533);
-	//Objs::InsertObj(obj13, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj13 = new CObjYokoKesen(766, 533);
+	Objs::InsertObj(obj13, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj14 = new CObjBlock(799.0f, 533);
-	//Objs::InsertObj(obj14, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj14 = new CObjYokoKesen(799.0f, 533);
+	Objs::InsertObj(obj14, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj15 = new CObjBlock(733, 500);
-	//Objs::InsertObj(obj15, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj15 = new CObjYokoKesen(733, 500);
+	Objs::InsertObj(obj15, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj16 = new CObjBlock(766, 500);
-	//Objs::InsertObj(obj16, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj16 = new CObjYokoKesen(766, 500);
+	Objs::InsertObj(obj16, OBJ_YOKO_KESEN, 50);
 
-	//CObjBlock* obj17 = new CObjBlock(799.0f, 500);
-	//Objs::InsertObj(obj17, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj17 = new CObjYokoKesen(799.0f, 500);
+	Objs::InsertObj(obj17, OBJ_YOKO_KESEN, 50);
 
 	}
 	else if (m_time == 780)
 	{
-	//CObjBlock* obj = new CObjBlock(799.0f, 300);
-	//Objs::InsertObj(obj, OBJ_BLOCK, 50);
-	//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
-	//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
-	//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
-	//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
-	//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
-	//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
-	//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
-	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
-	//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
-	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
-	//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
-	//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
-	//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
-	//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
-	//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
-	//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+	CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 300);
+	Objs::InsertObj(obj, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj2 = new CObjYokoKesen(799.0f, 277);
+	Objs::InsertObj(obj2, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj3 = new CObjYokoKesen(799.0f, 244);
+	Objs::InsertObj(obj3, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj4 = new CObjYokoKesen(766.0f, 300);
+	Objs::InsertObj(obj4, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj5 = new CObjYokoKesen(766.0f, 277);
+	Objs::InsertObj(obj5, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj1 = new CObjYokoKesen(766.0f, 244);
+	Objs::InsertObj(obj1, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj6 = new CObjYokoKesen(733.0f, 300);
+	Objs::InsertObj(obj6,OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj7 = new CObjYokoKesen(733.0f, 277);
+	Objs::InsertObj(obj7, OBJ_YOKO_KESEN, 50);
+
+	CObjYokoKesen* obj8 = new CObjYokoKesen(733.0f, 244);
+	Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
 
 
 	}

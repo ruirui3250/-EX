@@ -35,7 +35,7 @@ enum OBJ_NAME
 	OBJ_HOMING_BULLET,
 	OBJ_ITEM,
 	OBJLASER_BULLET,
-	OBJ_BLOCK,
+	OBJ_YOKO_KESEN,
 
 	/*----------------*/
 	OBJ_TATE_ENEMY,
@@ -123,6 +123,7 @@ struct UserData
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
 #include"ObjLaserBullet.h"
+#include"ObjYokoKesen.h"
 /*---------------------3–Ê---------------*/
 #include"CObjTateBulletEnemy.h"
 #include"ObjTateAttackEnemy.h"

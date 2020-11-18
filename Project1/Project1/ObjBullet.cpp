@@ -57,7 +57,7 @@ void CObjBullet::Action()
 	hit->SetPos(m_x, m_y);//HitBoxの位置を弾丸の位置を更新
 
 		//障害物オブジェクトと接触したら弾丸削除
-	if (hit->CheckObjNameHit(OBJ_BLOCK) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_YOKO_KESEN) != nullptr)
 	{
 		this->SetStatus(false);//自身に削除命令をだす。
 		Hits::DeleteHitBox(this);//弾丸が所有するHitBoxを削除する。

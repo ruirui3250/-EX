@@ -39,9 +39,6 @@
     <Filter Include="ソース ファイル\基本データ\3面主人公">
       <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\3面血栓">
-      <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\4面終了">
       <UniqueIdentifier>{b6ac8072-15e5-484f-bbd6-734630453ab6}</UniqueIdentifier>
     </Filter>
@@ -105,6 +102,9 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\ボス\5面ボス">
       <UniqueIdentifier>{8b291023-19c1-44d7-a573-cbf447977116}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\血栓">
+      <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -199,7 +199,7 @@
       <Filter>ソース ファイル\基本データ\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTatekesen.h">
-      <Filter>ソース ファイル\基本データ\3面血栓</Filter>
+      <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClInclude>
     <ClInclude Include="ObjSceneMain.h">
       <Filter>ソース ファイル\基本データ\背景画面\1面</Filter>
@@ -300,6 +300,9 @@
     <ClInclude Include="SceneMain2.h">
       <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
     </ClInclude>
+    <ClInclude Include="ObjYokoKesen.h">
+      <Filter>ソース ファイル\基本データ\血栓</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -393,7 +396,7 @@
       <Filter>ソース ファイル\基本データ\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTatekesen.cpp">
-      <Filter>ソース ファイル\基本データ\3面血栓</Filter>
+      <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClCompile>
     <ClCompile Include="ObjSceneMain.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\1面</Filter>
@@ -493,6 +496,9 @@
     </ClCompile>
     <ClCompile Include="CObjTateBulletEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjYokoKesen.cpp">
+      <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
