@@ -141,6 +141,7 @@
   <ItemGroup>
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
+    <ClInclude Include="CObjEnemyBossBullet4.h" />
     <ClInclude Include="CObjHomingBullet.h" />
     <ClInclude Include="CObjHomingEnemy.h" />
     <ClInclude Include="CObjSinEnemy.h" />
@@ -163,15 +164,16 @@
     <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBullet.h" />
     <ClInclude Include="ObjClearBack.h" />
-    <ClInclude Include="ObjClearVirus.h" />
+    <ClInclude Include="ObjClearBack2.h" />
     <ClInclude Include="ObjDiffusionEnemy.h" />
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjEnemyBoss.h" />
     <ClInclude Include="ObjEnemyBoss2.h" />
+    <ClInclude Include="ObjEnemyBoss4.h" />
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjSceneMain.h" />
-    <ClInclude Include="ObjSceneMain2.h" />
+    <ClInclude Include="ObjSceneMain4.h" />
     <ClInclude Include="ObjTateAttackEnemy.h" />
     <ClInclude Include="ObjTateBoss.h" />
     <ClInclude Include="ObjTateBullet.h" />
@@ -184,18 +186,25 @@
     <ClInclude Include="Objwin.h" />
     <ClInclude Include="Objwin2.h" />
     <ClInclude Include="ObjLaserBullet.h" />
+    <ClInclude Include="Objwin3.h" />
+    <ClInclude Include="Objwin4.h" />
+    <ClInclude Include="ObjWin5.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h" />
-    <ClInclude Include="SceneMain2.h" />
+    <ClInclude Include="SceneMain4.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="TatesukuSceneMain.h" />
     <ClInclude Include="UtilityModule.h" />
     <ClInclude Include="winscene.h" />
     <ClInclude Include="winscene2.h" />
+    <ClInclude Include="winscene3.h" />
+    <ClInclude Include="WinScene4.h" />
+    <ClInclude Include="WinScene5.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
+    <ClCompile Include="CObjEnemyBossBullet4.cpp" />
     <ClCompile Include="CObjHomingBullet.cpp" />
     <ClCompile Include="CObjHomingEnemy.cpp" />
     <ClCompile Include="CObjSinEnemy.cpp" />
@@ -218,15 +227,16 @@
     <ClCompile Include="ObjBlock.cpp" />
     <ClCompile Include="ObjBullet.cpp" />
     <ClCompile Include="ObjClearBack.cpp" />
-    <ClCompile Include="ObjClearVirus.cpp" />
+    <ClCompile Include="ObjClearBack2.cpp" />
     <ClCompile Include="ObjDiffusionEnemy.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="ObjEnemyBoss.cpp" />
     <ClCompile Include="ObjEnemyBoss2.cpp" />
+    <ClCompile Include="ObjEnemyBoss4.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjSceneMain.cpp" />
-    <ClCompile Include="ObjSceneMain2.cpp" />
+    <ClCompile Include="ObjSceneMain4.cpp" />
     <ClCompile Include="ObjTateAttackEnemy.cpp" />
     <ClCompile Include="ObjTateBoss.cpp" />
     <ClCompile Include="ObjTateBullet.cpp" />
@@ -239,14 +249,20 @@
     <ClCompile Include="Objwin.cpp" />
     <ClCompile Include="Objwin2.cpp" />
     <ClCompile Include="ObjLaserBullet.cpp" />
+    <ClCompile Include="Objwin3.cpp" />
+    <ClCompile Include="Objwin4.cpp" />
+    <ClCompile Include="ObjWin5.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp" />
-    <ClCompile Include="SceneMain2.cpp" />
+    <ClCompile Include="SceneMain4.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="TatesukuSceneMain.cpp" />
     <ClCompile Include="UtilityModule.cpp" />
     <ClCompile Include="winscene.cpp" />
     <ClCompile Include="winscene2.cpp" />
+    <ClCompile Include="winscene3.cpp" />
+    <ClCompile Include="WinScene4.cpp" />
+    <ClCompile Include="WinScene5.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
