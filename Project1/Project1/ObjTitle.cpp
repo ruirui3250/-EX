@@ -18,8 +18,6 @@ void CObjTitle::Init()
 //アクション
 void CObjTitle::Action()
 {
-
-
 	//エンターキーを押してシーンタイトルを移行する
 	if (Input::GetVKey(VK_RETURN) == true)
 	{
@@ -33,11 +31,11 @@ void CObjTitle::Action()
 	{
 		m_key_flag = true;
 	}
-	if (Input::GetVKey('2') == true)
+	if (Input::GetVKey('3') == true)
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new CSceneMain());
+			Scene::SetScene(new TatesukuSceneMain());
 			m_key_flag = false;
 		}
 	}
