@@ -430,6 +430,9 @@ void CSceneMain2::Scene()
 	CObjAttackEnemy* obj3;
 	obj3 = new CObjAttackEnemy(766.0f, 230);
 
+	CObjAttackEnemy* obj4;
+	obj4 = new CObjAttackEnemy(788.0f, 250);
+
 	}
 
 	else if (m_time == 3000)
