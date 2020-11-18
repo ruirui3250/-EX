@@ -22,4 +22,6 @@ private:
 	float m_vy;//回転用処理のYベクトル
 	float m_y1;//背景1のY位置情報
 	float m_y2;//背景2のY位置情報
+	float m_r;//回転
+	float m_speed;//速度プラス
 };
