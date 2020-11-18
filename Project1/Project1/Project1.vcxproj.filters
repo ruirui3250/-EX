@@ -291,11 +291,14 @@
     <ClInclude Include="CObjEnemyBossBullet4.h">
       <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClInclude>
-    <ClInclude Include="SceneMain2.h">
-      <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
-    </ClInclude>
     <ClInclude Include="ObjSceneMain2.h">
-      <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
+      <Filter>ソース ファイル\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain2.h">
+      <Filter>ソース ファイル\ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjTateBulletEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -482,11 +485,14 @@
     <ClCompile Include="CObjEnemyBossBullet4.cpp">
       <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClCompile>
+    <ClCompile Include="ObjSceneMain2.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
+    </ClCompile>
     <ClCompile Include="SceneMain2.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
     </ClCompile>
-    <ClCompile Include="ObjSceneMain2.cpp">
-      <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
+    <ClCompile Include="CObjTateBulletEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
