@@ -66,7 +66,7 @@ void CObjTateEnemy::Action()
 void CObjTateEnemy::Draw()
 {
 	//描画カラー情報　R-RED G=GREEN B=BLUE A=ALPHA(透過情報)
-	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	float c[4] = { 1.0f,6.0f,9.0f,1.0f };
 
 	RECT_F src; //描画切り取り位置
 	RECT_F dst;//描画先表示
@@ -84,6 +84,6 @@ void CObjTateEnemy::Draw()
 	dst.m_bottom = 32.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
-	Draw::Draw(2, &src, &dst, c, 0.0f);
+	Draw::Draw(7, &src, &dst, c, 0.0f);
 
 }

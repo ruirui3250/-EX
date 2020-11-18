@@ -23,7 +23,7 @@ void CObjWin3::Action()
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new CSceneMain3());
+			Scene::SetScene(new TatesukuSceneMain());
 			m_key_flag = false;
 		}
 	}

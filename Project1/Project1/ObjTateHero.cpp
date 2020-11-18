@@ -90,6 +90,24 @@ void CObjTateHero::Action()
 				}
 			}
 
+			else
+			{
+				m_f = true;
+			}
+		//m_ka -= 1;
+		//if (m_ka <= 0 == false)
+		//	if (m_f == true)
+		//	{
+		//		//19発同時発射
+		//		CObjAngleBulletHero* obj_b;
+		//		for (int i = 0; i < 360; i += 20)
+		//		{
+		//			obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
+		//			Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
+		//			m_f = false;
+		//		}
+		//	}
+
 
 	}
 	//主人公機の移動
@@ -338,6 +356,6 @@ void CObjTateHero::Draw()
 	dst.m_left = 0.0f + m_x;
 	dst.m_right = 32.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
-	Draw::Draw(13, &src, &dst, c, 0.0f);
+	Draw::Draw(0, &src, &dst, c, 0.0f);
 
 }
