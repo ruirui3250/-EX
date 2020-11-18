@@ -38,9 +38,6 @@ void CObjHomingBullet::Init()
 //アクション
 void CObjHomingBullet::Action()
 {
-    //主人公機と誘導弾丸で角度を取る
-    CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
-
     //Resourcesの描写物のRECT
     m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
 
@@ -59,7 +56,8 @@ void CObjHomingBullet::Action()
         return;//消滅処理は、ここでアクションメソッドを終了させる
     }
 
-    
+    //主人公機と誘導弾丸で角度を取る
+    CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
 
     //主人公機が存在する場合、誘導角度の計算する
     if (obj != nullptr)
