@@ -1,26 +1,26 @@
-//使用するヘッダーファイル
+////使用するヘッダーファイル
 #include "GameL\DrawTexture.h"
 #include "GameHead.h"
 
-#include"ObjClearVirus.h"
+#include"ObjClearBack2.h"
 
-//使用するネームスペース
+////使用するネームスペース
 using namespace GameL;
 
-//イニシャライズ
-void CObjClearvirus::Init()
+////イニシャライズ
+void CObjClearBack2::Init()
 {
 
 }
 
 //アクション
-void CObjClearvirus::Action()
+void CObjClearBack2::Action()
 {
 
 }
 
 //ドロー
-void CObjClearvirus::Draw()
+void CObjClearBack2::Draw()
 {
 	//描画カラー情報
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };

@@ -1,5 +1,4 @@
 #pragma once
-#pragma once
 //使用するヘッダー
 #include "GameL/\SceneObjManager.h"
 //使用するネームスペース
@@ -19,5 +18,4 @@ private:
 	float m_y;  //敵機のｙ方向の位置
 	float m_vx; //敵機移動ベクトルｘ
 	float m_vy; //敵機移動ベクトルｙ
-	int   m_time;//ホーミング弾丸発射タイミング用
 };

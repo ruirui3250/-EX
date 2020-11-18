@@ -21,23 +21,11 @@ void CObjSceneMain::Action()
 	m_x1 -= 10.0f;
 	if (m_x1 < -800.0f)
 		m_x1 = 800;
+
 	//”wŒi2‚Ì‘€ì
 	m_x2 -= 10.0f;
 	if (m_x2 < -800.0f)
 		m_x2 = 800;
-	//‰æ–Ê‚ð‰ñ“]‚³‚¹‚é
-	float ar = 170.0f;
-
-	//Œ»Ý‚Ì•ûŒü‚ÌŠp“x‚ðŠl“¾
-	float br = 180.0f;
-
-	float r = 3.14 / 180.0f;//Šp“x1
-	if (ar < br)
-	{
-		//ˆÚ“®•ûŒü‚É+1‚ð‰Á‚¦‚é
-		m_vx = m_vx * cos(r) - m_vy * sin(r);
-		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
-	}
 	
 }
 
@@ -59,11 +47,11 @@ void CObjSceneMain::Draw()
 	////•\Ž¦ˆÊ’u‚ÌÝ’è
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 500.0f;
-	dst.m_bottom = 500.0f;
+	dst.m_right = 1000.0f;
+	dst.m_bottom = 600.0f;
 
 	////‰æ‘œ•\Ž¦
-	Draw::Draw(5, &src, &dst, c, 0.0f);
+	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 	//”wŒi‚P‚ðÝ’è•`‰æ
 	dst.m_top = 0.0f;
@@ -72,7 +60,7 @@ void CObjSceneMain::Draw()
 	dst.m_bottom = 600.0f;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ð•`‰æB
-	Draw::Draw(5, &src, &dst, c, 0.0f);
+	Draw::Draw(9, &src, &dst, c, 0.0f);
 
 	//”wŒi2‚ðÝ’è•`‰æ
 	dst.m_top = 0.0f;
@@ -81,5 +69,5 @@ void CObjSceneMain::Draw()
 	dst.m_bottom = 600.0f;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ð•`‰æB
-	Draw::Draw(5, &src, &dst, c, 0.0f);
+	Draw::Draw(9, &src, &dst, c, 0.0f);
 }

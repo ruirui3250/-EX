@@ -4,15 +4,15 @@
 //使用するネームスペース
 using namespace GameL;
 
-//objectクリア画面の敵キャラ
-class CObjClearvirus :public CObj
+//オブジェクトクリア
+class CObjWin5 :public CObj
 {
 public:
-	CObjClearvirus() {};
-	~CObjClearvirus() {};
-
+	CObjWin5() {};
+	~CObjWin5() {};
 	void Init();//イニシャライズ
 	void Action();//アクション
 	void Draw();//ドロー
 private:
+	bool m_key_flag;//キーフラグ
 };

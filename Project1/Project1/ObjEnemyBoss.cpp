@@ -26,7 +26,7 @@ void CObjBoss::Init()
     m_vy = 0.0f;
 
     //当たり判定用HitBoxを作成
-    Hits::SetHitBox(this, m_x + 100, m_y + 50, 250, 200, ELEMENT_ENEMY, OBJ_BOSS_ENEMY, 1);
+    Hits::SetHitBox(this, m_x, m_y, 512, 512, ELEMENT_ENEMY, OBJ_BOSS_ENEMY, 4);
 }
 
 //アクション
@@ -87,7 +87,7 @@ void CObjBoss::Action()
 
     //HitBoxの内容を更新
     CHitBox* hit = Hits::GetHitBox(this);
-    hit->SetPos(m_x + 100, m_y + 50);
+    hit->SetPos(m_x, m_y);
 
     //領域外に出たら弾丸を破壊する
     bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
@@ -111,7 +111,7 @@ void CObjBoss::Action()
         this->SetStatus(false);
         Hits::DeleteHitBox(this);
 
-        Scene::SetScene(new CSceneWin());
+        Scene::SetScene(new CSceneWin2());
 
     }
 }
@@ -129,14 +129,14 @@ void CObjBoss::Draw()
     src.m_top = 0.0f;
     src.m_left = 0.0f;
     src.m_right = 512.0f;
-    src.m_bottom = 260.0f;
+    src.m_bottom = 512.0f;
 
     //表示位置の設定
     dst.m_top = 0.0f + m_y;
     dst.m_left = 0.0f + m_x;
     dst.m_right = 512.0f + m_x;
-    dst.m_bottom = 260.0f + m_y;
+    dst.m_bottom = 512.0f + m_y;
 
     //1番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
-    Draw::Draw(3, &src, &dst, c, 0.0f);
+    Draw::Draw(4, &src, &dst, c, 0.0f);
 }
