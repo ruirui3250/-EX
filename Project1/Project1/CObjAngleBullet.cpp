@@ -105,5 +105,5 @@ void CObjAngleBullet::Draw()
     dst.m_bottom = 32.0f + m_y;
 
     //0番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
-    Draw::Draw(0, &m_eff, &dst, c, m_r);
+    Draw::Draw(5, &m_eff, &dst, c, m_r);
 }

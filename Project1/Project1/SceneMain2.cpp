@@ -28,7 +28,7 @@ CSceneMain2::~CSceneMain2()
 void CSceneMain2::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
-	Draw::LoadImage(L"背景(使).png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"背景(使).png", 9, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
 
@@ -36,7 +36,7 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 9, TEX_SIZE_512);
+	//Draw::LoadImage(L"障害物.png", 9, TEX_SIZE_512);
 
 	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
@@ -46,9 +46,9 @@ void CSceneMain2::InitScene()
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
 
-	//blockオブジェクト作成
-	CObjBlock* objb = new CObjBlock();
-	Objs::InsertObj(objb, OBJ_BLOCK, 9);
+	////blockオブジェクト作成
+	//CObjBlock* objb = new CObjBlock();
+	//Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
 	//クリア時背景オブジェクト作成
 	CObjSceneMain* back = new CObjSceneMain();
@@ -177,8 +177,8 @@ void CSceneMain2::Scene()
 		//Audio::Stop(0);//0曲ストップ
 		//Audio::Start(1);//1曲目スタート
 
-		CObjBoss* obj;
-		obj = new CObjBoss(300, 100);
-		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
+		CObjBoss2* obj;
+		obj = new CObjBoss2(300, 100);
+		Objs::InsertObj(obj, OBJ_BOSS_ENEMY2, 50);
 	}
 }

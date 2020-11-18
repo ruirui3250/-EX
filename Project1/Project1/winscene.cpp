@@ -31,7 +31,7 @@ CSceneWin::~CSceneWin()
 void CSceneWin::InitScene()
 {
 	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"Win画面２.png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"Win画面(使).png", 1, TEX_SIZE_512);
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
@@ -44,8 +44,8 @@ void CSceneWin::InitScene()
 
 
 		//クリア時背景オブジェクト作成
-	CObjClearback* back = new CObjClearback();
-	Objs::InsertObj(back, OBJ_CLEAR_BACK, 0);
+	CObjClearBack2* back = new CObjClearBack2();//背景オブジェクト作成
+	Objs::InsertObj(back, OBJ_CLEAR_BACK2, 1);//背景オブジェクト作成
 
 	////クリアウイルス作成
 	//CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成

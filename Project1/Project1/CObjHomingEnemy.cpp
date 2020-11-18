@@ -22,7 +22,6 @@ void CObjHomingEnemy::Init()
 {
     m_vx = 0.0f;
     m_vy = 0.0f;
-    m_time = 0;
 
     //当たり判定用HitBoxを作成
     Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_HOMING_BULLET, 1);
@@ -31,52 +30,45 @@ void CObjHomingEnemy::Init()
 //アクション
 void CObjHomingEnemy::Action()
 {
-    m_time++;
-    if (m_time > 100)
-    {
-        m_time = 0;
-        //誘導弾丸オブジェクト作成
-        CObjHomingBullet* obj_homing_bullet = new CObjHomingBullet(m_x, m_y);
-        Objs::InsertObj(obj_homing_bullet, OBJ_HOMING_BULLET, 100);
-    }
-
-    //移動方向
+ //移動方向
     m_vx = -1.0f;
     m_vy = 0.0f;
 
-    //移動ベクトルの正規化
-    UnitVec(&m_vy, &m_vx);
+    //ベクトルの長さを求める。(三平方の定理。)
+    float r = 0.0f;
+    r = m_vx * m_vx + m_vy * m_vy;
+    r = sqrt(r);//rをルートを求める。
 
-    //速度をつける
+    //長さが0かどうか調べる。
+    if (r == 0.0f)
+    {
+        ;//0なら何もしない。
+    }
+    else
+    {
+        //正規化をする
+        m_vx = 1.0f / r * m_vx;
+        m_vy = 1.0f / r * m_vy;
+    }
+    //速度を付ける
     m_vx *= 1.5f;
     m_vy *= 1.5f;
 
-    //移動ベクトルを座標に加算する
+    //移動ベクトルを座標に変換する。
     m_x += m_vx;
     m_y += m_vy;
 
-    //HitBoxの内容を更新
+    //HitBoxの内容を更新。
     CHitBox* hit = Hits::GetHitBox(this);
     hit->SetPos(m_x, m_y);
 
-    //領域外に出たら弾丸を破壊する
-    bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
-    if (check == false)
+    //ホーミング敵機が完全に領域外でたら破棄する。
+    if (m_x < 32.0f)
     {
-        this->SetStatus(false);
-        Hits::DeleteHitBox(this);
-
-        return;
+        this->SetStatus(false);//自信に削除命令
+        Hits::DeleteHitBox(this);//ホーミング敵機が所有するHitBox
     }
-
-    //Sin敵機が完全に領域外に出たら敵機を破棄する
-    if (m_x < -32.0f)
-    {
-        this->SetStatus(false);   //自身に削除命令を出す
-        Hits::DeleteHitBox(this); //Sin敵機が所有するHitBoxに削除する。
-    }
-
-    //弾丸と接触しているかどうか調べる
+    //弾丸が接触しているか調べる。
     if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
     {
         this->SetStatus(false);

@@ -7,6 +7,30 @@
 #include "GameL/DrawFont.h"
 #include"CObjAngleBulletHero.h"
 
+//使用するネームスペース
+using namespace GameL;
+
+////主人公位置情報X変更用
+//void CObjHero::SetX(float x)
+//{
+//	m_x = x;
+//}
+////位置情報Y軸
+//void CObjHero::SetY(float y)
+//{
+//	m_y = y;
+//}
+////位置情報X取得
+//float CObjHero::GetX()
+//{
+//	return m_x;
+//}
+////位置情報Y
+//float CObjHero::GetY()
+//{
+//	return m_y;
+//}
+
 //イニシャライズ
 void CObjHero::Init()
 {
@@ -305,6 +329,6 @@ void CObjHero::Draw()
 	dst.m_right = 32.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
 
-	Draw::Draw(0, &src, &dst, c, 0.0f);
+	Draw::Draw(1, &src, &dst, c, 0.0f);
 
 }
