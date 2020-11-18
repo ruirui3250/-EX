@@ -18,6 +18,7 @@ enum OBJ_NAME
 	OBJ_HERO,
 	OBJ_SCENE_MAIN,
 	OBJ_SCENE_MAIN2,
+	OBJ_SCENE_MAIN4,
 	OBJ_BULLET,
 	OBJ_ENEMY,
 	OBJ_ATTACK_ENEMY,
@@ -154,5 +155,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneTitle
+#define SET_GAME_START TatesukuSceneMain
 //-----------------------------------------------
