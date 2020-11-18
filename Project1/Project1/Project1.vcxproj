@@ -173,7 +173,6 @@
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjSceneMain.h" />
-    <ClInclude Include="ObjSceneMain2.h" />
     <ClInclude Include="ObjSceneMain4.h" />
     <ClInclude Include="ObjTateAttackEnemy.h" />
     <ClInclude Include="ObjTateBoss.h" />
@@ -238,7 +237,6 @@
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjSceneMain.cpp" />
-    <ClCompile Include="ObjSceneMain2.cpp" />
     <ClCompile Include="ObjSceneMain4.cpp" />
     <ClCompile Include="ObjTateAttackEnemy.cpp" />
     <ClCompile Include="ObjTateBoss.cpp" />
@@ -257,7 +255,6 @@
     <ClCompile Include="ObjWin5.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp" />
-    <ClCompile Include="SceneMain2.cpp" />
     <ClCompile Include="SceneMain4.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="TatesukuSceneMain.cpp" />
