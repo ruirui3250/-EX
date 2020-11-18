@@ -8,8 +8,11 @@ enum OBJ_NAME
 	//OBJ_○○と表記
 	OBJ_WIN,
 	OBJ_WIN2,
+	OBJ_WIN3,
+	OBJ_WIN4,
+	OBJ_WIN5,
 	OBJ_CLEAR_BACK,
-	OBJ_CLEAR_VIRUS,
+	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
 	OBJ_HERO,
@@ -20,6 +23,9 @@ enum OBJ_NAME
 	OBJ_BULLET_ENEMY,
 	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
+	OBJ_BOSS_ENEMY2,
+	OBJ_BOSS_ENEMY4,
+	OBJ_BOSS_BULLET_ENEMY,
 	OBJ_BLOCK,
 	OBJ_ANGLE_BULLET_HERO,
 	OBJ_DIFFUSION_HERO,
@@ -85,10 +91,15 @@ struct UserData
 //画面関連
 #include "Objwin.h"
 #include"Objwin2.h"
+#include"Objwin3.h"
+#include"Objwin4.h"
+#include"ObjWin5.h"
 #include "ObjClearBack.h"
-#include"ObjClearVirus.h"
+#include"ObjClearBack2.h"
 #include"ObjTitle.h"
 #include"ObjSceneMain.h"
+#include"ObjSceneMain2.h"
+#include"ObjSceneMain4.h"
 #include"ObjTatesukuSceneMain.h"
 #include"TatesukuSceneMain.h"
 //敵関連
@@ -103,8 +114,10 @@ struct UserData
 #include"ObjEnemy.h"
 #include"ObjDiffusionEnemy.h"
 #include"ObjEnemyBoss.h"
-#include"CObjAngleBulletHero.h"
 #include"ObjEnemyBoss2.h"
+#include"ObjEnemyBoss4.h"
+#include"CObjEnemyBossBullet4.h"
+#include"CObjAngleBulletHero.h"
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
 #include"ObjLaserBullet.h"
@@ -127,8 +140,14 @@ struct UserData
 //ゲームシーンクラスヘッダ------------------------
 #include"winscene.h"
 #include"winscene2.h"
+#include"winscene3.h"
+#include"WinScene4.h"
+#include"WinScene5.h"
 #include"SceneTitle.h"
 #include"SceneMain.h"
+#include"SceneMain4.h"
+#include"SceneMain2.h"
+#include"TatesukuSceneMain.h"
 #include"SceneGameOver.h"
 //-----------------------------------------------
 
