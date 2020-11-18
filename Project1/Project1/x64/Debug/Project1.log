@@ -230,8 +230,8 @@ C:\Users\GA1A\Desktop\-EX3\Project1\Project1\WinScene5.cpp(2): message : '_SECUR
 C:\Users\GA1A\Desktop\-EX3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\GA1A\Desktop\-EX3\Project1\Project1\WinScene5.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
   コードを生成中...
+  LINK : 前回のインクリメンタル リンクで C:\Users\GA1A\Desktop\新しいフォルダー\Project1\x64\Debug\Project1.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
+  CObjTateBulletEnemy.cpp
 ObjBlock.obj : error LNK2019: 未解決の外部シンボル "public: float __cdecl CObjHero::GetX(void)" (?GetX@CObjHero@@QEAAMXZ) が関数 "public: virtual void __cdecl CObjBlock::Action(void)" (?Action@CObjBlock@@UEAAXXZ) で参照されました
 ObjBlock.obj : error LNK2019: 未解決の外部シンボル "public: float __cdecl CObjHero::GetY(void)" (?GetY@CObjHero@@QEAAMXZ) が関数 "public: virtual void __cdecl CObjBlock::Action(void)" (?Action@CObjBlock@@UEAAXXZ) で参照されました
-ObjTateAttackEnemy.obj : error LNK2019: 未解決の外部シンボル "public: __cdecl CObjTateBulletEnemy::CObjTateBulletEnemy(float,float)" (??0CObjTateBulletEnemy@@QEAA@MM@Z) が関数 "public: virtual void __cdecl CObjTateAttackEnemy::Action(void)" (?Action@CObjTateAttackEnemy@@UEAAXXZ) で参照されました
-ObjTateBoss.obj : error LNK2001: 外部シンボル "public: __cdecl CObjTateBulletEnemy::CObjTateBulletEnemy(float,float)" (??0CObjTateBulletEnemy@@QEAA@MM@Z) は未解決です
-C:\Users\GA1A\Desktop\-EX3\Project1\x64\Debug\Project1.exe : fatal error LNK1120: 3 件の未解決の外部参照
+C:\Users\GA1A\Desktop\project1\Project1\x64\Debug\Project1.exe : fatal error LNK1120: 2 件の未解決の外部参照
