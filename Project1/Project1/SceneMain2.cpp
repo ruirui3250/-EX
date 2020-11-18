@@ -276,24 +276,31 @@ void CSceneMain2::Scene()
 	{
 		//CObjBlock* obj = new CObjBlock(799.0f, 300);
 		//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
 		//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
 		//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
 		//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
 		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
 		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
 		//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+
+
 		//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
 		//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+
 		//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
 		//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
-
-
 	}
 	else if (m_time == 890)
 	{
@@ -305,7 +312,127 @@ void CSceneMain2::Scene()
 		CObjEnemy* obj;
 		obj = new CObjEnemy(799.0, 305);
 	}
-	else if (m_time == 1200)
+	else if (m_time == 900)
+	{
+	CObjEnemy* obj;
+	obj = new CObjEnemy(799.0f, 250);
+
+	CObjAttackEnemy* obj2;
+	obj = new CObjEnemy(799.0f, 44);
+
+	CObjEnemy* obj3;
+	obj3 = new CObjEnemy(733.0f, 430);
+
+	CObjAttackEnemy* obj4;
+	obj4 = new CObjAttackEnemy(500.0f, 10);
+
+	CObjEnemy* obj5;
+	obj5 = new CObjEnemy(799.0f, 430);
+
+	}
+
+	else if(m_time=1200)
+	{
+		//CObjBlock* obj = new CObjBlock(799.0f, 300);
+		//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
+		//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
+		//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
+		//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
+		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
+		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
+		//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+
+
+		//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
+		//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+
+		//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
+		//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+
+		CObjEnemy* obj9;
+		obj9 = new CObjEnemy(722.0f, 130);
+
+		CObjEnemy* obj10;
+		obj10 = new CObjEnemy(799.0, 130);
+
+		CObjEnemy* obj11;
+		obj11 = new CObjEnemy(799.0, 222);
+
+		CObjEnemy* obj12;
+		obj12 = new CObjEnemy(722.0f, 230);
+
+		CObjEnemy* obj13;
+		obj13 = new CObjEnemy(733.0f, 150);
+
+		CObjAttackEnemy* obj14;
+		obj14 = new CObjAttackEnemy(799.0f, 400);
+
+		CObjAttackEnemy* obj15;
+		obj15 = new CObjAttackEnemy(722.0f, 450);
+
+		CObjAttackEnemy* obj16;
+		obj16 = new CObjAttackEnemy(755.0f, 366);
+
+		CObjAttackEnemy* obj17;
+		obj17 = new CObjAttackEnemy(733.0f, 490);
+	}
+
+	else if (m_time == 1233)
+	{
+	//CObjBlock* obj = new CObjBlock(799.0f, 300);
+	//Objs::InsertObj(obj, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
+	//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
+	//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
+	//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
+	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
+	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
+	//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
+
+
+	//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
+	//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
+
+	//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
+	//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
+	}
+	else if (m_time == 1255)
+	{
+	CObjAttackEnemy* obj;
+	obj = new CObjAttackEnemy(733.0f, 140);
+
+	CObjAttackEnemy* obj2;
+	obj2 = new CObjAttackEnemy(799.0f, 150);
+
+	CObjAttackEnemy* obj3;
+	obj3 = new CObjAttackEnemy(766.0f, 230);
+
+	}
+
+	else if (m_time == 3000)
 	{
 		//音楽チェンジ
 		//Audio::Stop(0);//0曲ストップ
