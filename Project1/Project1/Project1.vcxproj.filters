@@ -64,6 +64,9 @@
     <Filter Include="ソース ファイル\3面血栓">
       <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\背景画面\背景画面2">
+      <UniqueIdentifier>{b2fff18b-d6b1-4fad-9763-5d89bdb22de2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -219,6 +222,12 @@
     <ClInclude Include="ObjTatekesen.h">
       <Filter>ソース ファイル\3面血栓</Filter>
     </ClInclude>
+    <ClInclude Include="SceneMain2.h">
+      <Filter>ソース ファイル\背景画面\背景画面2</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSceneMain2.h">
+      <Filter>ソース ファイル\背景画面\背景画面2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -373,6 +382,12 @@
     </ClCompile>
     <ClCompile Include="ObjTatekesen.cpp">
       <Filter>ソース ファイル\3面血栓</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSceneMain2.cpp">
+      <Filter>ソース ファイル\背景画面\背景画面2</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain2.cpp">
+      <Filter>ソース ファイル\背景画面\背景画面2</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
