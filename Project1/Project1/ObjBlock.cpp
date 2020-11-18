@@ -4,6 +4,7 @@
 #include"GameL\SceneManager.h"
 #include"GameHead.h"
 #include"ObjBlock.h"
+#include"GameL\HitBoxManager.h"
 #include"GameL\SceneObjManager.h"
 //使用するネームスペース
 using namespace GameL;
@@ -11,6 +12,11 @@ using namespace GameL;
 //イニシャライズ
 void CObjBlock::Init()
 {
+	m_vx = 0.0f;
+	m_vy = 0.0f;
+
+	//当たり判定用HitBox作成
+	Hits::SetHitBox(this, m_x, m_y, 250, 128, ELEMENT_ENEMY, OBJ_BLOCK, 1);
 	//スクロール用
 	m_scroll = 0.0f;
 

@@ -56,7 +56,7 @@ void CObjAngleBulletHero::Action()
 	m_y -= m_vy * m_speed;
 
 	//主人公機弾丸のHitBox更新用ポインター取得
-	CHitBox* hit = Hits::GetHitBox(this);
+	CHitBox*hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);//HitBoxの位置を敵機弾丸の位置に更新
 	{
 

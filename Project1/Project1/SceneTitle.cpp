@@ -28,8 +28,8 @@ CSceneTitle::~CSceneTitle()
 //ゲームメイン初期化メソッド
 void CSceneTitle::InitScene()
 {
-	Font::SetStrTex(L"バイラスクラッシュ");
-	Font::SetStrTex(L"エンターキーでゲームを始める");
+	//外部グラフィック読み込み登録0番
+	Draw::LoadImage(L"タイトル(使).png", 1, TEX_SIZE_512);
 
 	//クリアオブジェクト登録
 	CObjTitle* obj = new CObjTitle();//クリアオブジェクト作成

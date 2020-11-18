@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="CObjAngleBullet.h" />
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
     <ClInclude Include="CObjHomingBullet.h" />
@@ -172,23 +171,27 @@
     <ClInclude Include="ObjGameOver.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjSceneMain.h" />
+    <ClInclude Include="ObjTateAttackEnemy.h" />
+    <ClInclude Include="ObjTateBoss.h" />
+    <ClInclude Include="ObjTateBullet.h" />
+    <ClInclude Include="ObjTateEnemy.h" />
+    <ClInclude Include="ObjTateHero.h" />
+    <ClInclude Include="ObjTatekesen.h" />
+    <ClInclude Include="ObjTateLaserBullet.h" />
+    <ClInclude Include="ObjTatesukuSceneMain.h" />
     <ClInclude Include="ObjTitle.h" />
     <ClInclude Include="Objwin.h" />
     <ClInclude Include="Objwin2.h" />
     <ClInclude Include="ObjLaserBullet.h" />
-    <ClInclude Include="Objwin3.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneMain.h" />
-    <ClInclude Include="SceneMain2.h" />
-    <ClInclude Include="SceneMain4.h" />
     <ClInclude Include="SceneTitle.h" />
+    <ClInclude Include="TatesukuSceneMain.h" />
     <ClInclude Include="UtilityModule.h" />
     <ClInclude Include="winscene.h" />
     <ClInclude Include="winscene2.h" />
-    <ClInclude Include="winscene3.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="CObjAngleBullet.cpp" />
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjHomingBullet.cpp" />
@@ -221,20 +224,25 @@
     <ClCompile Include="ObjGameOver.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjSceneMain.cpp" />
+    <ClCompile Include="ObjTateAttackEnemy.cpp" />
+    <ClCompile Include="ObjTateBoss.cpp" />
+    <ClCompile Include="ObjTateBullet.cpp" />
+    <ClCompile Include="ObjTateEnemy.cpp" />
+    <ClCompile Include="ObjTateHero.cpp" />
+    <ClCompile Include="ObjTatekesen.cpp" />
+    <ClCompile Include="ObjTateLaserBullet.cpp" />
+    <ClCompile Include="ObjTatesukuSceneMain.cpp" />
     <ClCompile Include="ObjTitle.cpp" />
     <ClCompile Include="Objwin.cpp" />
     <ClCompile Include="Objwin2.cpp" />
     <ClCompile Include="ObjLaserBullet.cpp" />
-    <ClCompile Include="Objwin3.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneMain.cpp" />
-    <ClCompile Include="SceneMain2.cpp" />
-    <ClCompile Include="SceneMain4.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
+    <ClCompile Include="TatesukuSceneMain.cpp" />
     <ClCompile Include="UtilityModule.cpp" />
     <ClCompile Include="winscene.cpp" />
     <ClCompile Include="winscene2.cpp" />
-    <ClCompile Include="winscene3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

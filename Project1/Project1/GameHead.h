@@ -8,7 +8,6 @@ enum OBJ_NAME
 	//OBJ_○○と表記
 	OBJ_WIN,
 	OBJ_WIN2,
-	OBJ_WIN3,
 	OBJ_CLEAR_BACK,
 	OBJ_CLEAR_VIRUS,
 	OBJ_TITLE,
@@ -29,8 +28,17 @@ enum OBJ_NAME
 	OBJ_HOMING_BULLET,
 	OBJ_ITEM,
 	OBJLASER_BULLET,
-	OBJ_ANGLE_BULLET,
-	OBJ_SCENE_MAIN2,
+
+	/*----------------*/
+	OBJ_TATE_ENEMY,
+	OBJ_TATE_BOSS,
+	OBJ_TATE_ATTACK_ENEMY,
+	OBJ_TATE_BULLET_ENEMY,
+	OBJ_TATE_HERO,
+	OBJ_TATE_BULLET,
+	OBJ_TATE_LASER_BULLET,
+	OBJ_TATEKESEN,
+	OBJ_TATESUKU_SCENE_MAIN,
 };
 //------------------------------------------------
 
@@ -77,11 +85,12 @@ struct UserData
 //画面関連
 #include "Objwin.h"
 #include"Objwin2.h"
-#include"Objwin3.h"
 #include "ObjClearBack.h"
 #include"ObjClearVirus.h"
 #include"ObjTitle.h"
 #include"ObjSceneMain.h"
+#include"ObjTatesukuSceneMain.h"
+#include"TatesukuSceneMain.h"
 //敵関連
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
@@ -99,8 +108,15 @@ struct UserData
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
 #include"ObjLaserBullet.h"
-#include"CObjAngleBullet.h"
-
+/*---------------------3面---------------*/
+#include"CObjTateBulletEnemy.h"
+#include"ObjTateAttackEnemy.h"
+#include"ObjTateEnemy.h"
+#include"ObjTateHero.h"
+#include"ObjTateLaserBullet.h"
+#include"ObjTateBullet.h"
+#include"ObjTatekesen.h"
+#include"ObjTateBoss.h"
 //ブロック関連
 #include"ObjBlock.h"
 //アイテム関連
@@ -111,11 +127,9 @@ struct UserData
 //ゲームシーンクラスヘッダ------------------------
 #include"winscene.h"
 #include"winscene2.h"
-#include"winscene3.h"
 #include"SceneTitle.h"
 #include"SceneMain.h"
 #include"SceneGameOver.h"
-#include"SceneMain2.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
