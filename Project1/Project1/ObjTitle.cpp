@@ -31,6 +31,18 @@ void CObjTitle::Action()
 	{
 		m_key_flag = true;
 	}
+	if (Input::GetVKey('3') == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new TatesukuSceneMain());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
 }
 
 //ƒhƒ[
