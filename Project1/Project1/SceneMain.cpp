@@ -33,11 +33,12 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImageW(L"敵弾(使).png", 5, TEX_SIZE_512);
 
-	Draw::LoadImage(L"注射器(使).png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
 	//Draw::LoadImage(L"障害物.png",9, TEX_SIZE_512);
+	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
 	Draw::LoadImage(L"拡散弾丸.png",6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録

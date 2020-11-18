@@ -47,7 +47,7 @@ void CObjSceneMain::Draw()
 	////表示位置の設定
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 1000.0f;
+	dst.m_right = 1200.0f;
 	dst.m_bottom = 600.0f;
 
 	////画像表示
@@ -56,7 +56,7 @@ void CObjSceneMain::Draw()
 	//背景１を設定描画
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f + m_x1;
-	dst.m_right = 1000.0f + m_x1;
+	dst.m_right = 1200.0f + m_x1;
 	dst.m_bottom = 600.0f;
 
 	//0番目に登録したグラフィックを描画。
@@ -65,7 +65,7 @@ void CObjSceneMain::Draw()
 	//背景2を設定描画
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f + m_x2;
-	dst.m_right = 1000.0f + m_x2;
+	dst.m_right = 1200.0f + m_x2;
 	dst.m_bottom = 600.0f;
 
 	//0番目に登録したグラフィックを描画。

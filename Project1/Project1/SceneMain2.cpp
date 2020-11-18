@@ -33,7 +33,7 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImageW(L"敵弾(使).png", 5, TEX_SIZE_512);
 
-	Draw::LoadImage(L"注射器(使).png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
 	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
 
@@ -43,6 +43,8 @@ void CSceneMain2::InitScene()
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	Draw::LoadImage(L"ボス2.png", 4, TEX_SIZE_512);
 
+	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
@@ -51,9 +53,9 @@ void CSceneMain2::InitScene()
 	//CObjBlock* objb = new CObjBlock();
 	//Objs::InsertObj(objb, OBJ_BLOCK, 9);
 
-		//クリア時背景オブジェクト作成
+		//背景オブジェクト作成
 	CObjSceneMain2* back = new CObjSceneMain2();
-	Objs::InsertObj(back, OBJ_SCENE_MAIN, 9);
+	Objs::InsertObj(back, OBJ_SCENE_MAIN2, 9);
 
 	//タイム初期化
 	m_time = 0;
@@ -302,147 +304,15 @@ void CSceneMain2::Scene()
 		//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
 		//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
 	}
-	else if (m_time == 890)
-	{
-		CObjAttackEnemy* obj;
-		obj = new CObjAttackEnemy(799.0f, 450);
-	}
-	else if (m_time == 850)
-	{
-		CObjEnemy* obj;
-		obj = new CObjEnemy(799.0, 305);
-	}
-	else if (m_time == 900)
-	{
-	CObjEnemy* obj;
-	obj = new CObjEnemy(799.0f, 250);
 
-	CObjAttackEnemy* obj2;
-	obj = new CObjEnemy(799.0f, 44);
-
-	CObjEnemy* obj3;
-	obj3 = new CObjEnemy(733.0f, 430);
-
-	CObjAttackEnemy* obj4;
-	obj4 = new CObjAttackEnemy(500.0f, 10);
-
-	CObjEnemy* obj5;
-	obj5 = new CObjEnemy(799.0f, 430);
-
-	}
-
-	else if(m_time=1200)
-	{
-		//CObjBlock* obj = new CObjBlock(799.0f, 300);
-		//Objs::InsertObj(obj, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
-		//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
-		//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
-		//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
-		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
-		//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
-		//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
-
-
-		//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
-		//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
-
-		//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
-		//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
-
-		CObjEnemy* obj9;
-		obj9 = new CObjEnemy(722.0f, 130);
-
-		CObjEnemy* obj10;
-		obj10 = new CObjEnemy(799.0, 130);
-
-		CObjEnemy* obj11;
-		obj11 = new CObjEnemy(799.0, 222);
-
-		CObjEnemy* obj12;
-		obj12 = new CObjEnemy(722.0f, 230);
-
-		CObjEnemy* obj13;
-		obj13 = new CObjEnemy(733.0f, 150);
-
-		CObjAttackEnemy* obj14;
-		obj14 = new CObjAttackEnemy(799.0f, 400);
-
-		CObjAttackEnemy* obj15;
-		obj15 = new CObjAttackEnemy(722.0f, 450);
-
-		CObjAttackEnemy* obj16;
-		obj16 = new CObjAttackEnemy(755.0f, 366);
-
-		CObjAttackEnemy* obj17;
-		obj17 = new CObjAttackEnemy(733.0f, 490);
-	}
-
-	else if (m_time == 1233)
-	{
-	//CObjBlock* obj = new CObjBlock(799.0f, 300);
-	//Objs::InsertObj(obj, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj2 = new CObjBlock(799.0f, 277);
-	//Objs::InsertObj(obj2, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj3 = new CObjBlock(799.0f, 244);
-	//Objs::InsertObj(obj3, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj4 = new CObjBlock(766.0f, 300);
-	//Objs::InsertObj(obj4, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj5 = new CObjBlock(766.0f, 277);
-	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj5 = new CObjBlock(766.0f, 244);
-	//Objs::InsertObj(obj5, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj6 = new CObjBlock(733.0f, 300);
-	//Objs::InsertObj(obj6, OBJ_BLOCK, 50);
-
-
-	//CObjBlock* obj7 = new CObjBlock(733.0f, 277);
-	//Objs::InsertObj(obj7, OBJ_BLOCK, 50);
-
-	//CObjBlock* obj8 = new CObjBlock(733.0f, 244);
-	//Objs::InsertObj(obj8, OBJ_BLOCK, 50);
-	}
-	else if (m_time == 1255)
-	{
-	CObjAttackEnemy* obj;
-	obj = new CObjAttackEnemy(733.0f, 140);
-
-	CObjAttackEnemy* obj2;
-	obj2 = new CObjAttackEnemy(799.0f, 150);
-
-	CObjAttackEnemy* obj3;
-	obj3 = new CObjAttackEnemy(766.0f, 230);
-
-	CObjAttackEnemy* obj4;
-	obj4 = new CObjAttackEnemy(788.0f, 250);
-
-	}
-
-	else if (m_time == 3000)
+	else if (m_time == 1500)
 	{
 		//音楽チェンジ
 		//Audio::Stop(0);//0曲ストップ
 		//Audio::Start(1);//1曲目スタート
 
-		CObjBoss* obj;
-		obj = new CObjBoss(300, 250);
-		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
+		CObjBoss2* obj;
+		obj = new CObjBoss2(300, 250);
+		Objs::InsertObj(obj, OBJ_BOSS_ENEMY2, 50);
 	}
 }
