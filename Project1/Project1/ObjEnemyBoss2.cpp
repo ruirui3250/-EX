@@ -45,13 +45,13 @@ void CObjBoss2::Action()
     if (m_time % 200 == 0)
     {
             //19”­“¯Žž”­ŽË
-            CObjAngleBullet* obj_b;
-            for (int i = 0; i < 360; i += 20)
-            {
-                //Šp“xi‚ÅŠp“x’eŠÛ”­ŽË
-                obj_b = new CObjAngleBullet(m_x + 124, m_y + 91, i, 5.0f);
-                Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET, 100);
-            }
+            //CObjAngleBullet* obj_b;
+            //for (int i = 0; i < 360; i += 20)
+            //{
+            //    //Šp“xi‚ÅŠp“x’eŠÛ”­ŽË
+            //    obj_b = new CObjAngleBullet(m_x + 124, m_y + 91, i, 5.0f);
+            //    Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET, 100);
+            //}
     }
         //—U“±’e”­ŽË
         if (m_time % 500 == 0)
