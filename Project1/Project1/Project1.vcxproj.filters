@@ -291,14 +291,14 @@
     <ClInclude Include="CObjEnemyBossBullet4.h">
       <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
     </ClInclude>
-    <ClInclude Include="ObjSceneMain2.h">
-      <Filter>ソース ファイル\ヘッダー ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneMain2.h">
-      <Filter>ソース ファイル\ヘッダー ファイル</Filter>
-    </ClInclude>
     <ClInclude Include="CObjTateBulletEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機\3面敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSceneMain2.h">
+      <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain2.h">
+      <Filter>ソース ファイル\基本データ\背景画面\2面</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
