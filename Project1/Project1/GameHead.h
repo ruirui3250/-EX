@@ -28,7 +28,6 @@ enum OBJ_NAME
 	OBJ_BOSS_ENEMY2,
 	OBJ_BOSS_ENEMY4,
 	OBJ_BOSS_BULLET_ENEMY,
-	OBJ_BLOCK,
 	OBJ_ANGLE_BULLET_HERO,
 	OBJ_DIFFUSION_HERO,
 	OBJ_HOMING_ENEMY,
@@ -132,8 +131,6 @@ struct UserData
 #include"ObjTateBullet.h"
 #include"ObjTatekesen.h"
 #include"ObjTateBoss.h"
-//ブロック関連
-#include"ObjBlock.h"
 //アイテム関連
 #include"Item.h"
 
