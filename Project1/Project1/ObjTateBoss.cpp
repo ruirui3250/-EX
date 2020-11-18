@@ -146,7 +146,7 @@ void CObjTateBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 
-		/*Scene::SetScene(new CSencetitle());*/
+		Scene::SetScene(new CSceneWin4());
 	}
 }
 
@@ -224,15 +224,15 @@ void CObjTateBoss::Draw()
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
 	src.m_right = 512.0f;
-	src.m_bottom = 260.0f;
+	src.m_bottom = 512.0f;
 
 	//表示位置の設定
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
 	dst.m_right = 512.0f + m_x;
-	dst.m_bottom = 260.0f + m_y;
+	dst.m_bottom = 512.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
-	Draw::Draw(9, &src, &dst, c, 0.0f);
+	Draw::Draw(4, &src, &dst, c, 0.0f);
 
 }

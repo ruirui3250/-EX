@@ -111,7 +111,7 @@ void CObjBoss2::Action()
         this->SetStatus(false);
         Hits::DeleteHitBox(this);
 
-        Scene::SetScene(new CSceneWin2());
+        Scene::SetScene(new CSceneWin3());
 
     }
 }
