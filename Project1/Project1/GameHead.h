@@ -28,6 +28,17 @@ enum OBJ_NAME
 	OBJ_HOMING_BULLET,
 	OBJ_ITEM,
 	OBJLASER_BULLET,
+
+	/*----------------*/
+	OBJ_TATE_ENEMY,
+	OBJ_TATE_BOSS,
+	OBJ_TATE_ATTACK_ENEMY,
+	OBJ_TATE_BULLET_ENEMY,
+	OBJ_TATE_HERO,
+	OBJ_TATE_BULLET,
+	OBJ_TATE_LASER_BULLET,
+	OBJ_TATEKESEN,
+	OBJ_TATESUKU_SCENE_MAIN,
 };
 //------------------------------------------------
 
@@ -78,6 +89,8 @@ struct UserData
 #include"ObjClearVirus.h"
 #include"ObjTitle.h"
 #include"ObjSceneMain.h"
+#include"ObjTatesukuSceneMain.h"
+#include"TatesukuSceneMain.h"
 //敵関連
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
@@ -95,6 +108,15 @@ struct UserData
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
 #include"ObjLaserBullet.h"
+/*---------------------3面---------------*/
+#include"CObjTateBulletEnemy.h"
+#include"ObjTateAttackEnemy.h"
+#include"ObjTateEnemy.h"
+#include"ObjTateHero.h"
+#include"ObjTateLaserBullet.h"
+#include"ObjTateBullet.h"
+#include"ObjTatekesen.h"
+#include"ObjTateBoss.h"
 //ブロック関連
 #include"ObjBlock.h"
 //アイテム関連

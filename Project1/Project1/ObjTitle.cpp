@@ -18,8 +18,22 @@ void CObjTitle::Init()
 //アクション
 void CObjTitle::Action()
 {
+
+
 	//エンターキーを押してシーンタイトルを移行する
 	if (Input::GetVKey(VK_RETURN) == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new CSceneMain());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
+	if (Input::GetVKey('2') == true)
 	{
 		if (m_key_flag == true)
 		{

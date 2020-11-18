@@ -5,7 +5,7 @@
 #include "ObjHero.h"
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
-#include"ObjAngleBulletHero.h"
+//#include "ObjAngleBulletHero.h"
 
 //イニシャライズ
 void CObjHero::Init()

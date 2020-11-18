@@ -52,6 +52,18 @@
     <Filter Include="ソース ファイル\基本データ\敵機">
       <UniqueIdentifier>{76349a5a-98a4-4af8-ab78-871eff5f835f}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\3面">
+      <UniqueIdentifier>{b6ddcc51-69f4-4f56-b74c-73cb54c18f46}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\3面\3面敵">
+      <UniqueIdentifier>{02687793-d0f9-48e6-b45e-84855614a5ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\3面\3面主人公">
+      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\3面血栓">
+      <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GameHead.h">
@@ -180,6 +192,33 @@
     <ClInclude Include="ObjLaserBullet.h">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
     </ClInclude>
+    <ClInclude Include="ObjTatesukuSceneMain.h">
+      <Filter>ソース ファイル\3面</Filter>
+    </ClInclude>
+    <ClInclude Include="TatesukuSceneMain.h">
+      <Filter>ソース ファイル\3面</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateAttackEnemy.h">
+      <Filter>ソース ファイル\3面\3面敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateBoss.h">
+      <Filter>ソース ファイル\3面\3面敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateEnemy.h">
+      <Filter>ソース ファイル\3面\3面敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateBullet.h">
+      <Filter>ソース ファイル\3面\3面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateHero.h">
+      <Filter>ソース ファイル\3面\3面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateLaserBullet.h">
+      <Filter>ソース ファイル\3面\3面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTatekesen.h">
+      <Filter>ソース ファイル\3面血栓</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -307,6 +346,33 @@
     </ClCompile>
     <ClCompile Include="ObjLaserBullet.cpp">
       <Filter>ソース ファイル\基本データ\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTatesukuSceneMain.cpp">
+      <Filter>ソース ファイル\3面</Filter>
+    </ClCompile>
+    <ClCompile Include="TatesukuSceneMain.cpp">
+      <Filter>ソース ファイル\3面</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateAttackEnemy.cpp">
+      <Filter>ソース ファイル\3面\3面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateBoss.cpp">
+      <Filter>ソース ファイル\3面\3面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateEnemy.cpp">
+      <Filter>ソース ファイル\3面\3面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateBullet.cpp">
+      <Filter>ソース ファイル\3面\3面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateHero.cpp">
+      <Filter>ソース ファイル\3面\3面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateLaserBullet.cpp">
+      <Filter>ソース ファイル\3面\3面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTatekesen.cpp">
+      <Filter>ソース ファイル\3面血栓</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
