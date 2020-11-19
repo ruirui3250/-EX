@@ -54,6 +54,7 @@ enum OBJ_NAME
 	OBJ_SITA_LASER_BULLET,
 	OBJ_SITA_BULLET_ENEMY,
 	OBJ_SITA_ATTACK_ENEMY,
+	OBJ_SITA_ENEMY,
 };
 //------------------------------------------------
 
@@ -146,6 +147,7 @@ struct UserData
 #include"ObjSitaLaserBullet.h"
 #include"CObjSitaBulletEnemy.h"
 #include"ObjSitaAttackEnemy.h"
+#include"ObjSitaEnemy.h"
 //アイテム関連
 #include"Item.h"
 
