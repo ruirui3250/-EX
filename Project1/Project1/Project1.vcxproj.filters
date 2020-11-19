@@ -327,6 +327,9 @@
     <ClInclude Include="ObjSitaAttackEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
     </ClInclude>
+    <ClInclude Include="ObjSitaEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -540,6 +543,9 @@
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaAttackEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
     </ClCompile>
   </ItemGroup>
