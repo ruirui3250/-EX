@@ -20,8 +20,19 @@ CObjHomingEnemy::CObjHomingEnemy(float x, float y)
 //イニシャライズ
 void CObjHomingEnemy::Init()
 {
-    m_vx = 0.0f;
-    m_vy = 0.0f;
+	m_eff.m_top = 32;
+	m_eff.m_left = 0;
+	m_eff.m_right = 32;
+	m_eff.m_bottom = 64;
+	m_ani = 0;
+	m_ani_time = 0;
+	m_del = false;
+
+	m_vx = 1.0f;
+	m_vy = 0.0f;
+	//移動ベクトルの正規化
+	UnitVec(&m_vy, &m_vx);
+    
 
     //当たり判定用HitBoxを作成
     Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_HOMING_BULLET, 1);
@@ -30,15 +41,42 @@ void CObjHomingEnemy::Init()
 //アクション
 void CObjHomingEnemy::Action()
 {
- //移動方向
-    m_vx = -1.0f;
-    m_vy = 0.0f;
 
-    //ベクトルの長さを求める。(三平方の定理。)
-    float r = 0.0f;
-    r = m_vx * m_vx + m_vy * m_vy;
-    r = sqrt(r);//rをルートを求める。
+	//主人公機と誘導弾丸で角度を取る
+	float ar = 170.0f;
 
+	//弾丸と現在の向いている方向を取る。
+	float br = 180.0f;
+
+	float r = 3.14 / 180.0f;//角度1
+
+	if (ar < br)
+	{
+		//移動方向に1加える。
+		m_vx = m_vx * cos(r) - m_vy * sin(r);
+		m_vy = m_vy * cos(r) + m_vx * sin(r);
+	}
+	else
+	{
+		//移動方向に-1加える。
+		m_vx = m_vx * cos(-r) - m_vy * sin(-r);
+		m_vy = m_vy * cos(-r) + m_vx * sin(-r);
+	}
+	UnitVec(&m_vx, &m_vy);
+	m_x = m_vx * 5.0f;
+	m_y = m_vy * 5.0f;
+
+	//誘導弾丸のHitBoxの更新用ポインター獲得
+	CHitBox* hit = Hits::GetHitBox(this);
+	hit->SetPos(m_x, m_y);//HitBoxの位置を更新
+
+	//誘導弾丸の完全に領域外に出た場合誘導弾丸を破棄
+	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, -800.0f, 600.0f);
+	if (check == false)
+	{
+		this->SetStatus(false);//自信に削除命令出す
+		Hits::DeleteHitBox(this);//誘導弾丸オブジェクトHITBOｘ削除
+	}
     //長さが0かどうか調べる。
     if (r == 0.0f)
     {
@@ -102,6 +140,19 @@ void CObjHomingEnemy::Draw()
     dst.m_left = 0.0f + m_x;
     dst.m_right = 32.0f + m_x;
     dst.m_bottom = 32.0f + m_y;
+
+	float r = 0.0f;
+
+	//主人公機と誘導弾丸で角度を取る
+    CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
+
+	//主人公機が存在する場合、誘導角度の計算する
+	if (obj != nullptr)
+	{
+		float x = obj->GetX() - m_x;
+		float y = obj->GetY() - m_y;
+		r = GetAtan2Angle(x, -y);
+
 
     //0番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
     Draw::Draw(3, &src, &dst, c, 0.0f);
