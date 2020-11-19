@@ -31,7 +31,7 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"敵弾(使).png", 2, TEX_SIZE_512);//敵機弾丸
 
-	Draw::LoadImage(L"主人公機.png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器縦.png", 0, TEX_SIZE_512);
 
 	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
 
@@ -49,7 +49,7 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"縦カプセル.png", 14, TEX_SIZE_512);//bulletHero
 
-	Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
+	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
 
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
