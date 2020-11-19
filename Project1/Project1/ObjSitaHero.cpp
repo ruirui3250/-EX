@@ -15,8 +15,8 @@ void CObjSitaHero::Init()
 	m_la = 100;
 	m_hp = 3;
 	m_ka = 3;
-	m_x = 128;
-	m_y = 544;
+	m_x = 350;
+	m_y = 0;
 	//当たり判定用hitboxを作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
 }
@@ -40,13 +40,13 @@ void CObjSitaHero::Action()
 	{
 
 		m_la += 1;
-		//if (m_la >= 0)
-		//{
-		//	//弾丸オブジェクト作成
-		//	CObjSitaLaserBullet* obj_b = new CObjSitaLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-		//	Objs::InsertObj(obj_b, OBJ_TATE_LASER_BULLET, 100);//作った弾丸オブジェクト
-		//	m_la--;
-		//}
+		if (m_la >= 0)
+		{
+			//弾丸オブジェクト作成
+			CObjSitaLaserBullet* obj_b = new CObjSitaLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_SITA_LASER_BULLET, 100);//作った弾丸オブジェクト
+			m_la--;
+		}
 
 
 
@@ -59,10 +59,10 @@ void CObjSitaHero::Action()
 		if (m_f == true)
 		{
 
-			////弾丸オブジェクト作成
-			//CObjSitaBullet* obj_b = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			//Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			//m_f = false;
+			//弾丸オブジェクト作成
+			CObjSitaBullet* obj_b = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			m_f = false;
 		}
 
 	}
