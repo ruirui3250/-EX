@@ -176,6 +176,9 @@
     <ClInclude Include="ObjSceneMain.h" />
     <ClInclude Include="ObjSceneMain2.h" />
     <ClInclude Include="ObjSceneMain4.h" />
+    <ClInclude Include="ObjSitaBullet.h" />
+    <ClInclude Include="ObjSitaHero.h" />
+    <ClInclude Include="ObjSitaLaserBullet.h" />
     <ClInclude Include="ObjTateAttackEnemy.h" />
     <ClInclude Include="ObjTateBoss.h" />
     <ClInclude Include="ObjTateBullet.h" />
@@ -243,6 +246,9 @@
     <ClCompile Include="ObjSceneMain.cpp" />
     <ClCompile Include="ObjSceneMain2.cpp" />
     <ClCompile Include="ObjSceneMain4.cpp" />
+    <ClCompile Include="ObjSitaBullet.cpp" />
+    <ClCompile Include="ObjSitaHero.cpp" />
+    <ClCompile Include="ObjSitaLaserBullet.cpp" />
     <ClCompile Include="ObjTateAttackEnemy.cpp" />
     <ClCompile Include="ObjTateBoss.cpp" />
     <ClCompile Include="ObjTateBullet.cpp" />

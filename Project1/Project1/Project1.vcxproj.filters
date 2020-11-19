@@ -106,6 +106,9 @@
     <Filter Include="ソース ファイル\基本データ\血栓">
       <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\4面主人公">
+      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -303,6 +306,15 @@
     <ClInclude Include="ObjYokoKesen.h">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClInclude>
+    <ClInclude Include="ObjSitaBullet.h">
+      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaHero.h">
+      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaLaserBullet.h">
+      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -499,6 +511,15 @@
     </ClCompile>
     <ClCompile Include="ObjYokoKesen.cpp">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaBullet.cpp">
+      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaHero.cpp">
+      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaLaserBullet.cpp">
+      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
