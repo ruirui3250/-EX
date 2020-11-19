@@ -5,20 +5,20 @@
 //使用するネームスペース
 using namespace GameL;
 
-//オブジェクト：敵機
+//オブジェクト：弾丸
 class CObjHomingEnemy :public CObj
 {
 public:
-	CObjHomingEnemy(float x, float y);//コンストラクタ位置情報をもらう
+	CObjHomingEnemy(float x, float y);   //コンストラクタ
 	~CObjHomingEnemy() {};
-	void Init();      //イニシャライズ
-	void Action();    //アクション
-	void Draw();      //ドロー
+	void Init();     //イニシャライズ
+	void Action();   //アクション
+	void Draw();     //ドロー
 private:
-	float m_x;  //敵機のｘ方向の位置
-	float m_y;  //敵機のｙ方向の位置
-	float m_vx; //敵機移動ベクトルｘ
-	float m_vy; //敵機移動ベクトルｙ
+	float m_x;       //弾丸のX方向の位置用変数
+	float m_y;       //弾丸のY方向の位置用変数
+	float m_vx;      //弾丸のX方向の速度用変数
+	float m_vy;      //
 
 	int m_ani;       //アニメーション用
 	int m_ani_time;  //着弾アニメーション間隔

@@ -8,6 +8,22 @@
 #include"UtilityModule.h"
 //#include "ObjAngleBulletHero.h"
 
+//使用するネームスペース
+using namespace GameL;
+
+
+//位置情報X取得用
+float CObjHero::GetX()
+{
+	return m_x;
+}
+
+//位置情報Y取得用
+float CObjHero::GetY()
+{
+	return m_y;
+}
+
 //イニシャライズ
 void CObjHero::Init()
 {
