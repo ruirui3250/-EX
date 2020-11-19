@@ -1,1 +1,5 @@
-﻿  Project1.vcxproj -> C:\Users\GA1A\Desktop\game3\Project1\Debug\Project1.exe
+﻿  CObjEnemyBossBullet4.cpp
+  ObjEnemyBoss4.cpp
+C:\Users\GA1A\Desktop\game3\Project1\Project1\ObjEnemyBoss4.cpp(81,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  コードを生成中...
+  Project1.vcxproj -> C:\Users\GA1A\Desktop\game3\Project1\Debug\Project1.exe

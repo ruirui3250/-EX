@@ -5,7 +5,6 @@
 //GameLで使用するヘッダー
 #include"GameL\DrawTexture.h"
 #include"GameL\SceneObjManager.h"
-#include"GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -14,12 +13,12 @@ using namespace GameL;
 #include"SceneMain4.h"
 #include"GameHead.h"
 //コンストラクタ
-CSceneMain4::CSceneMain4()
+CSceneMain4::~CSceneMain4()
 {
 
 }
 //デストラクタ
-CSceneMain4::~CSceneMain4()
+CSceneMain4::CSceneMain4()
 {
 
 }
@@ -28,31 +27,39 @@ CSceneMain4::~CSceneMain4()
 void CSceneMain4::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
-	Draw::LoadImage(L"背景(使).png", 9, TEX_SIZE_512);
+	Draw::LoadImage(L"背景(使).png", 5, TEX_SIZE_512);
 
-	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
+	Draw::LoadImage(L"敵弾(使).png", 2, TEX_SIZE_512);//敵機弾丸
 
-	Draw::LoadImage(L"注射器(使).png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器縦.png", 0, TEX_SIZE_512);
 
-	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
+	Draw::LoadImage(L"拡散弾カプセル.png", 6, TEX_SIZE_512);
 
-	//Draw::LoadImage(L"障害物.png", 9, TEX_SIZE_512);
+	Draw::LoadImage(L"ウイルス(使).png", 7, TEX_SIZE_512);
 
-	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+
+	Draw::LoadImage(L"Boss3(使).png", 9, TEX_SIZE_512);
+
+	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
+
+	Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
+
+	Draw::LoadImage(L"主人公弾縦.png", 1, TEX_SIZE_512);//bulletHero
+
+	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
+
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
-	Draw::LoadImage(L"ボス4.png", 22, TEX_SIZE_512);
+	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 
 	//主人公オブジェクト作成
-	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
-
-	////blockオブジェクト作成
-	//CObjBlock* objb = new CObjBlock();
-	//Objs::InsertObj(objb, OBJ_BLOCK, 9);
+	CObjTateHero* obj = new CObjTateHero();//主人公オブジェクト作成
+	Objs::InsertObj(obj, OBJ_TATE_HERO, 10);//主人公オブジェクトマネージャーを登録
 
 		//クリア時背景オブジェクト作成
-	CObjSceneMain* back = new CObjSceneMain();
-	Objs::InsertObj(back, OBJ_SCENE_MAIN4, 9);
+	CObjTatesukuSceneMain* back = new CObjTatesukuSceneMain();
+	Objs::InsertObj(back, OBJ_TATESUKU_SCENE_MAIN, 5);
 
 	//タイム初期化
 	m_time = 0;
@@ -63,122 +70,531 @@ void CSceneMain4::InitScene()
 void CSceneMain4::Scene()
 {
 	m_time++;
-
 	if (m_time == 30)
 	{
-		CObjEnemy* obj = new CObjEnemy(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+		CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	else if (m_time == 80)
-	{
-		CObjEnemy* obj = new CObjEnemy(799.0f, 300);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 120)
-	{
-		CObjEnemy* obj = new CObjEnemy(799.0f, 200);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 200)
-	{
-		CObjEnemy* obj;
-		obj = new CObjEnemy(799.0f, 100);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-		obj = new CObjEnemy(799.0f, 500);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	else if (m_time == 400)
-	{
-		CObjEnemy* obj1;
-		obj1 = new CObjEnemy(799.0f, 300);
-		Objs::InsertObj(obj1, OBJ_ENEMY, 50);
+	/*-------------------------回復アイテム出現---------------------------*/
 
-		CObjAttackEnemy* obj2;
-		obj2 = new CObjAttackEnemy(799, 400);
-		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
-
-	}
-	else if (m_time == 550)
+	///*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
+	if (m_time == 30)
 	{
-		CObjEnemy* obj1;
-		obj1 = new CObjEnemy(799.0f, 400);
-		Objs::InsertObj(obj1, OBJ_ENEMY, 50);
-
-		CObjAttackEnemy* obj2;
-		obj2 = new CObjAttackEnemy(799, 300);
-		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY, 50);
-
+		CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	else if (m_time == 680)
+	if (m_time == 20)
 	{
-		CObjEnemy* obj;
-		obj = new CObjEnemy(799.0f, 300);
+		CObjTateEnemy* obj = new CObjTateEnemy(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 40)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(400.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 50)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(280.0f, 100);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 60)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(250.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+
+
+
+	if (m_time == 80)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 90)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 70)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 40)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(650.0f, 100);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 50)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(450.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 60)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 70)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 30)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 50)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(500.0f, 100);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 60)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(450.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+
+
+
+	if (m_time == 70)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 80)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(650.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 70)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 100)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-		obj = new CObjEnemy(799.0f, 350);
+	}
+	if (m_time == 110)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-		obj = new CObjEnemy(799.0f, 250);
+	}
+	if (m_time == 120)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	else if (m_time == 750)
+	if (m_time == 110)
 	{
-		CObjAttackEnemy* obj;
-		obj = new CObjAttackEnemy(799, 300);
-		Objs::InsertObj(obj, OBJ_ATTACK_ENEMY, 50);
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	else if (m_time == 1000)
+	if (m_time == 130)
 	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	else if (m_time == 1100)
+	if (m_time == 120)
 	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32 + 64);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(150.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	else if (m_time == 1200)
+	if (m_time == 150)
 	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	else if (m_time == 1300)
+	if (m_time == 120)
 	{
-		CObjSinEnemy* obj;
-		for (int i = 0; i < 15; i++)
-		{
-			obj = new CObjSinEnemy(799, i * 32);
-			Objs::InsertObj(obj, OBJ_SIN_ENEMY, 50);
-		}
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(250.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 110)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 130)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(450.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 120)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 150)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*------------------敵連合部隊第１防衛ライン-----------------*/
+	if (m_time == 400)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 400)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 400)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 400)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 400)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(650.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 400)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
 
-		CObjDiffusionEnemy* obj2;
-		obj2 = new CObjDiffusionEnemy(799, 300);
-		Objs::InsertObj(obj2, OBJ_DIFFUSION_ENEMY, 50);
-	}
-	else if (m_time == 1500)
+	if (m_time == 400)
 	{
-		CObjHomingEnemy* obj;
-		obj = new CObjHomingEnemy(799, 500);
-		Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(550.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	else if (m_time == 2000)
+	if (m_time == 400)
 	{
-		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
 
-		CObjBoss4* obj;
-		obj = new CObjBoss4(799, 300);
-		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
+	/*--------------------敵連合部隊第２防衛ライン------------------------*/
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(100.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(400.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*------------------敵連合部隊第３防衛ライン----------------------*/
+	if (m_time == 1000)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(100.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(400.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*------------------------------------------------------------------------*/
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(100.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(400.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*----------------------------障害物出現------------------------------*/
+	if (m_time == 300)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(10.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 300)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(150.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 300)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 300)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*------------------------------------------------------------*/
+	if (m_time == 600)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(10.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 600)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 600)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*---------------------------------------------------------*/
+	if (m_time == 900)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(450.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 900)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 900)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(10.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+
+	if (m_time == 1200)																	//このタイミングで左側に普通の敵機出現させること
+	{
+		CObjTateKesen* obj = new CObjTateKesen(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	/*-------------------------敵機挿入-----------------------*/
+	if (m_time == 1200)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(100.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1150)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1210)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(150.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1220)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(50.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(120.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1150)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(180.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1210)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(270.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1220)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(230.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+
+	if (m_time == 1200)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(10.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1150)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(20.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1210)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(30.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1220)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(40.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(50.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1150)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(250.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1210)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(300.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1220)
+	{
+		CObjTateEnemy* obj = new CObjTateEnemy(350.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+
+
+	if (m_time == 1500)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(10.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(290.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+
+	if (m_time == 1500)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(800.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+
+	/*-------------------------ボス-------------------------------*/
+	if (m_time == 2000)
+	{
+		CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+
+	}
+
 }
+
+//メモ
+//障害物は１が一番左６００が一番右とする

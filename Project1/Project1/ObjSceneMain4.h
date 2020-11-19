@@ -16,12 +16,10 @@ public:
 	void Draw();//ƒhƒ[
 private:
 
+	float m_y1;//”wŒi‚P‚ÌˆÊ’uî•ñ
+	float m_y2;//”wŒi2‚ÌˆÊ’uî•ñ
 	float m_x1;//”wŒi‚P‚ÌˆÊ’uî•ñ
 	float m_x2;//”wŒi2‚ÌˆÊ’uî•ñ
 	float m_vx;//‰ñ“]—pˆ—‚ÌXƒxƒNƒgƒ‹
 	float m_vy;//‰ñ“]—pˆ—‚ÌYƒxƒNƒgƒ‹
-	float m_y1;//”wŒi1‚ÌYˆÊ’uî•ñ
-	float m_y2;//”wŒi2‚ÌYˆÊ’uî•ñ
-	float m_r;//‰ñ“]
-	float m_speed;//‘¬“xƒvƒ‰ƒX
 };

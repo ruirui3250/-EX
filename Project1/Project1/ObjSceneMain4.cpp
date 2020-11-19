@@ -11,21 +11,33 @@ using namespace GameL;
 //ƒCƒjƒVƒƒƒ‰ƒCƒY
 void CObjSceneMain4::Init()
 {
-	m_x1 = 0.0f;
-	m_x2 = 800.0f;
+	m_y1 = 10.0f;
+	m_y2 = 800.0f;
 }
 //ƒAƒNƒVƒ‡ƒ“
 void CObjSceneMain4::Action()
 {
 	//”wŒi‚P‚Ì‘€ì
-	m_y1 -= 10.0f;
+	m_y1 += 10.0f;
 	if (m_y1 < -800.0f)
 		m_y1 = 800;
-
 	//”wŒi2‚Ì‘€ì
-	m_y2 -= 10.0f;
+	m_y2 += 10.0f;
 	if (m_y2 < -800.0f)
 		m_y2 = 800;
+	//‰æ–Ê‚ğ‰ñ“]‚³‚¹‚é
+	float ar = 170.0f;
+
+	//Œ»İ‚Ì•ûŒü‚ÌŠp“x‚ğŠl“¾
+	float br = 180.0f;
+
+	float r = 3.14 / 180.0f;//Šp“x1
+	if (ar < br)
+	{
+		//ˆÚ“®•ûŒü‚É+1‚ğ‰Á‚¦‚é
+		m_vx = m_vy * cos(r) + m_vx * sin(r);
+		m_vy = m_vx * cos(-r) - m_vy * sin(-r);
+	}
 
 }
 
@@ -47,27 +59,27 @@ void CObjSceneMain4::Draw()
 	////•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 1000.0f;
-	dst.m_bottom = 600.0f;
+	dst.m_right = 500.0f;
+	dst.m_bottom = 500.0f;
 
 	////‰æ‘œ•\¦
-	Draw::Draw(9, &src, &dst, c, 0.0f);
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi‚P‚ğİ’è•`‰æ
-	dst.m_top = 1000.0f+m_y1;
-	dst.m_left = 0.0f+m_x1;
-	dst.m_right = 0.0f+m_x1;
-	dst.m_bottom = 600.0f+m_y1;
+	dst.m_top = 1200.0f + m_y2;
+	dst.m_left = 1000.0f;
+	dst.m_right = 0.0f;
+	dst.m_bottom = 0.0f + m_y2;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æB
-	Draw::Draw(9, &src, &dst, c, 0.0f);
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi2‚ğİ’è•`‰æ
-	dst.m_top = 1000.0f+m_y2;
-	dst.m_left = 0.0f + m_x2;
-	dst.m_right =0.0f + m_x2;
-	dst.m_bottom = 600.0f+m_y2;
+	dst.m_top = 1200.0f + m_y1;
+	dst.m_left = 1000.0f;
+	dst.m_right = 0.0f;
+	dst.m_bottom = 0.0f + m_y1;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æB
-	Draw::Draw(9, &src, &dst, c, 0.0f);
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 }
