@@ -156,7 +156,8 @@ void CObjHomingEnemy::Draw()
 		float y = obj->GetY() - m_y;
 		r = GetAtan2Angle(x, -y);
 
-		//0番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
+		
+		///0番目に登録したグラフィックをsrc・dst・cの情報をもとに描画
 		Draw::Draw(3, &m_eff, &dst, c, r);
 	}
 }
