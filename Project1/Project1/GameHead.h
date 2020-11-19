@@ -47,6 +47,13 @@ enum OBJ_NAME
 	OBJ_TATE_LASER_BULLET,
 	OBJ_TATEKESEN,
 	OBJ_TATESUKU_SCENE_MAIN,
+
+	/*4面用ネーム*/
+	OBJ_SITA_HERO,
+	OBJ_SITA_BULLET,
+	OBJ_SITA_LASER_BULLET,
+	OBJ_SITA_BULLET_ENEMY,
+	OBJ_SITA_ATTACK_ENEMY,
 };
 //------------------------------------------------
 
@@ -133,6 +140,12 @@ struct UserData
 #include"ObjTateBullet.h"
 #include"ObjTatekesen.h"
 #include"ObjTateBoss.h"
+/*---------------4面--------------*/
+#include"ObjSitaHero.h"
+#include"ObjSitaBullet.h"
+#include"ObjSitaLaserBullet.h"
+#include"CObjSitaBulletEnemy.h"
+#include"ObjSitaAttackEnemy.h"
 //アイテム関連
 #include"Item.h"
 
@@ -154,5 +167,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneTitle
+#define SET_GAME_START  CSceneMain4
 //-----------------------------------------------

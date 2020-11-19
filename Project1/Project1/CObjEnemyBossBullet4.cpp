@@ -24,14 +24,14 @@ void CObjEnemyBossBullet4::Init()
 	m_ani = 0;
 	m_ani_time = 0;
 
-	m_vx = -1.0f;
-	m_vy = 0.0f;
+	m_vx = 0.0f;
+	m_vy = +1.0f;
 
 	//移動ベクトルの正規化
 	UnitVec(&m_vy, &m_vx);
 
 	//当たり判定用HitBoxを作成。
-	Hits::SetHitBox(this, m_x+5 , m_y+5, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_BULLET_ENEMY, 100);
+	Hits::SetHitBox(this, m_x , m_y, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_BULLET_ENEMY, 100);
 
 }
 
@@ -96,5 +96,5 @@ void CObjEnemyBossBullet4::Draw()
 	dst.m_bottom = 10.0f + m_y;
 
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(21, &src, &dst, c, 0.0f);
+	Draw::Draw(4, &src, &dst, c, 0.0f);
 }

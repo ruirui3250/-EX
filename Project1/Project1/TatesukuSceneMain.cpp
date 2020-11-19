@@ -33,8 +33,6 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"注射器縦.png", 0, TEX_SIZE_512);
 
-	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
-
 	Draw::LoadImage(L"拡散弾カプセル.png", 6, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ウイルス(使).png", 7, TEX_SIZE_512);
@@ -47,7 +45,7 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
 
-	Draw::LoadImage(L"縦カプセル.png", 14, TEX_SIZE_512);//bulletHero
+	Draw::LoadImage(L"主人公弾縦.png", 1, TEX_SIZE_512);//bulletHero
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
