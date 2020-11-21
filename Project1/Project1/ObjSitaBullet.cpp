@@ -36,7 +36,7 @@ void CObjSitaBullet::Action()
 	m_y -= m_vy;*/
 	m_y += 10.0f;
 	//Resourcesの描画物RECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 1);
 
 	//弾丸消滅処理
 	if (m_del == true)
@@ -100,7 +100,7 @@ void CObjSitaBullet::Draw()
 	//描画カラー情報
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 	RECT_F dst;//描画先表示
-
+	RECT_F src;
 
 
 	//表示位置の設定
@@ -109,10 +109,10 @@ void CObjSitaBullet::Draw()
 	dst.m_right = 32.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
 	//切り取り位置の設定
-	m_eff.m_top = 0;
-	m_eff.m_left = 0;
-	m_eff.m_right = 32;
-	m_eff.m_bottom = 32;
+	src.m_top = 0;
+	src.m_left = 0;
+	src.m_right = 32;
+	src.m_bottom = 32;
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(1, &m_eff, &dst, c, 0.0f);
+	Draw::Draw(1, &src, &dst, c, 0.0f);
 }

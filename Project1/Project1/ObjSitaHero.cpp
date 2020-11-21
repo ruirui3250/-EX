@@ -155,25 +155,25 @@ void CObjSitaHero::Action()
 	hit->SetPos(m_x, m_y);				  //入り口から新しい位置（主人公機の位置）情報に置き換える
 
 
-	//ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
-	if (m_f == true)
-	{
-		if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
-		{
+	////ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
+	//if (m_f == true)
+	//{
+	//	if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
+	//	{
 
-			m_hp -= 1;
-			m_f = false;
-		}
-		if (m_hp <= 0)
-		{
-			this->SetStatus(false);//自身に削除命令を出す
-			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+	//		m_hp -= 1;
+	//		m_f = false;
+	//	}
+	//	if (m_hp <= 0)
+	//	{
+	//		this->SetStatus(false);//自身に削除命令を出す
+	//		Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
-			////主人公機消滅でシーンをゲームオーバーに移行する
-			//Scene::SetScene(new CSceneGameOver4());
-		}
+	//		////主人公機消滅でシーンをゲームオーバーに移行する
+	//		//Scene::SetScene(new CSceneGameOver4());
+	//	}
 
-	}
+	//}
 
 	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
@@ -188,19 +188,19 @@ void CObjSitaHero::Action()
 
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	//{
-	//	m_hp -= 1;
+	if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
+	{
+		m_hp -= 1;
 
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+		if (m_hp == 0)
+		{
+			this->SetStatus(false);//自身に削除命令を出す
+			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
 		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
-	//}
+			Scene::SetScene(new CSceneGameOver());
+		}
+	}
 }
 //ドロー
 void CObjSitaHero::Draw()
