@@ -19,7 +19,7 @@ void CObjSitaBulletEnemy::Init()
 {
 	m_eff.m_top = 32;
 	m_eff.m_left = 0;
-	m_eff.m_right = 32;
+	m_eff.m_right =32;
 	m_eff.m_bottom = 64;
 	m_ani = 0;
 	m_ani_time = 0;
@@ -31,7 +31,7 @@ void CObjSitaBulletEnemy::Init()
 	UnitVec(&m_vy, &m_vx);
 
 	//ìñÇΩÇËîªíËópHitBoxÇçÏê¨ÅB
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_BULLET_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_BULLET_ENEMY, 50);
 
 }
 
@@ -39,7 +39,7 @@ void CObjSitaBulletEnemy::Init()
 void CObjSitaBulletEnemy::Action()
 {
 	//ResourcesÇÃï`âÊï®RECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 50);
 
 	//íeä€è¡ñ≈èàóù
 	if (m_del == true)

@@ -22,7 +22,7 @@ void CObjSitaAttackEnemy::Init()
 	m_time = 0;
 
 	//当たり判定用HitBoxを作成.
-	Hits::SetHitBox(this, m_x, m_y, /*横長*/64,/*縦長*/ 32, ELEMENT_ENEMY, OBJ_ATTACK_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, /*横長*/32,/*縦長*/ 32, ELEMENT_ENEMY, OBJ_ATTACK_ENEMY, 1);
 
 }
 //アクション
@@ -34,8 +34,8 @@ void CObjSitaAttackEnemy::Action()
 	{
 		m_time = 0;
 		//弾丸敵機object
-		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x, m_y);//弾丸発射オブジェクト作成
-		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機object登録
+		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x, m_y);//弾丸発射オブジェクト作成
+		Objs::InsertObj(obj_b, OBJ_SITA_BULLET_ENEMY, 100);//弾丸敵機object登録
 	}
 	//移動方向
 	m_vx = 0.0f;

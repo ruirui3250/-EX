@@ -36,9 +36,6 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面\3面終了">
       <UniqueIdentifier>{ea2122b0-2b73-428d-ab76-fc4c8fed4e57}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\3面主人公">
-      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\4面終了">
       <UniqueIdentifier>{b6ac8072-15e5-484f-bbd6-734630453ab6}</UniqueIdentifier>
     </Filter>
@@ -106,11 +103,17 @@
     <Filter Include="ソース ファイル\基本データ\血栓">
       <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\4面主人公">
-      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\敵機\4面敵">
       <UniqueIdentifier>{1a2352a1-f9ba-4f3e-ba4a-ee7fd9217996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\横スクロール">
+      <UniqueIdentifier>{a90e1288-cd80-44a4-bac3-7624c81f4108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\3面主人公">
+      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\4面主人公">
+      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -258,24 +261,6 @@
     <ClInclude Include="WinScene4.h">
       <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClInclude>
-    <ClInclude Include="CObjBulletEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjHomingBullet.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjHomingEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjSinEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjAttackEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
     <ClInclude Include="ObjEnemyBoss2.h">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClInclude>
@@ -329,6 +314,24 @@
     </ClInclude>
     <ClInclude Include="ObjSitaEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjBulletEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjHomingBullet.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjHomingEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjSinEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttackEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -476,24 +479,6 @@
     <ClCompile Include="WinScene4.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClCompile>
-    <ClCompile Include="CObjBulletEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjHomingBullet.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjHomingEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjSinEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjAttackEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
     <ClCompile Include="ObjGameOver.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
     </ClCompile>
@@ -547,6 +532,24 @@
     </ClCompile>
     <ClCompile Include="ObjSitaEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjBulletEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjHomingBullet.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjHomingEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjSinEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttackEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

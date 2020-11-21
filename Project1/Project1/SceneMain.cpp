@@ -88,7 +88,7 @@ void CSceneMain::Scene()
 		Objs::InsertObj(obj4, OBJ_ENEMY, 50);
 
 		CObjHomingEnemy* obj2;
-		obj2 = new CObjHomingEnemy(799.0f, 330);
+		obj2 = new CObjHomingEnemy(799.0f, 150);
 		Objs::InsertObj(obj2, OBJ_HOMING_ENEMY, 50);
 
 	}
@@ -335,7 +335,7 @@ void CSceneMain::Scene()
 	else if (m_time == 500)
 	{
 	CObjHomingEnemy* obj;
-	obj = new CObjHomingEnemy(799.0f, 500);
+	obj = new CObjHomingEnemy(799.0f, 0);
 	Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
 	}
 	else if (m_time == 1200)

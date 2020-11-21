@@ -32,7 +32,7 @@ void CObjSitaEnemy::Action()
 		m_r = 6.0f;
 	//ˆÚ“®•ûŒü
 	m_vx = sin(3.14 / 180 * m_r);
-	m_vy = -1.0f;
+	m_vy = +1.0f;
 
 	//ˆÚ“®ƒxƒNƒgƒ‹‚Ì³‹K‰»
 	UnitVec(&m_vy, &m_vx);

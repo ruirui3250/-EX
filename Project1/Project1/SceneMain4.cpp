@@ -31,7 +31,7 @@ void CSceneMain4::InitScene()
 
 	Draw::LoadImage(L"敵弾(使).png", 2, TEX_SIZE_512);//敵機弾丸
 
-	Draw::LoadImage(L"注射器縦.png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器下.png", 0, TEX_SIZE_512);
 
 	Draw::LoadImage(L"拡散弾カプセル.png", 6, TEX_SIZE_512);
 
@@ -69,12 +69,12 @@ void CSceneMain4::InitScene()
 //ゲームシーン実行中メソッド
 void CSceneMain4::Scene()
 {
-	//m_time++;
-	//if (m_time == 30)
-	//{
-	//	CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
-	//	Objs::InsertObj(obj, OBJ_ITEM, 50);
-	//}
+	m_time++;
+	if (m_time == 30)
+	{
+		CObjSitaAttackEnemy* obj = new CObjSitaAttackEnemy(200.0f, 500);
+		Objs::InsertObj(obj, OBJ_SITA_ATTACK_ENEMY,50);
+	}
 	///*-------------------------回復アイテム出現---------------------------*/
 
 	/////*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/

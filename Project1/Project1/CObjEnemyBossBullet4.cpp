@@ -19,8 +19,8 @@ void CObjEnemyBossBullet4::Init()
 {
 	m_eff.m_top = 0;
 	m_eff.m_left = 0;
-	m_eff.m_right = 10;
-	m_eff.m_bottom = 10;
+	m_eff.m_right = 0;
+	m_eff.m_bottom = 0;
 	m_ani = 0;
 	m_ani_time = 0;
 

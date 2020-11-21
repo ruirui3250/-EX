@@ -69,6 +69,33 @@ void CObjAngleBulletHero::Action()
 			Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxに削除する。
 		}
 
+		//敵機オブジェクトにぶつかったら弾丸削除。
+		if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
+		{
+			this->SetStatus(false); //自身に削除命令
+			Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		}
+
+		//当たり判定を行うオブジェクト情報部
+		int data_base[4] =
+		{
+			OBJ_ENEMY,
+			OBJ_ATTACK_ENEMY,
+			//OBJ_DIFFUSION_ENEMY,
+			OBJ_HOMING_ENEMY,
+			OBJ_BOSS_ENEMY,
+		};
+		//敵機オブジェクトと接触したら拡散弾丸削除
+		for (int i = 0; i < 4; i++)
+		{
+			if (hit->CheckObjNameHit(data_base[i]) != nullptr)
+			{
+				/*Audio::Start(3);*/
+				this->SetStatus(false);
+				Hits::DeleteHitBox(this);
+			}
+		}
+
 		if (m_del == true)
 		{
 
@@ -100,13 +127,7 @@ void CObjAngleBulletHero::Action()
 			}
 			return;//消滅処理は、ここでアクションメソッドを終了させる
 		}
-		//敵機オブジェクトと接触したら拡散弾丸削除
-		if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
-		{
-			//hit->SetInvincibility(true);//敵機弾丸が所有するHitBoxに削除する。
-			this->SetStatus(false);
-			Hits::DeleteHitBox(this);
-		}
+
 
 
 

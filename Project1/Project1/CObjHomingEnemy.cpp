@@ -34,7 +34,7 @@ void CObjHomingEnemy::Init()
 	UnitVec(&m_vy, &m_vx);
 
 	//当たり判定用HitBoxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_SIN_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_HOMING_ENEMY, 50);
 }
 
 //アクション
@@ -120,13 +120,6 @@ void CObjHomingEnemy::Action()
 	{
 		m_del = true;                 //消滅実行
 		hit->SetInvincibility(false);//当たり判定無効
-	}
-
-	//弾丸と接触しているかどうか調べる
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-	{
-		m_del = true;                 //消滅実行
-		hit->SetInvincibility(true);//当たり判定無効
 	}
 }
 
