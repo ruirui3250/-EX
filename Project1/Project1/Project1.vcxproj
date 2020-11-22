@@ -204,6 +204,9 @@
     <ClInclude Include="ObjWin5.h" />
     <ClInclude Include="ObjYokoKesen.h" />
     <ClInclude Include="SceneGameOver.h" />
+    <ClInclude Include="SceneGameOver2.h" />
+    <ClInclude Include="SceneGameOver3.h" />
+    <ClInclude Include="SceneGameOver4.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="SceneMain2.h" />
     <ClInclude Include="SceneMain4.h" />
@@ -283,6 +286,9 @@
     <ClCompile Include="ObjWin5.cpp" />
     <ClCompile Include="ObjYokoKesen.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
+    <ClCompile Include="SceneGameOver2.cpp" />
+    <ClCompile Include="SceneGameOver3.cpp" />
+    <ClCompile Include="SceneGameOver4.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="SceneMain2.cpp" />
     <ClCompile Include="SceneMain4.cpp" />

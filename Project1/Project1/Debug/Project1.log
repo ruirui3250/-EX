@@ -1,1 +1,9 @@
-﻿  Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe
+﻿  CObjHomingEnemy.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(79,14): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(80,11): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(83,26): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(87,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(88,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(93,26): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\CObjHomingEnemy.cpp(94,26): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe

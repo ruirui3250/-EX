@@ -170,7 +170,7 @@ void CObjSitaHero::Action()
 			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
 			////主人公機消滅でシーンをゲームオーバーに移行する
-			Scene::SetScene(new CSceneGameOver());
+			Scene::SetScene(new CSceneGameOver3());
 		}
 
 	}

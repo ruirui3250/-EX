@@ -18,6 +18,7 @@ void CObjTateEnemy::Init()
 	m_r = 0;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+	m_del = 0.0f;
 
 	//“–‚½‚è”»’è—pHitBoxì¬
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
@@ -53,6 +54,12 @@ void CObjTateEnemy::Action()
 		this->SetStatus(false); //Ž©g‚Éíœ–½—ß‚ðo‚·B
 		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
+	}
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	if (hit->CheckObjNameHit(OBJ_TATE_HERO) != nullptr)
+	{
+		m_del = true; //Á–ÅŽÀs
+		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)

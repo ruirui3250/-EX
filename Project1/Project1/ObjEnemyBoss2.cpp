@@ -40,25 +40,29 @@ void CObjBoss2::Action()
        // 敵機オブジェクト
         CObjAttackEnemy* obj_b = new CObjAttackEnemy(m_x + 68, m_y + 114);//敵機オブジェクト作成
         Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY, 100);//敵機オブジェクト登録
+        CObjAttackEnemy* obj_b2 = new CObjAttackEnemy(m_x + 68, m_y + 250);//敵機オブジェクト作成
+        Objs::InsertObj(obj_b2, OBJ_ATTACK_ENEMY, 100);//敵機オブジェクト登録
+        CObjAttackEnemy* obj_b3 = new CObjAttackEnemy(m_x + 68, m_y + 10);//敵機オブジェクト作成
+        Objs::InsertObj(obj_b3, OBJ_ATTACK_ENEMY, 100);//敵機オブジェクト登録
     }
-    //360度弾丸発射
-    if (m_time % 200 == 0)
-    {
-            //19発同時発射
-            //CObjAngleBullet* obj_b;
-            //for (int i = 0; i < 360; i += 20)
-            //{
-            //    //角度iで角度弾丸発射
-            //    obj_b = new CObjAngleBullet(m_x + 124, m_y + 91, i, 5.0f);
-            //    Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET, 100);
-            //}
-    }
+    ////360度弾丸発射
+    //if (m_time % 200 == 0)
+    //{
+    //        //19発同時発射
+    //        //CObjAngleBullet* obj_b;
+    //        //for (int i = 0; i < 360; i += 20)
+    //        //{
+    //        //    //角度iで角度弾丸発射
+    //        //    obj_b = new CObjAngleBullet(m_x + 124, m_y + 91, i, 5.0f);
+    //        //    Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET, 100);
+    //        //}
+    //}
         //誘導弾発射
-        if (m_time % 500 == 0)
+        if (m_time % 200 == 0)
         {
             //誘導弾丸オブジェクト作成
-           // CObjHomingBullet* obj_homing_bullet = new CObjHomingBullet(m_x + 402, m_y + 150);
-            //Objs::InsertObj(obj_homing_bullet, OBJ_HOMING_BULLET, 100);
+           CObjHomingEnemy* obj_homing_enemy = new CObjHomingEnemy(m_x + 68, m_y + 120);
+            Objs::InsertObj(obj_homing_enemy, OBJ_HOMING_ENEMY, 100);
         }
     //m_timeの初期化
     if (m_time > 1000)

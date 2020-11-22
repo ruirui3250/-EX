@@ -15,6 +15,9 @@ enum OBJ_NAME
 	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
+	OBJ_GAME_OVER2,
+	OBJ_GAME_OVER3,
+	OBJ_GAME_OVER4,
 	OBJ_HERO,
 	OBJ_SCENE_MAIN,
 	OBJ_SCENE_MAIN2,
@@ -178,9 +181,12 @@ struct UserData
 #include"SceneMain5.h"
 #include"TatesukuSceneMain.h"
 #include"SceneGameOver.h"
+#include"SceneGameOver2.h"
+#include"SceneGameOver3.h"
+#include"SceneGameOver4.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  TatesukuSceneMain
+#define SET_GAME_START  CSceneMain
 //-----------------------------------------------
