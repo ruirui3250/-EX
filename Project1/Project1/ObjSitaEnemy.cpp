@@ -20,7 +20,7 @@ void CObjSitaEnemy::Init()
 	m_vy = 0.0f;
 
 	//“–‚½‚è”»’è—pHitBoxì¬
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_SITA_ENEMY, 1);
 }
 //ƒAƒNƒVƒ‡ƒ“
 void CObjSitaEnemy::Action()
@@ -55,7 +55,13 @@ void CObjSitaEnemy::Action()
 		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

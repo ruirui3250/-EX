@@ -18,7 +18,7 @@ void CObjSitaHero::Init()
 	m_x = 350;
 	m_y = 0;
 	//当たり判定用hitboxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_SITA_HERO, 100);
 }
 
 
@@ -61,7 +61,7 @@ void CObjSitaHero::Action()
 
 			//弾丸オブジェクト作成
 			CObjSitaBullet* obj_b = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
 
@@ -156,24 +156,24 @@ void CObjSitaHero::Action()
 
 
 	////ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
-	//if (m_f == true)
-	//{
-	//	if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
-	//	{
+	if (m_f == true)
+	{
+		if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
+		{
 
-	//		m_hp -= 1;
-	//		m_f = false;
-	//	}
-	//	if (m_hp <= 0)
-	//	{
-	//		this->SetStatus(false);//自身に削除命令を出す
-	//		Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+			m_hp -= 1;
+			m_f = false;
+		}
+		if (m_hp <= 0)
+		{
+			this->SetStatus(false);//自身に削除命令を出す
+			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
-	//		////主人公機消滅でシーンをゲームオーバーに移行する
-	//		//Scene::SetScene(new CSceneGameOver4());
-	//	}
+			////主人公機消滅でシーンをゲームオーバーに移行する
+			Scene::SetScene(new CSceneGameOver());
+		}
 
-	//}
+	}
 
 	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
@@ -188,19 +188,19 @@ void CObjSitaHero::Action()
 
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	{
-		m_hp -= 1;
+	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
+	//{
+	//	m_hp -= 1;
 
-		if (m_hp == 0)
-		{
-			this->SetStatus(false);//自身に削除命令を出す
-			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+	//	if (m_hp == 0)
+	//	{
+	//		this->SetStatus(false);//自身に削除命令を出す
+	//		Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-			Scene::SetScene(new CSceneGameOver());
-		}
-	}
+	//		//主人公機消滅でシーンをゲームオーバーに移行する
+	//		Scene::SetScene(new CSceneGameOver());
+	//	}
+	//}
 }
 //ドロー
 void CObjSitaHero::Draw()

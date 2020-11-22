@@ -148,6 +148,21 @@ void CObjTateBoss::Action()
 
 		Scene::SetScene(new CSceneWin4());
 	}
+	//弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		Scene::SetScene(new CSceneWin4());
+
+	}
 }
 
 //ドロー

@@ -165,11 +165,12 @@
     <ClInclude Include="Kaiten.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
+    <ClInclude Include="ObjAttackEnemy2.h" />
     <ClInclude Include="ObjBlock.h" />
     <ClInclude Include="ObjBullet.h" />
     <ClInclude Include="ObjClearBack.h" />
     <ClInclude Include="ObjClearBack2.h" />
-    <ClInclude Include="ObjDiffusionEnemy.h" />
+    <ClInclude Include="ObjDiffusionHero.h" />
     <ClInclude Include="ObjEnemy.h" />
     <ClInclude Include="ObjEnemyBoss.h" />
     <ClInclude Include="ObjEnemyBoss2.h" />
@@ -218,6 +219,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
+    <ClCompile Include="ObjAttackEnemy2.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjBulletEnemy2.cpp" />
     <ClCompile Include="CObjEnemyBossBullet4.cpp" />
@@ -246,7 +248,7 @@
     <ClCompile Include="ObjBullet.cpp" />
     <ClCompile Include="ObjClearBack.cpp" />
     <ClCompile Include="ObjClearBack2.cpp" />
-    <ClCompile Include="ObjDiffusionEnemy.cpp" />
+    <ClCompile Include="ObjDiffusionHero.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
     <ClCompile Include="CObjEnemy2.cpp" />
     <ClCompile Include="ObjEnemyBoss.cpp" />

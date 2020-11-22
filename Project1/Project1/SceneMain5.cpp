@@ -29,7 +29,7 @@ void CSceneMain5::InitScene()
 	//外部グラフィック読み込み0番  背景
 	Draw::LoadImage(L"背景(使).png", 9, TEX_SIZE_512);
 
-	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
+	Draw::LoadImage(L"ウイルス無.png", 3, TEX_SIZE_512);
 
 	Draw::LoadImageW(L"敵弾(使).png", 5, TEX_SIZE_512);
 
@@ -68,10 +68,10 @@ void CSceneMain5::Scene()
 {
 	m_time++;
 
-	//if (m_time == 30)
-	//{
-	//	CObjEnemy* obj = new CObjEnemy(799.0f, 400);
-	//	Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	if (m_time == 30)
+	{
+		CObjEnemy2* obj = new CObjEnemy2(799.0f, 400);
+		Objs::InsertObj(obj, OBJ_ENEMY2, 50);
 
 	//	CObjAttackEnemy* obj1;
 	//	obj1 = new CObjAttackEnemy(799, 230);
@@ -91,7 +91,7 @@ void CSceneMain5::Scene()
 	//	obj2 = new CObjHomingEnemy(799.0f, 150);
 	//	Objs::InsertObj(obj2, OBJ_HOMING_ENEMY, 50);
 
-	//}
+	}
 	//else if (m_time == 40)
 	//{
 	//	//block object create

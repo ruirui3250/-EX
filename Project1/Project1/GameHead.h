@@ -26,12 +26,10 @@ enum OBJ_NAME
 	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
 	OBJ_BOSS_ENEMY2,
-	OBJ_BOSS_ENEMY4,
 	OBJ_BOSS_BULLET_ENEMY,
 	OBJ_ANGLE_BULLET_HERO,
 	OBJ_DIFFUSION_HERO,
 	OBJ_HOMING_ENEMY,
-	OBJ_DIFFUSION_ENEMY,
 	OBJ_HOMING_BULLET,
 	OBJ_ITEM,
 	OBJLASER_BULLET,
@@ -55,11 +53,14 @@ enum OBJ_NAME
 	OBJ_SITA_BULLET_ENEMY,
 	OBJ_SITA_ATTACK_ENEMY,
 	OBJ_SITA_ENEMY,
+	OBJ_SITA_KESEN,
+	OBJ_BOSS_ENEMY4,
 
 	/*5面*/
 	OBJ_SCENE_MAIN5,
 	OBJ_BULLET_ENEMY2,
 	OBJ_ENEMY2,
+	OBJ_ATTACK_ENEMY2,
 };
 //------------------------------------------------
 
@@ -127,7 +128,7 @@ struct UserData
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
 #include"ObjEnemy.h"
-#include"ObjDiffusionEnemy.h"
+#include"ObjDiffusionHero.h"
 #include"ObjEnemyBoss.h"
 #include"ObjEnemyBoss2.h"
 #include"ObjEnemyBoss4.h"
@@ -152,10 +153,13 @@ struct UserData
 #include"ObjSitaLaserBullet.h"
 #include"CObjSitaBulletEnemy.h"
 #include"ObjSitaAttackEnemy.h"
+#include"ObjSitaKesen.h"
 #include"ObjSitaEnemy.h"
 /*5面*/
 #include"ObjSceneMain5.h"
 #include"CObjBulletEnemy2.h"
+#include"CObjEnemy2.h"
+#include"ObjAttackEnemy2.h"
 //アイテム関連
 #include"Item.h"
 
@@ -178,5 +182,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain5
+#define SET_GAME_START  CSceneMain4
 //-----------------------------------------------

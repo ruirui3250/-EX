@@ -37,7 +37,7 @@ void CObjBoss4::Action()
     m_time++;
 
     //’Êí’e”­ŽË
-    if (m_time % 20 == 0)
+    if (m_time % 10 == 0)
     {
         //’eŠÛ“G‹@ƒIƒuƒWƒFƒNƒg
         CObjEnemyBossBullet4* obj_b = new CObjEnemyBossBullet4(m_x, m_y);//’eŠÛ“G‹@ƒIƒuƒWƒFƒNƒgì¬
@@ -70,14 +70,14 @@ void CObjBoss4::Action()
 
 
     //Šp“x‰ÁŽZ
-    m_r += 2.0f;
+    m_r += 1.0f;
 
     //360‚Å‰Šú’l‚É–ß‚·
     if (m_r > 360.0f)
         m_r = 0.0f;
 
     //ˆÚ“®•ûŒü
-    m_vx = 20.0f;
+    m_vx = 0.0f;
     m_vy = sin(3.14 / 180 * m_r);
 
     //ˆÚ“®ƒxƒNƒgƒ‹‚Ì³‹K‰»
@@ -113,7 +113,22 @@ void CObjBoss4::Action()
         this->SetStatus(false);
         Hits::DeleteHitBox(this);
 
-        Scene::SetScene(new CSceneWin3());
+        Scene::SetScene(new CSceneWin5());
+
+    }
+    //’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+    if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+    {
+        m_hp -= 1;
+    }
+
+    //HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
+    if (m_hp <= 0)
+    {
+        this->SetStatus(false);
+        Hits::DeleteHitBox(this);
+
+        Scene::SetScene(new CSceneWin5());
 
     }
 }

@@ -39,7 +39,7 @@ void CSceneMain4::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Boss3(使).png", 9, TEX_SIZE_512);
+	Draw::LoadImage(L"ボス4.png", 4, TEX_SIZE_512);
 
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
@@ -587,12 +587,12 @@ void CSceneMain4::Scene()
 	//}
 
 	///*-------------------------ボス-------------------------------*/
-	//if (m_time == 2000)
-	//{
-	//	CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
-	//	Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	if (m_time == 50)
+	{
+		CObjBoss4* obj = new CObjBoss4(350.0f, 500);
+		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 50);
 
-	//}
+	}
 
 }
 

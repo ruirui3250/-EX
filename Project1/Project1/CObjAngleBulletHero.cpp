@@ -3,6 +3,7 @@
 #include"GameL\HitBoxManager.h"
 #include"GameHead.h"
 #include"CObjAngleBulletHero.h"
+#include"ObjDiffusionHero.h"
 #include "UtilityModule.h"
 //使用するネームスペース
 using namespace GameL;
@@ -77,16 +78,35 @@ void CObjAngleBulletHero::Action()
 		}
 
 		//当たり判定を行うオブジェクト情報部
-		int data_base[4] =
+		int data_base[18] =
 		{
+			//1,2面のやつ
 			OBJ_ENEMY,
 			OBJ_ATTACK_ENEMY,
-			//OBJ_DIFFUSION_ENEMY,
 			OBJ_HOMING_ENEMY,
+			OBJ_SIN_ENEMY,
+			//縦スクのやつ
+			OBJ_TATE_ENEMY,
+			OBJ_TATE_BULLET_ENEMY,
+			//下スクロール
+			OBJ_SITA_BULLET_ENEMY,
+			OBJ_SITA_ENEMY,
+			//血栓
+			OBJ_SITA_KESEN,
+			OBJ_TATEKESEN,
+			OBJ_YOKO_KESEN,
+			//ボス
 			OBJ_BOSS_ENEMY,
+			OBJ_BOSS_ENEMY2,
+			OBJ_TATE_BOSS,
+			OBJ_BOSS_ENEMY4,
+			//5面
+			OBJ_ENEMY2,
+			OBJ_BULLET_ENEMY2,
+			OBJ_ATTACK_ENEMY2,
 		};
 		//敵機オブジェクトと接触したら拡散弾丸削除
-		for (int i = 0; i < 4; i++)
+		for (int i = 0; i < 18; i++)
 		{
 			if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 			{
@@ -96,37 +116,37 @@ void CObjAngleBulletHero::Action()
 			}
 		}
 
-	//	if (m_del == true)
-	//	{
+		if (m_del == true)
+		{
 
-	//		//アニメーションRECT情報
-	//		RECT_F ani_src[4] =
-	//		{
-	//			{32,0,32,64},
-	//			{32,32,64,64},
-	//			{32,64,96,64},
-	//			{32,96,128,64},
-	//		};
-	//		//アニメーションのコマ感覚制御
-	//		if (m_ani_time > 2)
-	//		{
-	//			m_ani++;
-	//			m_ani_time = 0;
+			//アニメーションRECT情報
+			RECT_F ani_src[4] =
+			{
+				{32,0,32,64},
+				{32,32,64,64},
+				{32,64,96,64},
+				{32,96,128,64},
+			};
+			//アニメーションのコマ感覚制御
+			if (m_ani_time > 2)
+			{
+				m_ani++;
+				m_ani_time = 0;
 
-	//			m_eff = ani_src[m_ani];//アニメーションのRECT配列からm_ani番目のRECT情報取得
-	//		}
-	//		else
-	//		{
-	//			m_ani_time++;
-	//		}
-	//		//着弾アニメーション終了で本当にオブジェクトの破棄
-	//		if (m_ani == 4)
-	//		{
-	//			this->SetStatus(false);
-	//			Hits::DeleteHitBox(this);
-	//		}
-	//		return;//消滅処理は、ここでアクションメソッドを終了させる
-	//	}
+				m_eff = ani_src[m_ani];//アニメーションのRECT配列からm_ani番目のRECT情報取得
+			}
+			else
+			{
+				m_ani_time++;
+			}
+			//着弾アニメーション終了で本当にオブジェクトの破棄
+			if (m_ani == 4)
+			{
+				this->SetStatus(false);
+				Hits::DeleteHitBox(this);
+			}
+			return;//消滅処理は、ここでアクションメソッドを終了させる
+		}
 
 
 

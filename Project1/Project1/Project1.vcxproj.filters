@@ -66,9 +66,6 @@
     <Filter Include="ソース ファイル\基本データ\障害物">
       <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\主人公機">
-      <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\回転">
       <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
     </Filter>
@@ -109,14 +106,20 @@
     <Filter Include="ソース ファイル\基本データ\敵機\横スクロール">
       <UniqueIdentifier>{a90e1288-cd80-44a4-bac3-7624c81f4108}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\3面主人公">
-      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\4面主人公">
-      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\敵機\5面の敵">
       <UniqueIdentifier>{935e6d97-b084-4c44-a6eb-b503d7b3620d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公">
+      <UniqueIdentifier>{f79ae3db-d46d-44f3-8049-4f0c459557ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\3面主人公">
+      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\4面主人公">
+      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\主人公機">
+      <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -169,10 +172,10 @@
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClInclude>
     <ClInclude Include="ObjBullet.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjHero.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="UtilityModule.h">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
@@ -181,7 +184,7 @@
       <Filter>ソース ファイル\基本データ\障害物</Filter>
     </ClInclude>
     <ClInclude Include="CObjAngleBulletHero.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="Item.h">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
@@ -189,11 +192,8 @@
     <ClInclude Include="Kaiten.h">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClInclude>
-    <ClInclude Include="ObjDiffusionEnemy.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
-    </ClInclude>
     <ClInclude Include="ObjLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjTatesukuSceneMain.h">
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
@@ -202,13 +202,13 @@
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateBullet.h">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateHero.h">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTatekesen.h">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -298,13 +298,13 @@
       <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaBullet.h">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaHero.h">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaKesen.h">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -347,6 +347,12 @@
     </ClInclude>
     <ClInclude Include="CObjEnemy2.h">
       <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttackEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjDiffusionHero.h">
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -399,10 +405,10 @@
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjBullet.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="UtilityModule.cpp">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
@@ -411,7 +417,7 @@
       <Filter>ソース ファイル\基本データ\障害物</Filter>
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="Item.cpp">
       <Filter>ソース ファイル\基本データ\アイテム</Filter>
@@ -419,11 +425,8 @@
     <ClCompile Include="Kaiten.cpp">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClCompile>
-    <ClCompile Include="ObjDiffusionEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
-    </ClCompile>
     <ClCompile Include="ObjLaserBullet.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjTatesukuSceneMain.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
@@ -432,13 +435,13 @@
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateBullet.cpp">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateHero.cpp">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateLaserBullet.cpp">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTatekesen.cpp">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -528,13 +531,13 @@
       <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaBullet.cpp">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaHero.cpp">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaLaserBullet.cpp">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaKesen.cpp">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -577,6 +580,12 @@
     </ClCompile>
     <ClCompile Include="CObjEnemy2.cpp">
       <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttackEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDiffusionHero.cpp">
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

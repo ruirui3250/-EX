@@ -57,11 +57,11 @@ void CObjBullet::Action()
 	hit->SetPos(m_x, m_y);//HitBoxの位置を弾丸の位置を更新
 
 		//障害物オブジェクトと接触したら弾丸削除
-	if (hit->CheckObjNameHit(OBJ_YOKO_KESEN) != nullptr)
-	{
-		this->SetStatus(false);//自身に削除命令をだす。
-		Hits::DeleteHitBox(this);//弾丸が所有するHitBoxを削除する。
-	}
+	//if (hit->CheckObjNameHit(OBJ_YOKO_KESEN) != nullptr)
+	//{
+	//	this->SetStatus(false);//自身に削除命令をだす。
+	//	Hits::DeleteHitBox(this);//弾丸が所有するHitBoxを削除する。
+	//}
 
 	//領域外に出たら弾丸破棄
 	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
@@ -72,6 +72,13 @@ void CObjBullet::Action()
 		return;
 	}
 
+	//障害物に触れたら弾丸削除
+	if (hit->CheckObjNameHit(OBJ_YOKO_KESEN) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+
 	//敵機オブジェクトにぶつかったら弾丸削除。
 	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	{
@@ -80,20 +87,35 @@ void CObjBullet::Action()
 	}
 
 	//当たり判定を行うオブジェクト情報部
-	int data_base[7] =
+	int data_base[18] =
 	{
+		//1,2面のやつ
 		OBJ_ENEMY,
-		OBJ_ENEMY2,
 		OBJ_ATTACK_ENEMY,
-		OBJ_BULLET_ENEMY,
-		//OBJ_DIFFUSION_ENEMY,
 		OBJ_HOMING_ENEMY,
+		OBJ_SIN_ENEMY,
+		//縦スクのやつ
+		OBJ_TATE_ENEMY,
+		OBJ_TATE_BULLET_ENEMY,
+		//下スクロール
+		OBJ_SITA_BULLET_ENEMY,
+		OBJ_SITA_ENEMY,
+		//血栓
+		OBJ_SITA_KESEN,
+		OBJ_TATEKESEN,
+		OBJ_YOKO_KESEN,
+		//ボス
 		OBJ_BOSS_ENEMY,
 		OBJ_BOSS_ENEMY2,
+		OBJ_TATE_BOSS,
+		OBJ_BOSS_ENEMY4,
+		//5面
+		OBJ_ENEMY2,
+		OBJ_BULLET_ENEMY2,
+		OBJ_ATTACK_ENEMY2,
 	};
-
-	//オブジェクト情報部に当たり判定を行い。当たれば削除。
-	for (int i = 0; i < 7; i++)
+	//敵機オブジェクトと接触したら拡散弾丸削除
+	for (int i = 0; i < 18; i++)
 	{
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{

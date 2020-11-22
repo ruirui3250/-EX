@@ -115,11 +115,17 @@ void CObjHomingEnemy::Action()
 		return;
 	}
 
-	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
-		m_del = true;                 //Á–ÅŽÀs
-		hit->SetInvincibility(false);//“–‚½‚è”»’è–³Œø
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
 }
 

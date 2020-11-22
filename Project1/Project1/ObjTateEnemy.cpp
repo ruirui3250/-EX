@@ -60,6 +60,12 @@ void CObjTateEnemy::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 }
 
 //ƒhƒ[

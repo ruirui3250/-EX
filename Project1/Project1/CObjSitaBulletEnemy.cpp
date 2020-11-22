@@ -31,7 +31,7 @@ void CObjSitaBulletEnemy::Init()
 	UnitVec(&m_vy, &m_vx);
 
 	//“–‚½‚è”»’è—pHitBox‚ðì¬B
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_BULLET_ENEMY, 50);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_SITA_BULLET_ENEMY, 50);
 
 }
 
@@ -68,17 +68,23 @@ void CObjSitaBulletEnemy::Action()
 		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
 	}
-	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	////ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	//if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	//{
+	//	m_del = true; //Á–ÅŽÀs
+	//	hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+	//}
+		//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
-	//ŽålŒö‹@‚Ì’eŠÛobject‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
 }
 
