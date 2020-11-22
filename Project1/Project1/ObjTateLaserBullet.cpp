@@ -26,7 +26,7 @@ void CObjTateLaserBullet::Init()
 	m_vx = 0.0f;
 
 	//当たり判定HItBoxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_BULLET, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_TATE_LASER_BULLET, 1);
 }
 //アクション
 void CObjTateLaserBullet::Action()

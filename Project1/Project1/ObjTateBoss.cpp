@@ -24,7 +24,7 @@ void CObjTateBoss::Init()
 
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x + 100, m_y + 50, 250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
+	Hits::SetHitBox(this, m_x, m_y, 250, 250, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
 }
 //アクション
 void CObjTateBoss::Action()
@@ -124,7 +124,7 @@ void CObjTateBoss::Action()
 	m_y += m_vy;
 	//HitBoxの内容更新
 	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x + 100, m_y + 50);
+	hit->SetPos(m_x, m_y);
 	//領域外に出たら敵機を破棄。
 	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
 	if (check == false)
@@ -150,6 +150,21 @@ void CObjTateBoss::Action()
 	}
 	//弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+
+		Scene::SetScene(new CSceneWin4());
+
+	}
+	//弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		m_hp -= 1;
 	}
@@ -238,14 +253,14 @@ void CObjTateBoss::Draw()
 	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 512.0f;
-	src.m_bottom = 512.0f;
+	src.m_right = 250.0f;
+	src.m_bottom = 250.0f;
 
 	//表示位置の設定
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
-	dst.m_right = 512.0f + m_x;
-	dst.m_bottom = 512.0f + m_y;
+	dst.m_right = 250.0f + m_x;
+	dst.m_bottom = 250.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 	Draw::Draw(4, &src, &dst, c, 0.0f);

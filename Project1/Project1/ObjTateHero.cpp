@@ -25,18 +25,8 @@ void CObjTateHero::Init()
 //アクション
 void CObjTateHero::Action()
 {
-	/*-------------------------------タイトル画面に戻る--------------------------*/
-	if (Input::GetVKey('S') == true)
-	{
-		if (m_key_flag == true)
-		{
-			Scene::SetScene(new CSceneTitle());
-			m_key_flag = false;
-		}
-
-	}
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
-	if (Input::GetVKey('Z') == true)
+	if (Input::GetVKey('A') == true)
 	{
 
 		m_la -= 1;
@@ -52,7 +42,7 @@ void CObjTateHero::Action()
 
 	}
 	/*----------------------主人公機通常弾丸-----------------------------------*/
-	if (Input::GetVKey('X') == true)
+	if (Input::GetVKey('Z') == true)
 	{
 			m_vx = 0.0f;
 			m_vy = -1.0f;
@@ -74,7 +64,7 @@ void CObjTateHero::Action()
 	//主人公機の拡散弾丸弾発射
 	/*------------------------これは一回のみ発射可能------------------*/
 	//主人公機の拡散弾丸発射
-	if (Input::GetVKey('C') == true)
+	if (Input::GetVKey('X') == true)
 	{
 		m_ka -= 1;
 		if (m_ka <= 0 == false)
