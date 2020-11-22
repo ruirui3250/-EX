@@ -35,7 +35,7 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
-	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
+	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
 
 	//Draw::LoadImage(L"障害物.png",9, TEX_SIZE_512);
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);

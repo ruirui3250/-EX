@@ -80,17 +80,18 @@ void CObjBullet::Action()
 	}
 
 	//当たり判定を行うオブジェクト情報部
-	int data_base[4] =
+	int data_base[5] =
 	{
 		OBJ_ENEMY,
 		OBJ_ATTACK_ENEMY,
 		//OBJ_DIFFUSION_ENEMY,
 		OBJ_HOMING_ENEMY,
 		OBJ_BOSS_ENEMY,
+		OBJ_BOSS_ENEMY2,
 	};
 
 	//オブジェクト情報部に当たり判定を行い。当たれば削除。
-	for (int i = 0; i < 4; i++)
+	for (int i = 0; i < 5; i++)
 	{
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{

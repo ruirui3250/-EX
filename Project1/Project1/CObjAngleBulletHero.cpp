@@ -96,37 +96,37 @@ void CObjAngleBulletHero::Action()
 			}
 		}
 
-		if (m_del == true)
-		{
+	//	if (m_del == true)
+	//	{
 
-			//アニメーションRECT情報
-			RECT_F ani_src[4] =
-			{
-				{32,0,32,64},
-				{32,32,64,64},
-				{32,64,96,64},
-				{32,96,128,64},
-			};
-			//アニメーションのコマ感覚制御
-			if (m_ani_time > 2)
-			{
-				m_ani++;
-				m_ani_time = 0;
+	//		//アニメーションRECT情報
+	//		RECT_F ani_src[4] =
+	//		{
+	//			{32,0,32,64},
+	//			{32,32,64,64},
+	//			{32,64,96,64},
+	//			{32,96,128,64},
+	//		};
+	//		//アニメーションのコマ感覚制御
+	//		if (m_ani_time > 2)
+	//		{
+	//			m_ani++;
+	//			m_ani_time = 0;
 
-				m_eff = ani_src[m_ani];//アニメーションのRECT配列からm_ani番目のRECT情報取得
-			}
-			else
-			{
-				m_ani_time++;
-			}
-			//着弾アニメーション終了で本当にオブジェクトの破棄
-			if (m_ani == 4)
-			{
-				this->SetStatus(false);
-				Hits::DeleteHitBox(this);
-			}
-			return;//消滅処理は、ここでアクションメソッドを終了させる
-		}
+	//			m_eff = ani_src[m_ani];//アニメーションのRECT配列からm_ani番目のRECT情報取得
+	//		}
+	//		else
+	//		{
+	//			m_ani_time++;
+	//		}
+	//		//着弾アニメーション終了で本当にオブジェクトの破棄
+	//		if (m_ani == 4)
+	//		{
+	//			this->SetStatus(false);
+	//			Hits::DeleteHitBox(this);
+	//		}
+	//		return;//消滅処理は、ここでアクションメソッドを終了させる
+	//	}
 
 
 
