@@ -141,6 +141,8 @@
   <ItemGroup>
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
+    <ClInclude Include="CObjBulletEnemy2.h" />
+    <ClInclude Include="CObjEnemy2.h" />
     <ClInclude Include="CObjEnemyBossBullet4.h" />
     <ClInclude Include="CObjHomingBullet.h" />
     <ClInclude Include="CObjHomingEnemy.h" />
@@ -177,6 +179,7 @@
     <ClInclude Include="ObjSceneMain.h" />
     <ClInclude Include="ObjSceneMain2.h" />
     <ClInclude Include="ObjSceneMain4.h" />
+    <ClInclude Include="ObjSceneMain5.h" />
     <ClInclude Include="ObjSitaAttackEnemy.h" />
     <ClInclude Include="ObjSitaBullet.h" />
     <ClInclude Include="ObjSitaEnemy.h" />
@@ -203,6 +206,7 @@
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="SceneMain2.h" />
     <ClInclude Include="SceneMain4.h" />
+    <ClInclude Include="SceneMain5.h" />
     <ClInclude Include="SceneTitle.h" />
     <ClInclude Include="TatesukuSceneMain.h" />
     <ClInclude Include="UtilityModule.h" />
@@ -215,6 +219,7 @@
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
+    <ClCompile Include="CObjBulletEnemy2.cpp" />
     <ClCompile Include="CObjEnemyBossBullet4.cpp" />
     <ClCompile Include="CObjHomingBullet.cpp" />
     <ClCompile Include="CObjHomingEnemy.cpp" />
@@ -243,6 +248,7 @@
     <ClCompile Include="ObjClearBack2.cpp" />
     <ClCompile Include="ObjDiffusionEnemy.cpp" />
     <ClCompile Include="ObjEnemy.cpp" />
+    <ClCompile Include="CObjEnemy2.cpp" />
     <ClCompile Include="ObjEnemyBoss.cpp" />
     <ClCompile Include="ObjEnemyBoss2.cpp" />
     <ClCompile Include="ObjEnemyBoss4.cpp" />
@@ -251,6 +257,7 @@
     <ClCompile Include="ObjSceneMain.cpp" />
     <ClCompile Include="ObjSceneMain2.cpp" />
     <ClCompile Include="ObjSceneMain4.cpp" />
+    <ClCompile Include="ObjSceneMain5.cpp" />
     <ClCompile Include="ObjSitaAttackEnemy.cpp" />
     <ClCompile Include="ObjSitaBullet.cpp" />
     <ClCompile Include="ObjSitaEnemy.cpp" />
@@ -277,6 +284,7 @@
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="SceneMain2.cpp" />
     <ClCompile Include="SceneMain4.cpp" />
+    <ClCompile Include="SceneMain5.cpp" />
     <ClCompile Include="SceneTitle.cpp" />
     <ClCompile Include="TatesukuSceneMain.cpp" />
     <ClCompile Include="UtilityModule.cpp" />

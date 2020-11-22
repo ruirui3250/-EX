@@ -1,6 +1,6 @@
 //STLデバッグ機能をOFFにする。
-#define _SECURE_SCL(O)
-#define _HAS_ITERATOR_DEBUGGING(O)
+#define _SECURE_SCL(o)
+#define _HAS_ITERATOR_DEBUGGING(o)
 
 //GameLで使用するヘッダー
 #include"GameL\DrawTexture.h"

@@ -115,6 +115,9 @@
     <Filter Include="ソース ファイル\基本データ\4面主人公">
       <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\5面の敵">
+      <UniqueIdentifier>{935e6d97-b084-4c44-a6eb-b503d7b3620d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -333,6 +336,18 @@
     <ClInclude Include="ObjEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
     </ClInclude>
+    <ClInclude Include="ObjSceneMain5.h">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain5.h">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjBulletEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -550,6 +565,18 @@
     </ClCompile>
     <ClCompile Include="ObjEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSceneMain5.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain5.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjBulletEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

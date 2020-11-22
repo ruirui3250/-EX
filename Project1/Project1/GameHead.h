@@ -55,6 +55,11 @@ enum OBJ_NAME
 	OBJ_SITA_BULLET_ENEMY,
 	OBJ_SITA_ATTACK_ENEMY,
 	OBJ_SITA_ENEMY,
+
+	/*5面*/
+	OBJ_SCENE_MAIN5,
+	OBJ_BULLET_ENEMY2,
+	OBJ_ENEMY2,
 };
 //------------------------------------------------
 
@@ -148,6 +153,9 @@ struct UserData
 #include"CObjSitaBulletEnemy.h"
 #include"ObjSitaAttackEnemy.h"
 #include"ObjSitaEnemy.h"
+/*5面*/
+#include"ObjSceneMain5.h"
+#include"CObjBulletEnemy2.h"
 //アイテム関連
 #include"Item.h"
 
@@ -163,11 +171,12 @@ struct UserData
 #include"SceneMain.h"
 #include"SceneMain4.h"
 #include"SceneMain2.h"
+#include"SceneMain5.h"
 #include"TatesukuSceneMain.h"
 #include"SceneGameOver.h"
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain2
+#define SET_GAME_START  CSceneMain5
 //-----------------------------------------------
