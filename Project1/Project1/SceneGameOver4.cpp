@@ -29,7 +29,7 @@ void CSceneGameOver4::InitScene()
 
 }
 //ゲームメイン実行中メソッド
-void CSceneGameOver3::Scene()
+void CSceneGameOver4::Scene()
 {
 
 }

@@ -7,6 +7,18 @@
 #include "GameL/DrawFont.h"
 #include"CObjAngleBulletHero.h"
 
+//位置情報X取得用
+float CObjSitaHero::GetX()
+{
+	return m_x;
+}
+
+//位置情報Y取得用
+float CObjSitaHero::GetY()
+{
+	return m_y;
+}
+
 //イニシャライズ
 void CObjSitaHero::Init()
 {

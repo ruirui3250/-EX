@@ -1,6 +1,6 @@
 //STLデバッグ機能をOFFにする。
-#define _SECURE_SCL(O)
-#define _HAS_ITERATOR_DEBUGGING(O)
+#define _SECURE_SCL(o)
+#define _HAS_ITERATOR_DEBUGGING(o)
 
 //GameLで使用するヘッダー
 #include"GameL\DrawTexture.h"
@@ -589,8 +589,8 @@ void CSceneMain4::Scene()
 	///*-------------------------ボス-------------------------------*/
 	if (m_time == 50)
 	{
-		CObjBoss4* obj = new CObjBoss4(350.0f, 500);
-		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 50);
+		CObjBoss4* obj = new CObjBoss4(250,150);
+		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
 
 	}
 

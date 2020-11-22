@@ -24,8 +24,8 @@ void CObjBoss4::Init()
     m_r = 0.0f;
     m_vx = 0.0f;
     m_vy = 0.0f;
-    m_x = 0.0f;
-    m_y = 0.0f;
+    m_x = 500.0f;
+    m_y = 530.0f;
 
     //当たり判定用HitBoxを作成
     Hits::SetHitBox(this, m_x, m_y, 10, 10, ELEMENT_ENEMY, OBJ_BOSS_ENEMY4,100);
@@ -41,7 +41,7 @@ void CObjBoss4::Action()
     {
         //弾丸敵機オブジェクト
         CObjEnemyBossBullet4* obj_b = new CObjEnemyBossBullet4(m_x, m_y);//弾丸敵機オブジェクト作成
-        Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 4);//弾丸敵機オブジェクト登録
+        Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
     }
     //360度弾丸発射
     if (m_time % 200 == 0)
@@ -70,22 +70,25 @@ void CObjBoss4::Action()
 
 
     //角度加算
-    m_r += 1.0f;
+    m_r = 2.0f;
 
     //360で初期値に戻す
     if (m_r > 360.0f)
-        m_r = 0.0f;
+        m_r = 1.0f;
 
     //移動方向
     m_vx = 0.0f;
-    m_vy = sin(3.14 / 180 * m_r);
+    m_vy = 0.0f;
 
     //移動ベクトルの正規化
     UnitVec(&m_vy, &m_vx);
 
+    //速度を求める
+    m_vx *= 1.5f;
+    m_vy *= 1.5f;
     //移動ベクトルを座標に加算する
-    m_x += m_vx;
-    m_y += m_vy;
+    m_x -= m_vx;
+    m_y -= m_vy;
 
     //HitBoxの内容を更新
     CHitBox* hit = Hits::GetHitBox(this);
@@ -102,7 +105,7 @@ void CObjBoss4::Action()
     }
 
     //弾丸と接触しているかどうか調べる
-    if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+    if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
     {
         m_hp -= 1;
     }
