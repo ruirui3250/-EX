@@ -22,7 +22,7 @@ void CObjTateAttackEnemy::Init()
 	m_time = 0;
 
 	//当たり判定用HitBoxを作成.
-	Hits::SetHitBox(this, m_x, m_y, /*横長*/64,/*縦長*/ 32, ELEMENT_ENEMY, OBJ_ATTACK_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, /*横長*/32,/*縦長*/ 32, ELEMENT_ENEMY, OBJ_ATTACK_ENEMY, 1);
 
 }
 //アクション
@@ -75,7 +75,8 @@ void CObjTateAttackEnemy::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
-	//弾丸の接触を調べる。
+
+	//弾丸と接触しているかどうか調べる。
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
@@ -87,6 +88,7 @@ void CObjTateAttackEnemy::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+
 }
 //ドロー
 void CObjTateAttackEnemy::Draw()
@@ -99,13 +101,13 @@ void CObjTateAttackEnemy::Draw()
 
 	//切り取り位置の設定
 	src.m_top = 0.0f;
-	src.m_left = 64.0f;
-	src.m_right = 128.0f;
+	src.m_left = 0.0f;
+	src.m_right = 32.0f;
 	src.m_bottom = 32.0f;
 
 	//表示位置の設定
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 64.0f + m_x;
+	dst.m_left = 32.0f + m_x;
 	dst.m_right = 0.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
 

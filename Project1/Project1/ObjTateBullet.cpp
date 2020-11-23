@@ -34,7 +34,7 @@ void CObjTateBullet::Action()
 	//’eŠÛÀsˆ—
 	/*m_vy -= 1.0f;
 	m_y -= m_vy;*/
-	m_y -= 50.0f;
+	m_y -= 25.0f;
 	//Resources‚Ì•`‰æ•¨RECT
 	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
 
