@@ -47,8 +47,8 @@ void CSceneMain5::InitScene()
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
 	//主人公オブジェクト作成
-	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
+	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
+	Objs::InsertObj(obj, OBJ_HERO5, 10);//主人公オブジェクトマネージャーを登録
 
 	////blockオブジェクト作成
 	//CObjBlock* objb = new CObjBlock();

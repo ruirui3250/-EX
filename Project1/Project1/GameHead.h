@@ -68,6 +68,7 @@ enum OBJ_NAME
 	OBJ_SITA_ENEMY2,
 	OBJ_TATE_ENEMY2,
 	OBJ_TATE_ATTACK_ENEMY2,
+	OBJ_HERO5,
 };
 //------------------------------------------------
 
@@ -171,6 +172,7 @@ struct UserData
 #include"ObjSitaEnemy2.h"
 #include"ObjTateEnemy2.h"
 #include"ObjTateAttackEnemy2.h"
+#include"ObjHero5.h"
 //アイテム関連
 #include"Item.h"
 
@@ -196,5 +198,5 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain4
+#define SET_GAME_START  CSceneMain5
 //-----------------------------------------------

@@ -136,6 +136,9 @@
     <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\5面用">
       <UniqueIdentifier>{4d37169e-2f16-4734-bf79-23fcd0a59af9}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\5面主人公">
+      <UniqueIdentifier>{bf99b896-22a3-4e6c-a476-30962de360e6}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -390,6 +393,9 @@
     <ClInclude Include="ObjTateAttackEnemy2.h">
       <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
     </ClInclude>
+    <ClInclude Include="ObjHero5.h">
+      <Filter>ソース ファイル\基本データ\主人公\5面主人公</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -643,6 +649,9 @@
     </ClCompile>
     <ClCompile Include="ObjTateAttackEnemy2.cpp">
       <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero5.cpp">
+      <Filter>ソース ファイル\基本データ\主人公\5面主人公</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
