@@ -396,6 +396,18 @@
     <ClInclude Include="ObjHero5.h">
       <Filter>ソース ファイル\基本データ\主人公\5面主人公</Filter>
     </ClInclude>
+    <ClInclude Include="CObjEnemyBossBullet2.h">
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver2.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver3.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver4.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -652,6 +664,18 @@
     </ClCompile>
     <ClCompile Include="ObjHero5.cpp">
       <Filter>ソース ファイル\基本データ\主人公\5面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjEnemyBossBullet2.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver2.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver3.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver4.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

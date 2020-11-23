@@ -78,31 +78,31 @@ void CSceneMain4::Scene()
 	///*-------------------------回復アイテム出現---------------------------*/
 
 	/////*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
-	if (m_time == 30)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 20)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(300.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 40)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(400.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 50)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(280.0f, 100);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 60)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(250.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
+	//if (m_time == 30)
+	//{
+	//	CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
+	//	Objs::InsertObj(obj, OBJ_ITEM, 50);
+	//}
+	//if (m_time == 20)
+	//{
+	//	CObjTateEnemy* obj = new CObjTateEnemy(300.0f, 10);
+	//	Objs::InsertObj(obj, OBJ_ITEM, 50);
+	//}
+	//if (m_time == 40)
+	//{
+	//	CObjTateEnemy* obj = new CObjTateEnemy(400.0f, 10);
+	//	Objs::InsertObj(obj, OBJ_ITEM, 50);
+	//}
+	//if (m_time == 50)
+	//{
+	//	CObjTateEnemy* obj = new CObjTateEnemy(280.0f, 100);
+	//	Objs::InsertObj(obj, OBJ_ITEM, 50);
+	//}
+	//if (m_time == 60)
+	//{
+	//	CObjTateEnemy* obj = new CObjTateEnemy(250.0f, 10);
+	//	Objs::InsertObj(obj, OBJ_ITEM, 50);
+	//}
 
 
 
@@ -589,7 +589,7 @@ void CSceneMain4::Scene()
 	///*-------------------------ボス-------------------------------*/
 	if (m_time == 50)
 	{
-		CObjBoss4* obj = new CObjBoss4(250,150);
+		CObjEnemyBoss4* obj = new CObjEnemyBoss4(250,500);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
 
 	}

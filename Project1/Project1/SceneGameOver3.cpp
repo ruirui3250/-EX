@@ -23,7 +23,7 @@ void CSceneGameOver3::InitScene()
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"GameOver画面コンテ.png", 0, TEX_SIZE_512);
 	//	ゲームオーバーオブジェクト作成
-	CObjGameOver* obj = new CObjGameOver();
+	CObjGameOver3* obj = new CObjGameOver3();
 	Objs::InsertObj(obj, OBJ_GAME_OVER3, 10);
 
 

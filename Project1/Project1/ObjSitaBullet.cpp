@@ -80,7 +80,7 @@ m_y -= m_vy;*/
 	}
 
 	//当たり判定を行うオブジェクト情報部
-	int data_base[19] =
+	int data_base[26] =
 	{
 		//1,2面のやつ
 		OBJ_ENEMY,
@@ -90,6 +90,7 @@ m_y -= m_vy;*/
 		//縦スクのやつ
 		OBJ_TATE_ENEMY,
 		OBJ_TATE_BULLET_ENEMY,
+		OBJ_TATE_ATTACK_ENEMY,
 		//下スクロール
 		OBJ_SITA_BULLET_ENEMY,
 		OBJ_SITA_ENEMY,
@@ -103,13 +104,19 @@ m_y -= m_vy;*/
 		OBJ_BOSS_ENEMY2,
 		OBJ_TATE_BOSS,
 		OBJ_BOSS_ENEMY4,
+		OBJ_BOSS_BULLET_ENEMY2,
+		OBJ_BOSS_BULLET_ENEMY,
 		//5面
 		OBJ_ENEMY2,
 		OBJ_BULLET_ENEMY2,
 		OBJ_ATTACK_ENEMY2,
+		OBJ_SITA_ATTACK_ENEMY2,
+		OBJ_SITA_ENEMY2,
+		OBJ_TATE_ATTACK_ENEMY2,
+		OBJ_TATE_ENEMY2,
 	};
 	//敵機オブジェクトと接触したら拡散弾丸削除
-	for (int i = 0; i < 19; i++)
+	for (int i = 0; i < 26; i++)
 	{
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{
@@ -118,7 +125,6 @@ m_y -= m_vy;*/
 			Hits::DeleteHitBox(this);
 		}
 	}
-
 
 }
 //ドロー

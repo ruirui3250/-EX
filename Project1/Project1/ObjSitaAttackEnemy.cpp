@@ -81,6 +81,12 @@ void CObjSitaAttackEnemy::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 
 }
 //ƒhƒ[

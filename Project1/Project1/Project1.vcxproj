@@ -143,6 +143,7 @@
     <ClInclude Include="CObjBulletEnemy.h" />
     <ClInclude Include="CObjBulletEnemy2.h" />
     <ClInclude Include="CObjEnemy2.h" />
+    <ClInclude Include="CObjEnemyBossBullet2.h" />
     <ClInclude Include="CObjEnemyBossBullet4.h" />
     <ClInclude Include="CObjHomingBullet.h" />
     <ClInclude Include="CObjHomingEnemy.h" />
@@ -176,6 +177,9 @@
     <ClInclude Include="ObjEnemyBoss2.h" />
     <ClInclude Include="ObjEnemyBoss4.h" />
     <ClInclude Include="ObjGameOver.h" />
+    <ClInclude Include="ObjGameOver2.h" />
+    <ClInclude Include="ObjGameOver3.h" />
+    <ClInclude Include="ObjGameOver4.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjHero5.h" />
     <ClInclude Include="ObjSceneMain.h" />
@@ -227,6 +231,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
+    <ClCompile Include="CObjEnemyBossBullet2.cpp" />
     <ClCompile Include="ObjAttackEnemy2.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjBulletEnemy2.cpp" />
@@ -263,6 +268,9 @@
     <ClCompile Include="ObjEnemyBoss2.cpp" />
     <ClCompile Include="ObjEnemyBoss4.cpp" />
     <ClCompile Include="ObjGameOver.cpp" />
+    <ClCompile Include="ObjGameOver2.cpp" />
+    <ClCompile Include="ObjGameOver3.cpp" />
+    <ClCompile Include="ObjGameOver4.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjHero5.cpp" />
     <ClCompile Include="ObjSceneMain.cpp" />

@@ -29,7 +29,6 @@ enum OBJ_NAME
 	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
 	OBJ_BOSS_ENEMY2,
-	OBJ_BOSS_BULLET_ENEMY,
 	OBJ_ANGLE_BULLET_HERO,
 	OBJ_DIFFUSION_HERO,
 	OBJ_HOMING_ENEMY,
@@ -58,6 +57,8 @@ enum OBJ_NAME
 	OBJ_SITA_ENEMY,
 	OBJ_SITA_KESEN,
 	OBJ_BOSS_ENEMY4,
+	OBJ_BOSS_BULLET_ENEMY,
+	OBJ_BOSS_BULLET_ENEMY2,
 
 	/*5–Ê*/
 	OBJ_SCENE_MAIN5,
@@ -126,13 +127,16 @@ struct UserData
 #include"ObjSceneMain4.h"
 #include"ObjTatesukuSceneMain.h"
 #include"TatesukuSceneMain.h"
+#include"ObjGameOver.h"
+#include"ObjGameOver2.h"
+#include"ObjGameOver3.h"
+#include"ObjGameOver4.h"
 //“GŠÖ˜A
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
 #include"CObjSinEnemy.h"
 #include"ObjAttackEnemy.h"
 #include"ObjClearBack.h"
-#include"ObjGameOver.h"
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
 #include"ObjEnemy.h"
@@ -141,6 +145,7 @@ struct UserData
 #include"ObjEnemyBoss2.h"
 #include"ObjEnemyBoss4.h"
 #include"CObjEnemyBossBullet4.h"
+#include"CObjEnemyBossBullet2.h"
 #include"CObjAngleBulletHero.h"
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
