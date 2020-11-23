@@ -94,7 +94,30 @@ void CObjAttackEnemy2::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
 
+	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 }
 //ƒhƒ[
 void CObjAttackEnemy2::Draw()

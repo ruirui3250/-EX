@@ -378,6 +378,18 @@
     <ClInclude Include="SceneGameOver4.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\5面用</Filter>
     </ClInclude>
+    <ClInclude Include="ObjSitaAttackEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateAttackEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -619,6 +631,18 @@
     </ClCompile>
     <ClCompile Include="SceneGameOver4.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\5面用</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaAttackEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateAttackEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

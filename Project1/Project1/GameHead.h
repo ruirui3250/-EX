@@ -64,6 +64,10 @@ enum OBJ_NAME
 	OBJ_BULLET_ENEMY2,
 	OBJ_ENEMY2,
 	OBJ_ATTACK_ENEMY2,
+	OBJ_SITA_ATTACK_ENEMY2,
+	OBJ_SITA_ENEMY2,
+	OBJ_TATE_ENEMY2,
+	OBJ_TATE_ATTACK_ENEMY2,
 };
 //------------------------------------------------
 
@@ -163,6 +167,10 @@ struct UserData
 #include"CObjBulletEnemy2.h"
 #include"CObjEnemy2.h"
 #include"ObjAttackEnemy2.h"
+#include"ObjSitaAttackEnemy2.h"
+#include"ObjSitaEnemy2.h"
+#include"ObjTateEnemy2.h"
+#include"ObjTateAttackEnemy2.h"
 //アイテム関連
 #include"Item.h"
 
