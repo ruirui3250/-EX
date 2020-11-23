@@ -32,7 +32,7 @@ void CObjSitaEnemy::Action()
 		m_r = 6.0f;
 	//ˆÚ“®•ûŒü
 	m_vx = sin(3.14 / 180 * m_r);
-	m_vy = +1.0f;
+	m_vy = -1.0f;
 
 	//ˆÚ“®ƒxƒNƒgƒ‹‚Ì³‹K‰»
 	UnitVec(&m_vy, &m_vx);
@@ -53,6 +53,12 @@ void CObjSitaEnemy::Action()
 		this->SetStatus(false); //Ž©g‚Éíœ–½—ß‚ðo‚·B
 		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
+	}
+	////ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		m_del = true; //Á–ÅŽÀs
+		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)

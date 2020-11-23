@@ -98,6 +98,7 @@ void CObjEnemyBoss4::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin5());
 
 	}
 	// 弾丸と接触しているかどうか調べる
@@ -111,6 +112,7 @@ void CObjEnemyBoss4::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin5());
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
@@ -135,6 +137,7 @@ void CObjEnemyBoss4::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin5());
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)

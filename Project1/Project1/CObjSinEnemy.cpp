@@ -60,6 +60,12 @@ void CObjSinEnemy::Action()
 		Hits::DeleteHitBox(this);//ƒVƒ““G‹@‚ªŠ—L‚·‚éhitbox‚ðíœ
 		return;
 	}
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		m_del = true; //Á–ÅŽÀs
+		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+	}
 	//’eŠÛ‚ÉÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é.
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{

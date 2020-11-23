@@ -19,5 +19,6 @@ private:
 	float m_vx;//敵移動のベクトルx
 	float m_vy;//敵移動のベクトルy
 	int m_hp;
+	bool m_del;
 };
 

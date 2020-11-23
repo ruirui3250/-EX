@@ -28,8 +28,6 @@ void CObjTateHero::Action()
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey('A') == true)
 	{
-
-		m_la -= 1;
 		if (m_la >= 0)
 		{
 			//弾丸オブジェクト作成

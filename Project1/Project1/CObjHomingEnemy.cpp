@@ -41,7 +41,7 @@ void CObjHomingEnemy::Init()
 void CObjHomingEnemy::Action()
 {
 	//ResourcesÇÃï`é ï®ÇÃRECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 3);
 
 	//íeä€è¡ñ≈èàóù
 	if (m_del == true)

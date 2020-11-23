@@ -17,7 +17,7 @@ private:
 	float m_y;//攻撃方法のｙ方向の位置。
 	float m_vx;//攻撃敵機方向ベクトルx
 	float m_vy;//攻撃敵機方向ベクトルy
-
+	bool m_del;
 	int m_time;//攻撃敵機用弾丸発射タイミング用
 	int m_hp;
 };

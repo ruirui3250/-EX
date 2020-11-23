@@ -20,5 +20,6 @@ private:
 	float m_vy;//“GˆÚ“®‚ÌƒxƒNƒgƒ‹y
 	float m_r;
 	int m_hp;
+	bool m_del;
 };
 
