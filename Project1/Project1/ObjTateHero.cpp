@@ -52,10 +52,11 @@ void CObjTateHero::Action()
 			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
-		else
-		{
-			m_f = true;
-		}
+
+	}
+	else
+	{
+		m_f = true;
 	}
 
 	//主人公機の拡散弾丸弾発射
