@@ -78,7 +78,7 @@ void CObjAngleBulletHero::Action()
 		}
 
 		//当たり判定を行うオブジェクト情報部
-		int data_base[26] =
+		int data_base[27] =
 		{
 			//1,2面のやつ
 			OBJ_ENEMY,
@@ -112,9 +112,10 @@ void CObjAngleBulletHero::Action()
 			OBJ_SITA_ENEMY2,
 			OBJ_TATE_ATTACK_ENEMY2,
 			OBJ_TATE_ENEMY2,
+			OBJ_MIX_BOSS
 		};
 		//敵機オブジェクトと接触したら拡散弾丸削除
-		for (int i = 0; i < 26; i++)
+		for (int i = 0; i < 27; i++)
 		{
 			if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 			{

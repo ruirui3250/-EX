@@ -408,6 +408,9 @@
     <ClInclude Include="ObjGameOver4.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
     </ClInclude>
+    <ClInclude Include="CObjMixBoss.h">
+      <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -676,6 +679,9 @@
     </ClCompile>
     <ClCompile Include="ObjGameOver4.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjMixBoss.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

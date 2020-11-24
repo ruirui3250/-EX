@@ -17,7 +17,7 @@ CObjBulletEnemy2::CObjBulletEnemy2(float x, float y)
 //イニシャライズ
 void CObjBulletEnemy2::Init()
 {
-	m_hp = 45;
+	m_hp = 10;
 	m_eff.m_top = 32;
 	m_eff.m_left = 0;
 	m_eff.m_right = 32;
@@ -40,7 +40,7 @@ void CObjBulletEnemy2::Init()
 void CObjBulletEnemy2::Action()
 {
 	//Resourcesの描画物RECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 5);
 
 	//弾丸消滅処理
 	if (m_del == true)
