@@ -68,11 +68,6 @@ void CObjTateAttackEnemy::Action()
 		return;
 
 	}
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
-	}
 	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
