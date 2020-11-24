@@ -19,18 +19,18 @@ void CObjWin3::Init()
 void CObjWin3::Action()
 {
 	/*エンターキーを押して次の面に移行する*/
-	/*if (Input::GetVKey(VK_RETURN) == true)
+	if (Input::GetVKey(VK_RETURN) == true)
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new CSceneMain3());
+			Scene::SetScene(new TatesukuSceneMain());
 			m_key_flag = false;
 		}
 	}
 	else
 	{
 		m_key_flag = true;
-	}*/
+	}
 }
 
 //ドロー

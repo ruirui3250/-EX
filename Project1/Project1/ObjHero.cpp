@@ -3,9 +3,26 @@
 #include "GameL\WinInputs.h"
 #include "GameHead.h"
 #include "ObjHero.h"
-#include"GameL\HitBoxManager.h"
+#include "GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
+//#include"UtilityModule.h"
 //#include "ObjAngleBulletHero.h"
+
+//使用するネームスペース
+using namespace GameL;
+
+
+//位置情報X取得用
+float CObjHero::GetX()
+{
+	return m_x;
+}
+
+//位置情報Y取得用
+float CObjHero::GetY()
+{
+	return m_y;
+}
 
 //イニシャライズ
 void CObjHero::Init()
@@ -73,7 +90,7 @@ void CObjHero::Action()
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
 				{
-					obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
+					obj_b = new CObjAngleBulletHero(m_x, m_y, i, 7.0f);
 					Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
 					m_f = false;
 				}

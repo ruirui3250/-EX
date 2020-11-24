@@ -27,29 +27,28 @@ TatesukuSceneMain::TatesukuSceneMain()
 void TatesukuSceneMain::InitScene()
 {
 	//外部グラフィック読み込み0番  背景
-	Draw::LoadImage(L"SceneMain.png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"背景(使).png", 5, TEX_SIZE_512);
 
-	Draw::LoadImage(L"image.png", 2, TEX_SIZE_512);
+	Draw::LoadImage(L"敵弾(使).png", 2, TEX_SIZE_512);//敵機弾丸
 
-	Draw::LoadImage(L"主人公機.png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"注射器縦.png", 0, TEX_SIZE_512);
 
-	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
+	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 
-	Draw::LoadImage(L"拡散弾カプセル.png", 6, TEX_SIZE_512);
+	Draw::LoadImage(L"ウイルス(使).png", 7, TEX_SIZE_512);
 
-	Draw::LoadImage(L"攻撃敵機.png", 7, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
-	Draw::LoadImage(L"血栓.png", 8, TEX_SIZE_512);
+	Draw::LoadImage(L"Boss3(使).png", 4, TEX_SIZE_512);
 
-	Draw::LoadImage(L"ボスキャラ.png", 9, TEX_SIZE_512);
+	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
-	Draw::LoadImage(L"レーザービーム.png", 10, TEX_SIZE_512);
+	Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
 
-	Draw::LoadImage(L"アイテムデータベース.png", 11, TEX_SIZE_512);
+	Draw::LoadImage(L"主人公弾縦.png", 1, TEX_SIZE_512);//bulletHero
 
-	Draw::LoadImage(L"縦主人公機.png", 13, TEX_SIZE_512);
+	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
-	Draw::LoadImage(L"縦通常弾丸.png", 14, TEX_SIZE_512);
 
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
@@ -588,7 +587,7 @@ void TatesukuSceneMain::Scene()
 	}
 
 	/*-------------------------ボス-------------------------------*/
-	if (m_time == 10)
+	if (m_time == 2000)
 	{
 		CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);

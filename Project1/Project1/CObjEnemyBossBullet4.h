@@ -1,25 +1,23 @@
 #pragma once
-#include"GameL\DrawTexture.h"
-#include"GameL\SceneObjManager.h"
+//使用するヘッダー
+#include "GameL\SceneObjManager.h"
 //使用するネームスペース
 using namespace GameL;
-//オブジェクト敵機弾丸
-class CObjEnemyBossBullet4 :public CObj
+
+//オブジェクト拡散機
+class CObjEnemyBossBullet4 : public CObj
 {
 public:
-	CObjEnemyBossBullet4(float x, float y);
+	CObjEnemyBossBullet4(float x, float y);//コンストラクタ位置をもらう
 	~CObjEnemyBossBullet4() {};
-	void Init();//イニシャライズ
-	void Action();//アクション
+	void Init();	//イニシャライズ
+	void Action(); //アクション
 	void Draw();//ドロー
 private:
-	float m_x;//オブジェクトの位置X
-	float m_y;//オブジェクトの位置Y
-	float m_vx;//オブジェクトの移動用ベクトルX
-	float m_vy;//オブジェクトの移動用ベクトルY
-
-	int m_ani; //着弾アニメーション
-	int m_ani_time;//着弾アニメーション間隔
-	bool m_del;//削除チェック
-	RECT_F m_eff;//着弾エフェクト描画
+	float m_x;//敵機のx方向の位置
+	float m_y;//敵機のy方向の位置
+	float m_vx;//敵移動のベクトルx
+	float m_vy;//敵移動のベクトルy
+	int	m_time;//拡散敵機の角度弾丸を撃つ間隔用変数
 };
+

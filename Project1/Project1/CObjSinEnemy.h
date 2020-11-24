@@ -18,4 +18,5 @@ private:
 	float m_vx;//オブジェクトの移動用ベクトルX
 	float m_vy;//オブジェクトの移動用ベクトルY
 	float m_r;//サインカーブの角度
+	bool m_del;
 };

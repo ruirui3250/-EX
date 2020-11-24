@@ -18,9 +18,8 @@ private:
 	float m_y;//オブジェクトの位置Y
 	float m_vx;//オブジェクトの移動用ベクトルX
 	float m_vy;//オブジェクトの移動用ベクトルY
-
+	bool m_del;
 	int m_ani; //着弾アニメーション
 	int m_ani_time;//着弾アニメーション間隔
-	bool m_del;//削除チェック
 	RECT_F m_eff;//着弾エフェクト描画
 };

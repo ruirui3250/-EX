@@ -18,6 +18,7 @@ void CObjTateEnemy::Init()
 	m_r = 0;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+	m_del = 0.0f;
 
 	//当たり判定用HitBox作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
@@ -54,8 +55,26 @@ void CObjTateEnemy::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
+	//主人公機objectと接触したら敵機弾丸削除。
+	if (hit->CheckObjNameHit(OBJ_TATE_HERO) != nullptr)
+	{
+		m_del = true; //消滅実行
+		hit->SetInvincibility(true);//当たり判定無効
+	}
 	//弾丸の接触を調べる。
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
@@ -66,7 +85,7 @@ void CObjTateEnemy::Action()
 void CObjTateEnemy::Draw()
 {
 	//描画カラー情報　R-RED G=GREEN B=BLUE A=ALPHA(透過情報)
-	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	float c[4] = { 1.0f,6.0f,9.0f,1.0f };
 
 	RECT_F src; //描画切り取り位置
 	RECT_F dst;//描画先表示
@@ -84,6 +103,6 @@ void CObjTateEnemy::Draw()
 	dst.m_bottom = 32.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
-	Draw::Draw(2, &src, &dst, c, 0.0f);
+	Draw::Draw(7, &src, &dst, c, 0.0f);
 
 }

@@ -74,12 +74,26 @@ void CObjTateBulletEnemy::Action()
 		m_del = true; //Á–ÅÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
-	//ålŒö‹@‚Ì’eŠÛobject‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
-		m_del = true; //Á–ÅÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	
 }
 
 //ƒhƒ[
