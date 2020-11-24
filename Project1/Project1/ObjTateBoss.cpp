@@ -133,19 +133,82 @@ void CObjTateBoss::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
-	//弾丸と接触したらhpを減らす。
+	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		m_hp -= 1;
 	}
 
-
-	//HPが0になったら破棄。
+	//HPが0になったら破棄
 	if (m_hp <= 0)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin4());
+	}
+	//弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		m_hp -= 1;
+	}
 
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin4());
+
+	}
+	// 弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin5());
+	}
+	// 弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	// 弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		Scene::SetScene(new CSceneWin5());
+	}
+	// 弾丸と接触しているかどうか調べる
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
+
+	//HPが0になったら破棄
+	if (m_hp <= 0)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin4());
 	}
 }
