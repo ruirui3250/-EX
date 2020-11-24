@@ -44,7 +44,7 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
-	Draw::LoadImage(L"ボス5.png", 4, TEX_SIZE_512);
+	Draw::LoadImage(L"ボス５.png", 4, TEX_SIZE_512);
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
@@ -204,68 +204,32 @@ void CSceneMain5::Scene()
 		obj2 = new CObjAttackEnemy2(799.0f, 400);
 		Objs::InsertObj(obj2, OBJ_ATTACK_ENEMY2, 50);
 
+	}
+
+	else if (m_time == 550)
+	{
+	CObjEnemy2* obj = new CObjEnemy2(799.0f, 400);
+	Objs::InsertObj(obj, OBJ_ENEMY2, 50);
+
 	CObjTateEnemy2* obj3 = new CObjTateEnemy2(10.0f, 30);
 	Objs::InsertObj(obj3, OBJ_TATE_ENEMY2, 50);
 
+	CObjSitaEnemy2* obj4 = new CObjSitaEnemy2(10.0f, 500);
+	Objs::InsertObj(obj4, OBJ_SITA_ENEMY2, 50);
+
+	CObjTateEnemy2* obj5 = new CObjTateEnemy2(70.0f, 500);
+	Objs::InsertObj(obj5, OBJ_TATE_ENEMY2, 50);
+
+	CObjSitaEnemy2* obj6 = new CObjSitaEnemy2(70.0f, 500);
+	Objs::InsertObj(obj6, OBJ_SITA_ENEMY2, 50);
 	}
-	//else if (m_time == 550)
-	//{
-	//	//block object create
-	//	CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 0);
-	//	Objs::InsertObj(obj, OBJ_YOKO_KESEN, 50);
 
-	//	CObjYokoKesen* obj1 = new CObjYokoKesen(766, 0);
-	//	Objs::InsertObj(obj1, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj2 = new CObjYokoKesen(733, 0);
-	//	Objs::InsertObj(obj2, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj3 = new CObjYokoKesen(799.0f, 33);
-	//	Objs::InsertObj(obj3, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj4 = new CObjYokoKesen(766, 33);
-	//	Objs::InsertObj(obj4, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj5 = new CObjYokoKesen(733, 33);
-	//	Objs::InsertObj(obj5, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj6 = new CObjYokoKesen(799.0f, 66);
-	//	Objs::InsertObj(obj6, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj7 = new CObjYokoKesen(766, 66);
-	//	Objs::InsertObj(obj7, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj8 = new CObjYokoKesen(733, 66);
-	//	Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj9 = new CObjYokoKesen(733, 566);
-	//	Objs::InsertObj(obj9, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj10 = new CObjYokoKesen(766, 566);
-	//	Objs::InsertObj(obj10, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj11 = new CObjYokoKesen(799.0f, 566);
-	//	Objs::InsertObj(obj11, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj12 = new CObjYokoKesen(733, 533);
-	//	Objs::InsertObj(obj12, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj13 = new CObjYokoKesen(766, 533);
-	//	Objs::InsertObj(obj13, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj14 = new CObjYokoKesen(799.0f, 533);
-	//	Objs::InsertObj(obj14, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj15 = new CObjYokoKesen(733, 500);
-	//	Objs::InsertObj(obj15, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj16 = new CObjYokoKesen(766, 500);
-	//	Objs::InsertObj(obj16, OBJ_YOKO_KESEN, 50);
-
-	//	CObjYokoKesen* obj17 = new CObjYokoKesen(799.0f, 500);
-	//	Objs::InsertObj(obj17, OBJ_YOKO_KESEN, 50);
-
-	//}
+	else if (m_time == 670)
+	{
+	CObjEnemy2* obj = new CObjEnemy2(550.0f, 400);
+	Objs::InsertObj(obj, OBJ_ENEMY2, 50);
+ 
+	}
 	//else if (m_time == 780)
 	//{
 	//	CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 300);
