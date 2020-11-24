@@ -30,6 +30,20 @@ void CObjGameOver::Action()
 	{
 		m_key_flag = true;
 	}
+
+	//Vキーを押してシーン：ゲームメイン1に移行する
+	if (Input::GetVKey('V') == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new CSceneMain());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
 }
 
 //ドロー

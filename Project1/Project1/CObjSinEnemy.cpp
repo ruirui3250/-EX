@@ -60,8 +60,20 @@ void CObjSinEnemy::Action()
 		Hits::DeleteHitBox(this);//シン敵機が所有するhitboxを削除
 		return;
 	}
+	//主人公機objectと接触したら敵機弾丸削除。
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		m_del = true; //消滅実行
+		hit->SetInvincibility(true);//当たり判定無効
+	}
 	//弾丸に接触しているかどうか調べる.
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
@@ -79,14 +91,14 @@ void CObjSinEnemy::Draw()
 
 	//切り取り位置の設定
 	src.m_top = 0.0f;
-	src.m_left = 32.0f;
-	src.m_right = 64.0f;
+	src.m_left = 0.0f;
+	src.m_right = 32.0f;
 	src.m_bottom = 32.0f;
 
 	//表示位置の設定
 	dst.m_top = 0.0f + m_y;
-	dst.m_left = 32.0f + m_x;
-	dst.m_right = 0.0f + m_x;
+	dst.m_left = 0.0f + m_x;
+	dst.m_right = 32.0f + m_x;
 	dst.m_bottom = 32.0f + m_y;
 
 	//0番目に登録したグラフィックを描画。

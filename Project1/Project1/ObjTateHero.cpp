@@ -25,21 +25,9 @@ void CObjTateHero::Init()
 //アクション
 void CObjTateHero::Action()
 {
-	/*-------------------------------タイトル画面に戻る--------------------------*/
-	if (Input::GetVKey('S') == true)
-	{
-		if (m_key_flag == true)
-		{
-			Scene::SetScene(new CSceneTitle());
-			m_key_flag = false;
-		}
-
-	}
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
-	if (Input::GetVKey('Z') == true)
+	if (Input::GetVKey('A') == true)
 	{
-
-		m_la -= 1;
 		if (m_la >= 0)
 		{
 			//弾丸オブジェクト作成
@@ -52,29 +40,28 @@ void CObjTateHero::Action()
 
 	}
 	/*----------------------主人公機通常弾丸-----------------------------------*/
-	if (Input::GetVKey('X') == true)
+	if (Input::GetVKey('Z') == true)
 	{
-			m_vx = 0.0f;
-			m_vy = -1.0f;
+		m_vx = 0.0f;
+		m_vy = -1.0f;
 		if (m_f == true)
 		{
-			
+
 			//弾丸オブジェクト作成
-			CObjTateBullet* obj_b = new CObjTateBullet(m_x + 3.0f, m_y-= 0.0f);//弾丸オブジェクト
+			CObjTateBullet* obj_b = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
-
-	}
-	else
-	{
-		m_f = true;
+		else
+		{
+			m_f = true;
+		}
 	}
 
 	//主人公機の拡散弾丸弾発射
 	/*------------------------これは一回のみ発射可能------------------*/
 	//主人公機の拡散弾丸発射
-	if (Input::GetVKey('C') == true)
+	if (Input::GetVKey('X') == true)
 	{
 		m_ka -= 1;
 		if (m_ka <= 0 == false)
@@ -170,7 +157,7 @@ void CObjTateHero::Action()
 				Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
 				//主人公機消滅でシーンをゲームオーバーに移行する
-				Scene::SetScene(new CSceneGameOver());
+				Scene::SetScene(new CSceneGameOver2());
 			}
 		
 	}

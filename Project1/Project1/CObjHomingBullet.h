@@ -1,11 +1,11 @@
 //#pragma once
-////使用するヘッダー
+//使用するヘッダー
 //#include "GameL\DrawTexture.h"
 //#include "GameL\SceneObjManager.h"
-////使用するネームスペース
+//使用するネームスペース
 //using namespace GameL;
 //
-////オブジェクト：弾丸
+//オブジェクト：弾丸
 //class CObjHomingEnemy :public CObj
 //{
 //public:

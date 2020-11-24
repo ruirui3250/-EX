@@ -1,6 +1,6 @@
 //STLデバッグ機能をOFFにする
-#define _SEURE_SCL (0)
-#define _HAS_ITERATOR_DEBUGGING (0)
+#define _SEURE_SCL (o)
+#define _HAS_ITERATOR_DEBUGGING (o)
 //GameLで使用するヘッダー
 #include "GameL\SceneObjManager.h"
 #include "GameL\DrawFont.h"
@@ -21,7 +21,7 @@ CSceneGameOver::~CSceneGameOver()
 void CSceneGameOver::InitScene()
 {
 	//外部グラフィックファイルを読み込み6番目に登録
-	Draw::LoadImage(L"GameOver画面(使).png", 0, TEX_SIZE_512);
+	Draw::LoadImage(L"GameOver画面コンテ.png", 0, TEX_SIZE_512);
 	//	ゲームオーバーオブジェクト作成
 	CObjGameOver* obj = new CObjGameOver();
 	Objs::InsertObj(obj, OBJ_GAME_OVER, 10);
