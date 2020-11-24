@@ -19,7 +19,7 @@ void CObjWin4::Init()
 void CObjWin4::Action()
 {
 	/*エンターキーを押して次の面に移行する*/
-	/*if (Input::GetVKey(VK_RETURN) == true)
+	if (Input::GetVKey(VK_RETURN) == true)
 	{
 		if (m_key_flag == true)
 		{
@@ -30,7 +30,7 @@ void CObjWin4::Action()
 	else
 	{
 		m_key_flag = true;
-	}*/
+	}
 }
 
 //ドロー
