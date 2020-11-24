@@ -133,12 +133,22 @@ void CObjTateBoss::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
-	//弾丸と接触したらhpを減らす。
+	
+	//弾丸の接触を調べる。
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		m_hp -= 1;
 	}
-
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		m_hp -= 1;
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
+	{
+		m_hp -= 1;
+	}
 
 	//HPが0になったら破棄。
 	if (m_hp <= 0)

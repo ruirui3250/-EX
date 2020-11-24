@@ -33,10 +33,13 @@ enum OBJ_NAME
 	OBJ_DIFFUSION_HERO,
 	OBJ_HOMING_ENEMY,
 	OBJ_HOMING_BULLET,
-	OBJ_ITEM,
+	
 	OBJLASER_BULLET,
 	OBJ_YOKO_KESEN,
 
+	/*----------------回復アイテム-------------*/
+	OBJ_LIFE_ITEM,
+	OBJ_ITEM,
 	/*----------------*/
 	OBJ_TATE_ENEMY,
 	OBJ_TATE_BOSS,
@@ -90,6 +93,7 @@ enum HIT_ELEMENTS
 	ELEMENT_BLUE,
 	ELEMENT_BLACK,
 	ELEMENT_WHITE,
+	ELEMENT_LIFE_ITEM,
 };
 //------------------------------------------------
 
@@ -161,6 +165,7 @@ struct UserData
 #include"ObjTateBullet.h"
 #include"ObjTatekesen.h"
 #include"ObjTateBoss.h"
+
 /*---------------4面--------------*/
 #include"ObjSitaHero.h"
 #include"ObjSitaBullet.h"
@@ -181,8 +186,8 @@ struct UserData
 #include"ObjHero5.h"
 #include"CObjMixBoss.h"
 //アイテム関連
-#include"Item.h"
-
+#include"ObjItem.h"
+#include"ObjLifeItem.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
@@ -201,9 +206,11 @@ struct UserData
 #include"SceneGameOver2.h"
 #include"SceneGameOver3.h"
 #include"SceneGameOver4.h"
+
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START SceneTitle
+#define SET_GAME_START TatesukuSceneMain
+//SceneTitle
 //-----------------------------------------------

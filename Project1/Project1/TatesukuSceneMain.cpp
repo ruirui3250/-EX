@@ -45,7 +45,11 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
 
-	Draw::LoadImage(L"主人公弾縦.png", 1, TEX_SIZE_512);//bulletHero
+	Draw::LoadImage(L"主人公弾縦.png", 1, TEX_SIZE_512);
+
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
@@ -583,7 +587,17 @@ void TatesukuSceneMain::Scene()
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 
 	}
-
+	/*------------------------------アイテム発射--------------------*/
+	if (m_time == 10)
+	{
+		CObjItem* obj = new CObjItem(200.0f, 450);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 20)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(250.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 }
 
 //メモ

@@ -139,6 +139,18 @@
     <Filter Include="ソース ファイル\基本データ\主人公\5面主人公">
       <UniqueIdentifier>{bf99b896-22a3-4e6c-a476-30962de360e6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\共通アイテム">
+      <UniqueIdentifier>{240e9972-8feb-40ad-9d94-50088d3d1677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\縦スクロール用アイテム">
+      <UniqueIdentifier>{e29134db-48fe-44db-abfa-c9d7269a7c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\横スクロールアイテム">
+      <UniqueIdentifier>{6ceaf816-9af1-48cb-b141-3173c2b4b6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\縦スクロールアイテム（下から）">
+      <UniqueIdentifier>{5fd61f10-0164-41c7-83db-1acf971c4fe5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -411,6 +423,12 @@
     <ClInclude Include="CObjMixBoss.h">
       <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
     </ClInclude>
+    <ClInclude Include="ObjItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -682,6 +700,12 @@
     </ClCompile>
     <ClCompile Include="CObjMixBoss.cpp">
       <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

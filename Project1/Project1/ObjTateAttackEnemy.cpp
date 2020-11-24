@@ -68,14 +68,13 @@ void CObjTateAttackEnemy::Action()
 		return;
 
 	}
-	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
-
-	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
