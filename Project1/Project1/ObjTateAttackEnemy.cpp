@@ -74,7 +74,7 @@ void CObjTateAttackEnemy::Action()
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
 	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
