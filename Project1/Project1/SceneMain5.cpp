@@ -283,9 +283,6 @@ void CSceneMain5::Scene()
 
 	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 500);
 	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
-
-	CObjTateKesen* obj5 = new CObjTateKesen(480, 10);
-	Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
  }
 	else if (m_time == 1500)
 	{
