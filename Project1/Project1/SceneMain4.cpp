@@ -45,7 +45,7 @@ void CSceneMain4::InitScene()
 
 	/*Draw::LoadImage(L"“G’e(g).png", 11, TEX_SIZE_512);*/
 
-	Draw::LoadImage(L"ålŒö’ec.png", 1, TEX_SIZE_512);//bulletHero
+	Draw::LoadImage(L"ålŒö’ec.png", 11, TEX_SIZE_512);//bulletHero
 
 	//Draw::LoadImage(L"c’ËŠí(g).png", 77, TEX_SIZE_512);//Objhero
 

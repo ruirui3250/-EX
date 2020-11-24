@@ -148,5 +148,5 @@ void CObjSitaBullet::Draw()
 	src.m_right = 32;
 	src.m_bottom = 32;
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(1, &src, &dst, c, 0.0f);
+	Draw::Draw(11, &src, &dst, c, 0.0f);
 }

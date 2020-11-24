@@ -39,6 +39,8 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
 
+	Draw::LoadImage(L"主人公弾縦.png", 11, TEX_SIZE_512);
+
 	//Draw::LoadImage(L"障害物.png",9, TEX_SIZE_512);
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
