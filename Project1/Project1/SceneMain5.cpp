@@ -293,7 +293,7 @@ void CSceneMain5::Scene()
 		//Audio::Start(1);//1曲目スタート
 
 		CObjMIXBoss* obj;
-		obj = new CObjMIXBoss(150, 250);
+		obj = new CObjMIXBoss(450, 250);
 		Objs::InsertObj(obj, OBJ_MIX_BOSS, 50);
 
 		CObjTateKesen* obj2 = new CObjTateKesen(150, 10);
