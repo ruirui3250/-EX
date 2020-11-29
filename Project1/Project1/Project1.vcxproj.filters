@@ -33,9 +33,6 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面\2面終了">
       <UniqueIdentifier>{9b474a29-2840-4b56-a2c4-e435e7f196d3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\クリア画面\3面終了">
-      <UniqueIdentifier>{ea2122b0-2b73-428d-ab76-fc4c8fed4e57}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\4面終了">
       <UniqueIdentifier>{b6ac8072-15e5-484f-bbd6-734630453ab6}</UniqueIdentifier>
     </Filter>
@@ -138,6 +135,9 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\主人公\5面主人公">
       <UniqueIdentifier>{bf99b896-22a3-4e6c-a476-30962de360e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\3面終了">
+      <UniqueIdentifier>{ea2122b0-2b73-428d-ab76-fc4c8fed4e57}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -256,7 +256,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\2面終了</Filter>
     </ClInclude>
     <ClInclude Include="Objwin4.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
     </ClInclude>
     <ClInclude Include="SceneMain4.h">
       <Filter>ソース ファイル\基本データ\背景画面\4面</Filter>
@@ -274,7 +274,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\4面終了</Filter>
     </ClInclude>
     <ClInclude Include="WinScene4.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss2.h">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
@@ -531,7 +531,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\2面終了</Filter>
     </ClCompile>
     <ClCompile Include="Objwin4.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain4.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\4面</Filter>
@@ -549,7 +549,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\4面終了</Filter>
     </ClCompile>
     <ClCompile Include="WinScene4.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss2.cpp">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
