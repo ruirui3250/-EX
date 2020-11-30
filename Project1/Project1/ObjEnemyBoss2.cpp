@@ -1,22 +1,23 @@
-//g—p‚·‚éƒwƒbƒ_[ƒtƒ@ƒCƒ‹
+ï»¿//ä½¿ç”¨ã™ã‚‹ãƒ˜ãƒƒãƒ€ãƒ¼ãƒ•ã‚¡ã‚¤ãƒ«
 #include "GameL/\DrawTexture.h"
 #include "GameL/\HitBoxManager.h"
 
 #include "GameHead.h"
 #include "ObjEnemyBoss2.h"
 #include "UtilityModule.h"
+#include "GameL/DrawFont.h"
 
-//g—p‚·‚éƒl[ƒ€ƒXƒy[ƒX
+//ä½¿ç”¨ã™ã‚‹ãƒãƒ¼ãƒ ã‚¹ãƒšãƒ¼ã‚¹
 using namespace GameL;
 
-//ƒRƒ“ƒXƒ^ƒ‰ƒXƒ^
+//ã‚³ãƒ³ã‚¹ã‚¿ãƒ©ã‚¹ã‚¿
 CObjBoss2::CObjBoss2(float x, float y)
 {
     m_x = x;
     m_y = y;
 }
 
-//ƒCƒjƒVƒƒƒ‰ƒCƒY
+//ã‚¤ãƒ‹ã‚·ãƒ£ãƒ©ã‚¤ã‚º
 void CObjBoss2::Init()
 {
     m_hp = 45;
@@ -25,75 +26,75 @@ void CObjBoss2::Init()
     m_vx = 0.0f;
     m_vy = 0.0f;
 
-   // “–‚½‚è”»’è—pHitBox‚ğì¬
+   // å½“ãŸã‚Šåˆ¤å®šç”¨HitBoxã‚’ä½œæˆ
     Hits::SetHitBox(this, m_x, m_y, 352, 352, ELEMENT_ENEMY, OBJ_BOSS_ENEMY2, 50);
 }
 
-//ƒAƒNƒVƒ‡ƒ“
+//ã‚¢ã‚¯ã‚·ãƒ§ãƒ³
 void CObjBoss2::Action()
 {
     m_time++;
 
-    //“G‹@”­Ë
+    //æ•µæ©Ÿç™ºå°„
     if (m_time % 50 == 0)
     {
-       // “G‹@ƒIƒuƒWƒFƒNƒg
-        CObjAttackEnemy* obj_b = new CObjAttackEnemy(m_x + 68, m_y + 114);//“G‹@ƒIƒuƒWƒFƒNƒgì¬
-        Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY, 100);//“G‹@ƒIƒuƒWƒFƒNƒg“o˜^
-        CObjAttackEnemy* obj_b2 = new CObjAttackEnemy(m_x + 68, m_y + 250);//“G‹@ƒIƒuƒWƒFƒNƒgì¬
-        Objs::InsertObj(obj_b2, OBJ_ATTACK_ENEMY, 100);//“G‹@ƒIƒuƒWƒFƒNƒg“o˜^
-        CObjAttackEnemy* obj_b3 = new CObjAttackEnemy(m_x + 68, m_y + 10);//“G‹@ƒIƒuƒWƒFƒNƒgì¬
-        Objs::InsertObj(obj_b3, OBJ_ATTACK_ENEMY, 100);//“G‹@ƒIƒuƒWƒFƒNƒg“o˜^
+       // æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ
+        CObjAttackEnemy* obj_b = new CObjAttackEnemy(m_x + 68, m_y + 114);//æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆä½œæˆ
+        Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY, 100);//æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç™»éŒ²
+        CObjAttackEnemy* obj_b2 = new CObjAttackEnemy(m_x + 68, m_y + 250);//æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆä½œæˆ
+        Objs::InsertObj(obj_b2, OBJ_ATTACK_ENEMY, 100);//æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç™»éŒ²
+        CObjAttackEnemy* obj_b3 = new CObjAttackEnemy(m_x + 68, m_y + 10);//æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆä½œæˆ
+        Objs::InsertObj(obj_b3, OBJ_ATTACK_ENEMY, 100);//æ•µæ©Ÿã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆç™»éŒ²
     }
-    ////360“x’eŠÛ”­Ë
+    ////360åº¦å¼¾ä¸¸ç™ºå°„
     //if (m_time % 200 == 0)
     //{
-    //        //19”­“¯”­Ë
+    //        //19ç™ºåŒæ™‚ç™ºå°„
     //        //CObjAngleBullet* obj_b;
     //        //for (int i = 0; i < 360; i += 20)
     //        //{
-    //        //    //Šp“xi‚ÅŠp“x’eŠÛ”­Ë
+    //        //    //è§’åº¦iã§è§’åº¦å¼¾ä¸¸ç™ºå°„
     //        //    obj_b = new CObjAngleBullet(m_x + 124, m_y + 91, i, 5.0f);
     //        //    Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET, 100);
     //        //}
     //}
-        //—U“±’e”­Ë
+        //èª˜å°å¼¾ç™ºå°„
         if (m_time % 200 == 0)
         {
-            //—U“±’eŠÛƒIƒuƒWƒFƒNƒgì¬
+            //èª˜å°å¼¾ä¸¸ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆä½œæˆ
            CObjHomingEnemy* obj_homing_enemy = new CObjHomingEnemy(m_x + 68, m_y + 120);
             Objs::InsertObj(obj_homing_enemy, OBJ_HOMING_ENEMY, 100);
         }
-    //m_time‚Ì‰Šú‰»
+    //m_timeã®åˆæœŸåŒ–
     if (m_time > 1000)
     {
         m_time = 0;
     }
 
 
-    //Šp“x‰ÁZ
+    //è§’åº¦åŠ ç®—
     m_r += 2.0f;
 
-    //360‚Å‰Šú’l‚É–ß‚·
+    //360ã§åˆæœŸå€¤ã«æˆ»ã™
     if (m_r > 360.0f)
         m_r = 0.0f;
 
-    //ˆÚ“®•ûŒü
+    //ç§»å‹•æ–¹å‘
     m_vx = 0.0f;
     m_vy = sin(3.14 / 180 * m_r);
 
-    //ˆÚ“®ƒxƒNƒgƒ‹‚Ì³‹K‰»
+    //ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«ã®æ­£è¦åŒ–
     UnitVec(&m_vy, &m_vx);
 
-    ///ˆÚ“®ƒxƒNƒgƒ‹‚ğÀ•W‚É‰ÁZ‚·‚é
+    ///ç§»å‹•ãƒ™ã‚¯ãƒˆãƒ«ã‚’åº§æ¨™ã«åŠ ç®—ã™ã‚‹
     m_x += m_vx;
     m_y += m_vy;
 
-    //HitBox‚Ì“à—e‚ğXV
+    //HitBoxã®å†…å®¹ã‚’æ›´æ–°
     CHitBox* hit = Hits::GetHitBox(this);
     hit->SetPos(m_x , m_y);
 
-    //—ÌˆæŠO‚Éo‚½‚ç’eŠÛ‚ğ”j‰ó‚·‚é
+    //é ˜åŸŸå¤–ã«å‡ºãŸã‚‰å¼¾ä¸¸ã‚’ç ´å£Šã™ã‚‹
     bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
     if (check == false)
     {
@@ -103,13 +104,13 @@ void CObjBoss2::Action()
         return;
     }
 
-   // ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+   // å¼¾ä¸¸ã¨æ¥è§¦ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹èª¿ã¹ã‚‹
     if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
     {
         m_hp -= 1;
     }
 
-    //HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
+    //HPãŒ0ã«ãªã£ãŸã‚‰ç ´æ£„
     if (m_hp <= 0)
     {
         this->SetStatus(false);
@@ -118,13 +119,13 @@ void CObjBoss2::Action()
         Scene::SetScene(new CSceneWin3());
 
     }
-    //’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+    //å¼¾ä¸¸ã¨æ¥è§¦ã—ã¦ã„ã‚‹ã‹ã©ã†ã‹èª¿ã¹ã‚‹
     if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
     {
         m_hp -= 1;
     }
 
-    //HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
+    //HPãŒ0ã«ãªã£ãŸã‚‰ç ´æ£„
     if (m_hp <= 0)
     {
         this->SetStatus(false);
@@ -135,27 +136,86 @@ void CObjBoss2::Action()
     }
 }
 
-//ƒhƒ[
+//ãƒ‰ãƒ­ãƒ¼
 void CObjBoss2::Draw()
 {
-   // •`‰æƒJƒ‰[î•ñ@R=RED@G=GREEN@B=BLUE@A=ALPHAi“§‰ßî•ñj
+   // æç”»ã‚«ãƒ©ãƒ¼æƒ…å ±ã€€R=REDã€€G=GREENã€€B=BLUEã€€A=ALPHAï¼ˆé€éæƒ…å ±ï¼‰
     float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
-    RECT_F src;//•`‰æŒ³Ø‚èæ‚èˆÊ’u
-    RECT_F dst;//•`‰ææ•\¦ˆÊ’u
+    wchar_t str[256];
+    swprintf_s(str, L"BossLife=%d", m_hp);
+    Font::StrDraw(str, 400, 500, 20, c);
+    if (m_hp == 100)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 90)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 80)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 70)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 60)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 50)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 40)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 30)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 20)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp >= 10)
+    {
+        swprintf_s(str, L"â–ˆâ–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
+    if (m_hp <= 10)
+    {
+        swprintf_s(str, L"â–ˆ", m_hp);
+        Font::StrDraw(str, 400, 550, 20, c);
+    }
 
-    //Ø‚èæ‚èˆÊ’u‚Ìİ’è
+    RECT_F src;//æç”»å…ƒåˆ‡ã‚Šå–ã‚Šä½ç½®
+    RECT_F dst;//æç”»å…ˆè¡¨ç¤ºä½ç½®
+
+    //åˆ‡ã‚Šå–ã‚Šä½ç½®ã®è¨­å®š
     src.m_top = 0.0f;
     src.m_left = 0.0f;
     src.m_right = 352.0f;
     src.m_bottom = 352.0f;
 
-    //•\¦ˆÊ’u‚Ìİ’è
+    //è¡¨ç¤ºä½ç½®ã®è¨­å®š
     dst.m_top = 0.0f + m_y;
     dst.m_left = 0.0f + m_x;
     dst.m_right = 352.0f + m_x;
     dst.m_bottom = 352.0f + m_y;
 
-    //1”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğsrcEdstEc‚Ìî•ñ‚ğ‚à‚Æ‚É•`‰æ
+    //1ç•ªç›®ã«ç™»éŒ²ã—ãŸã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã‚’srcãƒ»dstãƒ»cã®æƒ…å ±ã‚’ã‚‚ã¨ã«æç”»
     Draw::Draw(4, &src, &dst, c, 0.0f);
 }
