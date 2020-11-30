@@ -121,9 +121,6 @@
     <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject">
       <UniqueIdentifier>{9efa0281-e990-402e-bee6-58002cd1d9a6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\1,2面用">
-      <UniqueIdentifier>{60936283-8f20-4ec5-8003-e5f61d6afef4}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\3面用">
       <UniqueIdentifier>{3c863016-d832-47a7-b74e-2ca8b4fd547a}</UniqueIdentifier>
     </Filter>
@@ -136,8 +133,17 @@
     <Filter Include="ソース ファイル\基本データ\主人公\5面主人公">
       <UniqueIdentifier>{bf99b896-22a3-4e6c-a476-30962de360e6}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\3面終了">
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\1面用">
+      <UniqueIdentifier>{60936283-8f20-4ec5-8003-e5f61d6afef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\2面用">
+      <UniqueIdentifier>{f048fa27-4320-46a5-8e4f-1eee1d5a318b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\3面終了">
       <UniqueIdentifier>{ea2122b0-2b73-428d-ab76-fc4c8fed4e57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\2面主人公">
+      <UniqueIdentifier>{31b26c2c-b929-45f3-9578-7fd9da641da3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -256,7 +262,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\2面終了</Filter>
     </ClInclude>
     <ClInclude Include="Objwin4.h">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClInclude>
     <ClInclude Include="SceneMain4.h">
       <Filter>ソース ファイル\基本データ\背景画面\4面</Filter>
@@ -274,7 +280,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\4面終了</Filter>
     </ClInclude>
     <ClInclude Include="WinScene4.h">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClInclude>
     <ClInclude Include="ObjEnemyBoss2.h">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
@@ -370,7 +376,7 @@
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
     </ClInclude>
     <ClInclude Include="SceneGameOver.h">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\1,2面用</Filter>
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\1面用</Filter>
     </ClInclude>
     <ClInclude Include="SceneGameOver2.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面用</Filter>
@@ -410,6 +416,15 @@
     </ClInclude>
     <ClInclude Include="CObjMixBoss.h">
       <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver5.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver5.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHero2.h">
+      <Filter>ソース ファイル\基本データ\主人公\2面主人公</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -531,7 +546,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\2面終了</Filter>
     </ClCompile>
     <ClCompile Include="Objwin4.cpp">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClCompile>
     <ClCompile Include="SceneMain4.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\4面</Filter>
@@ -549,7 +564,7 @@
       <Filter>ソース ファイル\基本データ\クリア画面\4面終了</Filter>
     </ClCompile>
     <ClCompile Include="WinScene4.cpp">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面終了</Filter>
+      <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClCompile>
     <ClCompile Include="ObjEnemyBoss2.cpp">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
@@ -642,7 +657,7 @@
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
     </ClCompile>
     <ClCompile Include="SceneGameOver.cpp">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\1,2面用</Filter>
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\1面用</Filter>
     </ClCompile>
     <ClCompile Include="SceneGameOver2.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面用</Filter>
@@ -682,6 +697,15 @@
     </ClCompile>
     <ClCompile Include="CObjMixBoss.cpp">
       <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver5.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver5.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero2.cpp">
+      <Filter>ソース ファイル\基本データ\主人公\2面主人公</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
