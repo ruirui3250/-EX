@@ -11,33 +11,33 @@ using namespace GameL;
 //ƒCƒjƒVƒƒƒ‰ƒCƒY
 void CObjSceneMain4::Init()
 {
-	m_y1 = 800.0f;
-	m_y2= 0.0f;
+	m_y1 = 10.0f;
+	m_y2 = 800.0f;
 }
 //ƒAƒNƒVƒ‡ƒ“
 void CObjSceneMain4::Action()
 {
 	//”wŒi‚P‚Ì‘€ì
-	m_y1 +=10.0f;
-	if (m_y1>- 800.0f)
-		m_y1 -=800;
+	m_y1 -= 10.0f;
+	if (m_y1 < -800.0f)
+		m_y1 = 800;
 	//”wŒi2‚Ì‘€ì
-	m_y2 +=10.0f;
-	if (m_y2 >-800.0f)
-		m_y2 -= 800;
-	////‰æ–Ê‚ð‰ñ“]‚³‚¹‚é
-	//float ar = 170.0f;
+	m_y2 -= 10.0f;
+	if (m_y2 < -800.0f)
+		m_y2 = 800;
+	//‰æ–Ê‚ð‰ñ“]‚³‚¹‚é
+	float ar = 170.0f;
 
-	////Œ»Ý‚Ì•ûŒü‚ÌŠp“x‚ðŠl“¾
-	//float br = 180.0f;
+	//Œ»Ý‚Ì•ûŒü‚ÌŠp“x‚ðŠl“¾
+	float br = 180.0f;
 
-	//float r = 3.14 / 180.0f;//Šp“x1
-	//if (ar < br)
-	//{
-	//	//ˆÚ“®•ûŒü‚É+1‚ð‰Á‚¦‚é
-	//	m_vx = m_vy * cos(+r) + m_vx * sin(+r);
-	//	m_vy = m_vx * cos(r) - m_vy * sin(r);
-	//}
+	float r = 3.14 / 180.0f;//Šp“x1
+	if (ar < br)
+	{
+		//ˆÚ“®•ûŒü‚É+1‚ð‰Á‚¦‚é
+		m_vx = m_vy * cos(r) - m_vx * sin(r);
+		m_vy = m_vx * cos(-r) + m_vy * sin(-r);
+	}
 
 }
 
@@ -46,7 +46,7 @@ void CObjSceneMain4::Draw()
 {
 	//•`‰æƒJƒ‰[î•ñ R=Red G=Green B=blue A=alpha(“§‰ßî•ñ)
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-	
+
 	RECT_F src;//•`‰ææØ‚èŽæ‚èˆÊ’u
 	RECT_F dst;//•`‰ææ•\Ž¦
 
@@ -59,26 +59,26 @@ void CObjSceneMain4::Draw()
 	////•\Ž¦ˆÊ’u‚ÌÝ’è
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 500.0f;
-	dst.m_bottom = 500.0f;
+	dst.m_right = 1000.0f;
+	dst.m_bottom = 1000.0f;
 
-	//////‰æ‘œ•\Ž¦
-	//Draw::Draw(5, &src, &dst, c, 0.0f);
+	////‰æ‘œ•\Ž¦
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi‚P‚ðÝ’è•`‰æ
-	dst.m_top = 1200.0f - m_y2;
-	dst.m_left = 1000.0f;
+	dst.m_top = 1200.0f + m_y2;
+	dst.m_left = 1500.0f;
 	dst.m_right = 0.0f;
-	dst.m_bottom = 0.0f - m_y2;
+	dst.m_bottom = 0.0f + m_y2;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ð•`‰æB
 	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi2‚ðÝ’è•`‰æ
-	dst.m_top = 1200.0f - m_y1;
-	dst.m_left = 1000.0f;
+	dst.m_top = 1200.0f + m_y1;
+	dst.m_left = 1500.0f;
 	dst.m_right = 0.0f;
-	dst.m_bottom = 0.0f - m_y1;
+	dst.m_bottom = 0.0f + m_y1;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ð•`‰æB
 	Draw::Draw(5, &src, &dst, c, 0.0f);

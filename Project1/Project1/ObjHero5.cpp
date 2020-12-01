@@ -6,6 +6,7 @@
 #include "GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //#include "ObjAngleBulletHero.h"
 
 //使用するネームスペース

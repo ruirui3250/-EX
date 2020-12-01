@@ -5,6 +5,7 @@
 #include "ObjHero2.h"
 #include "GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
+#include"GameL/Audio.h"
 //#include"UtilityModule.h"
 //#include "ObjAngleBulletHero.h"
 

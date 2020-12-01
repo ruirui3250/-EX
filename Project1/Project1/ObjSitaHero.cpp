@@ -6,6 +6,7 @@
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
 #include"CObjAngleBulletHero.h"
+#include"GameL/Audio.h"
 
 //位置情報X取得用
 float CObjSitaHero::GetX()
