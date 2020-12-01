@@ -5,6 +5,7 @@
 #include "ObjTateHero.h"
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
+#include"GameL/Audio.h"
 #include"CObjAngleBulletHero.h"
 
 //イニシャライズ
