@@ -49,13 +49,13 @@ void CObjMIXBoss::Action()
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 270, m_y + 150);
+		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 270, m_y + 450);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
 	}
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 310, m_y + 150);
+		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 310, m_y + 350);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
 	}
 
@@ -70,7 +70,7 @@ void CObjMIXBoss::Action()
 	if (m_time % 30 == 0)
 	{
 	 //弾丸発射オブジェクト
-	 CObjAttackEnemy2* obj_b = new CObjAttackEnemy2(m_x + 170, m_y + 100);
+	 CObjAttackEnemy2* obj_b = new CObjAttackEnemy2(m_x + 170, m_y + 400);
 	 Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY2, 100);
 	}
 	if (m_time % 40 == 0)
@@ -82,8 +82,8 @@ void CObjMIXBoss::Action()
 	//if (m_time % 50 == 0)
 	//{
 	// //弾丸発射オブジェクト
-	// CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 250, m_y + 100);
-	// Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+	// CObjHomingEnemy* obj_b = new CObjHomingEnemy(m_x + 250, m_y + 100);
+	// Objs::InsertObj(obj_b, OBJ_HOMING_ENEMY, 100);
 	//}
 	//if (m_time % 60 == 0)
 	//{
@@ -91,12 +91,12 @@ void CObjMIXBoss::Action()
 	// CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 270, m_y + 100);
 	// Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
 	//}
-	if (m_time % 100 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjSitaEnemy2* obj_b = new CObjSitaEnemy2(m_x + 190, m_y + 100);
-		Objs::InsertObj(obj_b, OBJ_SITA_ENEMY2, 100);
-	}
+	//if (m_time % 100 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjSitaEnemy2* obj_b = new CObjSitaEnemy2(m_x + 190, m_y + 100);
+	//	Objs::InsertObj(obj_b, OBJ_SITA_ENEMY2, 100);
+	//}
 
 	//m_timeの初期化
 	if (m_time > 1000)

@@ -60,6 +60,8 @@ void CObjHomingEnemy::Action()
 
 	//主人公機と誘導弾丸で角度を取る
 	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
+	//主人公機と誘導弾丸で角度を取る
+	CObjHero5* obj2 = (CObjHero5*)Objs::GetObj(OBJ_HERO5);
 
 	//主人公機が存在する場合、誘導角度の計算する
 	if (obj != nullptr)

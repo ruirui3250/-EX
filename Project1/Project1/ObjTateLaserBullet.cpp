@@ -141,5 +141,5 @@ void CObjTateLaserBullet::Draw()
 	//m_eff.m_right = 32;
 	//m_eff.m_bottom = 64;
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(1, &m_eff, &dst, c, 0.0f);
+	Draw::Draw(10, &m_eff, &dst, c, 0.0f);
 }

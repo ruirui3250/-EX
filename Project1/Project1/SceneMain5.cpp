@@ -39,6 +39,8 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
 
+	Draw::LoadImage(L"主人公弾縦.png", 11, TEX_SIZE_512);
+
 	//Draw::LoadImage(L"障害物.png",9, TEX_SIZE_512);
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
@@ -224,64 +226,66 @@ void CSceneMain5::Scene()
 	Objs::InsertObj(obj6, OBJ_SITA_ENEMY2, 50);
 	}
 
-	else if (m_time == 670)
+	else if (m_time == 800)
 	{
 	CObjEnemy2* obj = new CObjEnemy2(550.0f, 400);
 	Objs::InsertObj(obj, OBJ_ENEMY2, 50);
- 
+
+	CObjEnemy2* obj2 = new CObjEnemy2(550.0f, 400);
+	Objs::InsertObj(obj2, OBJ_ENEMY2, 50);
+
+	CObjSitaEnemy2* obj3 = new CObjSitaEnemy2(550.0f, 400);
+	Objs::InsertObj(obj3, OBJ_SITA_ENEMY2, 50);
+
+	CObjTateKesen* obj6 = new CObjTateKesen(280, 30);
+	Objs::InsertObj(obj6, OBJ_TATEKESEN, 50);
+
+	CObjSitaKesen* obj7 = new CObjSitaKesen(330, 500);
+	Objs::InsertObj(obj7, OBJ_SITA_KESEN, 50);
+
+	CObjTateKesen* obj8 = new CObjTateKesen(380, 10);
+	Objs::InsertObj(obj8, OBJ_TATEKESEN, 50);
+
+	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 500);
+	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
+
+	CObjTateKesen* obj5 = new CObjTateKesen(480, 10);
+	Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
+	
+
 	}
-	//else if (m_time == 780)
-	//{
-	//	CObjYokoKesen* obj = new CObjYokoKesen(799.0f, 300);
-	//	Objs::InsertObj(obj, OBJ_YOKO_KESEN, 50);
+	else if (m_time == 1000)
+	{
+	CObjTateKesen* obj = new CObjTateKesen(10, 30);
+	Objs::InsertObj(obj, OBJ_TATEKESEN, 50);
 
-	//	CObjYokoKesen* obj2 = new CObjYokoKesen(799.0f, 277);
-	//	Objs::InsertObj(obj2, OBJ_YOKO_KESEN, 50);
+	CObjSitaKesen* obj2 = new CObjSitaKesen(70, 500);
+	Objs::InsertObj(obj2, OBJ_SITA_KESEN, 50);
 
-	//	CObjYokoKesen* obj3 = new CObjYokoKesen(799.0f, 244);
-	//	Objs::InsertObj(obj3, OBJ_YOKO_KESEN, 50);
+	CObjTateKesen* obj3 = new CObjTateKesen(130, 10);
+	Objs::InsertObj(obj3, OBJ_TATEKESEN, 50);
 
-	//	CObjYokoKesen* obj4 = new CObjYokoKesen(766.0f, 300);
-	//	Objs::InsertObj(obj4, OBJ_YOKO_KESEN, 50);
+	CObjSitaKesen* obj4 = new CObjSitaKesen(180, 500);
+	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
 
-	//	CObjYokoKesen* obj5 = new CObjYokoKesen(766.0f, 277);
-	//	Objs::InsertObj(obj5, OBJ_YOKO_KESEN, 50);
+	CObjTateKesen* obj5 = new CObjTateKesen(230, 10);
+	Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
+	}
 
-	//	CObjYokoKesen* obj1 = new CObjYokoKesen(766.0f, 244);
-	//	Objs::InsertObj(obj1, OBJ_YOKO_KESEN, 50);
+	else if (m_time == 1200)
+	{
+	CObjTateKesen* obj = new CObjTateKesen(280, 30);
+	Objs::InsertObj(obj, OBJ_TATEKESEN, 50);
 
-	//	CObjYokoKesen* obj6 = new CObjYokoKesen(733.0f, 300);
-	//	Objs::InsertObj(obj6, OBJ_YOKO_KESEN, 50);
+	CObjSitaKesen* obj2 = new CObjSitaKesen(330, 500);
+	Objs::InsertObj(obj2, OBJ_SITA_KESEN, 50);
 
-	//	CObjYokoKesen* obj7 = new CObjYokoKesen(733.0f, 277);
-	//	Objs::InsertObj(obj7, OBJ_YOKO_KESEN, 50);
+	CObjTateKesen* obj3 = new CObjTateKesen(380, 10);
+	Objs::InsertObj(obj3, OBJ_TATEKESEN, 50);
 
-	//	CObjYokoKesen* obj8 = new CObjYokoKesen(733.0f, 244);
-	//	Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
-
-
-	//}
-	//else if (m_time == 850)
-	//{
-	//	CObjHomingEnemy* obj;
-	//	obj = new CObjHomingEnemy(799.0f, 460);
-	//}
-	//else if (m_time == 890)
-	//{
-	//	CObjAttackEnemy* obj;
-	//	obj = new CObjAttackEnemy(799.0f, 450);
-	//}
-	//else if (m_time == 850)
-	//{
-	//	CObjEnemy* obj;
-	//	obj = new CObjEnemy(799.0, 305);
-	//}
-	//else if (m_time == 500)
-	//{
-	//	CObjHomingEnemy* obj;
-	//	obj = new CObjHomingEnemy(799.0f, 0);
-	//	Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
-	//}
+	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 500);
+	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
+ }
 	else if (m_time == 1500)
 	{
 		//音楽チェンジ
@@ -289,7 +293,27 @@ void CSceneMain5::Scene()
 		//Audio::Start(1);//1曲目スタート
 
 		CObjMIXBoss* obj;
-		obj = new CObjMIXBoss(300, 250);
+		obj = new CObjMIXBoss(450, 250);
 		Objs::InsertObj(obj, OBJ_MIX_BOSS, 50);
+
+		CObjTateKesen* obj2 = new CObjTateKesen(150, 10);
+		Objs::InsertObj(obj2, OBJ_TATEKESEN, 50);
+
+		CObjTateKesen* obj3 = new CObjTateKesen(200, 10);
+		Objs::InsertObj(obj3, OBJ_TATEKESEN, 50);
+
+		CObjTateKesen* obj5 = new CObjTateKesen(250, 10);
+		Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
+
+		CObjTateKesen* obj6 = new CObjTateKesen(300, 10);
+		Objs::InsertObj(obj6, OBJ_TATEKESEN, 50);
+
+		CObjTateKesen* obj7 = new CObjTateKesen(350, 10);
+		Objs::InsertObj(obj7, OBJ_TATEKESEN, 50);
+
+		CObjEnemyBossBullet4* obj8 = new CObjEnemyBossBullet4(800.0f, 500);
+		Objs::InsertObj(obj8, OBJ_BOSS_BULLET_ENEMY, 50);
+
+
 	}
 }

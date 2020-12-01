@@ -26,7 +26,7 @@ void CObjBoss::Init()
     m_vy = 0.0f;
 
     //当たり判定用HitBoxを作成
-    Hits::SetHitBox(this, m_x, m_y, 512, 512, ELEMENT_ENEMY, OBJ_BOSS_ENEMY, 4);
+    Hits::SetHitBox(this, m_x+150, m_y, 512, 512, ELEMENT_ENEMY, OBJ_BOSS_ENEMY, 4);
 }
 
 //アクション
@@ -87,7 +87,7 @@ void CObjBoss::Action()
 
     //HitBoxの内容を更新
     CHitBox* hit = Hits::GetHitBox(this);
-    hit->SetPos(m_x, m_y);
+    hit->SetPos(m_x+130, m_y);
 
     //領域外に出たら弾丸を破壊する
     bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
