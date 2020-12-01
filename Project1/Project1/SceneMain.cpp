@@ -67,7 +67,17 @@ void CSceneMain::InitScene()
 void CSceneMain::Scene()
 {
 	m_time++;
+	if (m_time == 10)
+	{
 
+		CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 10)
+	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
 	if (m_time == 30)
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);
