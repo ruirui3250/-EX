@@ -54,6 +54,8 @@ void TatesukuSceneMain::InitScene()
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
+		//音楽読み込み
+	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);

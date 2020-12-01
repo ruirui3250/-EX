@@ -51,6 +51,9 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
+	//音楽読み込み
+	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO5, 10);//主人公オブジェクトマネージャーを登録
