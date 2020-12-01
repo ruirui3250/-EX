@@ -226,6 +226,6 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START TatesukuSceneMain
+#define SET_GAME_START SceneMain4
 //SceneTitle
 //-----------------------------------------------
