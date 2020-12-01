@@ -584,7 +584,7 @@ void TatesukuSceneMain::Scene()
 	}
 
 	/*-------------------------É{ÉX-------------------------------*/
-	if (m_time == 2000)
+	if (m_time == 20)
 	{
 		CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);

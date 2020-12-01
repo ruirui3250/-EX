@@ -24,7 +24,7 @@ void CObjTateBoss::Init()
 
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x+50, m_y+100, 250, 250, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
+	Hits::SetHitBox(this, m_x+300, m_y, 250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
 }
 //アクション
 void CObjTateBoss::Action()
@@ -84,12 +84,12 @@ void CObjTateBoss::Action()
 	// CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 250, m_y + 100);
 	// Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
 	//}
-	//if (m_time % 60 == 0)
-	//{
-	// //弾丸発射オブジェクト
-	// CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 270, m_y + 100);
-	// Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
-	//}
+	if (m_time % 60 == 0)
+	{
+	 //弾丸発射オブジェクト
+	 CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 270, m_y + 100);
+	 Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+	}
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
