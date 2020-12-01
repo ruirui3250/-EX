@@ -65,6 +65,8 @@ void CObjHero2::Action()
 	{
 		if (m_f == true)
 		{
+			//発射音を流す
+			Audio::Start(2);
 
 			//弾丸オブジェクト作成
 			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
