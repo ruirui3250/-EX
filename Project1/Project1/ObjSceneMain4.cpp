@@ -1,7 +1,7 @@
 //g—p‚·‚éƒl[ƒ€ƒXƒy[ƒX
 #include "GameL\DrawTexture.h"
 #include"GameHead.h"
-#include"ObjSceneMain4.h"
+#include"ObjTatesukuSceneMain.h"
 #include"UtilityModule.h"
 #include<math.h>
 
@@ -9,44 +9,44 @@
 using namespace GameL;
 
 //ƒCƒjƒVƒƒƒ‰ƒCƒY
-void CObjSceneMain4::Init()
+void CObjTatesukuSceneMain::Init()
 {
-	m_y1= 800.0f;
-	m_y2= 0.0f;
+	m_y1 = 10.0f;
+	m_y2 = 800.0f;
 }
 //ƒAƒNƒVƒ‡ƒ“
-void CObjSceneMain4::Action()
+void CObjTatesukuSceneMain::Action()
 {
 	//”wŒi‚P‚Ì‘€ì
-	m_y1 +=10.0f;
-	if (m_y1>- 800.0f)
-		m_y1 -=800;
+	m_y1 -= 10.0f;
+	if (m_y1 < -800.0f)
+		m_y1 = 800;
 	//”wŒi2‚Ì‘€ì
-	m_y2 +=10.0f;
-	if (m_y2>-800.0f)
-		m_y2 -= 800;
-	////‰æ–Ê‚ğ‰ñ“]‚³‚¹‚é
-	//float ar = 170.0f;
+	m_y2 -= 10.0f;
+	if (m_y2 < -800.0f)
+		m_y2 = 800;
+	//‰æ–Ê‚ğ‰ñ“]‚³‚¹‚é
+	float ar = 170.0f;
 
-	////Œ»İ‚Ì•ûŒü‚ÌŠp“x‚ğŠl“¾
-	//float br = 180.0f;
+	//Œ»İ‚Ì•ûŒü‚ÌŠp“x‚ğŠl“¾
+	float br = 180.0f;
 
-	//float r = 3.14 / 180.0f;//Šp“x1
-	//if (ar < br)
-	//{
-	//	//ˆÚ“®•ûŒü‚É+1‚ğ‰Á‚¦‚é
-	//	m_vx = m_vy * cos(+r) + m_vx * sin(+r);
-	//	m_vy = m_vx * cos(r) - m_vy * sin(r);
-	//}
+	float r = 3.14 / 180.0f;//Šp“x1
+	if (ar < br)
+	{
+		//ˆÚ“®•ûŒü‚É+1‚ğ‰Á‚¦‚é
+		m_vx = m_vy * cos(r) - m_vx * sin(r);
+		m_vy = m_vx * cos(-r) + m_vy * sin(-r);
+	}
 
 }
 
 //ƒhƒ[
-void CObjSceneMain4::Draw()
+void CObjTatesukuSceneMain::Draw()
 {
 	//•`‰æƒJƒ‰[î•ñ R=Red G=Green B=blue A=alpha(“§‰ßî•ñ)
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
-	
+
 	RECT_F src;//•`‰ææØ‚èæ‚èˆÊ’u
 	RECT_F dst;//•`‰ææ•\¦
 
@@ -59,15 +59,15 @@ void CObjSceneMain4::Draw()
 	////•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 500.0f;
-	dst.m_bottom = 500.0f;
+	dst.m_right = 1000.0f;
+	dst.m_bottom = 1000.0f;
 
-	//////‰æ‘œ•\¦
-	//Draw::Draw(5, &src, &dst, c, 0.0f);
+	////‰æ‘œ•\¦
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi‚P‚ğİ’è•`‰æ
 	dst.m_top = 1200.0f + m_y2;
-	dst.m_left = 1000.0f;
+	dst.m_left = 1500.0f;
 	dst.m_right = 0.0f;
 	dst.m_bottom = 0.0f + m_y2;
 
@@ -76,7 +76,7 @@ void CObjSceneMain4::Draw()
 
 	//”wŒi2‚ğİ’è•`‰æ
 	dst.m_top = 1200.0f + m_y1;
-	dst.m_left = 1000.0f;
+	dst.m_left = 1500.0f;
 	dst.m_right = 0.0f;
 	dst.m_bottom = 0.0f + m_y1;
 
