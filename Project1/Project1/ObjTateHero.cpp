@@ -5,6 +5,7 @@
 #include "ObjTateHero.h"
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
+#include"GameL/Audio.h"
 #include"CObjAngleBulletHero.h"
 
 //イニシャライズ
@@ -46,6 +47,8 @@ void CObjTateHero::Action()
 		m_vy = -1.0f;
 		if (m_f == true)
 		{
+			//発射音を流す
+			Audio::Start(2);
 
 			//弾丸オブジェクト作成
 			CObjTateBullet* obj_b = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト

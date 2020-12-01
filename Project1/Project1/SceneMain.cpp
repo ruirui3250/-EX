@@ -5,6 +5,7 @@
 //GameLで使用するヘッダー
 #include"GameL\DrawTexture.h"
 #include"GameL\SceneObjManager.h"
+#include"GameL/Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -45,6 +46,9 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"Boss1(使).png",4,TEX_SIZE_512);
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+
+	//音楽読み込み
+	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成

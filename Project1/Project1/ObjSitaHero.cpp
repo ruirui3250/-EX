@@ -6,6 +6,7 @@
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
 #include"CObjAngleBulletHero.h"
+#include"GameL/Audio.h"
 
 //位置情報X取得用
 float CObjSitaHero::GetX()
@@ -64,6 +65,9 @@ void CObjSitaHero::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
+		//発射音を流す
+		Audio::Start(2);
+
 		m_vx = 0.0f;
 		m_vy = +1.0f;
 		if (m_f == true)
