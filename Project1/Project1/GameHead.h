@@ -18,6 +18,7 @@ enum OBJ_NAME
 	OBJ_GAME_OVER2,
 	OBJ_GAME_OVER3,
 	OBJ_GAME_OVER4,
+	OBJ_GAME_OVER5,
 	OBJ_HERO,
 	OBJ_SCENE_MAIN,
 	OBJ_SCENE_MAIN2,
@@ -144,6 +145,7 @@ struct UserData
 #include"ObjGameOver2.h"
 #include"ObjGameOver3.h"
 #include"ObjGameOver4.h"
+#include"ObjGameOver5.h"
 //敵関連
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
@@ -152,6 +154,7 @@ struct UserData
 #include"ObjClearBack.h"
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
+#include"ObjHero2.h"
 #include"ObjEnemy.h"
 #include"ObjDiffusionHero.h"
 #include"ObjEnemyBoss.h"
@@ -221,11 +224,12 @@ struct UserData
 #include"SceneGameOver2.h"
 #include"SceneGameOver3.h"
 #include"SceneGameOver4.h"
+#include"SceneGameOver5.h"
 
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START SceneMain4
+#define SET_GAME_START CSceneMain4
 //SceneTitle
 //-----------------------------------------------
