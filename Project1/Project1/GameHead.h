@@ -39,7 +39,14 @@ enum OBJ_NAME
 
 	/*----------------回復アイテム-------------*/
 	OBJ_LIFE_ITEM,
+	OBJ_MIGI_LIFE_ITEM,
+	OBJ_HIDARI_LIFE_ITEM,
+	OBJ_SITA_LIFE_ITEM,
+	/*----------ビーム回復-------*/
 	OBJ_ITEM,
+	OBJ_MIGI_ITEM,
+	OBJ_HIDARI_ITEM,
+	OBJ_SITAITEM,
 	/*----------------*/
 	OBJ_TATE_ENEMY,
 	OBJ_TATE_BOSS,
@@ -85,7 +92,7 @@ enum HIT_ELEMENTS
 	//属性は追加可能だが、デバック時の色は初期設定分しか無い
 	ELEMENT_PLAYER,
 	ELEMENT_ENEMY,
-	ELEMENT_ITEM,
+	
 	ELEMENT_MAGIC,
 	ELEMENT_FIELD,
 	ELEMENT_RED,
@@ -94,6 +101,7 @@ enum HIT_ELEMENTS
 	ELEMENT_BLACK,
 	ELEMENT_WHITE,
 	ELEMENT_LIFE_ITEM,
+	ELEMENT_ITEM,
 };
 //------------------------------------------------
 
@@ -185,8 +193,15 @@ struct UserData
 #include"ObjTateAttackEnemy2.h"
 #include"ObjHero5.h"
 #include"CObjMixBoss.h"
-//アイテム関連
+/*----------回復アイテム----------------*/
+#include"ObjMigiItem.h"
+#include"ObjHidariItem.h"
+#include"ObjSitaItem.h"
 #include"ObjItem.h"
+/*-----------体力-----------*/
+#include"ObjMigiLifeItem.h"
+#include"ObjHidariLifeItem.h"
+#include"ObjSitaLifeItem.h"
 #include"ObjLifeItem.h"
 //------------------------------------------------
 

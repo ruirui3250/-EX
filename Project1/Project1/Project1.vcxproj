@@ -163,9 +163,6 @@
     <ClInclude Include="GameL\SetWindow.h" />
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
-    <ClInclude Include="Item.h">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClInclude>
     <ClInclude Include="Kaiten.h" />
     <ClInclude Include="main.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
@@ -185,8 +182,13 @@
     <ClInclude Include="ObjGameOver4.h" />
     <ClInclude Include="ObjHero.h" />
     <ClInclude Include="ObjHero5.h" />
+    <ClInclude Include="ObjHidariItem.h" />
+    <ClInclude Include="ObjHidariLifeItem.h" />
+    <ClInclude Include="ObjSitaLifeItem.h" />
     <ClInclude Include="ObjItem.h" />
     <ClInclude Include="ObjLifeItem.h" />
+    <ClInclude Include="ObjMigiItem.h" />
+    <ClInclude Include="ObjMigiLifeItem.h" />
     <ClInclude Include="ObjSceneMain.h" />
     <ClInclude Include="ObjSceneMain2.h" />
     <ClInclude Include="ObjSceneMain4.h" />
@@ -197,6 +199,7 @@
     <ClInclude Include="ObjSitaEnemy.h" />
     <ClInclude Include="ObjSitaEnemy2.h" />
     <ClInclude Include="ObjSitaHero.h" />
+    <ClInclude Include="ObjSitaItem.h" />
     <ClInclude Include="ObjSitaKesen.h" />
     <ClInclude Include="ObjSitaLaserBullet.h" />
     <ClInclude Include="ObjTateAttackEnemy.h" />
@@ -260,9 +263,6 @@
     <ClCompile Include="GameL\SetWindow.cpp" />
     <ClCompile Include="GameL\UserData.cpp" />
     <ClCompile Include="GameL\WinInputs.cpp" />
-    <ClCompile Include="Item.cpp">
-      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
-    </ClCompile>
     <ClCompile Include="Kaiten.cpp" />
     <ClCompile Include="ObjAttackEnemy.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
@@ -281,8 +281,13 @@
     <ClCompile Include="ObjGameOver4.cpp" />
     <ClCompile Include="ObjHero.cpp" />
     <ClCompile Include="ObjHero5.cpp" />
+    <ClCompile Include="ObjHidariItem.cpp" />
+    <ClCompile Include="ObjHidariLifeItem.cpp" />
+    <ClCompile Include="ObjSitaLifeItem.cpp" />
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjLifeItem.cpp" />
+    <ClCompile Include="ObjMigiItem.cpp" />
+    <ClCompile Include="ObjMigiLifeItem.cpp" />
     <ClCompile Include="ObjSceneMain.cpp" />
     <ClCompile Include="ObjSceneMain2.cpp" />
     <ClCompile Include="ObjSceneMain4.cpp" />
@@ -293,6 +298,7 @@
     <ClCompile Include="ObjSitaEnemy.cpp" />
     <ClCompile Include="ObjSitaEnemy2.cpp" />
     <ClCompile Include="ObjSitaHero.cpp" />
+    <ClCompile Include="ObjSitaItem.cpp" />
     <ClCompile Include="ObjSitaKesen.cpp" />
     <ClCompile Include="ObjSitaLaserBullet.cpp" />
     <ClCompile Include="ObjTateAttackEnemy.cpp" />

@@ -26,8 +26,8 @@ void CObjLifeItem::Action()
 {
 
 	//移動方向
-	/*m_vx = +1.0f;
-	m_vy = 0.0f;*/
+	m_vx = +1.0f;
+	m_vy = 0.0f;
 
 	//移動ベクトルの正規化
 	UnitVec(&m_vy, &m_vx);
@@ -49,7 +49,12 @@ void CObjLifeItem::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
-
+	/*-----------------------触れたらこのオブジェクト削除------------*/
+	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
+	{
+		this->SetStatus(false); //自身に削除命令
+		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+	}
 }
 
 //ドロー

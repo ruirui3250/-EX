@@ -21,9 +21,6 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面">
       <UniqueIdentifier>{9e484e8d-a0ae-4b00-b99d-88ac2749cd43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\アイテム">
-      <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\5面終了">
       <UniqueIdentifier>{ea04686c-e1c5-493d-b6b5-64bd663e68d6}</UniqueIdentifier>
     </Filter>
@@ -142,14 +139,17 @@
     <Filter Include="ソース ファイル\共通アイテム">
       <UniqueIdentifier>{240e9972-8feb-40ad-9d94-50088d3d1677}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\共通アイテム\縦スクロール用アイテム">
-      <UniqueIdentifier>{e29134db-48fe-44db-abfa-c9d7269a7c3c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\共通アイテム\横スクロールアイテム">
-      <UniqueIdentifier>{6ceaf816-9af1-48cb-b141-3173c2b4b6e0}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\共通アイテム\縦スクロールアイテム（下から）">
       <UniqueIdentifier>{5fd61f10-0164-41c7-83db-1acf971c4fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）">
+      <UniqueIdentifier>{e29134db-48fe-44db-abfa-c9d7269a7c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\横スクロールアイテム（右へ）">
+      <UniqueIdentifier>{6ceaf816-9af1-48cb-b141-3173c2b4b6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\横スクロールアイテム（左へ）">
+      <UniqueIdentifier>{f0b58820-f4b7-4fb0-a610-2f75b41680f6}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -209,9 +209,6 @@
     </ClInclude>
     <ClInclude Include="CObjAngleBulletHero.h">
       <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
-    </ClInclude>
-    <ClInclude Include="Item.h">
-      <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClInclude>
     <ClInclude Include="Kaiten.h">
       <Filter>ソース ファイル\基本データ\回転</Filter>
@@ -424,10 +421,28 @@
       <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
     </ClInclude>
     <ClInclude Include="ObjItem.h">
-      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
     </ClInclude>
     <ClInclude Include="ObjLifeItem.h">
-      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMigiItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMigiLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHidariLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHidariItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -490,9 +505,6 @@
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
       <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
-    </ClCompile>
-    <ClCompile Include="Item.cpp">
-      <Filter>ソース ファイル\基本データ\アイテム</Filter>
     </ClCompile>
     <ClCompile Include="Kaiten.cpp">
       <Filter>ソース ファイル\基本データ\回転</Filter>
@@ -702,10 +714,28 @@
       <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
     </ClCompile>
     <ClCompile Include="ObjItem.cpp">
-      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
     </ClCompile>
     <ClCompile Include="ObjLifeItem.cpp">
-      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム</Filter>
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMigiLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHidariLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHidariItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMigiItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
