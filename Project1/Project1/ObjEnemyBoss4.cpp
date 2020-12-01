@@ -160,64 +160,64 @@ void CObjEnemyBoss4::Draw()
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 
-	//wchar_t str[256];
-	//swprintf_s(str, L"BossLife=%d", m_hp);
-	//Font::StrDraw(str, 400, 500, 20, c);
-	//if (m_hp == 100)
-	//{
-	//	swprintf_s(str, L"████████████████████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 90)
-	//{
-	//	swprintf_s(str, L"███████████████████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 80)
-	//{
-	//	swprintf_s(str, L"███████████████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 70)
-	//{
-	//	swprintf_s(str, L"█████████████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 60)
-	//{
-	//	swprintf_s(str, L"███████████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 50)
-	//{
-	//	swprintf_s(str, L"█████████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 40)
-	//{
-	//	swprintf_s(str, L"███████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 30)
-	//{
-	//	swprintf_s(str, L"████", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 20)
-	//{
-	//	swprintf_s(str, L"███", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp >= 10)
-	//{
-	//	swprintf_s(str, L"██", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
-	//if (m_hp <= 10)
-	//{
-	//	swprintf_s(str, L"█", m_hp);
-	//	Font::StrDraw(str, 400, 550, 20, c);
-	//}
+	wchar_t str[256];
+	swprintf_s(str, L"BossLife=%d", m_hp);
+	Font::StrDraw(str, 400, 500, 20, c);
+	if (m_hp == 100)
+	{
+		swprintf_s(str, L"████████████████████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 90)
+	{
+		swprintf_s(str, L"███████████████████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 80)
+	{
+		swprintf_s(str, L"███████████████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 70)
+	{
+		swprintf_s(str, L"█████████████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 60)
+	{
+		swprintf_s(str, L"███████████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 50)
+	{
+		swprintf_s(str, L"█████████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 40)
+	{
+		swprintf_s(str, L"███████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 30)
+	{
+		swprintf_s(str, L"████", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 20)
+	{
+		swprintf_s(str, L"███", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp >= 10)
+	{
+		swprintf_s(str, L"██", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
+	if (m_hp <= 10)
+	{
+		swprintf_s(str, L"█", m_hp);
+		Font::StrDraw(str, 400, 550, 20, c);
+	}
 
 	RECT_F src; //描画切り取り位置
 	RECT_F dst;//描画先表示

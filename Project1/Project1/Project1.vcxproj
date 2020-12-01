@@ -180,7 +180,9 @@
     <ClInclude Include="ObjGameOver2.h" />
     <ClInclude Include="ObjGameOver3.h" />
     <ClInclude Include="ObjGameOver4.h" />
+    <ClInclude Include="ObjGameOver5.h" />
     <ClInclude Include="ObjHero.h" />
+    <ClInclude Include="ObjHero2.h" />
     <ClInclude Include="ObjHero5.h" />
     <ClInclude Include="ObjHidariItem.h" />
     <ClInclude Include="ObjHidariLifeItem.h" />
@@ -224,6 +226,7 @@
     <ClInclude Include="SceneGameOver2.h" />
     <ClInclude Include="SceneGameOver3.h" />
     <ClInclude Include="SceneGameOver4.h" />
+    <ClInclude Include="SceneGameOver5.h" />
     <ClInclude Include="SceneMain.h" />
     <ClInclude Include="SceneMain2.h" />
     <ClInclude Include="SceneMain4.h" />
@@ -279,7 +282,9 @@
     <ClCompile Include="ObjGameOver2.cpp" />
     <ClCompile Include="ObjGameOver3.cpp" />
     <ClCompile Include="ObjGameOver4.cpp" />
+    <ClCompile Include="ObjGameOver5.cpp" />
     <ClCompile Include="ObjHero.cpp" />
+    <ClCompile Include="ObjHero2.cpp" />
     <ClCompile Include="ObjHero5.cpp" />
     <ClCompile Include="ObjHidariItem.cpp" />
     <ClCompile Include="ObjHidariLifeItem.cpp" />
@@ -323,6 +328,7 @@
     <ClCompile Include="SceneGameOver2.cpp" />
     <ClCompile Include="SceneGameOver3.cpp" />
     <ClCompile Include="SceneGameOver4.cpp" />
+    <ClCompile Include="SceneGameOver5.cpp" />
     <ClCompile Include="SceneMain.cpp" />
     <ClCompile Include="SceneMain2.cpp" />
     <ClCompile Include="SceneMain4.cpp" />
