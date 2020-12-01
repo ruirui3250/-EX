@@ -1,7 +1,7 @@
 //使用するネームスペース
 #include "GameL\DrawTexture.h"
 #include"GameHead.h"
-#include"ObjTatesukuSceneMain.h"
+#include"ObjSceneMain4.h"
 #include"UtilityModule.h"
 #include<math.h>
 
@@ -9,13 +9,13 @@
 using namespace GameL;
 
 //イニシャライズ
-void CObjTatesukuSceneMain::Init()
+void CObjSceneMain4::Init()
 {
 	m_y1 = 10.0f;
 	m_y2 = 800.0f;
 }
 //アクション
-void CObjTatesukuSceneMain::Action()
+void CObjSceneMain4::Action()
 {
 	//背景１の操作
 	m_y1 -= 10.0f;
@@ -42,7 +42,7 @@ void CObjTatesukuSceneMain::Action()
 }
 
 //ドロー
-void CObjTatesukuSceneMain::Draw()
+void CObjSceneMain4::Draw()
 {
 	//描画カラー情報 R=Red G=Green B=blue A=alpha(透過情報)
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
