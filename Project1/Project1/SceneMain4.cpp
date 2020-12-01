@@ -53,6 +53,9 @@ void CSceneMain4::InitScene()
 		//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 

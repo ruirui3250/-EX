@@ -31,6 +31,8 @@ void CObjTateHero::Action()
 	{
 		if (m_la >= 0)
 		{
+			//発射音を流す
+			Audio::Start(4);
 			//弾丸オブジェクト作成
 			CObjTateLaserBullet* obj_b = new CObjTateLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_TATE_LASER_BULLET, 100);//作った弾丸オブジェクト

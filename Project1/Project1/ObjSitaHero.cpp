@@ -53,6 +53,8 @@ void CObjSitaHero::Action()
 	{
 		if (m_la >= 0)
 		{
+			//発射音を流す
+			Audio::Start(4);
 			//弾丸オブジェクト作成
 			CObjSitaLaserBullet* obj_b = new CObjSitaLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_SITA_LASER_BULLET, 100);//作った弾丸オブジェクト
