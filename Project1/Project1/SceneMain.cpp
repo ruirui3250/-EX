@@ -53,6 +53,9 @@ void CSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
@@ -74,17 +77,17 @@ void CSceneMain::InitScene()
 void CSceneMain::Scene()
 {
 	m_time++;
-	if (m_time == 10)
-	{
+	//if (m_time == 10)
+	//{
 
-		CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 10)
-	{
-		CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
+	//	CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
+	//	Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	//}
+	//if (m_time == 10)
+	//{
+	//	CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
+	//	Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	//}
 	if (m_time == 30)
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);

@@ -34,7 +34,7 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"ウイルス.png", 7, TEX_SIZE_512);
 
-	Draw::LoadImageW(L"敵弾(使).png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"敵弾(使).png", 5, TEX_SIZE_512);
 
 	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
