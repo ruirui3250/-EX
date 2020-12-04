@@ -59,7 +59,7 @@ void CSceneMain5::InitScene()
 
 	//主人公オブジェクト作成
 	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO5, 10);//主人公オブジェクトマネージャーを登録
+	Objs::InsertObj(obj, OBJ_HERO5, 0);//主人公オブジェクトマネージャーを登録
 
 	////blockオブジェクト作成
 	//CObjBlock* objb = new CObjBlock();

@@ -67,13 +67,13 @@ void CObjSitaHero::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
-		//発射音を流す
-		Audio::Start(2);
 
 		m_vx = 0.0f;
 		m_vy = +1.0f;
 		if (m_f == true)
 		{
+			//発射音を流す
+			Audio::Start(2);
 
 			//弾丸オブジェクト作成
 			CObjSitaBullet* obj_b = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
