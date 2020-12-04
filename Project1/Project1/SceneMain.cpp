@@ -48,6 +48,9 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
 	//音楽読み込み
+	Audio::LoadAudio(6, L"1面.wav", BACK_MUSIC);
+
+	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
 	//音楽読み込み
@@ -70,6 +73,8 @@ void CSceneMain::InitScene()
 
 	//タイム初期化
 	m_time = 0;
+
+	Audio::Start(6);
 
 }
 
