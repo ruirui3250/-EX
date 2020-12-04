@@ -32,7 +32,7 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"ウイルス無.png", 3, TEX_SIZE_512);
 
-	Draw::LoadImage(L"ウイルス.png", 7, TEX_SIZE_512);
+	/*Draw::LoadImage(L"ウイルス.png", 7, TEX_SIZE_512);*/
 
 	Draw::LoadImage(L"敵弾(使).png", 5, TEX_SIZE_512);
 
@@ -57,9 +57,12 @@ void CSceneMain5::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO5, 0);//主人公オブジェクトマネージャーを登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
 
 	////blockオブジェクト作成
 	//CObjBlock* objb = new CObjBlock();

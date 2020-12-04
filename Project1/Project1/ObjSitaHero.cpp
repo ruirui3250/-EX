@@ -96,6 +96,8 @@ void CObjSitaHero::Action()
 		if (m_ka <= 0 == false)
 			if (m_f == true)
 			{
+				//発射音を流す
+				Audio::Start(5);
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
