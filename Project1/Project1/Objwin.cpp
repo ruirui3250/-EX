@@ -31,6 +31,28 @@ void CObjWin::Action()
 	{
 		m_key_flag = true;
 	}
+	//”wŒi‚P‚Ì‘€ì
+	m_y1 -= 10.0f;
+	if (m_y1 < -800.0f)
+		m_y1 = 800;
+	//”wŒi2‚Ì‘€ì
+	m_y2 -= 10.0f;
+	if (m_y2 < -800.0f)
+		m_y2 = 800;
+	//‰æ–Ê‚ğ‰ñ“]‚³‚¹‚é
+	float ar = 170.0f;
+
+	//Œ»İ‚Ì•ûŒü‚ÌŠp“x‚ğŠl“¾
+	float br = 180.0f;
+
+	float r = 3.14 / 180.0f;//Šp“x1
+	if (ar < br)
+	{
+		//ˆÚ“®•ûŒü‚É+1‚ğ‰Á‚¦‚é
+		m_vx = m_vy * cos(r) - m_vx * sin(r);
+		m_vy = m_vx * cos(-r) + m_vy * sin(-r);
+	}
+
 }
 
 //ƒhƒ[
