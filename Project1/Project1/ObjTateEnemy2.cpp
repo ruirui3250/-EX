@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include "ObjTateEnemy2.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ

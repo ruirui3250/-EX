@@ -59,6 +59,12 @@ void CSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(11, L"ボス1.wav", BACK_MUSIC);
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
@@ -366,8 +372,8 @@ void CSceneMain::Scene()
 	else if (m_time == 1200)
 	{
 		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		Audio::Stop(6);//0曲ストップ
+		Audio::Start(11);//1曲目スタート
 
 		CObjBoss* obj;
 		obj = new CObjBoss(300, 250);

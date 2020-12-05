@@ -5,6 +5,7 @@
 #include"GameHead.h"
 #include"CObjSinEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 

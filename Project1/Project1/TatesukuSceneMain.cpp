@@ -63,6 +63,15 @@ void TatesukuSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(8, L"3面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(13, L"ボス3.wav", BACK_MUSIC);
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 
@@ -76,6 +85,9 @@ void TatesukuSceneMain::InitScene()
 
 	//タイム初期化
 	m_time = 0;
+
+
+	Audio::Start(8);
 
 }
 
@@ -592,6 +604,9 @@ void TatesukuSceneMain::Scene()
 	/*-------------------------ボス-------------------------------*/
 	if (m_time == 2000)
 	{
+		//音楽チェンジ
+		Audio::Stop(8);//0曲ストップ
+		Audio::Start(13);//1曲目スタート
 		CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 
