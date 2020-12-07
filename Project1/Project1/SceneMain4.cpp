@@ -154,7 +154,7 @@ void CSceneMain4::Scene()
 		Objs::InsertObj(obj2, OBJ_SITA_ENEMY, 50);
 		CObjSitaAttackEnemy* obj3 = new CObjSitaAttackEnemy(450.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_ATTACK_ENEMY, 50);
-		CObjSitaAttackEnemy* obj4 = new CObjSitaAttackEnemy(300.0f, 440);
+		CObjSitaAttackEnemy* obj4 = new CObjSitaAttackEnemy(300.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_ATTACK_ENEMY, 50);
 
 	}
@@ -184,18 +184,18 @@ void CSceneMain4::Scene()
 	{
 		CObjSitaEnemy* obj = new CObjSitaEnemy(550.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_ENEMY, 50);
-		CObjSitaAttackEnemy* obj2 = new CObjSitaAttackEnemy(100.0f, 350);
+		CObjSitaAttackEnemy* obj2 = new CObjSitaAttackEnemy(100.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ATTACK_ENEMY, 50);
 	}
 	if (m_time == 200)
 	{
-		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 450);
+		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_KESEN, 50);
 		CObjSitaEnemy* obj2 = new CObjSitaEnemy(0.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ENEMY, 50);
 		CObjSitaAttackEnemy* obj3 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_ATTACK_ENEMY, 50);
-		CObjSitaKesen* obj4 = new CObjSitaKesen(500.0f, 400);
+		CObjSitaKesen* obj4 = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
 	}
 	if (m_time == 300)
@@ -216,7 +216,7 @@ void CSceneMain4::Scene()
 
 	if (m_time == 500)
 	{
-		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(500.0f,435);
+		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(500.0f,500);
 		Objs::InsertObj(obj5, OBJ_SITA_ATTACK_ENEMY, 50);
 		CObjSitaAttackEnemy* obj6 = new CObjSitaAttackEnemy(450.0f, 500);
 		Objs::InsertObj(obj6, OBJ_SITA_ATTACK_ENEMY, 50);
@@ -232,7 +232,7 @@ void CSceneMain4::Scene()
 
 	if (m_time == 700)
 	{
-		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 450);
+		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_KESEN, 50);
 		CObjSitaEnemy* obj2 = new CObjSitaEnemy(450.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ENEMY, 50);
@@ -240,19 +240,19 @@ void CSceneMain4::Scene()
 
 	if(m_time==900)
 	{
-		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 450);
+		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_KESEN, 50);
-		CObjSitaKesen* obj2 = new CObjSitaKesen(300.0f, 250);
+		CObjSitaKesen* obj2 = new CObjSitaKesen(300.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_KESEN, 50);
 		CObjSitaKesen* obj3 = new CObjSitaKesen(100.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_KESEN, 50);
 		CObjSitaEnemy* obj4 = new CObjSitaEnemy(150.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_ENEMY, 50);
-		CObjSitaEnemy* obj5 = new CObjSitaEnemy(100.0f, 400);
+		CObjSitaEnemy* obj5 = new CObjSitaEnemy(100.0f, 500);
 		Objs::InsertObj(obj5, OBJ_SITA_ENEMY, 50);
 		CObjSitaAttackEnemy* obj6 = new CObjSitaAttackEnemy(450.0f, 500);
 		Objs::InsertObj(obj6, OBJ_SITA_ATTACK_ENEMY, 50);
-		CObjSitaAttackEnemy* obj7 = new CObjSitaAttackEnemy(250.0f, 300);
+		CObjSitaAttackEnemy* obj7 = new CObjSitaAttackEnemy(250.0f, 500);
 		Objs::InsertObj(obj7, OBJ_SITA_ATTACK_ENEMY, 50);
 	}
 	if (m_time == 1000)
@@ -268,13 +268,13 @@ void CSceneMain4::Scene()
 		CObjSitaAttackEnemy* obj2 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaEnemy* obj3 = new CObjSitaEnemy(450.0f, 400);
+		CObjSitaEnemy* obj3 = new CObjSitaEnemy(450.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_ATTACK_ENEMY, 50);
 
 		CObjSitaEnemy* obj4 = new CObjSitaEnemy(250.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(350.0f, 300);
+		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj5, OBJ_SITA_ATTACK_ENEMY, 50);
 
 
@@ -288,10 +288,10 @@ void CSceneMain4::Scene()
 		CObjSitaAttackEnemy* obj8 = new CObjSitaAttackEnemy(600.0f, 500);
 		Objs::InsertObj(obj8, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaAttackEnemy* obj9 = new CObjSitaAttackEnemy(350.0f, 300);
+		CObjSitaAttackEnemy* obj9 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj9, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaEnemy* obj10 = new CObjSitaEnemy(350.0f, 300);
+		CObjSitaEnemy* obj10 = new CObjSitaEnemy(350.0f, 500);
 		Objs::InsertObj(obj10, OBJ_SITA_ATTACK_ENEMY, 50);
 
 		CObjSitaAttackEnemy* obj11 = new CObjSitaAttackEnemy(750.0f, 500);
