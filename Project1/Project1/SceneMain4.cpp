@@ -57,6 +57,21 @@ void CSceneMain4::InitScene()
 		//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(9, L"4面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(14, L"ボス4.wav", BACK_MUSIC);
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 
@@ -70,6 +85,8 @@ void CSceneMain4::InitScene()
 
 	//タイム初期化
 	m_time = 0;
+
+	Audio::Start(9);
 
 }
 
@@ -300,6 +317,9 @@ void CSceneMain4::Scene()
 	///*-------------------------ボス-------------------------------*/
 	if (m_time == 2000)
 	{
+		//音楽チェンジ
+		Audio::Stop(9);//0曲ストップ
+		Audio::Start(14);//1曲目スタート
 		CObjEnemyBoss4* obj = new CObjEnemyBoss4(250,500);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
 

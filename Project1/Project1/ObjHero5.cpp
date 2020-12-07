@@ -45,6 +45,8 @@ void CObjHero5::Action()
 	{
 		if (m_la >= 0)
 		{
+			//発射音を流す
+			Audio::Start(4);
 			//弾丸オブジェクト作成
 			CObjLaserBullet* obj_b = new CObjLaserBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJLASER_BULLET, 100);//作った弾丸オブジェクト
@@ -106,6 +108,8 @@ void CObjHero5::Action()
 		if (m_ka <= 0 == false)
 			if (m_f == true)
 			{
+				//発射音を流す
+				Audio::Start(5);
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
