@@ -35,7 +35,7 @@ void CObjWin::Action()
 	//”wŒi‚P‚Ì‘€ì
 	if (m_y1 > -1900.0f)
 	{
-		m_y1 -= 2.0f;
+		m_y1 -= 3.0f;
 	}
 	////”wŒi2‚Ì‘€ì
 	//m_y2 -= 10.0f;
