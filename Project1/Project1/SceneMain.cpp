@@ -396,7 +396,7 @@ void CSceneMain::Scene()
 		Audio::Start(11);//1曲目スタート
 
 		CObjBoss* obj;
-		obj = new CObjBoss(300, 250);
+		obj = new CObjBoss(300, 0);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
 	}
 }
