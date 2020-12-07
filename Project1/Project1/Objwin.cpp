@@ -36,5 +36,13 @@ void CObjWin::Action()
 //ドロー
 void CObjWin::Draw()
 {
-
+	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
+	//出力する文字を入力
+	Font::SetStrTex(L"ENDING　CREDIT");
+	Font::SetStrTex(L"総合ディレクター　瀬口　琉");
+	Font::SetStrTex(L"プランナー　桶谷　光城");
+	Font::SetStrTex(L"プログラマー 上田　茂樹");
+	Font::SetStrTex(L"グラフィック 鞍野　一哉");
+	Font::SetStrTex(L"サウンドディレクター　蛭間　瑠唯");
+	Font::SetStrTex(L"お借りした楽曲　魔王魂様");
 }

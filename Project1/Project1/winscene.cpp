@@ -32,7 +32,7 @@ CSceneWin::~CSceneWin()
 void CSceneWin::InitScene()
 {
 	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"Win画面(使).png", 1, TEX_SIZE_512);
+	/*Draw::LoadImage(L"Win画面(使).png", 1, TEX_SIZE_512);*/
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
