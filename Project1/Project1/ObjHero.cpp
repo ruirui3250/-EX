@@ -171,6 +171,7 @@ void CObjHero::Action()
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
 	{
 
+		Audio::Start(19);
 		m_la = 100;//レーザー復活
 		m_ka = 3;//拡散弾丸
 		//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
@@ -180,6 +181,7 @@ void CObjHero::Action()
 	//ELEMENT_ITEMを持つオブジェクトと接触したらライフ回復
 	if (hit->CheckElementHit(ELEMENT_LIFE_ITEM) == true)
 	{
+		Audio::Start(20);
 		m_hp = 3;//HP
 
 

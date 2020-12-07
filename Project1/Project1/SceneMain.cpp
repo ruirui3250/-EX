@@ -32,7 +32,7 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"ウイルス(使).png", 3, TEX_SIZE_512);
 
-	Draw::LoadImage(L"敵弾(使).png", 5, TEX_SIZE_512);
+	Draw::LoadImageW(L"敵弾(使).png", 5, TEX_SIZE_512);
 
 	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
@@ -54,20 +54,13 @@ void CSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
-	//音楽読み込み
-	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
 
-	//音楽読み込み
-	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
 	//音楽読み込み
 	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
-
-	//音楽読み込み
-	Audio::LoadAudio(6, L"1面.wav", BACK_MUSIC);
-
-	//音楽読み込み
-	Audio::LoadAudio(11, L"ボス1.wav", BACK_MUSIC);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
@@ -81,7 +74,6 @@ void CSceneMain::InitScene()
 	CObjSceneMain* back = new CObjSceneMain();
 	Objs::InsertObj(back, OBJ_SCENE_MAIN, 9);
 
-	Audio::Start(6);
 	//タイム初期化
 	m_time = 0;
 
@@ -388,8 +380,8 @@ void CSceneMain::Scene()
 	else if (m_time == 1200)
 	{
 		//音楽チェンジ
-		Audio::Stop(6);//0曲ストップ
-		Audio::Start(11);//1曲目スタート
+		//Audio::Stop(0);//0曲ストップ
+		//Audio::Start(1);//1曲目スタート
 
 		CObjBoss* obj;
 		obj = new CObjBoss(300, 250);

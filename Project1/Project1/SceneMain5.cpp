@@ -72,6 +72,11 @@ void CSceneMain5::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(15, L"ボス5.wav", BACK_MUSIC);
 
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録

@@ -72,6 +72,11 @@ void CSceneMain4::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(14, L"ボス4.wav", BACK_MUSIC);
 
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 

@@ -68,6 +68,12 @@ void CSceneMain2::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(12, L"ボス2.wav", BACK_MUSIC);
 
+
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero2* obj = new CObjHero2();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録

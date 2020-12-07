@@ -72,6 +72,11 @@ void TatesukuSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(13, L"ボス3.wav", BACK_MUSIC);
 
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 
