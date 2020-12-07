@@ -50,6 +50,10 @@ void CSceneMain4::InitScene()
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
 		//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
@@ -96,7 +100,46 @@ void CSceneMain4::Scene()
 		Objs::InsertObj(obj, OBJ_SITA_ATTACK_ENEMY,50);
 	}
 	///*-------------------------回復アイテム出現---------------------------*/
-
+	if (m_time == 700)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(600.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 300)
+	{
+		CObjItem* obj = new CObjItem(550.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1300)
+	{
+		CObjItem* obj = new CObjItem(250.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(400.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1750)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(50.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1800)
+	{
+		CObjItem* obj = new CObjItem(550.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1400)
+	{
+		CObjItem* obj = new CObjItem(350.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 	/////*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
 	if (m_time == 30)
 	{

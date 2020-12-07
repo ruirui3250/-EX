@@ -101,7 +101,26 @@ void TatesukuSceneMain::Scene()
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 	/*-------------------------回復アイテム出現---------------------------*/
-
+	if (m_time == 800)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 300);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1800)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 300);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjItem* obj = new CObjItem(799.0f, 400);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 	///*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
 	if (m_time == 30)
 	{
@@ -612,16 +631,7 @@ void TatesukuSceneMain::Scene()
 
 	}
 	/*------------------------------アイテム発射--------------------*/
-	if (m_time == 10)
-	{
-		CObjItem* obj = new CObjItem(200.0f, 450);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 20)
-	{
-		CObjLifeItem* obj = new CObjLifeItem(250.0f, 500);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
+	
 }
 
 //メモ

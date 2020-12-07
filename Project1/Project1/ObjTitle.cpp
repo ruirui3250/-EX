@@ -32,6 +32,47 @@ void CObjTitle::Action()
 	{
 		m_key_flag = true;
 	}
+
+	//2
+	if (Input::GetVKey('2') == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new CSceneMain2());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
+	//4
+	if (Input::GetVKey('4') == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new CSceneMain4());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
+	//5
+	if (Input::GetVKey('5') == true)
+	{
+		if (m_key_flag == true)
+		{
+			Scene::SetScene(new CSceneMain5());
+			m_key_flag = false;
+		}
+	}
+	else
+	{
+		m_key_flag = true;
+	}
+
 }
 
 //ƒhƒ[

@@ -51,6 +51,9 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
@@ -92,6 +95,27 @@ void CSceneMain5::InitScene()
 void CSceneMain5::Scene()
 {
 	m_time++;
+	//アイテム配置
+	if (m_time == 500)
+	{
+		CObjMigiLifeItem* obj = new CObjMigiLifeItem(799.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(500.0f, 1);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjSitaLifeItem* obj = new CObjSitaLifeItem(1.0f, 300);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1400)
+	{
+		CObjItem* obj = new CObjItem(250.0f, 1);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 
 	if (m_time == 30)
 	{
