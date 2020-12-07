@@ -4,6 +4,7 @@
 #include "GameHead.h"
 #include "CObjSitaBulletEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 
 //使用するネーム
 using namespace GameL;

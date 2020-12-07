@@ -4,7 +4,7 @@
 #include"GameHead.h"
 #include"ObjTateBullet.h"
 #include"UtilityModule.h"
-//#include"GameL\Audio.h"
+#include"GameL\Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -120,7 +120,7 @@ void CObjTateBullet::Action()
 	{
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{
-			/*Audio::Start(3);*/
+			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 		}
@@ -147,5 +147,5 @@ void CObjTateBullet::Draw()
 	m_eff.m_right	= 32;
 	m_eff.m_bottom	= 64;
 	//0番目に登録したグラフィックを描画。
-	Draw::Draw(1, &m_eff, &dst, c, 0.0f);
+	Draw::Draw(11, &m_eff, &dst, c, 0.0f);
 }

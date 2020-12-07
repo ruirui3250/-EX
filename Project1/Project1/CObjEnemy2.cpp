@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include "CObjEnemy2.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
@@ -50,7 +51,7 @@ void CObjEnemy2::Action()
 		return;
 	}
 	//主人公機objectと接触したら敵機弾丸削除。
-	if (hit->CheckObjNameHit(OBJ_HERO5) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		m_del = true; //消滅実行
 		hit->SetInvincibility(true);//当たり判定無効

@@ -48,10 +48,22 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
 	//音楽読み込み
+	Audio::LoadAudio(6, L"1面.wav", BACK_MUSIC);
+
+	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
 	//音楽読み込み
 	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(11, L"ボス1.wav", BACK_MUSIC);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
@@ -68,23 +80,25 @@ void CSceneMain::InitScene()
 	//タイム初期化
 	m_time = 0;
 
+	Audio::Start(6);
+
 }
 
 //ゲームシーン実行中メソッド
 void CSceneMain::Scene()
 {
 	m_time++;
-	if (m_time == 10)
-	{
+	//if (m_time == 10)
+	//{
 
-		CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 10)
-	{
-		CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
+	//	CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
+	//	Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	//}
+	//if (m_time == 10)
+	//{
+	//	CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
+	//	Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	//}
 	if (m_time == 30)
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);
@@ -358,8 +372,8 @@ void CSceneMain::Scene()
 	else if (m_time == 1200)
 	{
 		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		Audio::Stop(6);//0曲ストップ
+		Audio::Start(11);//1曲目スタート
 
 		CObjBoss* obj;
 		obj = new CObjBoss(300, 250);
