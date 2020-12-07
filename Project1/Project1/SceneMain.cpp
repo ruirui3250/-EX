@@ -59,6 +59,9 @@ void CSceneMain::InitScene()
 
 	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
