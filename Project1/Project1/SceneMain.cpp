@@ -54,6 +54,8 @@ void CSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
+	
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
