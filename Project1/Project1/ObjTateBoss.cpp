@@ -19,12 +19,12 @@ void CObjTateBoss::Init()
 	m_hp = 200;
 	m_time = 0;
 	m_r = 0.0f;
-	m_vx = 250.0f;
-	m_vy = 250.0f;
+	m_vx = 150.0f;
+	m_vy = 150.0f;
 
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x+300, m_y, 250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
+	Hits::SetHitBox(this, m_x+100, m_y+100,250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
 }
 //アクション
 void CObjTateBoss::Action()

@@ -1,25 +1,6 @@
-﻿  ObjTateBoss.cpp
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(114,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(175,84): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(175,84): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(180,81): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(180,81): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(185,69): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(185,69): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(190,63): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(190,63): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(195,57): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(195,57): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(200,51): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(200,51): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(205,45): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(205,45): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(210,36): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(210,36): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(215,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(215,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(220,30): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(220,30): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(225,27): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjTateBoss.cpp(225,27): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+﻿  SceneMain5.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\SceneMain5.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\SceneMain5.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
   Project1.vcxproj -> C:\Users\GA1A\source\repos\-EX\Project1\x64\Debug\Project1.exe

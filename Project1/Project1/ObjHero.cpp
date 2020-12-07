@@ -163,20 +163,24 @@ void CObjHero::Action()
 		}
 	}
 
-	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	//{
-	//	m_hp -= 1;
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
 
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+		m_la = 100;//レーザー復活
+		m_ka = 3;//拡散弾丸
+		//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
+		//同様に５にするとのこと
+	}
 
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
-	//}
+	//ELEMENT_ITEMを持つオブジェクトと接触したらライフ回復
+	if (hit->CheckElementHit(ELEMENT_LIFE_ITEM) == true)
+	{
+		m_hp = 3;//HP
+
+
+	}
+
 }
 //ドロー
 void CObjHero::Draw()

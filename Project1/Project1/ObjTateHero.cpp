@@ -15,7 +15,7 @@ void CObjTateHero::Init()
 	m_vy = 0.0f;
 	m_la = 100;
 	m_hp = 3;
-	m_ka = 3;
+	m_ka = 5;
 	m_x = 128;	
 	m_y = 544;
 		//当たり判定用hitboxを作成
@@ -26,7 +26,7 @@ void CObjTateHero::Init()
 //アクション
 void CObjTateHero::Action()
 {
-	/*---------------主人公機の通常弾丸弾丸発射-------------------------*/
+	/*---------------主人公機のレーザー弾丸弾丸発射-------------------------*/
 	if (Input::GetVKey('A') == true)
 	{
 		if (m_la >= 0)
@@ -40,7 +40,7 @@ void CObjTateHero::Action()
 
 
 	}
-	/*----------------------主人公レーザー弾丸-----------------------------------*/
+	/*----------------------主人公通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
 		m_vx = 0.0f;
@@ -68,38 +68,30 @@ void CObjTateHero::Action()
 	if (Input::GetVKey('X') == true)
 	{
 		m_ka -= 1;
-		if (m_ka <= 0 == false)
-			if (m_f == true)
+		if (m_f == true)
+		{
+			if (m_ka >= 0)
 			{
+				m_f = false;
+				
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
 				{
 					obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
 					Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
-					m_f = false;
 				}
 			}
+		
+		}
 
-			else
-			{
-				m_f = true;
-			}
-		//m_ka -= 1;
-		//if (m_ka <= 0 == false)
-		//	if (m_f == true)
-		//	{
-		//		//19発同時発射
-		//		CObjAngleBulletHero* obj_b;
-		//		for (int i = 0; i < 360; i += 20)
-		//		{
-		//			obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
-		//			Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
-		//			m_f = false;
-		//		}
-		//	}
+	
 
 
+	}
+	else
+	{
+		m_f = true;
 	}
 	//主人公機の移動
 	if (Input::GetVKey(VK_RIGHT) == true)
@@ -205,138 +197,156 @@ void CObjTateHero::Action()
 void CObjTateHero::Draw()
 {
 	float c[4] = { 1.0f,1.0f, 1.0f, 1.0f, };
-
 	wchar_t str[256];
-	swprintf_s(str, L"Life=%d", m_hp);
-	Font::StrDraw(str, 500, 20, 20, c);
-	swprintf_s(str, L"拡散弾丸=%d発", m_ka);
-	Font::StrDraw(str, 500, 40, 20, c);
-	swprintf_s(str, L"ビーム=%dパーセント", m_la);
-	Font::StrDraw(str, 500, 60, 20, c);
+
 	/*---------HP表示---------------------*/
 
 	if (m_hp == 3)
 	{
 		swprintf_s(str, L"♥♥♥", m_hp);
 		Font::StrDraw(str, 155, 20, 60, c);
+		this->SetPrio(50);
 	}
 	if (m_hp == 2)
 	{
 		swprintf_s(str, L"♥♥♡", m_hp);
 		Font::StrDraw(str, 155, 20, 60, c);
+		this->SetPrio(50);
 	}
 	if (m_hp == 1)
 	{
 		swprintf_s(str, L"♥♡♡", m_hp);
 		Font::StrDraw(str, 155, 20, 60, c);
+		this->SetPrio(50);
 	}
 	/*-------------------拡散団残りメーター-----------------*/
 	swprintf_s(str, L"拡散弾丸：", m_hp);
 	Font::StrDraw(str, 20, 70, 30, c);
-
+	this->SetPrio(50);
 	if (m_ka == 5)
 	{
 		swprintf_s(str, L"★★★★★", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_ka == 4)
 	{
 		swprintf_s(str, L"★★★★☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_ka == 3)
 	{
 		swprintf_s(str, L"★★★☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_ka == 2)
 	{
 		swprintf_s(str, L"★★☆☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_ka == 1)
 	{
 		swprintf_s(str, L"★☆☆☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_ka == 0)
 	{
 		swprintf_s(str, L"☆☆☆☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_ka <= 0)
 	{
 		swprintf_s(str, L"Eroor", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
+		this->SetPrio(50);
 	}
 
 	/*-------------レーザーゲージ-------------------*/
 	swprintf_s(str, L"レーザー：", m_hp);
 	Font::StrDraw(str, 20, 110, 30, c);
-	if (m_la == 100)
+	this->SetPrio(50);
+	if (m_la == 200)
 	{
 		swprintf_s(str, L"■■■■■■■■■■", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 90)
+	if (m_la >= 180)
 	{
 		swprintf_s(str, L"■■■■■■■■■□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 80)
+	if (m_la >= 160)
 	{
 		swprintf_s(str, L"■■■■■■■■□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 70)
+	if (m_la >= 140)
 	{
 		swprintf_s(str, L"■■■■■■■□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 60)
+	if (m_la >= 120)
 	{
 		swprintf_s(str, L"■■■■■■□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 50)
+	if (m_la >= 100)
 	{
 		swprintf_s(str, L"■■■■■□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 40)
+	if (m_la >= 80)
 	{
 		swprintf_s(str, L"■■■■□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 30)
+	if (m_la >= 60)
 	{
 		swprintf_s(str, L"■■■□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 20)
+	if (m_la >= 40)
 	{
 		swprintf_s(str, L"■■□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
-	if (m_la >= 10)
+	if (m_la >= 20)
 	{
 		swprintf_s(str, L"■□□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_la >= 0)
 	{
 		swprintf_s(str, L"□□□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_la == -1)
 	{
 		swprintf_s(str, L"Error", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
 	if (m_la <= -1)
 	{
 		swprintf_s(str, L"Error", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
 	}
 
 	RECT_F src;//描画元切り取り位置

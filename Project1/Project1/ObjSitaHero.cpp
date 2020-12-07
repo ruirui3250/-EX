@@ -199,6 +199,14 @@ void CObjSitaHero::Action()
 		//同様に５にするとのこと
 	}
 
+	//ELEMENT_ITEMを持つオブジェクトと接触したらライフ回復
+	if (hit->CheckElementHit(ELEMENT_LIFE_ITEM) == true)
+	{
+		m_hp = 3;//HP
+
+
+	}
+
 
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除

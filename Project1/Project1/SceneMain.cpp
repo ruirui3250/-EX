@@ -47,6 +47,10 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
@@ -71,17 +75,30 @@ void CSceneMain::InitScene()
 void CSceneMain::Scene()
 {
 	m_time++;
-	if (m_time == 10)
+	//アイテム制御
+	if (m_time == 550)
 	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 350)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 840)
+	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 145);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 970)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 
-		CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 10)
-	{
-		CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
+	
+	/*-----て--------き--------敵*/
 	if (m_time == 30)
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);

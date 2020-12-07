@@ -46,6 +46,10 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
@@ -70,6 +74,30 @@ void CSceneMain2::InitScene()
 void CSceneMain2::Scene()
 {
 	m_time++;
+	//アイテム制御盤
+
+
+
+	if (m_time == 200)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(400.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 350)
+	{
+		CObjSitaLifeItem* obj = new CObjSitaLifeItem(230.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(460.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 750)
+	{
+		CObjSitaLifeItem* obj = new CObjSitaLifeItem(500.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
 
 	if (m_time == 30)
 	{
