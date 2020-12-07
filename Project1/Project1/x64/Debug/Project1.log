@@ -1,8 +1,25 @@
-﻿  ObjTateBullet.cpp
-  TatesukuSceneMain.cpp
-C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\TatesukuSceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\TatesukuSceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-  コードを生成中...
+﻿  ObjEnemyBoss.cpp
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(80,15): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(146,90): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(146,90): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(151,87): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(151,87): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(156,75): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(156,75): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(161,69): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(161,69): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(166,63): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(166,63): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(171,57): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(171,57): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(176,51): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(176,51): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(181,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(181,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(186,39): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(186,39): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(191,36): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(191,36): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(196,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\Desktop\新しいフォルダー\Project1\Project1\ObjEnemyBoss.cpp(196,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
   Project1.vcxproj -> C:\Users\GA1A\Desktop\新しいフォルダー\Project1\x64\Debug\Project1.exe

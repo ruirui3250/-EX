@@ -58,5 +58,14 @@ void CObjWin::Action()
 //ドロー
 void CObjWin::Draw()
 {
-
+	float c[4]{ 1.0f, 1.0f, 1.0f, 1.0f };
+	Font::StrDraw(L"ENDING CREDIT", 250, 0, 32, c);
+	Font::StrDraw(L"総合ディレクター　瀬口 琉",150,30,32,c);
+	Font::StrDraw(L"プランナー 桶谷　光城",150,60,32,c);
+	Font::StrDraw(L"チーフプランナー 上田　茂樹",150,90,32,c);
+	Font::StrDraw(L"グラフィックデザイナー　鞍野　一哉",150,120,32,c);
+	Font::StrDraw(L"サウンドディレクター　蛭間　瑠唯",150,150,32,c);
+	Font::StrDraw(L"お借りした楽曲 魔王魂様",150,180,32,c);
+	Font::StrDraw(L"Congratulation!!", 0, 300, 50, c);
+	Font::StrDraw(L"エンターでタイトルに戻る", 0, 500, 67, c);
 }
