@@ -54,7 +54,10 @@ void CSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
-	
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
