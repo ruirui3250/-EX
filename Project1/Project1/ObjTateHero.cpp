@@ -28,8 +28,8 @@ void CObjTateHero::Action()
 {
 	if (Input::GetVKey('Z') == true)
 	{
-		m_vx = 0.0f;
-		m_vy = -1.0f;
+		/*m_vx = 0.0f;
+		m_vy = -1.0f;*/
 		if (m_f == true)
 		{
 			//発射音を流す
