@@ -26,21 +26,6 @@ void CObjTateHero::Init()
 //アクション
 void CObjTateHero::Action()
 {
-	/*---------------主人公機のレーザー弾丸弾丸発射-------------------------*/
-	if (Input::GetVKey('A') == true)
-	{
-		if (m_la >= 0)
-		{
-			//弾丸オブジェクト作成
-			CObjTateLaserBullet* obj_b = new CObjTateLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b, OBJ_TATE_LASER_BULLET, 100);//作った弾丸オブジェクト
-			m_la--;
-		}
-
-
-
-	}
-	/*----------------------主人公通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
 		m_vx = 0.0f;
@@ -61,6 +46,23 @@ void CObjTateHero::Action()
 	{
 		m_f = true;
 	}
+	/*---------------主人公機のレーザー弾丸弾丸発射-------------------------*/
+	if (Input::GetVKey('A') == true)
+	{
+		if (m_la >= 0)
+		{
+			//弾丸オブジェクト作成
+			CObjTateLaserBullet* obj_b = new CObjTateLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_TATE_LASER_BULLET, 100);//作った弾丸オブジェクト
+			m_la--;
+		}
+
+
+
+	}
+	/*----------------------主人公通常弾丸-----------------------------------*/
+	
+
 
 	//主人公機の拡散弾丸弾発射
 	/*------------------------これは一回のみ発射可能------------------*/
@@ -84,15 +86,8 @@ void CObjTateHero::Action()
 			}
 		
 		}
-
+	}
 	
-
-
-	}
-	else
-	{
-		m_f = true;
-	}
 	//主人公機の移動
 	if (Input::GetVKey(VK_RIGHT) == true)
 	{
