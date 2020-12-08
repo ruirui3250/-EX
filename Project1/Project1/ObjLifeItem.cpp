@@ -55,6 +55,11 @@ void CObjLifeItem::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 }
 
 //ƒhƒ[
