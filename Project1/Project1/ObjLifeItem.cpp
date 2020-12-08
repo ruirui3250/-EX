@@ -50,7 +50,7 @@ void CObjLifeItem::Action()
 		return;
 	}
 	/*---------------------主人公に触れたらこのオブジェクト削除---------------------*/
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

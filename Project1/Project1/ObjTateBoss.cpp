@@ -24,7 +24,7 @@ void CObjTateBoss::Init()
 
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x+100, m_y+100,250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
+	Hits::SetHitBox(this, m_x, m_y,250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
 }
 //アクション
 void CObjTateBoss::Action()
