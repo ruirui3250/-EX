@@ -26,7 +26,7 @@ void CObjTateLaserBullet::Init()
 	m_vx = 0.0f;
 
 	//当たり判定HItBoxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_TATE_LASER_BULLET, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 64, ELEMENT_PLAYER, OBJ_TATE_LASER_BULLET, 1);
 }
 //アクション
 void CObjTateLaserBullet::Action()
@@ -130,7 +130,7 @@ void CObjTateLaserBullet::Draw()
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
 	dst.m_right = 32.0f + m_x;
-	dst.m_bottom = 32.0f + m_y;
+	dst.m_bottom = 64.0f + m_y;
 	//切り取り位置の設定
 	m_eff.m_top = 32;
 	m_eff.m_left = 0;
