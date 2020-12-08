@@ -56,18 +56,30 @@ void CObjTateAttackEnemy::Action()
 	m_x += m_vx;
 	m_y += m_vy;
 
-	//HitBox‚Ì“à—e‚ðXVB
+	//HitBox‚Ì“à—eXV
 	CHitBox* hit = Hits::GetHitBox(this);
 	hit->SetPos(m_x, m_y);
-
-	//“G‹@‚ªŠ®‘S‚É—Ìˆæ‚É‚Å‚½‚ç”jŠüB
+	//—ÌˆæŠO‚Éo‚½‚ç“G‹@‚ð”jŠüB
 	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
 	if (check == false)
 	{
-		this->SetStatus(false);//Ž©g‚Éíœ–½—ß
-		Hits::DeleteHitBox(this);//“G‹@‚ðŠ—L‚·‚éHITBOXíœ
+		this->SetStatus(false); //Ž©g‚Éíœ–½—ß‚ðo‚·B
+		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
+	}
 
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@íœB
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		m_del = true; //Á–ÅŽÀs
+		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
@@ -77,12 +89,6 @@ void CObjTateAttackEnemy::Action()
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-	}
-	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

@@ -69,6 +69,12 @@ void CObjAttackEnemy::Action()
 		return;
 
 	}
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@íœB
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{

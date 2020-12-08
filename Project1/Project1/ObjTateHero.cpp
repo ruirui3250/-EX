@@ -134,25 +134,33 @@ void CObjTateHero::Action()
 
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
-	if (m_f == true)
-		{
 	if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
 	{
-	
-			m_hp -= 1;
-			m_f = false;
-		}
-			if (m_hp <= 0)
-			{
-				this->SetStatus(false);//自身に削除命令を出す
-				Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+		m_hp -= 1;
+		if (m_hp == 0)
+		{
+			this->SetStatus(false);//自身に削除命令を出す
+			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
-				//主人公機消滅でシーンをゲームオーバーに移行する
-				Scene::SetScene(new CSceneGameOver2());
-			}
-		
+			//主人公機消滅でシーンをゲームオーバーに移行する
+			Scene::SetScene(new CSceneGameOver5());
+		}
 	}
 
+	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
+	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
+	//{
+	//	m_hp -= 1;
+
+		//if (m_hp == 0)
+		//{
+		//	this->SetStatus(false);//自身に削除命令を出す
+		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+
+		//	//主人公機消滅でシーンをゲームオーバーに移行する
+		//	Scene::SetScene(new CSceneGameOver());
+		//}
+	//}
 	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
 	{
@@ -172,22 +180,6 @@ void CObjTateHero::Action()
 
 
 	}
-	
-
-	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	//{
-	//	m_hp -= 1;
-
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
-
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
-	//}
 }
 //ドロー
 void CObjTateHero::Draw()
