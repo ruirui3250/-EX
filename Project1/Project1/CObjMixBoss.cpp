@@ -150,7 +150,7 @@ void CObjMIXBoss::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-		Scene::SetScene(new CSceneWin());
+		Scene::SetScene(new CSceneWin6());
 	}
 	//弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
@@ -163,7 +163,7 @@ void CObjMIXBoss::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-		Scene::SetScene(new CSceneWin());
+		Scene::SetScene(new CSceneWin6());
 
 	}
 	// 弾丸と接触しているかどうか調べる
@@ -177,7 +177,7 @@ void CObjMIXBoss::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-		Scene::SetScene(new CSceneWin());
+		Scene::SetScene(new CSceneWin6());
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
@@ -190,7 +190,7 @@ void CObjMIXBoss::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-		Scene::SetScene(new CSceneWin());
+		Scene::SetScene(new CSceneWin6());
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
@@ -203,7 +203,7 @@ void CObjMIXBoss::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-		Scene::SetScene(new CSceneWin());
+		Scene::SetScene(new CSceneWin6());
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
@@ -216,7 +216,7 @@ void CObjMIXBoss::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
-		Scene::SetScene(new CSceneWin());
+		Scene::SetScene(new CSceneWin6());
 	}
 }
 

@@ -160,6 +160,9 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面\5面終了\ENDING">
       <UniqueIdentifier>{0f5b14f2-b1af-496e-bfe5-2c55fa180408}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ">
+      <UniqueIdentifier>{b7f14980-e8ce-478f-af34-e442fa6fa4ab}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -248,12 +251,6 @@
     </ClInclude>
     <ClInclude Include="SceneMain.h">
       <Filter>ソース ファイル\基本データ\背景画面\1面</Filter>
-    </ClInclude>
-    <ClInclude Include="Objwin.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\5面終了</Filter>
-    </ClInclude>
-    <ClInclude Include="winscene.h">
-      <Filter>ソース ファイル\基本データ\クリア画面\5面終了</Filter>
     </ClInclude>
     <ClInclude Include="Objwin2.h">
       <Filter>ソース ファイル\基本データ\クリア画面\1面終了</Filter>
@@ -468,6 +465,12 @@
     <ClInclude Include="WinScene6.h">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
     </ClInclude>
+    <ClInclude Include="Objwin.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
+    </ClInclude>
+    <ClInclude Include="winscene.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -559,12 +562,6 @@
     </ClCompile>
     <ClCompile Include="SceneMain.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\1面</Filter>
-    </ClCompile>
-    <ClCompile Include="Objwin.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\5面終了</Filter>
-    </ClCompile>
-    <ClCompile Include="winscene.cpp">
-      <Filter>ソース ファイル\基本データ\クリア画面\5面終了</Filter>
     </ClCompile>
     <ClCompile Include="Objwin2.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\1面終了</Filter>
@@ -775,6 +772,12 @@
     </ClCompile>
     <ClCompile Include="WinScene6.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
+    </ClCompile>
+    <ClCompile Include="winscene.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
+    </ClCompile>
+    <ClCompile Include="Objwin.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

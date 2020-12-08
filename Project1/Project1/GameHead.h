@@ -11,6 +11,7 @@ enum OBJ_NAME
 	OBJ_WIN3,
 	OBJ_WIN4,
 	OBJ_WIN5,
+	OBJ_WIN6,
 	OBJ_CLEAR_BACK,
 	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
@@ -133,6 +134,7 @@ struct UserData
 #include"Objwin3.h"
 #include"Objwin4.h"
 #include"ObjWin5.h"
+#include"ObjWin6.h"
 #include "ObjClearBack.h"
 #include"ObjClearBack2.h"
 #include"ObjTitle.h"
@@ -151,7 +153,6 @@ struct UserData
 #include"ObjBullet.h"
 #include"CObjSinEnemy.h"
 #include"ObjAttackEnemy.h"
-#include"ObjClearBack.h"
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
 #include"ObjHero2.h"
@@ -214,6 +215,7 @@ struct UserData
 #include"winscene3.h"
 #include"WinScene4.h"
 #include"WinScene5.h"
+#include"WinScene6.h"
 #include"SceneTitle.h"
 #include"SceneMain.h"
 #include"SceneMain4.h"
@@ -230,7 +232,7 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneTitle
+#define SET_GAME_START CSceneWin6
 
 
 //
