@@ -21,4 +21,5 @@ private:
 	float m_x2;//背景2の位置情報
 	float m_vx;//回転用処理のXベクトル
 	float m_vy;//回転用処理のYベクトル
+	int m_time;
 };
