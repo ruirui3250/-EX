@@ -46,8 +46,33 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(7, L"2面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(12, L"ボス2.wav", BACK_MUSIC);
+
+
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
 	//主人公オブジェクト作成
 	CObjHero2* obj = new CObjHero2();//主人公オブジェクト作成
@@ -64,12 +89,38 @@ void CSceneMain2::InitScene()
 	//タイム初期化
 	m_time = 0;
 
+	Audio::Start(7);
+
 }
 
 //ゲームシーン実行中メソッド
 void CSceneMain2::Scene()
 {
 	m_time++;
+	//アイテム制御盤
+
+
+
+	if (m_time == 200)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(400.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 350)
+	{
+		CObjSitaLifeItem* obj = new CObjSitaLifeItem(230.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(460.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 750)
+	{
+		CObjSitaLifeItem* obj = new CObjSitaLifeItem(500.0f, 1);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
 
 	if (m_time == 30)
 	{
@@ -502,8 +553,8 @@ void CSceneMain2::Scene()
 	else if (m_time == 1500)
 	{
 		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		Audio::Stop(7);//0曲ストップ
+		Audio::Start(12);//1曲目スタート
 
 		CObjBoss2* obj;
 		obj = new CObjBoss2(350, 150);

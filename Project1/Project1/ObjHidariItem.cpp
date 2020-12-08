@@ -25,8 +25,8 @@ void CObjHidariItem::Init()
 void CObjHidariItem::Action()
 {
 
-	m_vx = 0.0f;
-	m_vy = -1.0f;
+	m_vx = -1.0f;
+	m_vy = 0.0f;
 
 	//移動ベクトルの正規化
 	UnitVec(&m_vy, &m_vx);
@@ -50,10 +50,10 @@ void CObjHidariItem::Action()
 	}
 	/*---------------------主人公に触れたらこのオブジェクト削除---------------------*/
 //主人公機に触れたら削除
-	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
-		this->SetStatus(false); //自身に削除命令
-		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
 }
 

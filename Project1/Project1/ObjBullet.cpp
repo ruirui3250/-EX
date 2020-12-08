@@ -4,6 +4,7 @@
 #include "GameHead.h"
 #include"ObjBullet.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //#include"GameL\Audio.h"
 
 //使用するネームスペース
@@ -129,6 +130,7 @@ void CObjBullet::Action()
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{
 			/*Audio::Start(3);*/
+			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
 		}

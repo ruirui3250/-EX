@@ -32,9 +32,9 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"ウイルス無.png", 3, TEX_SIZE_512);
 
-	Draw::LoadImage(L"ウイルス.png", 7, TEX_SIZE_512);
+	/*Draw::LoadImage(L"ウイルス.png", 7, TEX_SIZE_512);*/
 
-	Draw::LoadImageW(L"敵弾(使).png", 5, TEX_SIZE_512);
+	Draw::LoadImage(L"敵弾(使).png", 5, TEX_SIZE_512);
 
 	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
@@ -51,12 +51,35 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
 
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(10, L"5面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(15, L"ボス5.wav", BACK_MUSIC);
+
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
 	//主人公オブジェクト作成
 	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
-	Objs::InsertObj(obj, OBJ_HERO5, 10);//主人公オブジェクトマネージャーを登録
+	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
 
 	////blockオブジェクト作成
 	//CObjBlock* objb = new CObjBlock();
@@ -69,12 +92,35 @@ void CSceneMain5::InitScene()
 	//タイム初期化
 	m_time = 0;
 
+	Audio::Start(10);
+
 }
 
 //ゲームシーン実行中メソッド
 void CSceneMain5::Scene()
 {
 	m_time++;
+	//アイテム配置
+	if (m_time == 500)
+	{
+		CObjMigiLifeItem* obj = new CObjMigiLifeItem(799.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 700)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(500.0f, 1);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjSitaLifeItem* obj = new CObjSitaLifeItem(1.0f, 300);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1400)
+	{
+		CObjItem* obj = new CObjItem(250.0f, 1);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 
 	if (m_time == 30)
 	{
@@ -293,8 +339,8 @@ void CSceneMain5::Scene()
 	else if (m_time == 1500)
 	{
 		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		Audio::Stop(10);//0曲ストップ
+		Audio::Start(15);//1曲目スタート
 
 		CObjMIXBoss* obj;
 		obj = new CObjMIXBoss(450, 250);

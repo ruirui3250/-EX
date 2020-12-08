@@ -16,7 +16,7 @@ CObjSitaLifeItem::CObjSitaLifeItem(float x, float y)
 void CObjSitaLifeItem::Init()
 {
 	m_vx = 0.0f;
-	m_vy = 0.0f;
+	m_vy = +1.0f;
 
 	//当たり判定用HitBox作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_LIFE_ITEM, OBJ_LIFE_ITEM, 1);
@@ -26,8 +26,9 @@ void CObjSitaLifeItem::Action()
 {
 
 	//移動方向
-	m_vx = +1.0f;
-	m_vy = 0.0f;
+	m_vx = 0.0f;
+	m_vy = +1.0f;
+
 
 	//移動ベクトルの正規化
 	UnitVec(&m_vy, &m_vx);
@@ -50,10 +51,10 @@ void CObjSitaLifeItem::Action()
 		return;
 	}
 	/*-----------------------触れたらこのオブジェクト削除------------*/
-	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
-		this->SetStatus(false); //自身に削除命令
-		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
 }
 

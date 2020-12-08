@@ -26,7 +26,7 @@ void CObjHidariLifeItem::Action()
 {
 
 	//移動方向
-	m_vx = +1.0f;
+	m_vx = -1.0f;
 	m_vy = 0.0f;
 
 	//移動ベクトルの正規化
@@ -50,10 +50,10 @@ void CObjHidariLifeItem::Action()
 		return;
 	}
 	/*---------------------主人公に触れたらこのオブジェクト削除---------------------*/
-	if (hit->CheckElementHit(ELEMENT_PLAYER) == true)
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
-		this->SetStatus(false); //自身に削除命令
-		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
 }
 

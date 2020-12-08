@@ -50,8 +50,32 @@ void CSceneMain4::InitScene()
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
 		//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(9, L"4面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(14, L"ボス4.wav", BACK_MUSIC);
+
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
@@ -67,6 +91,8 @@ void CSceneMain4::InitScene()
 	//タイム初期化
 	m_time = 0;
 
+	Audio::Start(9);
+
 }
 
 //ゲームシーン実行中メソッド
@@ -79,7 +105,46 @@ void CSceneMain4::Scene()
 		Objs::InsertObj(obj, OBJ_SITA_ATTACK_ENEMY,50);
 	}
 	///*-------------------------回復アイテム出現---------------------------*/
-
+	if (m_time == 700)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(600.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1000)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 300)
+	{
+		CObjItem* obj = new CObjItem(550.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1300)
+	{
+		CObjItem* obj = new CObjItem(250.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(400.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1750)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(50.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1800)
+	{
+		CObjItem* obj = new CObjItem(550.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1400)
+	{
+		CObjItem* obj = new CObjItem(350.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 	/////*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
 	if (m_time == 30)
 	{
@@ -89,7 +154,7 @@ void CSceneMain4::Scene()
 		Objs::InsertObj(obj2, OBJ_SITA_ENEMY, 50);
 		CObjSitaAttackEnemy* obj3 = new CObjSitaAttackEnemy(450.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_ATTACK_ENEMY, 50);
-		CObjSitaAttackEnemy* obj4 = new CObjSitaAttackEnemy(300.0f, 440);
+		CObjSitaAttackEnemy* obj4 = new CObjSitaAttackEnemy(300.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_ATTACK_ENEMY, 50);
 
 	}
@@ -119,18 +184,18 @@ void CSceneMain4::Scene()
 	{
 		CObjSitaEnemy* obj = new CObjSitaEnemy(550.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_ENEMY, 50);
-		CObjSitaAttackEnemy* obj2 = new CObjSitaAttackEnemy(100.0f, 350);
+		CObjSitaAttackEnemy* obj2 = new CObjSitaAttackEnemy(100.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ATTACK_ENEMY, 50);
 	}
 	if (m_time == 200)
 	{
-		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 450);
+		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_KESEN, 50);
 		CObjSitaEnemy* obj2 = new CObjSitaEnemy(0.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ENEMY, 50);
 		CObjSitaAttackEnemy* obj3 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_ATTACK_ENEMY, 50);
-		CObjSitaKesen* obj4 = new CObjSitaKesen(500.0f, 400);
+		CObjSitaKesen* obj4 = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
 	}
 	if (m_time == 300)
@@ -151,7 +216,7 @@ void CSceneMain4::Scene()
 
 	if (m_time == 500)
 	{
-		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(500.0f,435);
+		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(500.0f,500);
 		Objs::InsertObj(obj5, OBJ_SITA_ATTACK_ENEMY, 50);
 		CObjSitaAttackEnemy* obj6 = new CObjSitaAttackEnemy(450.0f, 500);
 		Objs::InsertObj(obj6, OBJ_SITA_ATTACK_ENEMY, 50);
@@ -167,7 +232,7 @@ void CSceneMain4::Scene()
 
 	if (m_time == 700)
 	{
-		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 450);
+		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_KESEN, 50);
 		CObjSitaEnemy* obj2 = new CObjSitaEnemy(450.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ENEMY, 50);
@@ -175,19 +240,19 @@ void CSceneMain4::Scene()
 
 	if(m_time==900)
 	{
-		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 450);
+		CObjSitaKesen* obj = new CObjSitaKesen(500.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_KESEN, 50);
-		CObjSitaKesen* obj2 = new CObjSitaKesen(300.0f, 250);
+		CObjSitaKesen* obj2 = new CObjSitaKesen(300.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_KESEN, 50);
 		CObjSitaKesen* obj3 = new CObjSitaKesen(100.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_KESEN, 50);
 		CObjSitaEnemy* obj4 = new CObjSitaEnemy(150.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_ENEMY, 50);
-		CObjSitaEnemy* obj5 = new CObjSitaEnemy(100.0f, 400);
+		CObjSitaEnemy* obj5 = new CObjSitaEnemy(100.0f, 500);
 		Objs::InsertObj(obj5, OBJ_SITA_ENEMY, 50);
 		CObjSitaAttackEnemy* obj6 = new CObjSitaAttackEnemy(450.0f, 500);
 		Objs::InsertObj(obj6, OBJ_SITA_ATTACK_ENEMY, 50);
-		CObjSitaAttackEnemy* obj7 = new CObjSitaAttackEnemy(250.0f, 300);
+		CObjSitaAttackEnemy* obj7 = new CObjSitaAttackEnemy(250.0f, 500);
 		Objs::InsertObj(obj7, OBJ_SITA_ATTACK_ENEMY, 50);
 	}
 	if (m_time == 1000)
@@ -203,13 +268,13 @@ void CSceneMain4::Scene()
 		CObjSitaAttackEnemy* obj2 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj2, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaEnemy* obj3 = new CObjSitaEnemy(450.0f, 400);
+		CObjSitaEnemy* obj3 = new CObjSitaEnemy(450.0f, 500);
 		Objs::InsertObj(obj3, OBJ_SITA_ATTACK_ENEMY, 50);
 
 		CObjSitaEnemy* obj4 = new CObjSitaEnemy(250.0f, 500);
 		Objs::InsertObj(obj4, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(350.0f, 300);
+		CObjSitaAttackEnemy* obj5 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj5, OBJ_SITA_ATTACK_ENEMY, 50);
 
 
@@ -223,10 +288,10 @@ void CSceneMain4::Scene()
 		CObjSitaAttackEnemy* obj8 = new CObjSitaAttackEnemy(600.0f, 500);
 		Objs::InsertObj(obj8, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaAttackEnemy* obj9 = new CObjSitaAttackEnemy(350.0f, 300);
+		CObjSitaAttackEnemy* obj9 = new CObjSitaAttackEnemy(350.0f, 500);
 		Objs::InsertObj(obj9, OBJ_SITA_ATTACK_ENEMY, 50);
 
-		CObjSitaEnemy* obj10 = new CObjSitaEnemy(350.0f, 300);
+		CObjSitaEnemy* obj10 = new CObjSitaEnemy(350.0f, 500);
 		Objs::InsertObj(obj10, OBJ_SITA_ATTACK_ENEMY, 50);
 
 		CObjSitaAttackEnemy* obj11 = new CObjSitaAttackEnemy(750.0f, 500);
@@ -257,6 +322,9 @@ void CSceneMain4::Scene()
 	///*-------------------------ボス-------------------------------*/
 	if (m_time == 2000)
 	{
+		//音楽チェンジ
+		Audio::Stop(9);//0曲ストップ
+		Audio::Start(14);//1曲目スタート
 		CObjEnemyBoss4* obj = new CObjEnemyBoss4(250,500);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
 

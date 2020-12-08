@@ -106,8 +106,8 @@ void CObjEnemyBossBullet2::Draw()
 	//切り取り位置の設定
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
-	dst.m_right = 10.0f + m_x;
-	dst.m_bottom = 10.0f + m_y;
+	dst.m_right = 25.0f + m_x;
+	dst.m_bottom = 25.0f + m_y;
 
 	//0番目に登録したグラフィックを描画。
 	Draw::Draw(4, &m_eff, &dst, c, m_r);

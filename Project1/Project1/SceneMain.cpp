@@ -47,8 +47,31 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(6, L"1面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(11, L"ボス1.wav", BACK_MUSIC);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
@@ -64,6 +87,7 @@ void CSceneMain::InitScene()
 
 	//タイム初期化
 	m_time = 0;
+	Audio::Start(6);
 
 }
 
@@ -71,17 +95,30 @@ void CSceneMain::InitScene()
 void CSceneMain::Scene()
 {
 	m_time++;
-	if (m_time == 10)
+	//アイテム制御
+	if (m_time == 550)
 	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 350)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 840)
+	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 145);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 970)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 
-		CObjMigiItem* obj = new CObjMigiItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 10)
-	{
-		CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
+	
+	/*-----て--------き--------敵*/
 	if (m_time == 30)
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);
@@ -355,11 +392,11 @@ void CSceneMain::Scene()
 	else if (m_time == 1200)
 	{
 		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		Audio::Stop(6);//0曲ストップ
+		Audio::Start(11);//1曲目スタート
 
 		CObjBoss* obj;
-		obj = new CObjBoss(300, 250);
+		obj = new CObjBoss(300, 0);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
 	}
 }
