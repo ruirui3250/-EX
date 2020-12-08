@@ -221,6 +221,7 @@
     <ClInclude Include="Objwin3.h" />
     <ClInclude Include="Objwin4.h" />
     <ClInclude Include="ObjWin5.h" />
+    <ClInclude Include="ObjWin6.h" />
     <ClInclude Include="ObjYokoKesen.h" />
     <ClInclude Include="SceneGameOver.h" />
     <ClInclude Include="SceneGameOver2.h" />
@@ -239,6 +240,7 @@
     <ClInclude Include="winscene3.h" />
     <ClInclude Include="WinScene4.h" />
     <ClInclude Include="WinScene5.h" />
+    <ClInclude Include="WinScene6.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CObjAngleBulletHero.cpp" />
@@ -323,6 +325,7 @@
     <ClCompile Include="Objwin3.cpp" />
     <ClCompile Include="Objwin4.cpp" />
     <ClCompile Include="ObjWin5.cpp" />
+    <ClCompile Include="ObjWin6.cpp" />
     <ClCompile Include="ObjYokoKesen.cpp" />
     <ClCompile Include="SceneGameOver.cpp" />
     <ClCompile Include="SceneGameOver2.cpp" />
@@ -341,6 +344,7 @@
     <ClCompile Include="winscene3.cpp" />
     <ClCompile Include="WinScene4.cpp" />
     <ClCompile Include="WinScene5.cpp" />
+    <ClCompile Include="WinScene6.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

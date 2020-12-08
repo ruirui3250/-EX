@@ -157,6 +157,9 @@
     <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\2面用">
       <UniqueIdentifier>{4054d481-d7c3-43c6-9982-da169b7895c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\クリア画面\5面終了\ENDING">
+      <UniqueIdentifier>{0f5b14f2-b1af-496e-bfe5-2c55fa180408}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -459,6 +462,12 @@
     <ClInclude Include="SceneGameOver5.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
     </ClInclude>
+    <ClInclude Include="ObjWin6.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
+    </ClInclude>
+    <ClInclude Include="WinScene6.h">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -760,6 +769,12 @@
     </ClCompile>
     <ClCompile Include="ObjGameOver5.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjWin6.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
+    </ClCompile>
+    <ClCompile Include="WinScene6.cpp">
+      <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
