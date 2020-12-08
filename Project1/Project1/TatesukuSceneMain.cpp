@@ -126,6 +126,22 @@ void TatesukuSceneMain::Scene()
 		CObjItem* obj = new CObjItem(799.0f, 400);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
+	//補充アイテム
+	if (m_time == 800)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(210.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(210.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1800)
+	{
+		CObjSitaItem* obj = new CObjSitaItem(210.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 	///*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
 	if (m_time == 30)
 	{
@@ -591,7 +607,32 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 00)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 00)
+	{
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 00)
@@ -599,30 +640,10 @@ void TatesukuSceneMain::Scene()
 		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	if (m_time == 00)
+	if (m_time == 2000)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+		CObjSitaItem* obj = new CObjSitaItem(210.0f, 10);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 
 	/*-------------------------ボス-------------------------------*/

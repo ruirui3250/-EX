@@ -65,10 +65,11 @@ void CObjWin::Draw()
 		Font::StrDraw(L"STAFF CREDIT", 150, 300 + m_y1, 100, c);
 		Font::StrDraw(L"総合ディレクター　瀬口 琉", 0, 450 + m_y1, 50, c);
 		Font::StrDraw(L"プランナー 桶谷　光城", 0, 600 + m_y1, 50, c);
-		Font::StrDraw(L"チーフプランナー 上田　茂樹", 0, 750 + m_y1, 50, c);
+		Font::StrDraw(L"プログラムディレクター上田　茂樹", 0, 750 + m_y1, 50, c);
 		Font::StrDraw(L"グラフィックデザイナー　鞍野　一哉", 0, 900 + m_y1, 45, c);
 		Font::StrDraw(L"サウンドディレクター　蛭間　瑠唯", 0, 1050 + m_y1, 50, c);
 		Font::StrDraw(L"お借りした楽曲 魔王魂様", 0, 1300 + m_y1, 50, c);
-		Font::StrDraw(L"Congratulation!!", 0, 300, 2000 + m_y1, c);
+		Font::StrDraw(L"Congratulation!!", 0, 100, 2000 + m_y1, c);
+		Font::StrDraw(L"byポムポム社員", 300, 2100 + m_y1, 65, c);
 		Font::StrDraw(L"エンターでタイトルに戻る", 0, 2400 + m_y1, 65, c);
 }
