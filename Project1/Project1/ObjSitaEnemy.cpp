@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include "ObjSitaEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
@@ -20,7 +21,7 @@ void CObjSitaEnemy::Init()
 	m_vy = 0.0f;
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_SITA_ENEMY, 1);
 }
 //アクション
 void CObjSitaEnemy::Action()
@@ -54,8 +55,26 @@ void CObjSitaEnemy::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
+	////主人公機objectと接触したら敵機弾丸削除。
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		m_del = true; //消滅実行
+		hit->SetInvincibility(true);//当たり判定無効
+	}
 	//弾丸の接触を調べる。
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

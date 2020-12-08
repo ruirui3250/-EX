@@ -6,6 +6,7 @@
 #include "GameHead.h"
 #include "CObjHomingEnemy.h"
 #include "UtilityModule.h"
+#include"GameL/Audio.h"
 
 //Žg—p‚·‚éƒl[ƒ€ƒXƒy[ƒX
 using namespace GameL;
@@ -34,14 +35,14 @@ void CObjHomingEnemy::Init()
 	UnitVec(&m_vy, &m_vx);
 
 	//“–‚½‚è”»’è—pHitBox‚ðì¬
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_SIN_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_HOMING_ENEMY, 50);
 }
 
 //ƒAƒNƒVƒ‡ƒ“
 void CObjHomingEnemy::Action()
 {
 	//Resources‚Ì•`ŽÊ•¨‚ÌRECT
-	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 2);
+	m_eff = GetBulletEffect(&m_ani, &m_ani_time, m_del, 3);
 
 	//’eŠÛÁ–Åˆ—
 	if (m_del == true)
@@ -60,6 +61,8 @@ void CObjHomingEnemy::Action()
 
 	//ŽålŒö‹@‚Æ—U“±’eŠÛ‚ÅŠp“x‚ðŽæ‚é
 	CObjHero* obj = (CObjHero*)Objs::GetObj(OBJ_HERO);
+	//ŽålŒö‹@‚Æ—U“±’eŠÛ‚ÅŠp“x‚ðŽæ‚é
+	CObjHero5* obj2 = (CObjHero5*)Objs::GetObj(OBJ_HERO5);
 
 	//ŽålŒö‹@‚ª‘¶Ý‚·‚éê‡A—U“±Šp“x‚ÌŒvŽZ‚·‚é
 	if (obj != nullptr)
@@ -114,19 +117,23 @@ void CObjHomingEnemy::Action()
 
 		return;
 	}
-
-	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
-	{
-		m_del = true;                 //Á–ÅŽÀs
-		hit->SetInvincibility(false);//“–‚½‚è”»’è–³Œø
-	}
-
-	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
-		m_del = true;                 //Á–ÅŽÀs
+		m_del = true; //Á–ÅŽÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 	}
 }
 

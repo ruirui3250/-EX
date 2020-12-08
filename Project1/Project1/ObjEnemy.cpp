@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include "ObjEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
@@ -48,8 +49,20 @@ void CObjEnemy::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
+	//主人公機objectと接触したら敵機弾丸削除。
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		m_del = true; //消滅実行
+		hit->SetInvincibility(true);//当たり判定無効
+	}
 	//弾丸の接触を調べる。
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

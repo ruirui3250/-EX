@@ -6,6 +6,8 @@
 #include "GameL\SceneObjManager.h"
 #include "GameL\DrawFont.h"
 #include"GameL\DrawTexture.h"
+#include"GameL/Audio.h"
+
 
 //使用するネームスペース
 using namespace GameL;
@@ -34,6 +36,8 @@ void CSceneWin3::InitScene()
 	Draw::LoadImage(L"Win画面２.png",0, TEX_SIZE_512);
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
+	//音楽読み込み
+	Audio::LoadAudio(17, L"クリア画面.wav", BACK_MUSIC);
 
 	//クリアオブジェクト登録
 	CObjWin3* obj = new CObjWin3();//クリアオブジェクト作成
@@ -47,6 +51,8 @@ void CSceneWin3::InitScene()
 	////クリアウイルス作成
 	//CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成
 	//Objs::InsertObj(obj2, OBJ_CLEAR_VIRUS, 1);//クリアウイルス登録
+
+	Audio::Start(17);
 
 }
 

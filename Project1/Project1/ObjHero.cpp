@@ -5,7 +5,8 @@
 #include "ObjHero.h"
 #include "GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
-#include"UtilityModule.h"
+#include"GameL/Audio.h"
+//#include"UtilityModule.h"
 //#include "ObjAngleBulletHero.h"
 
 //使用するネームスペース
@@ -44,6 +45,8 @@ void CObjHero::Action()
 	{
 		if (m_la >= 0)
 		{
+			//発射音を流す
+			Audio::Start(4);
 			//弾丸オブジェクト作成
 			CObjLaserBullet* obj_b = new CObjLaserBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJLASER_BULLET, 100);//作った弾丸オブジェクト
@@ -64,6 +67,8 @@ void CObjHero::Action()
 	{
 		if (m_f == true)
 		{
+			//発射音を流す
+			Audio::Start(2);
 
 			//弾丸オブジェクト作成
 			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
@@ -86,11 +91,13 @@ void CObjHero::Action()
 		if (m_ka <= 0 == false)
 			if (m_f == true)
 			{
+				//発射音を流す
+				Audio::Start(5);
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
 				{
-					obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
+					obj_b = new CObjAngleBulletHero(m_x, m_y, i, 7.0f);
 					Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
 					m_f = false;
 				}
@@ -160,20 +167,26 @@ void CObjHero::Action()
 		}
 	}
 
-	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	//{
-	//	m_hp -= 1;
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
 
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+		Audio::Start(19);
+		m_la = 100;//レーザー復活
+		m_ka = 3;//拡散弾丸
+		//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
+		//同様に５にするとのこと
+	}
 
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
-	//}
+	//ELEMENT_ITEMを持つオブジェクトと接触したらライフ回復
+	if (hit->CheckElementHit(ELEMENT_LIFE_ITEM) == true)
+	{
+		Audio::Start(20);
+		m_hp = 3;//HP
+
+
+	}
+
 }
 //ドロー
 void CObjHero::Draw()

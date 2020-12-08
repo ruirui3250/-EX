@@ -21,9 +21,6 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面">
       <UniqueIdentifier>{9e484e8d-a0ae-4b00-b99d-88ac2749cd43}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\アイテム">
-      <UniqueIdentifier>{7d70c0f3-a896-48ca-9e1a-8d05903ae99b}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\5面終了">
       <UniqueIdentifier>{ea04686c-e1c5-493d-b6b5-64bd663e68d6}</UniqueIdentifier>
     </Filter>
@@ -35,9 +32,6 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\3面終了">
       <UniqueIdentifier>{ea2122b0-2b73-428d-ab76-fc4c8fed4e57}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\3面主人公">
-      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\クリア画面\4面終了">
       <UniqueIdentifier>{b6ac8072-15e5-484f-bbd6-734630453ab6}</UniqueIdentifier>
@@ -68,9 +62,6 @@
     </Filter>
     <Filter Include="ソース ファイル\基本データ\障害物">
       <UniqueIdentifier>{d613236d-325c-4b0c-9a58-d17b38517e8c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\基本データ\主人公機">
-      <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\基本データ\回転">
       <UniqueIdentifier>{9149d42f-c28e-41fb-addf-fc889cc67f8f}</UniqueIdentifier>
@@ -106,11 +97,65 @@
     <Filter Include="ソース ファイル\基本データ\血栓">
       <UniqueIdentifier>{a07cf676-2c1c-4eba-b12e-aafcf23cb3c5}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\基本データ\4面主人公">
-      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\基本データ\敵機\4面敵">
       <UniqueIdentifier>{1a2352a1-f9ba-4f3e-ba4a-ee7fd9217996}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\横スクロール">
+      <UniqueIdentifier>{a90e1288-cd80-44a4-bac3-7624c81f4108}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\敵機\5面の敵">
+      <UniqueIdentifier>{935e6d97-b084-4c44-a6eb-b503d7b3620d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公">
+      <UniqueIdentifier>{f79ae3db-d46d-44f3-8049-4f0c459557ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\3面主人公">
+      <UniqueIdentifier>{bec77eee-1be5-47e7-a333-1d9d7477feea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\4面主人公">
+      <UniqueIdentifier>{ca7a8154-71a6-487f-9eae-e34587f19129}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\主人公機">
+      <UniqueIdentifier>{fbbcc07d-5484-4ab6-ae79-6254abe949b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject">
+      <UniqueIdentifier>{9efa0281-e990-402e-bee6-58002cd1d9a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\3面用">
+      <UniqueIdentifier>{3c863016-d832-47a7-b74e-2ca8b4fd547a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\4面用">
+      <UniqueIdentifier>{b985b638-4fea-41bd-96e5-9625b3783ec4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\5面用">
+      <UniqueIdentifier>{4d37169e-2f16-4734-bf79-23fcd0a59af9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\5面主人公">
+      <UniqueIdentifier>{bf99b896-22a3-4e6c-a476-30962de360e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム">
+      <UniqueIdentifier>{240e9972-8feb-40ad-9d94-50088d3d1677}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\縦スクロールアイテム（下から）">
+      <UniqueIdentifier>{5fd61f10-0164-41c7-83db-1acf971c4fe5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）">
+      <UniqueIdentifier>{e29134db-48fe-44db-abfa-c9d7269a7c3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\横スクロールアイテム（右へ）">
+      <UniqueIdentifier>{6ceaf816-9af1-48cb-b141-3173c2b4b6e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\共通アイテム\横スクロールアイテム（左へ）">
+      <UniqueIdentifier>{f0b58820-f4b7-4fb0-a610-2f75b41680f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\1面用">
+      <UniqueIdentifier>{60936283-8f20-4ec5-8003-e5f61d6afef4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\主人公\2面主人公">
+      <UniqueIdentifier>{73603979-1356-4aa1-ad8c-a4b5cfa47895}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\ゲームオーバー画面\2面用">
+      <UniqueIdentifier>{4054d481-d7c3-43c6-9982-da169b7895c5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -150,12 +195,6 @@
     <ClInclude Include="GameL\WinInputs.h">
       <Filter>リソース ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="ObjGameOver.h">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
-    </ClInclude>
-    <ClInclude Include="SceneGameOver.h">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
-    </ClInclude>
     <ClInclude Include="ObjTitle.h">
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClInclude>
@@ -163,10 +202,10 @@
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClInclude>
     <ClInclude Include="ObjBullet.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjHero.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="UtilityModule.h">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
@@ -175,19 +214,13 @@
       <Filter>ソース ファイル\基本データ\障害物</Filter>
     </ClInclude>
     <ClInclude Include="CObjAngleBulletHero.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
-    </ClInclude>
-    <ClInclude Include="Item.h">
-      <Filter>ソース ファイル\基本データ\アイテム</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="Kaiten.h">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClInclude>
-    <ClInclude Include="ObjDiffusionEnemy.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
-    </ClInclude>
     <ClInclude Include="ObjLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClInclude>
     <ClInclude Include="ObjTatesukuSceneMain.h">
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
@@ -196,13 +229,13 @@
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateBullet.h">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateHero.h">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTateLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjTatekesen.h">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -258,24 +291,6 @@
     <ClInclude Include="WinScene4.h">
       <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClInclude>
-    <ClInclude Include="CObjBulletEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjHomingBullet.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjHomingEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="CObjSinEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjAttackEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjEnemy.h">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClInclude>
     <ClInclude Include="ObjEnemyBoss2.h">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClInclude>
@@ -310,13 +325,13 @@
       <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaBullet.h">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaHero.h">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
     <ClInclude Include="ObjSitaKesen.h">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -329,6 +344,120 @@
     </ClInclude>
     <ClInclude Include="ObjSitaEnemy.h">
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjBulletEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjHomingBullet.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjHomingEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjSinEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttackEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjEnemy.h">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSceneMain5.h">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneMain5.h">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjBulletEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttackEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjDiffusionHero.h">
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\1面用</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver2.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面用</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver3.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\4面用</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver4.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\5面用</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaAttackEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateAttackEnemy2.h">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHero5.h">
+      <Filter>ソース ファイル\基本データ\主人公\5面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjEnemyBossBullet2.h">
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver2.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver3.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver4.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClInclude>
+    <ClInclude Include="CObjMixBoss.h">
+      <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMigiItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjMigiLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjSitaLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHidariLifeItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHidariItem.h">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjHero2.h">
+      <Filter>ソース ファイル\基本データ\主人公\2面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver5.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneGameOver5.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -371,9 +500,6 @@
     <ClCompile Include="GameL\WinInputs.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
-    <ClCompile Include="SceneGameOver.cpp">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
-    </ClCompile>
     <ClCompile Include="ObjTitle.cpp">
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClCompile>
@@ -381,10 +507,10 @@
       <Filter>ソース ファイル\基本データ\タイトル画面</Filter>
     </ClCompile>
     <ClCompile Include="ObjBullet.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjHero.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="UtilityModule.cpp">
       <Filter>ソース ファイル\基本データ\UtilityModule</Filter>
@@ -393,19 +519,13 @@
       <Filter>ソース ファイル\基本データ\障害物</Filter>
     </ClCompile>
     <ClCompile Include="CObjAngleBulletHero.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
-    </ClCompile>
-    <ClCompile Include="Item.cpp">
-      <Filter>ソース ファイル\基本データ\アイテム</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="Kaiten.cpp">
       <Filter>ソース ファイル\基本データ\回転</Filter>
     </ClCompile>
-    <ClCompile Include="ObjDiffusionEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
-    </ClCompile>
     <ClCompile Include="ObjLaserBullet.cpp">
-      <Filter>ソース ファイル\基本データ\主人公機</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
     </ClCompile>
     <ClCompile Include="ObjTatesukuSceneMain.cpp">
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
@@ -414,13 +534,13 @@
       <Filter>ソース ファイル\基本データ\背景画面\3面</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateBullet.cpp">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateHero.cpp">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTateLaserBullet.cpp">
-      <Filter>ソース ファイル\基本データ\3面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjTatekesen.cpp">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -476,27 +596,6 @@
     <ClCompile Include="WinScene4.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\3面終了</Filter>
     </ClCompile>
-    <ClCompile Include="CObjBulletEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjHomingBullet.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjHomingEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="CObjSinEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjAttackEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjEnemy.cpp">
-      <Filter>ソース ファイル\基本データ\敵機</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjGameOver.cpp">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面</Filter>
-    </ClCompile>
     <ClCompile Include="ObjEnemyBoss2.cpp">
       <Filter>ソース ファイル\基本データ\ボス\二面ボス</Filter>
     </ClCompile>
@@ -528,13 +627,13 @@
       <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaBullet.cpp">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaHero.cpp">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaLaserBullet.cpp">
-      <Filter>ソース ファイル\基本データ\4面主人公</Filter>
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClCompile>
     <ClCompile Include="ObjSitaKesen.cpp">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
@@ -547,6 +646,120 @@
     </ClCompile>
     <ClCompile Include="ObjSitaEnemy.cpp">
       <Filter>ソース ファイル\基本データ\敵機\4面敵</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjBulletEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjHomingBullet.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjHomingEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjSinEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttackEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjEnemy.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\横スクロール</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSceneMain5.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneMain5.cpp">
+      <Filter>ソース ファイル\基本データ\背景画面\5面</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjBulletEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttackEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjDiffusionHero.cpp">
+      <Filter>ソース ファイル\基本データ\主人公\主人公機</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\1面用</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver2.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\3面用</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver3.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\4面用</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver4.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\5面用</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaAttackEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjTateAttackEnemy2.cpp">
+      <Filter>ソース ファイル\基本データ\敵機\5面の敵</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero5.cpp">
+      <Filter>ソース ファイル\基本データ\主人公\5面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjEnemyBossBullet2.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\4面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver2.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver3.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver4.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
+    </ClCompile>
+    <ClCompile Include="CObjMixBoss.cpp">
+      <Filter>ソース ファイル\基本データ\ボス\5面ボス</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロール用アイテム%28上に行く）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMigiLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjSitaLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\縦スクロールアイテム（下から）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHidariLifeItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHidariItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（左へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjMigiItem.cpp">
+      <Filter>ソース ファイル\共通アイテム\横スクロールアイテム（右へ）</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjHero2.cpp">
+      <Filter>ソース ファイル\基本データ\主人公\2面主人公</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneGameOver5.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver5.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

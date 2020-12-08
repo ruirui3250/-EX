@@ -4,6 +4,7 @@
 #include "GameHead.h"
 #include "CObjSitaBulletEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 
 //Žg—p‚·‚éƒl[ƒ€
 using namespace GameL;
@@ -19,11 +20,10 @@ void CObjSitaBulletEnemy::Init()
 {
 	m_eff.m_top = 32;
 	m_eff.m_left = 0;
-	m_eff.m_right = 32;
+	m_eff.m_right =32;
 	m_eff.m_bottom = 64;
 	m_ani = 0;
 	m_ani_time = 0;
-
 	m_vx = 0.0f;
 	m_vy = +1.0f;
 
@@ -31,7 +31,7 @@ void CObjSitaBulletEnemy::Init()
 	UnitVec(&m_vy, &m_vx);
 
 	//“–‚½‚è”»’è—pHitBox‚ðì¬B
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_BULLET_ENEMY, 1);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_SITA_BULLET_ENEMY, 50);
 
 }
 
@@ -68,14 +68,29 @@ void CObjSitaBulletEnemy::Action()
 		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
 	}
-	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	//	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
 	}
-	//ŽålŒö‹@‚Ì’eŠÛobject‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
+	}
+	////ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
 	{
 		m_del = true; //Á–ÅŽÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø

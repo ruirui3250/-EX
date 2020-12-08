@@ -6,6 +6,19 @@
 #include"GameL\HitBoxManager.h"
 #include "GameL/DrawFont.h"
 #include"CObjAngleBulletHero.h"
+#include"GameL/Audio.h"
+
+//位置情報X取得用
+float CObjSitaHero::GetX()
+{
+	return m_x;
+}
+
+//位置情報Y取得用
+float CObjSitaHero::GetY()
+{
+	return m_y;
+}
 
 //イニシャライズ
 void CObjSitaHero::Init()
@@ -18,7 +31,7 @@ void CObjSitaHero::Init()
 	m_x = 350;
 	m_y = 0;
 	//当たり判定用hitboxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
+	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_SITA_HERO, 100);
 }
 
 
@@ -38,10 +51,10 @@ void CObjSitaHero::Action()
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey('A') == true)
 	{
-
-		m_la += 1;
 		if (m_la >= 0)
 		{
+			//発射音を流す
+			Audio::Start(4);
 			//弾丸オブジェクト作成
 			CObjSitaLaserBullet* obj_b = new CObjSitaLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_SITA_LASER_BULLET, 100);//作った弾丸オブジェクト
@@ -54,14 +67,17 @@ void CObjSitaHero::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
+
 		m_vx = 0.0f;
 		m_vy = +1.0f;
 		if (m_f == true)
 		{
+			//発射音を流す
+			Audio::Start(2);
 
 			//弾丸オブジェクト作成
 			CObjSitaBullet* obj_b = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
 		}
 
@@ -80,6 +96,8 @@ void CObjSitaHero::Action()
 		if (m_ka <= 0 == false)
 			if (m_f == true)
 			{
+				//発射音を流す
+				Audio::Start(5);
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
@@ -155,7 +173,7 @@ void CObjSitaHero::Action()
 	hit->SetPos(m_x, m_y);				  //入り口から新しい位置（主人公機の位置）情報に置き換える
 
 
-	//ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
+	////ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
 	if (m_f == true)
 	{
 		if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
@@ -170,7 +188,7 @@ void CObjSitaHero::Action()
 			Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
 			////主人公機消滅でシーンをゲームオーバーに移行する
-			//Scene::SetScene(new CSceneGameOver4());
+			Scene::SetScene(new CSceneGameOver3());
 		}
 
 	}
@@ -179,10 +197,20 @@ void CObjSitaHero::Action()
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
 	{
 
+		Audio::Start(19);
 		m_la = 100;//レーザー復活
 		m_ka = 3;//拡散弾丸
 		//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
 		//同様に５にするとのこと
+	}
+
+	//ELEMENT_ITEMを持つオブジェクトと接触したらライフ回復
+	if (hit->CheckElementHit(ELEMENT_LIFE_ITEM) == true)
+	{
+		Audio::Start(20);
+		m_hp = 3;//HP
+
+
 	}
 
 
@@ -192,14 +220,14 @@ void CObjSitaHero::Action()
 	//{
 	//	m_hp -= 1;
 
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+	//	if (m_hp == 0)
+	//	{
+	//		this->SetStatus(false);//自身に削除命令を出す
+	//		Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
 
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
+	//		//主人公機消滅でシーンをゲームオーバーに移行する
+	//		Scene::SetScene(new CSceneGameOver());
+	//	}
 	//}
 }
 //ドロー

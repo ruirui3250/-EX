@@ -19,4 +19,5 @@ private:
 	float m_vx;//敵移動のベクトルx
 	float m_vy;//敵移動のベクトルy
 	float m_r;
+	bool m_del;      //削除チェック
 };

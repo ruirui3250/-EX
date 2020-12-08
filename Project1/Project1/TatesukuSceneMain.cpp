@@ -5,6 +5,7 @@
 //GameLで使用するヘッダー
 #include"GameL\DrawTexture.h"
 #include"GameL\SceneObjManager.h"
+#include"GameL/Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -33,22 +34,48 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"注射器縦.png", 0, TEX_SIZE_512);
 
-	Draw::LoadImage(L"拡散弾カプセル.png", 6, TEX_SIZE_512);
+	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ウイルス(使).png", 7, TEX_SIZE_512);
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
-	Draw::LoadImage(L"Boss3(使).png", 9, TEX_SIZE_512);
+	Draw::LoadImage(L"Boss3(使).png", 4, TEX_SIZE_512);
 
-	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
+	Draw::LoadImage(L"レーザー縦.png", 10, TEX_SIZE_512);
 
-	Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
+	//Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
 
-	Draw::LoadImage(L"主人公弾縦.png", 1, TEX_SIZE_512);//bulletHero
+	Draw::LoadImage(L"主人公弾縦.png", 11, TEX_SIZE_512);
+
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
+		//音楽読み込み
+	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(8, L"3面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(13, L"ボス3.wav", BACK_MUSIC);
+
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
@@ -64,6 +91,9 @@ void TatesukuSceneMain::InitScene()
 	//タイム初期化
 	m_time = 0;
 
+
+	Audio::Start(8);
+
 }
 
 //ゲームシーン実行中メソッド
@@ -76,7 +106,26 @@ void TatesukuSceneMain::Scene()
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 	/*-------------------------回復アイテム出現---------------------------*/
-
+	if (m_time == 800)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1200)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 300);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1800)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(350.0f, 300);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjItem* obj = new CObjItem(799.0f, 400);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 	///*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
 	if (m_time == 30)
 	{
@@ -174,54 +223,29 @@ void TatesukuSceneMain::Scene()
 		CObjTateEnemy* obj = new CObjTateEnemy(700.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 100)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
 	if (m_time == 110)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 120)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 110)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 130)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 120)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(150.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 150)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 120)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(250.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 110)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 130)
 	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(450.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 120)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(400.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 130)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(410.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 120)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 110)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 120)
@@ -368,6 +392,21 @@ void TatesukuSceneMain::Scene()
 	if (m_time == 1500)
 	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1500)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(650.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 1500)
@@ -589,11 +628,15 @@ void TatesukuSceneMain::Scene()
 	/*-------------------------ボス-------------------------------*/
 	if (m_time == 2000)
 	{
+		//音楽チェンジ
+		Audio::Stop(8);//0曲ストップ
+		Audio::Start(13);//1曲目スタート
 		CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 
 	}
-
+	/*------------------------------アイテム発射--------------------*/
+	
 }
 
 //メモ

@@ -15,6 +15,10 @@ enum OBJ_NAME
 	OBJ_CLEAR_BACK2,
 	OBJ_TITLE,
 	OBJ_GAME_OVER,
+	OBJ_GAME_OVER2,
+	OBJ_GAME_OVER3,
+	OBJ_GAME_OVER4,
+	OBJ_GAME_OVER5,
 	OBJ_HERO,
 	OBJ_SCENE_MAIN,
 	OBJ_SCENE_MAIN2,
@@ -26,17 +30,24 @@ enum OBJ_NAME
 	OBJ_SIN_ENEMY,
 	OBJ_BOSS_ENEMY,
 	OBJ_BOSS_ENEMY2,
-	OBJ_BOSS_ENEMY4,
-	OBJ_BOSS_BULLET_ENEMY,
 	OBJ_ANGLE_BULLET_HERO,
 	OBJ_DIFFUSION_HERO,
 	OBJ_HOMING_ENEMY,
-	OBJ_DIFFUSION_ENEMY,
 	OBJ_HOMING_BULLET,
-	OBJ_ITEM,
+	
 	OBJLASER_BULLET,
 	OBJ_YOKO_KESEN,
 
+	/*----------------回復アイテム-------------*/
+	OBJ_LIFE_ITEM,
+	OBJ_MIGI_LIFE_ITEM,
+	OBJ_HIDARI_LIFE_ITEM,
+	OBJ_SITA_LIFE_ITEM,
+	/*----------ビーム回復-------*/
+	OBJ_ITEM,
+	OBJ_MIGI_ITEM,
+	OBJ_HIDARI_ITEM,
+	OBJ_SITAITEM,
 	/*----------------*/
 	OBJ_TATE_ENEMY,
 	OBJ_TATE_BOSS,
@@ -55,6 +66,22 @@ enum OBJ_NAME
 	OBJ_SITA_BULLET_ENEMY,
 	OBJ_SITA_ATTACK_ENEMY,
 	OBJ_SITA_ENEMY,
+	OBJ_SITA_KESEN,
+	OBJ_BOSS_ENEMY4,
+	OBJ_BOSS_BULLET_ENEMY,
+	OBJ_BOSS_BULLET_ENEMY2,
+
+	/*5面*/
+	OBJ_SCENE_MAIN5,
+	OBJ_BULLET_ENEMY2,
+	OBJ_ENEMY2,
+	OBJ_ATTACK_ENEMY2,
+	OBJ_SITA_ATTACK_ENEMY2,
+	OBJ_SITA_ENEMY2,
+	OBJ_TATE_ENEMY2,
+	OBJ_TATE_ATTACK_ENEMY2,
+	OBJ_HERO5,
+	OBJ_MIX_BOSS,
 };
 //------------------------------------------------
 
@@ -66,7 +93,7 @@ enum HIT_ELEMENTS
 	//属性は追加可能だが、デバック時の色は初期設定分しか無い
 	ELEMENT_PLAYER,
 	ELEMENT_ENEMY,
-	ELEMENT_ITEM,
+	
 	ELEMENT_MAGIC,
 	ELEMENT_FIELD,
 	ELEMENT_RED,
@@ -74,6 +101,8 @@ enum HIT_ELEMENTS
 	ELEMENT_BLUE,
 	ELEMENT_BLACK,
 	ELEMENT_WHITE,
+	ELEMENT_LIFE_ITEM,
+	ELEMENT_ITEM,
 };
 //------------------------------------------------
 
@@ -112,21 +141,27 @@ struct UserData
 #include"ObjSceneMain4.h"
 #include"ObjTatesukuSceneMain.h"
 #include"TatesukuSceneMain.h"
+#include"ObjGameOver.h"
+#include"ObjGameOver2.h"
+#include"ObjGameOver3.h"
+#include"ObjGameOver4.h"
+#include"ObjGameOver5.h"
 //敵関連
 #include"CObjBulletEnemy.h"
 #include"ObjBullet.h"
 #include"CObjSinEnemy.h"
 #include"ObjAttackEnemy.h"
 #include"ObjClearBack.h"
-#include"ObjGameOver.h"
 #include"ObjSceneMain.h"
 #include"ObjHero.h"
+#include"ObjHero2.h"
 #include"ObjEnemy.h"
-#include"ObjDiffusionEnemy.h"
+#include"ObjDiffusionHero.h"
 #include"ObjEnemyBoss.h"
 #include"ObjEnemyBoss2.h"
 #include"ObjEnemyBoss4.h"
 #include"CObjEnemyBossBullet4.h"
+#include"CObjEnemyBossBullet2.h"
 #include"CObjAngleBulletHero.h"
 #include"CObjHomingEnemy.h"
 #include"CObjHomingBullet.h"
@@ -141,16 +176,36 @@ struct UserData
 #include"ObjTateBullet.h"
 #include"ObjTatekesen.h"
 #include"ObjTateBoss.h"
+
 /*---------------4面--------------*/
 #include"ObjSitaHero.h"
 #include"ObjSitaBullet.h"
 #include"ObjSitaLaserBullet.h"
 #include"CObjSitaBulletEnemy.h"
 #include"ObjSitaAttackEnemy.h"
+#include"ObjSitaKesen.h"
 #include"ObjSitaEnemy.h"
-//アイテム関連
-#include"Item.h"
-
+/*5面*/
+#include"ObjSceneMain5.h"
+#include"CObjBulletEnemy2.h"
+#include"CObjEnemy2.h"
+#include"ObjAttackEnemy2.h"
+#include"ObjSitaAttackEnemy2.h"
+#include"ObjSitaEnemy2.h"
+#include"ObjTateEnemy2.h"
+#include"ObjTateAttackEnemy2.h"
+#include"ObjHero5.h"
+#include"CObjMixBoss.h"
+/*----------回復アイテム----------------*/
+#include"ObjMigiItem.h"
+#include"ObjHidariItem.h"
+#include"ObjSitaItem.h"
+#include"ObjItem.h"
+/*-----------体力-----------*/
+#include"ObjMigiLifeItem.h"
+#include"ObjHidariLifeItem.h"
+#include"ObjSitaLifeItem.h"
+#include"ObjLifeItem.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
@@ -163,11 +218,18 @@ struct UserData
 #include"SceneMain.h"
 #include"SceneMain4.h"
 #include"SceneMain2.h"
+#include"SceneMain5.h"
 #include"TatesukuSceneMain.h"
 #include"SceneGameOver.h"
+#include"SceneGameOver2.h"
+#include"SceneGameOver3.h"
+#include"SceneGameOver4.h"
+#include"SceneGameOver5.h"
+
 //-----------------------------------------------
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START  CSceneMain
+#define SET_GAME_START CSceneWin
+//SceneTitle
 //-----------------------------------------------

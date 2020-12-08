@@ -4,6 +4,7 @@
 #include "GameHead.h"
 #include "CObjTateBulletEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 
 //g—p‚·‚éƒl[ƒ€
 using namespace GameL;
@@ -74,12 +75,31 @@ void CObjTateBulletEnemy::Action()
 		m_del = true; //Á–ÅÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
-	//ålŒö‹@‚Ì’eŠÛobject‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	//ålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		m_del = true; //Á–ÅÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	
 }
 
 //ƒhƒ[

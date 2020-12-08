@@ -1,10 +1,11 @@
 //STLデバッグ機能をOFFにする。
-#define _SECURE_SCL(O)
-#define _HAS_ITERATOR_DEBUGGING(O)
+#define _SECURE_SCL(o)
+#define _HAS_ITERATOR_DEBUGGING(o)
 
 //GameLで使用するヘッダー
 #include"GameL\DrawTexture.h"
 #include"GameL\SceneObjManager.h"
+#include"GameL/Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -35,7 +36,7 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"注射器.png", 0, TEX_SIZE_512);
 
-	Draw::LoadImage(L"カプセル.png", 2, TEX_SIZE_512);
+	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
 
 	//Draw::LoadImage(L"障害物.png",9, TEX_SIZE_512);
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
@@ -45,6 +46,32 @@ void CSceneMain::InitScene()
 	Draw::LoadImage(L"Boss1(使).png",4,TEX_SIZE_512);
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+
+	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
+
+	//音楽読み込み
+	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(4, L"レーザー.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(5, L"拡散弾.wav", EFFECT);
+	//アイテム回復BGM
+	Audio::LoadAudio(19, L"HP.wav", EFFECT);
+
+	Audio::LoadAudio(20, L"LK.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(18, L"敵死亡.wav", EFFECT);
+
+	//音楽読み込み
+	Audio::LoadAudio(6, L"1面.wav", BACK_MUSIC);
+
+	//音楽読み込み
+	Audio::LoadAudio(11, L"ボス1.wav", BACK_MUSIC);
 
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
@@ -60,6 +87,7 @@ void CSceneMain::InitScene()
 
 	//タイム初期化
 	m_time = 0;
+	Audio::Start(6);
 
 }
 
@@ -67,7 +95,30 @@ void CSceneMain::InitScene()
 void CSceneMain::Scene()
 {
 	m_time++;
+	//アイテム制御
+	if (m_time == 550)
+	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 600);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 350)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 840)
+	{
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 145);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 970)
+	{
+		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
 
+	
+	/*-----て--------き--------敵*/
 	if (m_time == 30)
 	{
 		CObjEnemy* obj = new CObjEnemy(799.0f, 400);
@@ -88,7 +139,7 @@ void CSceneMain::Scene()
 		Objs::InsertObj(obj4, OBJ_ENEMY, 50);
 
 		CObjHomingEnemy* obj2;
-		obj2 = new CObjHomingEnemy(799.0f, 330);
+		obj2 = new CObjHomingEnemy(799.0f, 150);
 		Objs::InsertObj(obj2, OBJ_HOMING_ENEMY, 50);
 
 	}
@@ -335,17 +386,17 @@ void CSceneMain::Scene()
 	else if (m_time == 500)
 	{
 	CObjHomingEnemy* obj;
-	obj = new CObjHomingEnemy(799.0f, 500);
+	obj = new CObjHomingEnemy(799.0f, 0);
 	Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
 	}
 	else if (m_time == 1200)
 	{
 		//音楽チェンジ
-		//Audio::Stop(0);//0曲ストップ
-		//Audio::Start(1);//1曲目スタート
+		Audio::Stop(6);//0曲ストップ
+		Audio::Start(11);//1曲目スタート
 
 		CObjBoss* obj;
-		obj = new CObjBoss(300, 250);
+		obj = new CObjBoss(300, 0);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY, 50);
 	}
 }

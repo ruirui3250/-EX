@@ -6,6 +6,7 @@
 #include "GameL\SceneObjManager.h"
 //#include "GameL\DrawFont.h"
 #include"GameL\DrawTexture.h"
+#include"GameL/Audio.h"
 
 //使用するネームスペース
 using namespace GameL;
@@ -30,10 +31,13 @@ CSceneWin::~CSceneWin()
 //文字の登録
 void CSceneWin::InitScene()
 {
-	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"Win画面(使).png", 1, TEX_SIZE_512);
+	////外部グラフィック読み込み登録0番
+	//Draw::LoadImage(L"Win画面(使).png", 1, TEX_SIZE_512);
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
+
+	//音楽読み込み
+	Audio::LoadAudio(3, L"エンディング.wav", BACK_MUSIC);
 
 	/*Font::SetStrTex(L"You Win!");
 	Font::SetStrTex(L"エンターキーでタイトル戻る。");*/
@@ -50,7 +54,7 @@ void CSceneWin::InitScene()
 	////クリアウイルス作成
 	//CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成
 	//Objs::InsertObj(obj2, OBJ_CLEAR_VIRUS, 1);//クリアウイルス登録
-
+	Audio::Start(3);
 }
 
 //実行メソッド

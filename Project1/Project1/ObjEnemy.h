@@ -17,5 +17,6 @@ private:
 	float m_x;//敵機のx方向の位置
 	float m_y;//敵機のy方向の位置
 	float m_vx;//敵移動のベクトルx
+	bool m_del;
 	float m_vy;//敵移動のベクトルy
 };

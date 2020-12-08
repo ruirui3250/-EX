@@ -5,6 +5,7 @@
 #include"GameHead.h"
 #include"CObjSinEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //Žg—p‚·‚éƒl[ƒ€ƒXƒy[ƒX
 using namespace GameL;
 
@@ -60,8 +61,20 @@ void CObjSinEnemy::Action()
 		Hits::DeleteHitBox(this);//ƒVƒ““G‹@‚ªŠ—L‚·‚éhitbox‚ðíœ
 		return;
 	}
+	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	{
+		m_del = true; //Á–ÅŽÀs
+		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+	}
 	//’eŠÛ‚ÉÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é.
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

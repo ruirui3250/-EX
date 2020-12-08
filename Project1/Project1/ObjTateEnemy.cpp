@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include "ObjTateEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
@@ -18,6 +19,7 @@ void CObjTateEnemy::Init()
 	m_r = 0;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
+	m_del = 0.0f;
 
 	//当たり判定用HitBox作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
@@ -56,6 +58,18 @@ void CObjTateEnemy::Action()
 	}
 	//弾丸の接触を調べる。
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);

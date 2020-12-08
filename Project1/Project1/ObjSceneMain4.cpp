@@ -11,18 +11,18 @@ using namespace GameL;
 //イニシャライズ
 void CObjSceneMain4::Init()
 {
-	m_y1 = 800.0f;
-	m_y2 = 10.0f;
+	m_y1 = 10.0f;
+	m_y2 = 800.0f;
 }
 //アクション
 void CObjSceneMain4::Action()
 {
 	//背景１の操作
-	m_y1 +=10.0f;
+	m_y1 -= 10.0f;
 	if (m_y1 < -800.0f)
 		m_y1 = 800;
 	//背景2の操作
-	m_y2 +=10.0f;
+	m_y2 -= 10.0f;
 	if (m_y2 < -800.0f)
 		m_y2 = 800;
 	//画面を回転させる
@@ -59,26 +59,26 @@ void CObjSceneMain4::Draw()
 	////表示位置の設定
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 500.0f;
-	dst.m_bottom = 500.0f;
+	dst.m_right = 1000.0f;
+	dst.m_bottom = 1000.0f;
 
-	//////画像表示
-	//Draw::Draw(5, &src, &dst, c, 0.0f);
+	////画像表示
+	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//背景１を設定描画
-	dst.m_top = 1200.0f - m_y2;
-	dst.m_left = 1000.0f;
+	dst.m_top = 1200.0f + m_y2;
+	dst.m_left = 1500.0f;
 	dst.m_right = 0.0f;
-	dst.m_bottom = 0.0f - m_y2;
+	dst.m_bottom = 0.0f + m_y2;
 
 	//0番目に登録したグラフィックを描画。
 	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//背景2を設定描画
-	dst.m_top = 1200.0f - m_y1;
-	dst.m_left = 1000.0f;
+	dst.m_top = 1200.0f + m_y1;
+	dst.m_left = 1500.0f;
 	dst.m_right = 0.0f;
-	dst.m_bottom = 0.0f - m_y1;
+	dst.m_bottom = 0.0f + m_y1;
 
 	//0番目に登録したグラフィックを描画。
 	Draw::Draw(5, &src, &dst, c, 0.0f);

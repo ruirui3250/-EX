@@ -19,7 +19,7 @@ void CObjSitaKesen::Init()
 	m_vy = 0.0f;
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_TATEKESEN, 8);
+	Hits::SetHitBox(this, m_x, m_y, 64, 64, ELEMENT_ENEMY, OBJ_SITA_KESEN, 50);
 }
 //アクション
 void CObjSitaKesen::Action()
@@ -48,7 +48,18 @@ void CObjSitaKesen::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
-
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 }
 
 //ドロー

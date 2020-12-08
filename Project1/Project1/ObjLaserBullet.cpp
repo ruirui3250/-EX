@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include"ObjLaserBullet.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //#include"GameL\Audio.h"
 
 //使用するネームスペース
@@ -74,26 +75,54 @@ void CObjLaserBullet::Action()
 	//}
 
 	//当たり判定を行うオブジェクト情報部
-	int data_base[6] =
+	//当たり判定を行うオブジェクト情報部
+	int data_base[27] =
 	{
+		//1,2面のやつ
 		OBJ_ENEMY,
 		OBJ_ATTACK_ENEMY,
-		/*	OBJ_DIFFUSION_ENEMY,
-			OBJ_HOMING_ENEMY,
-			OBJ_BOSS_ENEMY,*/
+		OBJ_HOMING_ENEMY,
+		OBJ_SIN_ENEMY,
+		//縦スクのやつ
+		OBJ_TATE_ENEMY,
+		OBJ_TATE_BULLET_ENEMY,
+		OBJ_TATE_ATTACK_ENEMY,
+		//下スクロール
+		OBJ_SITA_BULLET_ENEMY,
+		OBJ_SITA_ENEMY,
+		OBJ_SITA_ATTACK_ENEMY,
+		//血栓
+		OBJ_SITA_KESEN,
+		OBJ_TATEKESEN,
+		OBJ_YOKO_KESEN,
+		//ボス
+		OBJ_BOSS_ENEMY,
+		OBJ_BOSS_ENEMY2,
+		OBJ_TATE_BOSS,
+		OBJ_BOSS_ENEMY4,
+		OBJ_BOSS_BULLET_ENEMY2,
+		OBJ_BOSS_BULLET_ENEMY,
+		//5面
+		OBJ_ENEMY2,
+		OBJ_BULLET_ENEMY2,
+		OBJ_ATTACK_ENEMY2,
+		OBJ_SITA_ATTACK_ENEMY2,
+		OBJ_SITA_ENEMY2,
+		OBJ_TATE_ATTACK_ENEMY2,
+		OBJ_TATE_ENEMY2,
+		OBJ_MIX_BOSS
 	};
-
-	//オブジェクト情報部に当たり判定を行い。当たれば削除。
-	for (int i = 0; i < 6; i++)
+	//敵機オブジェクトと接触したら拡散弾丸削除
+	for (int i = 0; i < 27; i++)
 	{
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{
-			//Audio::Start(3);
-			m_del = true; //消滅実行
-			hit->SetInvincibility(true);//当たり判定無効
+			/*Audio::Start(3);*/
+			Audio::Start(18);
+			this->SetStatus(false);
+			Hits::DeleteHitBox(this);
 		}
 	}
-
 }
 //ドロー
 void CObjLaserBullet::Draw()
