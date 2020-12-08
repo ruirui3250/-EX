@@ -64,6 +64,8 @@ void CObjBoss2::Action()
             //誘導弾丸オブジェクト作成
            CObjHomingEnemy* obj_homing_enemy = new CObjHomingEnemy(m_x + 68, m_y + 120);
             Objs::InsertObj(obj_homing_enemy, OBJ_HOMING_ENEMY, 100);
+            CObjHomingEnemy* obj_homing_enemy2 = new CObjHomingEnemy(m_x + 68, m_y + 250);
+            Objs::InsertObj(obj_homing_enemy2, OBJ_HOMING_ENEMY, 100);
         }
     //m_timeの初期化
     if (m_time > 1000)

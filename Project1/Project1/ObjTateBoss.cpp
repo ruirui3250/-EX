@@ -24,7 +24,7 @@ void CObjTateBoss::Init()
 
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x+100, m_y+100,250, 200, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
+	Hits::SetHitBox(this, m_x+100, m_y,150, 190, ELEMENT_ENEMY, OBJ_TATE_BOSS, 1);
 }
 //アクション
 void CObjTateBoss::Action()
@@ -124,7 +124,7 @@ void CObjTateBoss::Action()
 	m_y += m_vy;
 	//HitBoxの内容更新
 	CHitBox* hit = Hits::GetHitBox(this);
-	hit->SetPos(m_x, m_y);
+	hit->SetPos(m_x+100, m_y);
 	//領域外に出たら敵機を破棄。
 	bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
 	if (check == false)
