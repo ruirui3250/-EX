@@ -42,11 +42,11 @@ void CSceneMain4::InitScene()
 
 	Draw::LoadImage(L"ボス4.png", 4, TEX_SIZE_512);
 
-	Draw::LoadImage(L"レーザー縦.png", 10, TEX_SIZE_512);
+	Draw::LoadImage(L"レーザー縦.png", 12, TEX_SIZE_512);
 
 	/*Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);*/
 
-	Draw::LoadImage(L"主人公弾縦.png", 12, TEX_SIZE_512);//bulletHero
+	Draw::LoadImage(L"主人公弾縦.png", 11, TEX_SIZE_512);//bulletHero
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
