@@ -198,19 +198,19 @@ void CSceneMain5::Scene()
 
 	else if (m_time == 300)
 	{
-		CObjTateEnemy2* obj = new CObjTateEnemy2(10.0f, 30);
+		CObjTateEnemy2* obj = new CObjTateEnemy2(10.0f, 1);
 		Objs::InsertObj(obj, OBJ_TATE_ENEMY2, 50);
 
-		CObjTateEnemy2* obj2 = new CObjTateEnemy2(70.0f, 30);
+		CObjTateEnemy2* obj2 = new CObjTateEnemy2(70.0f, 1);
 		Objs::InsertObj(obj2, OBJ_TATE_ENEMY2, 50);
 
-		CObjTateEnemy2* obj3 = new CObjTateEnemy2(120.0f, 30);
+		CObjTateEnemy2* obj3 = new CObjTateEnemy2(120.0f, 1);
 		Objs::InsertObj(obj3, OBJ_TATE_ENEMY2, 50);
 
-		CObjTateEnemy2* obj4 = new CObjTateEnemy2(170.0f, 30);
+		CObjTateEnemy2* obj4 = new CObjTateEnemy2(170.0f, 1);
 		Objs::InsertObj(obj4, OBJ_TATE_ENEMY2, 50);
 
-		CObjTateEnemy2* obj5 = new CObjTateEnemy2(190.0f, 30);
+		CObjTateEnemy2* obj5 = new CObjTateEnemy2(190.0f, 1);
 		Objs::InsertObj(obj5, OBJ_TATE_ENEMY2, 50);
 	}
 
@@ -223,19 +223,19 @@ void CSceneMain5::Scene()
 		CObjEnemy2* obj2 = new CObjEnemy2(799.0f, 350);
 		Objs::InsertObj(obj2, OBJ_ENEMY2, 50);
 
-		CObjTateKesen* obj3 = new CObjTateKesen(10, 30);
+		CObjTateKesen* obj3 = new CObjTateKesen(10, -1);
 		Objs::InsertObj(obj3, OBJ_TATEKESEN, 50);
 
-		CObjSitaKesen* obj4 = new CObjSitaKesen(70, 500);
+		CObjSitaKesen* obj4 = new CObjSitaKesen(70, 550);
 		Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
 
-		CObjTateKesen* obj5 = new CObjTateKesen(130, 10);
+		CObjTateKesen* obj5 = new CObjTateKesen(130, -1);
 		Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
 
-		CObjSitaKesen* obj6 = new CObjSitaKesen(180, 500);
+		CObjSitaKesen* obj6 = new CObjSitaKesen(180, 550);
 		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
 
-		CObjTateKesen* obj7 = new CObjTateKesen(230, 10);
+		CObjTateKesen* obj7 = new CObjTateKesen(230, -1);
 		Objs::InsertObj(obj7, OBJ_TATEKESEN, 50);
 
 		
@@ -287,53 +287,53 @@ void CSceneMain5::Scene()
 	CObjSitaEnemy2* obj3 = new CObjSitaEnemy2(550.0f, 400);
 	Objs::InsertObj(obj3, OBJ_SITA_ENEMY2, 50);
 
-	CObjTateKesen* obj6 = new CObjTateKesen(280, 30);
+	CObjTateKesen* obj6 = new CObjTateKesen(280, -1);
 	Objs::InsertObj(obj6, OBJ_TATEKESEN, 50);
 
-	CObjSitaKesen* obj7 = new CObjSitaKesen(330, 500);
+	CObjSitaKesen* obj7 = new CObjSitaKesen(330, 550);
 	Objs::InsertObj(obj7, OBJ_SITA_KESEN, 50);
 
-	CObjTateKesen* obj8 = new CObjTateKesen(380, 10);
+	CObjTateKesen* obj8 = new CObjTateKesen(380, -1);
 	Objs::InsertObj(obj8, OBJ_TATEKESEN, 50);
 
-	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 500);
+	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 550);
 	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
 
-	CObjTateKesen* obj5 = new CObjTateKesen(480, 10);
+	CObjTateKesen* obj5 = new CObjTateKesen(480, -1);
 	Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
 	
 
 	}
 	else if (m_time == 1000)
 	{
-	CObjTateKesen* obj = new CObjTateKesen(10, 30);
+	CObjTateKesen* obj = new CObjTateKesen(10, -1);
 	Objs::InsertObj(obj, OBJ_TATEKESEN, 50);
 
-	CObjSitaKesen* obj2 = new CObjSitaKesen(70, 500);
+	CObjSitaKesen* obj2 = new CObjSitaKesen(70, 550);
 	Objs::InsertObj(obj2, OBJ_SITA_KESEN, 50);
 
-	CObjTateKesen* obj3 = new CObjTateKesen(130, 10);
+	CObjTateKesen* obj3 = new CObjTateKesen(130, -1);
 	Objs::InsertObj(obj3, OBJ_TATEKESEN, 50);
 
-	CObjSitaKesen* obj4 = new CObjSitaKesen(180, 500);
+	CObjSitaKesen* obj4 = new CObjSitaKesen(180, 550);
 	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
 
-	CObjTateKesen* obj5 = new CObjTateKesen(230, 10);
+	CObjTateKesen* obj5 = new CObjTateKesen(230, -1);
 	Objs::InsertObj(obj5, OBJ_TATEKESEN, 50);
 	}
 
 	else if (m_time == 1200)
 	{
-	CObjTateKesen* obj = new CObjTateKesen(280, 30);
+	CObjTateKesen* obj = new CObjTateKesen(280, -1);
 	Objs::InsertObj(obj, OBJ_TATEKESEN, 50);
 
-	CObjSitaKesen* obj2 = new CObjSitaKesen(330, 500);
+	CObjSitaKesen* obj2 = new CObjSitaKesen(330, 501);
 	Objs::InsertObj(obj2, OBJ_SITA_KESEN, 50);
 
-	CObjTateKesen* obj3 = new CObjTateKesen(380, 10);
+	CObjTateKesen* obj3 = new CObjTateKesen(380, -1);
 	Objs::InsertObj(obj3, OBJ_TATEKESEN, 50);
 
-	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 500);
+	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 501);
 	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
  }
 	else if (m_time == 1500)
