@@ -101,7 +101,7 @@ void CSceneMain::Scene()
 		CObjHidariItem* obj = new CObjHidariItem(799.0f, 600);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 350)
+	if (m_time == 650)
 	{
 		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
@@ -111,7 +111,7 @@ void CSceneMain::Scene()
 		CObjHidariItem* obj = new CObjHidariItem(799.0f, 145);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 970)
+	if (m_time == 1170)
 	{
 		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);

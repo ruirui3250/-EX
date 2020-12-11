@@ -77,7 +77,12 @@ void CObjAngleBulletHero::Action()
 			this->SetStatus(false); //自身に削除命令
 			Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
 		}
-
+		//敵機オブジェクトにぶつかったら弾丸削除。
+		if (hit->CheckObjNameHit(OBJ_BULLET_ENEMY) != nullptr)
+		{
+			this->SetStatus(false); //自身に削除命令
+			Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		}
 		//当たり判定を行うオブジェクト情報部
 		int data_base[27] =
 		{

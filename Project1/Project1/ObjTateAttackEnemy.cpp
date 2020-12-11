@@ -35,9 +35,11 @@ void CObjTateAttackEnemy::Action()
 	{
 		m_time = 0;
 		//弾丸敵機object
-		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x, m_y);//弾丸発射オブジェクト作成
+		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x-10, m_y);//弾丸発射オブジェクト作成
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機object登録
 	}
+	
+
 	//移動方向
 	m_vx = 0.0f;
 	m_vy = +1.0f;

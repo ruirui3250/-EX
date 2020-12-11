@@ -19,7 +19,7 @@ void CObjTateKesen::Init()
 	m_vy = 0.0f;
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x, m_y, 250, 128, ELEMENT_ENEMY, OBJ_TATEKESEN, 1);
+	Hits::SetHitBox(this, m_x, m_y, 260, 90, ELEMENT_ENEMY, OBJ_TATEKESEN, 1);
 }
 //アクション
 void CObjTateKesen::Action()
@@ -48,12 +48,7 @@ void CObjTateKesen::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
-	//弾丸の接触を調べる。
-	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-	}
+
 
 }
 
@@ -75,8 +70,8 @@ void CObjTateKesen::Draw()
 	//表示位置の設定
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
-	dst.m_right = 250.0f + m_x;
-	dst.m_bottom = 128.0f + m_y;
+	dst.m_right = 260.0f + m_x;
+	dst.m_bottom = 90.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 	Draw::Draw(8, &src, &dst, c, 0.0f);
