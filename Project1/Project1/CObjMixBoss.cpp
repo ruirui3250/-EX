@@ -25,7 +25,7 @@ void CObjMIXBoss::Init()
 
 
 	//当たり判定用HitBox作成
-	Hits::SetHitBox(this, m_x, m_y, 300, 300, ELEMENT_ENEMY, OBJ_MIX_BOSS, 50);
+	Hits::SetHitBox(this, m_x, m_y, 280, 280, ELEMENT_ENEMY, OBJ_MIX_BOSS, 50);
 }
 //アクション
 void CObjMIXBoss::Action()
@@ -78,6 +78,12 @@ void CObjMIXBoss::Action()
 	 //弾丸発射オブジェクト
 	 CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 100);
 	 Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+	}
+	if (m_time % 50 == 0)
+	{
+		//弾丸発射オブジェクト
+		CObjYokoKesen* obj_b = new CObjYokoKesen(m_x, m_y+300);
+		Objs::InsertObj(obj_b, OBJ_YOKO_KESEN, 100);
 	}
 	//if (m_time % 50 == 0)
 	//{

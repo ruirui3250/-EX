@@ -42,7 +42,7 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"Boss3(使).png", 4, TEX_SIZE_512);
 
-	Draw::LoadImage(L"レーザー縦.png", 10, TEX_SIZE_512);
+	Draw::LoadImage(L"レーザー縦.png", 12, TEX_SIZE_512);
 
 	//Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
 

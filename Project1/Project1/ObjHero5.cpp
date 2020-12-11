@@ -79,18 +79,61 @@ void CObjHero5::Action()
 			Audio::Start(2);
 
 			//弾丸オブジェクト作成
-			CObjBullet* obj_b = new CObjBullet(m_x + 3.0f, m_y + 0.0f);//弾丸オブジェクト
+			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
 				//弾丸オブジェクト作成
-			CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
+			//CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
+			//Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			//m_f = false;
+
+			////弾丸オブジェクト作成
+			//CObjSitaBullet* obj_b3 = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
+			//Objs::InsertObj(obj_b3, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
+			//m_f = false;
+		}
+		else
+		{
+			m_f = true;
+		}
+	}
+	if (Input::GetVKey('Z') == true)
+	{
+		if (m_f == true)
+		{
+			//発射音を流す
+			Audio::Start(2);
 
 			//弾丸オブジェクト作成
-			CObjSitaBullet* obj_b3 = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b3, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
+			CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
 			m_f = false;
+		}
+		else
+		{
+			m_f = true;
+		}
+	}
+	if (Input::GetVKey('Z') == true)
+	{
+		if (m_f == true)
+		{
+			//発射音を流す
+			Audio::Start(2);
+
+			////弾丸オブジェクト作成
+			//CObjBullet* obj_b = new CObjBullet(m_x + 3.0f, m_y + 0.0f);//弾丸オブジェクト
+			//Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			//m_f = false;
+			//弾丸オブジェクト作成
+		//CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
+		//Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
+		//m_f = false;
+
+		//弾丸オブジェクト作成
+		CObjSitaBullet* obj_b3 = new CObjSitaBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
+		Objs::InsertObj(obj_b3, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
+		m_f = false;
 		}
 		else
 		{
