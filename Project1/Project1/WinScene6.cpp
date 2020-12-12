@@ -38,12 +38,24 @@ void CSceneWin6::InitScene()
 	////Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
 	//音楽読み込み
-	Audio::LoadAudio(17, L"クリア画面.wav", BACK_MUSIC);
+	Audio::LoadAudio(21, L"エンディングテーマ.wav", BACK_MUSIC);
 
 	//クリアオブジェクト登録
 	CObjWin6* obj = new CObjWin6();//クリアオブジェクト作成
 	Objs::InsertObj(obj, OBJ_WIN6, 10);//クリアオブジェクト登録
 
+	//Font登録
+	Font::SetStrTex(L"ウイルスは駆逐され。");
+	Font::SetStrTex(L"体内に平和が訪れた。");
+	Font::SetStrTex(L"しかし");
+	Font::SetStrTex(L"ウイルスは全て");
+	Font::SetStrTex(L"駆逐されたわけではない。");
+	Font::SetStrTex(L"新しいウイルスが");
+	Font::SetStrTex(L"体内に侵入して来たのだ");
+	Font::SetStrTex(L"戦え！");
+	Font::SetStrTex(L"ウイルスがいなくなる");
+	Font::SetStrTex(L"その日まで!!");
+	Font::SetStrTex(L"エンターでスタッフロール");
 
 		//クリア時背景オブジェクト作成
 	CObjClearBack2* back = new CObjClearBack2();
@@ -53,7 +65,7 @@ void CSceneWin6::InitScene()
 	//CObjClearvirus* obj2 = new CObjClearvirus();//クリア作成
 	//Objs::InsertObj(obj2, OBJ_CLEAR_VIRUS, 1);//クリアウイルス登録
 
-	Audio::Start(17);
+	Audio::Start(21);
 
 }
 

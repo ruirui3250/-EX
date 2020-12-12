@@ -1,2 +1,9 @@
 ﻿  ObjWin6.cpp
+  WinScene6.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\WinScene6.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\SceneObjManager.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\WinScene6.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  コードを生成中...
+  LINK : 前回のインクリメンタル リンクで C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe が見つからなかったか、ビルドされませんでした。フル リンクを行います。
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Debug\Project1.exe
