@@ -32,10 +32,10 @@ CSceneWin6::~CSceneWin6()
 //文字の登録
 void CSceneWin6::InitScene()
 {
-	//外部グラフィック読み込み登録0番
-	Draw::LoadImage(L"ゲームクリア画面.png", 1, TEX_SIZE_512);
-	////外部グラフィック読み込む1番
-	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
+	////外部グラフィック読み込み登録0番
+	//Draw::LoadImage(L"ゲームクリア画面.png", 1, TEX_SIZE_512);
+	//////外部グラフィック読み込む1番
+	////Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
 
 	//音楽読み込み
 	Audio::LoadAudio(17, L"クリア画面.wav", BACK_MUSIC);
