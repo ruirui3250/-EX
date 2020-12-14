@@ -232,7 +232,7 @@ struct UserData
 
 //シーンスタートクラス---------------------------
 //ゲーム開始時のシーンクラス登録
-#define SET_GAME_START CSceneMain5
+#define SET_GAME_START CSceneTitle
 
 
 //

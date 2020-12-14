@@ -4,7 +4,7 @@
 
 //GameL使用するヘッダー
 #include "GameL\SceneObjManager.h"
-//#include "GameL\DrawFont.h"
+#include "GameL\DrawFont.h"
 #include"GameL\DrawTexture.h"
 #include"GameL/Audio.h"
 
@@ -35,6 +35,17 @@ void CSceneWin::InitScene()
 	//Draw::LoadImage(L"Win画面(使).png", 1, TEX_SIZE_512);
 	////外部グラフィック読み込む1番
 	//Draw::LoadImage(L"virusclear.png", 1, TEX_SIZE_512);
+
+	Font::SetStrTex(L"STAFF CREDIT");
+	Font::SetStrTex(L"総合ディレクター　瀬口 琉");
+	Font::SetStrTex(L"プランナー 桶谷　光城");
+	Font::SetStrTex(L"プログラムディレクター上田　茂樹");
+	Font::SetStrTex(L"グラフィックデザイナー　鞍野　一哉");
+	Font::SetStrTex(L"サウンドディレクター　蛭間　瑠唯");
+	Font::SetStrTex(L"お借りした楽曲 魔王魂様");
+	Font::SetStrTex(L"Congratulation!!");
+	Font::SetStrTex(L"byポムポム社員");
+	Font::SetStrTex(L"エンターでタイトルに戻る");
 
 	//音楽読み込み
 	Audio::LoadAudio(3, L"エンディング.wav", BACK_MUSIC);
