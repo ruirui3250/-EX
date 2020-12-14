@@ -30,7 +30,7 @@ void CObjHero2::Init()
 {
 	m_la = 100;
 	m_hp = 3;
-	m_ka = 5;
+	m_ka = 3;
 	m_x = 6;
 	//当たり判定用hitboxを作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 100);
@@ -231,39 +231,28 @@ void CObjHero2::Draw()
 	swprintf_s(str, L"拡散弾丸：", m_hp);
 	Font::StrDraw(str, 20, 70, 30, c);
 	this->SetPrio(50);
-	if (m_ka == 5)
-	{
-		swprintf_s(str, L"★★★★★", m_ka);
-		Font::StrDraw(str, 150, 70, 40, c);
-		this->SetPrio(50);
-	}
-	if (m_ka == 4)
-	{
-		swprintf_s(str, L"★★★★☆", m_ka);
-		Font::StrDraw(str, 150, 70, 40, c);
-		this->SetPrio(50);
-	}
+	
 	if (m_ka == 3)
 	{
-		swprintf_s(str, L"★★★☆☆", m_ka);
+		swprintf_s(str, L"★★★", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
 	if (m_ka == 2)
 	{
-		swprintf_s(str, L"★★☆☆☆", m_ka);
+		swprintf_s(str, L"★★☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
 	if (m_ka == 1)
 	{
-		swprintf_s(str, L"★☆☆☆☆", m_ka);
+		swprintf_s(str, L"★☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
 	if (m_ka == 0)
 	{
-		swprintf_s(str, L"☆☆☆☆☆", m_ka);
+		swprintf_s(str, L"☆☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
