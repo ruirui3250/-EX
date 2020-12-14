@@ -19,7 +19,7 @@ void CObjTateHero::Init()
 	m_x = 128;	
 	m_y = 544;
 		//当たり判定用hitboxを作成
-	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
+		Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
 }
 
 
@@ -147,21 +147,7 @@ void CObjTateHero::Action()
 		}
 	}
 
-	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	//{
-	//	m_hp -= 1;
-
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
-
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
-	//}
-	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
 	{
 
@@ -229,6 +215,7 @@ void CObjTateHero::Draw()
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
+
 	if (m_ka <= 0)
 	{
 		swprintf_s(str, L"Eroor", m_ka);

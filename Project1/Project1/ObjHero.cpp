@@ -103,7 +103,8 @@ void CObjHero::Action()
 					m_f = false;
 				}
 			}
-
+		
+			
 			else
 			{
 				m_f = true;
@@ -234,6 +235,7 @@ void CObjHero::Draw()
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
+
 	if (m_ka <= 0)
 	{
 		swprintf_s(str, L"Eroor", m_ka);
