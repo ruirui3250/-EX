@@ -73,31 +73,31 @@ void CObjBullet::Action()
 		return;
 	}
 
-	//障害物に触れたら弾丸削除
-	if (hit->CheckObjNameHit(OBJ_YOKO_KESEN) != nullptr)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-	}
+	////障害物に触れたら弾丸削除
+	//if (hit->CheckObjNameHit(OBJ_YOKO_KESEN) != nullptr)
+	//{
+	//	this->SetStatus(false);
+	//	Hits::DeleteHitBox(this);
+	//}
 
-	//敵機オブジェクトにぶつかったら弾丸削除。
-	if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
-	{
-		this->SetStatus(false); //自身に削除命令
-		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
-	}
-	//敵機オブジェクトにぶつかったら弾丸削除。
-	if (hit->CheckObjNameHit(OBJ_BULLET_ENEMY) != nullptr)
-	{
-		this->SetStatus(false); //自身に削除命令
-		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
-	}
-	//敵機オブジェクトにぶつかったら弾丸削除。
-	if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	{
-		this->SetStatus(false); //自身に削除命令
-		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
-	}
+	////敵機オブジェクトにぶつかったら弾丸削除。
+	//if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
+	//{
+	//	this->SetStatus(false); //自身に削除命令
+	//	Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+	//}
+	////敵機オブジェクトにぶつかったら弾丸削除。
+	//if (hit->CheckObjNameHit(OBJ_BULLET_ENEMY) != nullptr)
+	//{
+	//	this->SetStatus(false); //自身に削除命令
+	//	Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+	//}
+	////敵機オブジェクトにぶつかったら弾丸削除。
+	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
+	//{
+	//	this->SetStatus(false); //自身に削除命令
+	//	Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+	//}
 	//当たり判定を行うオブジェクト情報部
 	int data_base[27] =
 	{
