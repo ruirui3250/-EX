@@ -307,61 +307,61 @@ void CObjSitaHero::Draw()
 	swprintf_s(str, L"レーザー：", m_hp);
 	Font::StrDraw(str, 20, 110, 30, c);
 	this->SetPrio(50);
-	if (m_la == 200)
+	if (m_la == 100)
 	{
 		swprintf_s(str, L"■■■■■■■■■■", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 180)
+	if (m_la >= 90)
 	{
 		swprintf_s(str, L"■■■■■■■■■□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 160)
+	if (m_la >= 80)
 	{
 		swprintf_s(str, L"■■■■■■■■□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 140)
+	if (m_la >= 70)
 	{
 		swprintf_s(str, L"■■■■■■■□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 120)
+	if (m_la >= 60)
 	{
 		swprintf_s(str, L"■■■■■■□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 100)
+	if (m_la >= 50)
 	{
 		swprintf_s(str, L"■■■■■□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 80)
+	if (m_la >= 40)
 	{
 		swprintf_s(str, L"■■■■□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 60)
+	if (m_la >= 30)
 	{
 		swprintf_s(str, L"■■■□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 40)
+	if (m_la >= 20)
 	{
 		swprintf_s(str, L"■■□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 20)
+	if (m_la >= 10)
 	{
 		swprintf_s(str, L"■□□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
@@ -385,6 +385,20 @@ void CObjSitaHero::Draw()
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
+
+	if (m_la == -1)
+	{
+		swprintf_s(str, L"Error", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
+	}
+	if (m_la <= -1)
+	{
+		swprintf_s(str, L"Error", m_la);
+		Font::StrDraw(str, 150, 110, 40, c);
+		this->SetPrio(50);
+	}
+
 
 	RECT_F src;//描画元切り取り位置
 	RECT_F dst;//描画先表示位置

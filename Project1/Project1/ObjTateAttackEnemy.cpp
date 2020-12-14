@@ -31,7 +31,7 @@ void CObjTateAttackEnemy::Action()
 {
 	m_time++;//1‰ÁŽZ
 
-	if (m_time > 50)
+	if (m_time > 75)
 	{
 		m_time = 0;
 		//’eŠÛ“G‹@object

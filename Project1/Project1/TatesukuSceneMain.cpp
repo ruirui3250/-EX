@@ -505,12 +505,27 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 1550)
 	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(750.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1550)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(650.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1550)
+	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(682.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 1550)
 	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
+		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 1560)
+	{
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(780.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 1550)

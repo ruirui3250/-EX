@@ -33,7 +33,7 @@ void CObjMIXBoss::Action()
 	m_time++;
 
 	//通常弾発射
-	if (m_time % 100 == 0)
+	if (m_time % 50 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x+100 , m_y+150);
@@ -42,20 +42,7 @@ void CObjMIXBoss::Action()
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x+150, m_y+150);
-		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
-	}
-
-	if (m_time % 100 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 270, m_y + 450);
-		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
-	}
-	if (m_time % 100 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 310, m_y + 350);
+		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 100, m_y + 150);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
 	}
 
@@ -79,7 +66,7 @@ void CObjMIXBoss::Action()
 	 CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 100);
 	 Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
 	}
-	if (m_time % 50 == 0)
+	if (m_time % 700 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjYokoKesen* obj_b = new CObjYokoKesen(m_x, m_y+300);

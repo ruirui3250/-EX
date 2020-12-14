@@ -40,7 +40,38 @@ void CObjHero5::Init()
 //アクション
 void CObjHero5::Action()
 {
-	/*---------------主人公機のレーザー弾丸発射-------------------------*/
+	/*---------------------主人公通常弾丸-------------------*/
+	if (Input::GetVKey('Z') == true)
+	{
+		/*m_vx = 0.0f;
+		m_vy = -1.0f;*/
+		if (m_f == true)
+		{
+			//発射音を流す
+			Audio::Start(2);
+
+
+					//弾丸オブジェクト作成
+					CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 0.0f);//弾丸オブジェクト
+					Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+					m_f = false;
+					//弾丸オブジェクト作成
+					CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
+					Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
+					m_f = false;
+					//弾丸オブジェクト作成
+					CObjSitaBullet* obj_b3= new CObjSitaBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
+					Objs::InsertObj(obj_b3, OBJ_BULLET, 100);//作った弾丸オブジェクト
+			m_f = false;
+		}
+
+	}
+	else
+	{
+		m_f = true;
+	}
+	
+	///*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey('A') == true)
 	{
 		if (m_la >= 0)
@@ -61,85 +92,12 @@ void CObjHero5::Action()
 			m_la--;
 		}
 
-		//if (m_f == true)
-		//{
-
-		//	//弾丸オブジェクト作成
-		//	CObjⅬaserBullet* obj_b = new CObjⅬaserBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
-		//	Objs::InsertObj(obj_b, OBJⅬASER_BULLET, 100);//作った弾丸オブジェクト
-		//}
+		
 
 	}
-	/*----------------------主人公機通常弾丸-----------------------------------*/
-	if (Input::GetVKey('Z') == true)
-	{
-		if (m_f == true)
-		{
-			//発射音を流す
-			Audio::Start(2);
-
-			//弾丸オブジェクト作成
-			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
-				//弾丸オブジェクト作成
-			//CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			//Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			//m_f = false;
-
-			////弾丸オブジェクト作成
-			//CObjSitaBullet* obj_b3 = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-			//Objs::InsertObj(obj_b3, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
-			//m_f = false;
-		}
-		else
-		{
-			m_f = true;
-		}
-	}
-	if (Input::GetVKey('Z') == true)
-	{
-		if (m_f == true)
-		{
-			//発射音を流す
-			Audio::Start(2);
-
-			//弾丸オブジェクト作成
-			CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
-		}
-		else
-		{
-			m_f = true;
-		}
-	}
-	if (Input::GetVKey('Z') == true)
-	{
-		if (m_f == true)
-		{
-			//発射音を流す
-			Audio::Start(2);
-
-			////弾丸オブジェクト作成
-			//CObjBullet* obj_b = new CObjBullet(m_x + 3.0f, m_y + 0.0f);//弾丸オブジェクト
-			//Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			//m_f = false;
-			//弾丸オブジェクト作成
-		//CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
-		//Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
-		//m_f = false;
-
-		//弾丸オブジェクト作成
-		CObjSitaBullet* obj_b3 = new CObjSitaBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
-		Objs::InsertObj(obj_b3, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
-		m_f = false;
-		}
-		else
-		{
-			m_f = true;
-		}
-	}
+	///*----------------------主人公機通常弾丸-----------------------------------*/
+	
+	
 
 
 
@@ -164,10 +122,7 @@ void CObjHero5::Action()
 				}
 			}
 
-			else
-			{
-				m_f = true;
-			}
+			
 	}
 	//主人公機の移動
 	if (Input::GetVKey(VK_RIGHT) == true)
@@ -339,61 +294,61 @@ void CObjHero5::Draw()
 	swprintf_s(str, L"レーザー：", m_hp);
 	Font::StrDraw(str, 20, 110, 30, c);
 	this->SetPrio(50);
-	if (m_la == 200)
+	if (m_la == 100)
 	{
 		swprintf_s(str, L"■■■■■■■■■■", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 180)
+	if (m_la >= 90)
 	{
 		swprintf_s(str, L"■■■■■■■■■□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 160)
+	if (m_la >= 80)
 	{
 		swprintf_s(str, L"■■■■■■■■□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 140)
+	if (m_la >= 70)
 	{
 		swprintf_s(str, L"■■■■■■■□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 120)
+	if (m_la >= 60)
 	{
 		swprintf_s(str, L"■■■■■■□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 100)
+	if (m_la >= 50)
 	{
 		swprintf_s(str, L"■■■■■□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 80)
+	if (m_la >= 40)
 	{
 		swprintf_s(str, L"■■■■□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 60)
+	if (m_la >= 30)
 	{
 		swprintf_s(str, L"■■■□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 40)
+	if (m_la >= 20)
 	{
 		swprintf_s(str, L"■■□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_la >= 20)
+	if (m_la >= 10)
 	{
 		swprintf_s(str, L"■□□□□□□□□□", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);

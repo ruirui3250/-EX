@@ -16,7 +16,7 @@ CObjEnemyBoss4::CObjEnemyBoss4(float x, float y)
 //イニシャライズ
 void CObjEnemyBoss4::Init()
 {
-	m_hp = 10;
+	m_hp = 100;
 	m_time = 0;
 	m_r = 0.0f;
 	m_vx = 250.0f;
@@ -32,13 +32,30 @@ void CObjEnemyBoss4::Action()
 	m_time++;
 
 	//通常弾発射
-	if (m_time % 50 == 0)
+	if (m_time % 500 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjEnemyBossBullet4* obj_b = new CObjEnemyBossBullet4(m_x, m_y);
 		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
 	}
-
+	if (m_time % 50 == 0)
+	{
+		//弾丸発射オブジェクト
+		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x+25, m_y);
+		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+	}
+	if (m_time % 50 == 0)
+	{
+		//弾丸発射オブジェクト
+		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x-25, m_y);
+		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+	}
+	if (m_time % 100 == 0)
+	{
+		//弾丸発射オブジェクト
+		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x , m_y);
+		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+	}
 	//m_timeの初期化
 	if (m_time > 1000)
 	{

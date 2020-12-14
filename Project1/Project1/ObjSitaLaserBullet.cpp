@@ -61,7 +61,12 @@ void CObjSitaLaserBullet::Action()
 		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
-
+	//敵機オブジェクトにぶつかったら弾丸削除。
+	if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
+	{
+		this->SetStatus(false); //自身に削除命令
+		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+	}
 	////敵機オブジェクトにぶつかったら弾丸削除。
 	//if (hit->CheckObjNameHit(OBJ_ENEMY) != nullptr)
 	//{

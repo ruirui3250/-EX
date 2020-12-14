@@ -18,7 +18,7 @@ CObjBulletEnemy2::CObjBulletEnemy2(float x, float y)
 //イニシャライズ
 void CObjBulletEnemy2::Init()
 {
-	m_hp = 10;
+	m_hp = 1;
 	m_eff.m_top = 32;
 	m_eff.m_left = 0;
 	m_eff.m_right = 32;

@@ -16,7 +16,7 @@ CObjTateEnemy2::CObjTateEnemy2(float x, float y)
 //イニシャライズ
 void CObjTateEnemy2::Init()
 {
-	m_hp = 22;
+	m_hp = 1;
 	m_r = 0;
 	m_vx = 0.0f;
 	m_vy = 0.0f;

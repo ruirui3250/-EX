@@ -16,7 +16,7 @@ CObjTateBoss::CObjTateBoss(float x, float y)
 //イニシャライズ
 void CObjTateBoss::Init()
 {
-	m_hp = 200;
+	m_hp = 100;
 	m_time = 0;
 	m_r = 0.0f;
 	m_vx = 150.0f;
