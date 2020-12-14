@@ -250,12 +250,6 @@ void CObjHero2::Draw()
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
-	if (m_ka == 0)
-	{
-		swprintf_s(str, L"☆☆☆", m_ka);
-		Font::StrDraw(str, 150, 70, 40, c);
-		this->SetPrio(50);
-	}
 	if (m_ka <= 0)
 	{
 		swprintf_s(str, L"Eroor", m_ka);

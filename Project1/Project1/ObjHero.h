@@ -12,6 +12,7 @@ public:
 	~CObjHero() {};
 	void Init();//イニシャライズ
 	void Action();//アクション
+	
 	void Draw();//ドロー
 	float GetX();	   //位置情報X変更用
 	float GetY();	   //位置情報X変更用

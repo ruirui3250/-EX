@@ -77,6 +77,7 @@ void CObjHero::Action()
 		}
 
 	}
+
 	else
 	{
 		m_f = true;
@@ -230,12 +231,6 @@ void CObjHero::Draw()
 	if (m_ka == 1)
 	{
 		swprintf_s(str, L"★☆☆", m_ka);
-		Font::StrDraw(str, 150, 70, 40, c);
-		this->SetPrio(50);
-	}
-	if (m_ka == 0)
-	{
-		swprintf_s(str, L"☆☆☆", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
