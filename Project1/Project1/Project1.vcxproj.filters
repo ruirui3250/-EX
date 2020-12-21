@@ -163,6 +163,9 @@
     <Filter Include="ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ">
       <UniqueIdentifier>{b7f14980-e8ce-478f-af34-e442fa6fa4ab}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\説明画面">
+      <UniqueIdentifier>{a6b8ec6a-6ec7-4f0a-9a53-cba59af138af}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
