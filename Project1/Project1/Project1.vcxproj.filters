@@ -166,6 +166,12 @@
     <Filter Include="ソース ファイル\基本データ\説明画面">
       <UniqueIdentifier>{a6b8ec6a-6ec7-4f0a-9a53-cba59af138af}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\説明画面\攻撃方法">
+      <UniqueIdentifier>{9a57cb9a-4801-4a92-8b79-312bdd4ae7f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\基本データ\説明画面\アイテム">
+      <UniqueIdentifier>{a7526170-e82e-482e-9265-d35a2aef40d5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -474,8 +480,17 @@
     <ClInclude Include="winscene.h">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
     </ClInclude>
-    <ClInclude Include="Attack description.h">
-      <Filter>ソース ファイル\基本データ\説明画面</Filter>
+    <ClInclude Include="Attack DescriptionScene.h">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttack DescriptionScene.h">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClInclude>
+    <ClInclude Include="Item DescriptionScene.h">
+      <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjItem Description.h">
+      <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -785,8 +800,17 @@
     <ClCompile Include="Objwin.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
     </ClCompile>
-    <ClCompile Include="Attack description.cpp">
-      <Filter>ソース ファイル\基本データ\説明画面</Filter>
+    <ClCompile Include="Attack DescriptionScene.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttack DescriptionScene.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClCompile>
+    <ClCompile Include="Item DescriptionScene.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjItem Description.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
