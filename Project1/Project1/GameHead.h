@@ -83,6 +83,10 @@ enum OBJ_NAME
 	OBJ_TATE_ATTACK_ENEMY2,
 	OBJ_HERO5,
 	OBJ_MIX_BOSS,
+
+	//説明
+	OBJ_ITEM_DESCRIPTION,
+	OBJ_ATTACK_DESCRIPTION,
 };
 //------------------------------------------------
 
@@ -207,6 +211,9 @@ struct UserData
 #include"ObjHidariLifeItem.h"
 #include"ObjSitaLifeItem.h"
 #include"ObjLifeItem.h"
+//説明
+#include"ObjAttack DescriptionScene.h"
+#include"ObjItem Description.h"
 //------------------------------------------------
 
 //ゲームシーンクラスヘッダ------------------------
@@ -227,6 +234,8 @@ struct UserData
 #include"SceneGameOver3.h"
 #include"SceneGameOver4.h"
 #include"SceneGameOver5.h"
+#include"Item DescriptionScene.h"
+#include"Attack DescriptionScene.h"
 
 //-----------------------------------------------
 

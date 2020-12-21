@@ -42,6 +42,10 @@ void CObjTitle::Action()
 			m_key_flag = false;
 		}
 	}
+	else
+	{
+		m_key_flag = true;
+	}
 	//2
 	if (Input::GetVKey('2') == true)
 	{

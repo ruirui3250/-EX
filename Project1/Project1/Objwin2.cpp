@@ -10,6 +10,11 @@
 //使用するネームスペース
 using namespace GameL;
 
+//CObjWin2::CObjWin2()
+//{
+//
+//}
+
 //イニシャライズ
 void CObjWin2::Init()
 {
