@@ -474,6 +474,9 @@
     <ClInclude Include="winscene.h">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
     </ClInclude>
+    <ClInclude Include="Attack description.h">
+      <Filter>ソース ファイル\基本データ\説明画面</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -781,6 +784,9 @@
     </ClCompile>
     <ClCompile Include="Objwin.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
+    </ClCompile>
+    <ClCompile Include="Attack description.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
