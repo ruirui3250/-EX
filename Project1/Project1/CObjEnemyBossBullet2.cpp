@@ -77,6 +77,12 @@ void CObjEnemyBossBullet2::Action()
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
 	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
 		this->SetStatus(false);

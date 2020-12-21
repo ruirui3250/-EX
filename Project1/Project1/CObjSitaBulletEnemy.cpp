@@ -95,6 +95,12 @@ void CObjSitaBulletEnemy::Action()
 		m_del = true; //消滅実行
 		hit->SetInvincibility(true);//当たり判定無効
 	}
+	//弾丸の接触を調べる。
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 }
 
 //ドロー
