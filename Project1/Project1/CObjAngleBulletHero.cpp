@@ -90,13 +90,14 @@ void CObjAngleBulletHero::Action()
 			Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
 		}
 		//当たり判定を行うオブジェクト情報部
-		int data_base[27] =
+		int data_base[28] =
 		{
 			//1,2面のやつ
 			OBJ_ENEMY,
 			OBJ_ATTACK_ENEMY,
 			OBJ_HOMING_ENEMY,
 			OBJ_SIN_ENEMY,
+			OBJ_BULLET_ENEMY,
 			//縦スクのやつ
 			OBJ_TATE_ENEMY,
 			OBJ_TATE_BULLET_ENEMY,
@@ -127,7 +128,7 @@ void CObjAngleBulletHero::Action()
 			OBJ_MIX_BOSS
 		};
 		//敵機オブジェクトと接触したら拡散弾丸削除
-		for (int i = 0; i < 27; i++)
+		for (int i = 0; i < 28; i++)
 		{
 			if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 			{
