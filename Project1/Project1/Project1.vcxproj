@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Attack description.h" />
+    <ClInclude Include="Attack DescriptionScene.h" />
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
     <ClInclude Include="CObjBulletEnemy2.h" />
@@ -164,8 +164,10 @@
     <ClInclude Include="GameL\SetWindow.h" />
     <ClInclude Include="GameL\UserData.h" />
     <ClInclude Include="GameL\WinInputs.h" />
+    <ClInclude Include="Item DescriptionScene.h" />
     <ClInclude Include="Kaiten.h" />
     <ClInclude Include="main.h" />
+    <ClInclude Include="ObjAttack DescriptionScene.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
     <ClInclude Include="ObjAttackEnemy2.h" />
     <ClInclude Include="ObjBlock.h" />
@@ -187,6 +189,7 @@
     <ClInclude Include="ObjHero5.h" />
     <ClInclude Include="ObjHidariItem.h" />
     <ClInclude Include="ObjHidariLifeItem.h" />
+    <ClInclude Include="ObjItem Description.h" />
     <ClInclude Include="ObjSitaLifeItem.h" />
     <ClInclude Include="ObjItem.h" />
     <ClInclude Include="ObjLifeItem.h" />
@@ -244,10 +247,12 @@
     <ClInclude Include="WinScene6.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Attack description.cpp" />
+    <ClCompile Include="Attack DescriptionScene.cpp" />
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjEnemyBossBullet2.cpp" />
     <ClCompile Include="CObjMixBoss.cpp" />
+    <ClCompile Include="Item DescriptionScene.cpp" />
+    <ClCompile Include="ObjAttack DescriptionScene.cpp" />
     <ClCompile Include="ObjAttackEnemy2.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjBulletEnemy2.cpp" />
@@ -292,6 +297,7 @@
     <ClCompile Include="ObjHero5.cpp" />
     <ClCompile Include="ObjHidariItem.cpp" />
     <ClCompile Include="ObjHidariLifeItem.cpp" />
+    <ClCompile Include="ObjItem Description.cpp" />
     <ClCompile Include="ObjSitaLifeItem.cpp" />
     <ClCompile Include="ObjItem.cpp" />
     <ClCompile Include="ObjLifeItem.cpp" />
