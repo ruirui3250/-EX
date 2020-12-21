@@ -148,6 +148,21 @@ void CObjTateHero::Action()
 	}
 
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
 	{
 
