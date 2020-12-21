@@ -22,6 +22,7 @@ void CObjEnemy::Init()
 	//当たり判定用HitBox作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_ENEMY, OBJ_ENEMY, 1);
 }
+
 //アクション
 void CObjEnemy::Action()
 {

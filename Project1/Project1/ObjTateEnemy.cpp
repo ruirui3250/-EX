@@ -12,6 +12,7 @@ CObjTateEnemy::CObjTateEnemy(float x, float y)
 {
 	m_x = x;
 	m_y = y;
+	
 }
 //イニシャライズ
 void CObjTateEnemy::Init()

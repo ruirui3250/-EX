@@ -18,8 +18,9 @@ void CObjTateHero::Init()
 	m_ka = 3;
 	m_x = 128;	
 	m_y = 544;
+	
 		//当たり判定用hitboxを作成
-		Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
+	Hits::SetHitBox  (this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 13);
 }
 
 
