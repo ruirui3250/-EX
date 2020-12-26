@@ -480,17 +480,17 @@
     <ClInclude Include="winscene.h">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
     </ClInclude>
-    <ClInclude Include="Attack DescriptionScene.h">
-      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
-    </ClInclude>
-    <ClInclude Include="ObjAttack DescriptionScene.h">
-      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
-    </ClInclude>
     <ClInclude Include="Item DescriptionScene.h">
       <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
     </ClInclude>
     <ClInclude Include="ObjItem Description.h">
       <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
+    </ClInclude>
+    <ClInclude Include="AttackDescriptionScene.h">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjAttackDescriptionScene.h">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -800,17 +800,17 @@
     <ClCompile Include="Objwin.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\STAFF　ＲＯＬＬ</Filter>
     </ClCompile>
-    <ClCompile Include="Attack DescriptionScene.cpp">
-      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
-    </ClCompile>
-    <ClCompile Include="ObjAttack DescriptionScene.cpp">
-      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
-    </ClCompile>
     <ClCompile Include="Item DescriptionScene.cpp">
       <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
     </ClCompile>
     <ClCompile Include="ObjItem Description.cpp">
       <Filter>ソース ファイル\基本データ\説明画面\アイテム</Filter>
+    </ClCompile>
+    <ClCompile Include="AttackDescriptionScene.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjAttackDescriptionScene.cpp">
+      <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

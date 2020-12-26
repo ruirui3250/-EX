@@ -139,7 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Attack DescriptionScene.h" />
+    <ClInclude Include="AttackDescriptionScene.h" />
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
     <ClInclude Include="CObjBulletEnemy2.h" />
@@ -167,7 +167,7 @@
     <ClInclude Include="Item DescriptionScene.h" />
     <ClInclude Include="Kaiten.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="ObjAttack DescriptionScene.h" />
+    <ClInclude Include="ObjAttackDescriptionScene.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
     <ClInclude Include="ObjAttackEnemy2.h" />
     <ClInclude Include="ObjBlock.h" />
@@ -247,12 +247,12 @@
     <ClInclude Include="WinScene6.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Attack DescriptionScene.cpp" />
+    <ClCompile Include="AttackDescriptionScene.cpp" />
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjEnemyBossBullet2.cpp" />
     <ClCompile Include="CObjMixBoss.cpp" />
     <ClCompile Include="Item DescriptionScene.cpp" />
-    <ClCompile Include="ObjAttack DescriptionScene.cpp" />
+    <ClCompile Include="ObjAttackDescriptionScene.cpp" />
     <ClCompile Include="ObjAttackEnemy2.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjBulletEnemy2.cpp" />

@@ -212,7 +212,7 @@ struct UserData
 #include"ObjSitaLifeItem.h"
 #include"ObjLifeItem.h"
 //ê‡ñæ
-#include"ObjAttack DescriptionScene.h"
+#include"ObjAttackDescriptionScene.h"
 #include"ObjItem Description.h"
 //------------------------------------------------
 
@@ -235,7 +235,7 @@ struct UserData
 #include"SceneGameOver4.h"
 #include"SceneGameOver5.h"
 #include"Item DescriptionScene.h"
-#include"Attack DescriptionScene.h"
+#include"AttackDescriptionScene.h"
 
 //-----------------------------------------------
 

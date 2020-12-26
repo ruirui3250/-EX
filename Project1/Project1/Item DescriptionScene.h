@@ -11,7 +11,7 @@ class CSceneItemD :public CScene
 public:
 	CSceneItemD();
 	~CSceneItemD();
-	void InitItemD();
+	void InitScene();
 	void Scene();
 private:
 };

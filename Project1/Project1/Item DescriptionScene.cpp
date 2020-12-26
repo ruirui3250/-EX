@@ -28,7 +28,7 @@ CSceneItemD::~CSceneItemD()
 }
 
 //ゲームメイン初期化メソッド
-void CSceneItemD::InitItemD()
+void CSceneItemD::InitScene()
 {
 	//外部グラフィック読み込み登録0番
 
