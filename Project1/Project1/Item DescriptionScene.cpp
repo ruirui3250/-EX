@@ -32,6 +32,14 @@ void CSceneItemD::InitScene()
 {
 	//外部グラフィック読み込み登録0番
 
+	Font::SetStrTex(L"アイテム");
+	Font::SetStrTex(L"赤血球");
+	Font::SetStrTex(L"赤く浮遊している楕円形状のアイテム");
+	Font::SetStrTex(L"取ると体力が全回復する。");
+	Font::SetStrTex(L"白血球");
+	Font::SetStrTex(L"白く浮遊している楕円形状のアイテム");
+	Font::SetStrTex(L"取るとレーザーと拡散弾の補給が出来る。");
+
 	//説明オブジェクト登録
 	CObjItemD* obj = new CObjItemD();//説明オブジェクト作成
 	Objs::InsertObj(obj, OBJ_ITEM_DESCRIPTION, 10);//説明オブジェクト登録

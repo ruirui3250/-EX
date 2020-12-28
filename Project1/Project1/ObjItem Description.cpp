@@ -45,6 +45,12 @@ void CObjItemD::Draw()
 	float c[4] = { 1.0f,1.0f,1.0f,1.0f };
 
 	////フォントの表示
-	//Font::StrDraw(L"You Win!", 270, 200, 50, c);
-	//Font::StrDraw(L"エンターで次のステージへ!!", 170, 500, 30, c);
+		////フォントの表示
+	Font::StrDraw(L"アイテム", 0, 0, 30, c);
+	Font::StrDraw(L"赤血球", 0, 50, 30, c);
+	Font::StrDraw(L"赤く浮遊している楕円形状のアイテム", 0, 80, 30, c);
+	Font::StrDraw(L"取ると体力が全回復する。", 0, 120, 30, c);
+	Font::StrDraw(L"白血球", 0, 160, 30, c);
+	Font::StrDraw(L"白く浮遊している楕円形状のアイテム", 0, 210, 30, c);
+	Font::StrDraw(L"取るとレーザーと拡散弾の補給が出来る。", 0, 240, 30, c);
 }
