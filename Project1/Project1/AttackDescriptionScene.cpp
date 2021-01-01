@@ -40,6 +40,7 @@ void CSceneAttack::InitScene()
 	Font::SetStrTex(L"Aキー");
 	Font::SetStrTex(L"レーザー発射　敵を貫いて攻撃できる");
 	Font::SetStrTex(L"レーザーと拡散弾は左上のゲージがなくなるまで使用可能");
+	Font::SetStrTex(L"エンターで次のページへ");
 
 	//説明オブジェクト登録
 	CObjAttack* obj = new CObjAttack();//説明オブジェクト作成

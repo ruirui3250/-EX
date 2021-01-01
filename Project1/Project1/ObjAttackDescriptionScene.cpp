@@ -46,4 +46,5 @@ void CObjAttack::Draw()
 	Font::StrDraw(L"Aキー", 0, 210, 30, c);
 	Font::StrDraw(L"レーザー発射　敵を貫いて攻撃できる", 0, 240, 30, c);
 	Font::StrDraw(L"レーザーと拡散弾は左上のゲージがなくなるまで使用可能", 0, 300, 30, c);
+	Font::StrDraw(L"エンターで次のページへ", 0, 360, 50, c);
 }

@@ -39,7 +39,7 @@ void CSceneItemD::InitScene()
 	Font::SetStrTex(L"白血球");
 	Font::SetStrTex(L"白く浮遊している楕円形状のアイテム");
 	Font::SetStrTex(L"取るとレーザーと拡散弾の補給が出来る。");
-
+	Font::SetStrTex(L"エンターでゲーム開始!");
 	//説明オブジェクト登録
 	CObjItemD* obj = new CObjItemD();//説明オブジェクト作成
 	Objs::InsertObj(obj, OBJ_ITEM_DESCRIPTION, 10);//説明オブジェクト登録
