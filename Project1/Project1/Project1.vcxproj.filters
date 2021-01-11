@@ -172,6 +172,9 @@
     <Filter Include="ソース ファイル\基本データ\説明画面\アイテム">
       <UniqueIdentifier>{a7526170-e82e-482e-9265-d35a2aef40d5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\基本データ\ボスエフェクト">
+      <UniqueIdentifier>{a8313931-4f88-4b37-a654-3397aa43e059}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -492,6 +495,9 @@
     <ClInclude Include="ObjAttackDescriptionScene.h">
       <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
     </ClInclude>
+    <ClInclude Include="ObjBossEffect.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -811,6 +817,9 @@
     </ClCompile>
     <ClCompile Include="ObjAttackDescriptionScene.cpp">
       <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossEffect.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

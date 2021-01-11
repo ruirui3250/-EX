@@ -57,14 +57,14 @@ void ObjBossEffect::Draw()
 	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 300.0f;
-	src.m_bottom = 300.0f;
+	src.m_right = 512.0f;
+	src.m_bottom = 512.0f;
 
 	//表示位置の設定
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
-	dst.m_right = 300.0f + m_x;
-	dst.m_bottom = 300.0f + m_y;
+	dst.m_right = 512.0f + m_x;
+	dst.m_bottom = 512.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 	Draw::Draw(29, &src, &dst, c, 0.0f);

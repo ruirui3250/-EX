@@ -47,6 +47,8 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ボスエフェクト.png", 29, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
@@ -365,6 +367,10 @@ void CSceneMain::Scene()
 
 	CObjYokoKesen* obj8 = new CObjYokoKesen(733.0f, 244);
 	Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
+
+	ObjBossEffect* obj9;
+	obj9 = new  ObjBossEffect(700.0f, 0);
+	Objs::InsertObj(obj9, OBJ_BOSS_EFFECT, 50);
 
 
 	}
