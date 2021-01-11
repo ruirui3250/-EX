@@ -87,6 +87,8 @@ enum OBJ_NAME
 	//説明
 	OBJ_ITEM_DESCRIPTION,
 	OBJ_ATTACK_DESCRIPTION,
+
+	OBJ_BOSS_EFFECT,
 };
 //------------------------------------------------
 
@@ -236,6 +238,9 @@ struct UserData
 #include"SceneGameOver5.h"
 #include"Item DescriptionScene.h"
 #include"AttackDescriptionScene.h"
+
+//ボス出現エフェクト
+#include"ObjBossEffect.h"
 
 //-----------------------------------------------
 
