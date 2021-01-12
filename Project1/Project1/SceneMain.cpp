@@ -368,10 +368,6 @@ void CSceneMain::Scene()
 	CObjYokoKesen* obj8 = new CObjYokoKesen(733.0f, 244);
 	Objs::InsertObj(obj8, OBJ_YOKO_KESEN, 50);
 
-	ObjBossEffect* obj9;
-	obj9 = new  ObjBossEffect(700.0f, 0);
-	Objs::InsertObj(obj9, OBJ_BOSS_EFFECT, 50);
-
 
 	}
 	else if (m_time == 850)
@@ -395,7 +391,15 @@ void CSceneMain::Scene()
 	obj = new CObjHomingEnemy(799.0f, 0);
 	Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
 	}
+
 	else if (m_time == 1200)
+	{
+	ObjBossEffect* obj;
+	obj = new  ObjBossEffect(733.0f, 177);
+	Objs::InsertObj(obj, OBJ_BOSS_EFFECT, 50);
+ }
+
+	else if (m_time == 1700)
 	{
 		//音楽チェンジ
 		Audio::Stop(6);//0曲ストップ

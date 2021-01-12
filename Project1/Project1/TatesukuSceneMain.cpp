@@ -48,6 +48,8 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"主人公弾縦.png", 11, TEX_SIZE_512);
 
+	Draw::LoadImage(L"ボスエフェクト.png", 29, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);

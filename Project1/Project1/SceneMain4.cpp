@@ -50,6 +50,8 @@ void CSceneMain4::InitScene()
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
+	Draw::LoadImage(L"ボスエフェクト.png", 29, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
