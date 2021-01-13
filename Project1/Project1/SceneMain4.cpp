@@ -38,7 +38,7 @@ void CSceneMain4::InitScene()
 
 	Draw::LoadImage(L"ウイルス(使).png", 7, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png", 29, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ボス4.png", 4, TEX_SIZE_512);
 
@@ -50,7 +50,7 @@ void CSceneMain4::InitScene()
 
 	//Draw::LoadImage(L"縦注射器(使).png", 77, TEX_SIZE_512);//Objhero
 
-	Draw::LoadImage(L"ボスエフェクト.png", 29, TEX_SIZE_512);
+	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
@@ -320,9 +320,16 @@ void CSceneMain4::Scene()
 		Objs::InsertObj(obj2, OBJ_BOSS_BULLET_ENEMY, 50);
 	}
 
+	if (m_time == 2000)
+	{
+		ObjBossEffect3* obj;
+		obj = new  ObjBossEffect3(150.0f, 500);
+		Objs::InsertObj(obj, OBJ_BOSS_EFFECT3, 50);
+	}
+
 
 	///*-------------------------ボス-------------------------------*/
-	if (m_time == 2000)
+	if (m_time == 2500)
 	{
 		//音楽チェンジ
 		Audio::Stop(9);//0曲ストップ

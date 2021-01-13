@@ -51,11 +51,11 @@ void CSceneMain5::InitScene()
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	Draw::LoadImage(L"ボス５.png", 4, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png", 29, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
-	Draw::LoadImage(L"ボスエフェクト.png", 29, TEX_SIZE_512);
+	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 	//音楽読み込み

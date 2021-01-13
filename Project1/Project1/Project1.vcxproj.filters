@@ -498,6 +498,12 @@
     <ClInclude Include="ObjBossEffect.h">
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
     </ClInclude>
+    <ClInclude Include="ObjBossEffect2.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBossEffect3.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -819,6 +825,12 @@
       <Filter>ソース ファイル\基本データ\説明画面\攻撃方法</Filter>
     </ClCompile>
     <ClCompile Include="ObjBossEffect.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossEffect2.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossEffect3.cpp">
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
     </ClCompile>
   </ItemGroup>

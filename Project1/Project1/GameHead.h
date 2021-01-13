@@ -89,6 +89,8 @@ enum OBJ_NAME
 	OBJ_ATTACK_DESCRIPTION,
 
 	OBJ_BOSS_EFFECT,
+	OBJ_BOSS_EFFECT2,
+	OBJ_BOSS_EFFECT3,
 };
 //------------------------------------------------
 
@@ -241,6 +243,8 @@ struct UserData
 
 //ボス出現エフェクト
 #include"ObjBossEffect.h"
+#include"ObjBossEffect2.h"
+#include"ObjBossEffect3.h"
 
 //-----------------------------------------------
 
