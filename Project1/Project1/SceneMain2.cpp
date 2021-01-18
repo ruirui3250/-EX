@@ -38,13 +38,15 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"カプセル.png", 1, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png",8, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png",29, TEX_SIZE_512);
 
 	Draw::LoadImage(L"拡散弾丸.png", 6, TEX_SIZE_512);
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	Draw::LoadImage(L"ボス2.png", 4, TEX_SIZE_512);
 
 	Draw::LoadImage(L"レーザー.png", 10, TEX_SIZE_512);
+
+	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
@@ -551,6 +553,14 @@ void CSceneMain2::Scene()
  }
 
 	else if (m_time == 1500)
+	{
+
+		ObjBossEffect* obj;
+		obj = new  ObjBossEffect(733.0f, 177);
+		Objs::InsertObj(obj, OBJ_BOSS_EFFECT, 50);
+	}
+
+	else if (m_time == 2000)
 	{
 		//音楽チェンジ
 		Audio::Stop(7);//0曲ストップ

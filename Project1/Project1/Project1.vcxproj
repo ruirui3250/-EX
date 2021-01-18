@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -139,7 +139,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Attack DescriptionScene.h" />
+    <ClInclude Include="AttackDescriptionScene.h" />
+    <ClInclude Include="ObjBossEffect.h" />
     <ClInclude Include="CObjAngleBulletHero.h" />
     <ClInclude Include="CObjBulletEnemy.h" />
     <ClInclude Include="CObjBulletEnemy2.h" />
@@ -167,10 +168,12 @@
     <ClInclude Include="Item DescriptionScene.h" />
     <ClInclude Include="Kaiten.h" />
     <ClInclude Include="main.h" />
-    <ClInclude Include="ObjAttack DescriptionScene.h" />
+    <ClInclude Include="ObjAttackDescriptionScene.h" />
     <ClInclude Include="ObjAttackEnemy.h" />
     <ClInclude Include="ObjAttackEnemy2.h" />
     <ClInclude Include="ObjBlock.h" />
+    <ClInclude Include="ObjBossEffect2.h" />
+    <ClInclude Include="ObjBossEffect3.h" />
     <ClInclude Include="ObjBullet.h" />
     <ClInclude Include="ObjClearBack.h" />
     <ClInclude Include="ObjClearBack2.h" />
@@ -247,12 +250,13 @@
     <ClInclude Include="WinScene6.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Attack DescriptionScene.cpp" />
+    <ClCompile Include="AttackDescriptionScene.cpp" />
+    <ClCompile Include="ObjBossEffect.cpp" />
     <ClCompile Include="CObjAngleBulletHero.cpp" />
     <ClCompile Include="CObjEnemyBossBullet2.cpp" />
     <ClCompile Include="CObjMixBoss.cpp" />
     <ClCompile Include="Item DescriptionScene.cpp" />
-    <ClCompile Include="ObjAttack DescriptionScene.cpp" />
+    <ClCompile Include="ObjAttackDescriptionScene.cpp" />
     <ClCompile Include="ObjAttackEnemy2.cpp" />
     <ClCompile Include="CObjBulletEnemy.cpp" />
     <ClCompile Include="CObjBulletEnemy2.cpp" />
@@ -278,6 +282,8 @@
     <ClCompile Include="Kaiten.cpp" />
     <ClCompile Include="ObjAttackEnemy.cpp" />
     <ClCompile Include="ObjBlock.cpp" />
+    <ClCompile Include="ObjBossEffect2.cpp" />
+    <ClCompile Include="ObjBossEffect3.cpp" />
     <ClCompile Include="ObjBullet.cpp" />
     <ClCompile Include="ObjClearBack.cpp" />
     <ClCompile Include="ObjClearBack2.cpp" />

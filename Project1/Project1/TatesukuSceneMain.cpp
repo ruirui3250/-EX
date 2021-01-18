@@ -38,7 +38,7 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"ウイルス(使).png", 7, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png", 29, TEX_SIZE_512);
 
 	Draw::LoadImage(L"Boss3(使).png", 4, TEX_SIZE_512);
 
@@ -47,6 +47,8 @@ void TatesukuSceneMain::InitScene()
 	//Draw::LoadImage(L"敵弾(使).png", 11, TEX_SIZE_512);
 
 	Draw::LoadImage(L"主人公弾縦.png", 11, TEX_SIZE_512);
+
+	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
@@ -530,8 +532,14 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 1550)
 	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(750.0f, 10);
+		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(150.0f, 0);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
+	}
+	if (m_time == 2000)
+	{
+		ObjBossEffect2* obj;
+		obj = new  ObjBossEffect2(150.0f, 0);
+		Objs::InsertObj(obj, OBJ_BOSS_EFFECT2, 50);
 	}
 
 
@@ -709,7 +717,7 @@ void TatesukuSceneMain::Scene()
 
 	if (m_time == 00)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
+		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 00)
@@ -754,7 +762,7 @@ void TatesukuSceneMain::Scene()
 	}
 
 	/*-------------------------ボス-------------------------------*/
-	if (m_time == 2000)
+	if (m_time == 2500)
 	{
 		//音楽チェンジ
 		Audio::Stop(8);//0曲ストップ

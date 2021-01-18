@@ -51,9 +51,11 @@ void CSceneMain5::InitScene()
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	Draw::LoadImage(L"ボス５.png", 4, TEX_SIZE_512);
 
-	Draw::LoadImage(L"障害物.png", 8, TEX_SIZE_512);
+	Draw::LoadImage(L"障害物.png", 29, TEX_SIZE_512);
 
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
+
+	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 	//音楽読み込み
@@ -338,7 +340,15 @@ void CSceneMain5::Scene()
 	CObjSitaKesen* obj4 = new CObjSitaKesen(430, 501);
 	Objs::InsertObj(obj4, OBJ_SITA_KESEN, 50);
  }
+
 	else if (m_time == 1500)
+	{
+	ObjBossEffect* obj;
+	obj = new  ObjBossEffect(733.0f, 177);
+	Objs::InsertObj(obj, OBJ_BOSS_EFFECT, 50);
+ }
+
+	else if (m_time == 2000)
 	{
 		//音楽チェンジ
 		Audio::Stop(10);//0曲ストップ

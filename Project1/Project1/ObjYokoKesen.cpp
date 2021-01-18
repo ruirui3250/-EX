@@ -86,6 +86,6 @@ void CObjYokoKesen::Draw()
 	dst.m_bottom = 64.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
-	Draw::Draw(8, &src, &dst, c, 0.0f);
+	Draw::Draw(29, &src, &dst, c, 0.0f);
 
 }
