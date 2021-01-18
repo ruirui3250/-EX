@@ -156,7 +156,7 @@ void CObjHero::Action()
 
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
-	if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
+	if (hit->CheckElementHit(OBJ_ENEMY) == true)
 	{
 		m_hp -= 1;
 		if (m_hp == 0)
@@ -219,19 +219,19 @@ void CObjHero::Draw()
 	this->SetPrio(50);
 	if (m_ka == 3)
 	{
-		swprintf_s(str, L"★★★", m_ka);
+		swprintf_s(str, L"発射可能！！", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
 	if (m_ka == 2)
 	{
-		swprintf_s(str, L"★★☆", m_ka);
+		swprintf_s(str, L"発射可能！！", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}
 	if (m_ka == 1)
 	{
-		swprintf_s(str, L"★☆☆", m_ka);
+		swprintf_s(str, L"発射可能！！", m_ka);
 		Font::StrDraw(str, 150, 70, 40, c);
 		this->SetPrio(50);
 	}

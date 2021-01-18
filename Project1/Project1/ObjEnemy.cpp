@@ -51,29 +51,24 @@ void CObjEnemy::Action()
 		return;
 	}
 	//ålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@íœB
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-	}
-	//ålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-	{
-		m_del = true; //Á–ÅÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
-	}
-	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(ELEMENT_PLAYER) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
 	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	if (hit->CheckObjNameHit(ELEMENT_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 	}
+	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB
+	if (hit->CheckObjNameHit(ELEMENT_ANGLE_BULLET) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
+	
 }
 
 //ƒhƒ[

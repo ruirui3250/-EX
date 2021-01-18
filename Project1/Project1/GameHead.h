@@ -96,8 +96,12 @@ enum HIT_ELEMENTS
 	ELEMENT_NULL,//属性無し 全ての属性と当たり判定が実行される
 	//以下　同じ属性同士では当たり判定は実行されない
 	//属性は追加可能だが、デバック時の色は初期設定分しか無い
+	
+	/*--------主人公機---*/
 	ELEMENT_PLAYER,
-	ELEMENT_ENEMY,
+	ELEMENT_BULLET,
+	ELEMENT_ANGLE_BULLET,
+	ELEMENT_LASER_BULLET,
 	
 	ELEMENT_MAGIC,
 	ELEMENT_FIELD,
@@ -108,6 +112,12 @@ enum HIT_ELEMENTS
 	ELEMENT_WHITE,
 	ELEMENT_LIFE_ITEM,
 	ELEMENT_ITEM,
+
+	/*-----------敵----------*/
+	ELEMENT_ENEMY,
+	ELEMENT_SIN_ENEMY,
+	ELEMENT_ATTACK_ENEMY,
+	ELEMENT_BLOCK,
 };
 //------------------------------------------------
 
@@ -236,6 +246,7 @@ struct UserData
 #include"SceneGameOver5.h"
 #include"Item DescriptionScene.h"
 #include"Attack DescriptionScene.h"
+
 
 //-----------------------------------------------
 
