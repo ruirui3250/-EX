@@ -81,6 +81,12 @@ void CObjSitaAttackEnemy::Action()
 		m_del = true; //Á–ÅŽÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+	}
 
 	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
