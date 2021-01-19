@@ -37,12 +37,14 @@ void CObjTateBoss::Action()
 		//弾丸発射オブジェクト
 		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x + 100, m_y + 150);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+		return;
 	}
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x + 150, m_y + 150);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+		return;
 	}
 
 	if (m_time % 100 == 0)
@@ -50,12 +52,14 @@ void CObjTateBoss::Action()
 		//弾丸発射オブジェクト
 		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x + 270, m_y + 150);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+		return;
 	}
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x + 310, m_y + 150);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+		return;
 	}
 
 	/*------------------------------別のタイミング----------------------------------------------*/
@@ -64,6 +68,7 @@ void CObjTateBoss::Action()
 		//弾丸発射オブジェクト
 		CObjTateBulletEnemy* obj_b = new CObjTateBulletEnemy(m_x + 200, m_y + 100);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+		return;
 	}
 	/*--------------------------------------bukatouka------------------------*/
 	//if (m_time % 30 == 0)
@@ -89,18 +94,21 @@ void CObjTateBoss::Action()
 	 //弾丸発射オブジェクト
 	 CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 270, m_y + 100);
 	 Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+	 return;
 	}
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjTateEnemy* obj_b = new CObjTateEnemy(m_x + 190, m_y + 100);
 		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);
+		return;
 	}
 
 	//m_timeの初期化
 	if (m_time > 1000)
 	{
 		m_time = 0;
+		return;
 	}
 	//角度計算
 	m_r += 1.0f;

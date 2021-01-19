@@ -41,6 +41,7 @@ void CObjEnemyBossBullet4::Action()
 			obj_b = new CObjEnemyBossBullet2(m_x, m_y, i, 5.0f);
 			Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY2, 100);
 		}
+		return;
 	}
 	//ˆÚ“®•ûŒü
 	m_vx = 0.0f;
