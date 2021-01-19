@@ -113,7 +113,7 @@ void CObjLaserBullet::Action()
 		OBJ_SITA_ENEMY2,
 		OBJ_TATE_ATTACK_ENEMY2,
 		OBJ_TATE_ENEMY2,
-		OBJ_MIX_BOSS
+		OBJ_MIX_BOSS,
 	};
 	//敵機オブジェクトと接触したら拡散弾丸削除
 	for (int i = 0; i < 28; i++)
