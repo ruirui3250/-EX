@@ -165,6 +165,7 @@ void CObjHero2::Action()
 			//主人公機消滅でシーンをゲームオーバーに移行する
 			Scene::SetScene(new CSceneGameOver5());
 		}
+		return;
 	}
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
@@ -188,6 +189,7 @@ void CObjHero2::Action()
 		Audio::Start(19);
 		m_la = 100;//レーザー復活
 		m_ka = 3;//拡散弾丸
+		return;
 		//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
 		//同様に５にするとのこと
 	}
@@ -197,6 +199,7 @@ void CObjHero2::Action()
 	{
 		Audio::Start(20);
 		m_hp = 3;//HP
+		return;
 
 
 	}

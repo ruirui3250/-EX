@@ -75,18 +75,28 @@ void CObjBulletEnemy::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		m_del = true; //Á–ÅŽÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
+	}
+	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 

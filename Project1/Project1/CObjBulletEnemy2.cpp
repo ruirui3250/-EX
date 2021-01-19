@@ -75,17 +75,20 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		m_del = true; //Á–ÅŽÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		return;
 	}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
@@ -93,11 +96,13 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
@@ -105,12 +110,14 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 
 	}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
@@ -118,11 +125,13 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
@@ -130,6 +139,7 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)

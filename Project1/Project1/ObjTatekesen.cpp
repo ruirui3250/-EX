@@ -53,6 +53,7 @@ void CObjTateKesen::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 
 

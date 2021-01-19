@@ -110,6 +110,7 @@ void CObjBoss2::Action()
     if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
     {
         m_hp -= 1;
+        return;
     }
 
     //HPが0になったら破棄
@@ -119,12 +120,14 @@ void CObjBoss2::Action()
         Hits::DeleteHitBox(this);
 
         Scene::SetScene(new CSceneWin3());
+        return;
 
     }
     //弾丸と接触しているかどうか調べる
     if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
     {
         m_hp -= 1;
+        return;
     }
 
     //HPが0になったら破棄
@@ -134,7 +137,7 @@ void CObjBoss2::Action()
         Hits::DeleteHitBox(this);
 
         Scene::SetScene(new CSceneWin3());
-
+        return;
     }
 }
 

@@ -75,30 +75,35 @@ void CObjEnemyBossBullet2::Action()
 	{
 		m_del = true; //Á–ÅŽÀs
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 

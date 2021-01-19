@@ -72,6 +72,7 @@ void CObjLaserBullet::Action()
 	{
 		this->SetStatus(false); //Ž©g‚Éíœ–½—ß
 		Hits::DeleteHitBox(this);//’eŠÛ‚ªŠ—L‚·‚éHITBOXíœ
+		return;
 	}
 
 
@@ -124,6 +125,7 @@ void CObjLaserBullet::Action()
 			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
+			return;
 		}
 	}
 }

@@ -70,12 +70,14 @@ void CObjTateBullet::Action()
 	{
 		this->SetStatus(false); //Ž©g‚Éíœ–½—ß
 		Hits::DeleteHitBox(this);//’eŠÛ‚ªŠ—L‚·‚éHITBOXíœ
+		return;
 	}
 	//“G‹@’eŠÛ‚É“–‚½‚Á‚½‚ç’eŠÛíœ
 	if (hit->CheckObjNameHit(OBJ_BULLET_ENEMY) != nullptr)
 	{
 		this->SetStatus(false); //Ž©g‚Éíœ–½—ß
 		Hits::DeleteHitBox(this);//’eŠÛ‚ªŠ—L‚·‚éHITBOXíœ
+		return;
 	}
 	//“G‹@ƒIƒuƒWƒFƒNƒg‚É‚Ô‚Â‚©‚Á‚½‚ç’eŠÛíœB
 	
@@ -125,6 +127,7 @@ void CObjTateBullet::Action()
 			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
+			return;
 		}
 	}
 

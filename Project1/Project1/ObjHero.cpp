@@ -167,6 +167,7 @@ void CObjHero::Action()
 			//主人公機消滅でシーンをゲームオーバーに移行する
 			Scene::SetScene(new CSceneGameOver());
 		}
+		return;
 	}
 
 	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活

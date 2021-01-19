@@ -73,6 +73,7 @@ void CObjDiffusionHero::Action()
 	{
 		this->SetStatus(false); //自身に削除命令
 		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		return;
 	}
 
 	//当たり判定を行うオブジェクト情報部
@@ -97,6 +98,7 @@ void CObjDiffusionHero::Action()
 			/*Audio::Start(3);*/
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
+			return;
 		}
 	}
 }

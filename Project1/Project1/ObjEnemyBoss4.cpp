@@ -37,29 +37,34 @@ void CObjEnemyBoss4::Action()
 		//弾丸発射オブジェクト
 		CObjEnemyBossBullet4* obj_b = new CObjEnemyBossBullet4(m_x, m_y);
 		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+		return;
 	}
 	if (m_time % 50 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x+25, m_y);
 		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+		return;
 	}
 	if (m_time % 50 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x-25, m_y);
 		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+		return;
 	}
 	if (m_time % 100 == 0)
 	{
 		//弾丸発射オブジェクト
 		CObjSitaBulletEnemy* obj_b = new CObjSitaBulletEnemy(m_x , m_y);
 		Objs::InsertObj(obj_b, OBJ_BOSS_BULLET_ENEMY, 100);
+		return;
 	}
 	//m_timeの初期化
 	if (m_time > 1000)
 	{
 		m_time = 0;
+		return;
 	}
 	//角度計算
 	m_r += 1.0f;
@@ -96,6 +101,7 @@ void CObjEnemyBoss4::Action()
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -103,11 +109,13 @@ void CObjEnemyBoss4::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -116,12 +124,13 @@ void CObjEnemyBoss4::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin5());
-
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -130,11 +139,13 @@ void CObjEnemyBoss4::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin5());
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -142,11 +153,13 @@ void CObjEnemyBoss4::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -155,11 +168,13 @@ void CObjEnemyBoss4::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin5());
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -167,6 +182,7 @@ void CObjEnemyBoss4::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 

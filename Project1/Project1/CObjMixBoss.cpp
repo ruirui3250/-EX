@@ -131,11 +131,13 @@ void CObjMIXBoss::Action()
 	{
 		m_del = true; //消滅実行
 		hit->SetInvincibility(true);//当たり判定無効
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -144,11 +146,13 @@ void CObjMIXBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin6());
+		return;
 	}
 	//弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -157,12 +161,14 @@ void CObjMIXBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin6());
+		return;
 
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -171,11 +177,13 @@ void CObjMIXBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin6());
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -184,11 +192,13 @@ void CObjMIXBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin6());
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -197,11 +207,13 @@ void CObjMIXBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin6());
+		return;
 	}
 	// 弾丸と接触しているかどうか調べる
 	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		m_hp -= 1;
+		return;
 	}
 
 	//HPが0になったら破棄
@@ -210,6 +222,7 @@ void CObjMIXBoss::Action()
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		Scene::SetScene(new CSceneWin6());
+		return;
 	}
 }
 

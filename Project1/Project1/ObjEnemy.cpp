@@ -51,22 +51,25 @@ void CObjEnemy::Action()
 		return;
 	}
 	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@íœB
-	if (hit->CheckObjNameHit(ELEMENT_PLAYER) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
-	if (hit->CheckObjNameHit(ELEMENT_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
-	if (hit->CheckObjNameHit(ELEMENT_ANGLE_BULLET) != nullptr)
+	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	
 }

@@ -73,6 +73,7 @@ void CObjTateLaserBullet::Action()
 	{
 		this->SetStatus(false); //自身に削除命令
 		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		return;
 	}
 	//当たり判定を行うオブジェクト情報部
 	int data_base[27] =
@@ -119,6 +120,7 @@ void CObjTateLaserBullet::Action()
 			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
+			return;
 		}
 	}
 

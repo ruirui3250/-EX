@@ -85,6 +85,7 @@ void CObjBullet::Action()
 	{
 		this->SetStatus(false); //自身に削除命令
 		Hits::DeleteHitBox(this);//弾丸が所有するHITBOX削除
+		return;
 	}
 
 	////敵機オブジェクトにぶつかったら弾丸削除。
@@ -146,6 +147,7 @@ void CObjBullet::Action()
 			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
+			return;
 		}
 	}
 
