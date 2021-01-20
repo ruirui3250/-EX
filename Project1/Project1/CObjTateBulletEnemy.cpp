@@ -76,13 +76,6 @@ void CObjTateBulletEnemy::Action()
 		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
 		return;
 	}
-	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
-	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
-		return;
-	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
