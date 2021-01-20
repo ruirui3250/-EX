@@ -156,7 +156,7 @@ void CObjHero::Action()
 
 
 	//ELEMENT_ENEMYを持つオブジェクトと接触したらライフ1つ減らす
-	if (hit->CheckElementHit(OBJ_ENEMY) == true)
+	if (hit->CheckElementHit(ELEMENT_ENEMY) == true)
 	{
 		m_hp -= 1;
 		if (m_hp == 0)
