@@ -54,6 +54,7 @@ void CObjSitaItem::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 
