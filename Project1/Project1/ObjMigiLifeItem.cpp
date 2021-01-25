@@ -53,6 +53,7 @@ void CObjMigiLifeItem::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 
 }

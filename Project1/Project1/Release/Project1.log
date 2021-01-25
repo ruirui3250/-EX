@@ -1,5 +1,12 @@
-﻿  コード生成しています。
-  Previous IPDB not found, fall back to full compilation.
-  All 1283 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+﻿  CObjEnemy2.cpp
+  SceneMain5.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain5.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain5.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+  コード生成しています。
+  2 of 1283 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    56 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Release\Project1.exe

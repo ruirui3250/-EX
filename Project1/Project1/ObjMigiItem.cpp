@@ -55,6 +55,7 @@ void CObjMigiItem::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 

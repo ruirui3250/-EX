@@ -54,6 +54,7 @@ void CObjHidariLifeItem::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 

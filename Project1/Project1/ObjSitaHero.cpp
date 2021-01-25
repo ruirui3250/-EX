@@ -189,8 +189,8 @@ void CObjSitaHero::Action()
 
 			////主人公機消滅でシーンをゲームオーバーに移行する
 			Scene::SetScene(new CSceneGameOver3());
+			return;
 		}
-		return;
 
 	}
 
