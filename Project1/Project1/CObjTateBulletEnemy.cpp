@@ -72,8 +72,8 @@ void CObjTateBulletEnemy::Action()
 	//ålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
-		m_del = true; //Á–ÅÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
 		return;
 	}
 	//’eŠÛ‚ÌÚG‚ğ’²‚×‚éB

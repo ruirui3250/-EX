@@ -69,6 +69,12 @@ void CObjEnemyBossBullet4::Action()
 		return;
 
 	}
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
+	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
