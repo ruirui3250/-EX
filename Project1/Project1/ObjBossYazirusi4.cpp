@@ -76,13 +76,13 @@ void ObjBossYazirusi4::Action()
 	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 	//	return;
 	//}
-	//if (m_time == 1850)
+	if (m_time == 400)
 
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
+	{
+		this->SetStatus(false); //自身に削除命令を出す。
+		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
+		return;
+	}
 }
 
 //ドロー

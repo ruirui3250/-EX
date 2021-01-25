@@ -83,6 +83,12 @@ void ObjBossYazirusi2::Action()
 	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 	//	return;
 	//}
+	if (m_time == 300)
+	{
+		this->SetStatus(false); //自身に削除命令を出す。
+		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
+		return;
+	}
 }
 
 //ドロー
