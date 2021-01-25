@@ -50,7 +50,7 @@ void CObjItemD::Draw()
 	Font::StrDraw(L"赤血球", 0, 50, 30, c);
 	Font::StrDraw(L"赤く浮遊している楕円形状のアイテム", 0, 80, 30, c);
 	Font::StrDraw(L"取ると体力が全回復する。", 0, 120, 30, c);
-	Font::StrDraw(L"白血球", 0, 160, 30, c);
+	Font::StrDraw(L"白血球", 0, 180, 30, c);
 	Font::StrDraw(L"白く浮遊している楕円形状のアイテム", 0, 210, 30, c);
 	Font::StrDraw(L"取るとレーザーと拡散弾の補給が出来る。", 0, 240, 30, c);
 	Font::StrDraw(L"赤い矢印マークはボス登場位置を表している。", 0, 300, 35, c);
