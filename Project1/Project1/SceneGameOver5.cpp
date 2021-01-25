@@ -23,9 +23,9 @@ void CSceneGameOver5::InitScene()
 {
 	//外部グラフィックファイルを読み込み6番目に登録
 	Draw::LoadImage(L"GameOver画面コンテ.png", 0, TEX_SIZE_512);
-
 	//音楽読み込み
 	Audio::LoadAudio(16, L"ゲームオーバー.wav", BACK_MUSIC);
+
 	//	ゲームオーバーオブジェクト作成
 	CObjGameOver5* obj = new CObjGameOver5();
 	Objs::InsertObj(obj, OBJ_GAME_OVER5, 10);
