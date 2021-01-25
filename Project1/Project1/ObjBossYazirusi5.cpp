@@ -96,11 +96,7 @@ void ObjBossYazirusi5::Draw()
 
 	wchar_t str[256];
 
-	swprintf_s(str, L"%d", m_time);
-	Font::StrDraw(str, 500, 0, 40, c);
 
-	swprintf_s(str, L"%d", second);
-	Font::StrDraw(str, 550, 50, 40, c);
 
 	//Ø‚èæ‚èˆÊ’u‚Ìİ’è
 	src.m_top = 0.0f;

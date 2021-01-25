@@ -31,7 +31,7 @@ void CObjGameOver5::Action()
 		m_key_flag = true;
 	}
 
-	//Vキーを押してシーン：ゲームメイン1に移行する
+	//Vキーを押してシーン：タイトルに移行する
 	if (Input::GetVKey('V') == true)
 	{
 		if (m_key_flag == true)
