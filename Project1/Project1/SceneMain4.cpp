@@ -334,7 +334,7 @@ void CSceneMain4::Scene()
 		//音楽チェンジ
 		Audio::Stop(9);//0曲ストップ
 		Audio::Start(14);//1曲目スタート
-		CObjEnemyBoss4* obj = new CObjEnemyBoss4(250,500);
+		CObjEnemyBoss4* obj = new CObjEnemyBoss4(250,400);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY4, 100);
 
 	}
