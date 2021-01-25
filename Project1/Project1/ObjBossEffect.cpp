@@ -64,7 +64,7 @@ void ObjBossEffect::Draw()
 	dst.m_top = 0.0f + m_y;
 	dst.m_left = 0.0f + m_x;
 	dst.m_right = 512.0f + m_x;
-	dst.m_bottom = 512.0f + m_y;
+	dst.m_bottom = 128.0f + m_y;
 
 	//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 	Draw::Draw(8, &src, &dst, c, 0.0f);
