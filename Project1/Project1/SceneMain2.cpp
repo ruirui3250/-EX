@@ -48,6 +48,8 @@ void CSceneMain2::InitScene()
 
 	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"BOSSYAZIRUSI.png", 33, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
@@ -559,7 +561,13 @@ void CSceneMain2::Scene()
 		obj = new  ObjBossEffect(733.0f, 177);
 		Objs::InsertObj(obj, OBJ_BOSS_EFFECT, 50);
 	}
+	if (m_time == 1700)
 
+	{
+		ObjBossYazirusi2* obj = new ObjBossYazirusi2();
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI2, 50);
+
+	}
 	else if (m_time == 2000)
 	{
 		//音楽チェンジ

@@ -504,6 +504,21 @@
     <ClInclude Include="ObjBossEffect3.h">
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
     </ClInclude>
+    <ClInclude Include="ObjBossYazirusi.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBossYazirusi2.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBossYazirusi3.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBossYazirusi4.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjBossYazirusi5.h">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="GameL\Audio.cpp">
@@ -831,6 +846,21 @@
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
     </ClCompile>
     <ClCompile Include="ObjBossEffect3.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossYazirusi.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossYazirusi2.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossYazirusi3.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossYazirusi4.cpp">
+      <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjBossYazirusi5.cpp">
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
     </ClCompile>
   </ItemGroup>

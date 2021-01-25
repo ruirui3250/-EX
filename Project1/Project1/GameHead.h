@@ -91,6 +91,12 @@ enum OBJ_NAME
 	OBJ_BOSS_EFFECT,
 	OBJ_BOSS_EFFECT2,
 	OBJ_BOSS_EFFECT3,
+
+	OBJ_BOSS_YAZIRUSI,
+	OBJ_BOSS_YAZIRUSI2,
+	OBJ_BOSS_YAZIRUSI3,
+	OBJ_BOSS_YAZIRUSI4,
+	OBJ_BOSS_YAZIRUSI5,
 };
 //------------------------------------------------
 
@@ -255,7 +261,12 @@ struct UserData
 #include"ObjBossEffect.h"
 #include"ObjBossEffect2.h"
 #include"ObjBossEffect3.h"
-
+/*--------------------------BOSS‚â‚¶‚é‚µ-------------*/
+#include"ObjBossYazirusi.h"
+#include"ObjBossYazirusi2.h"
+#include"ObjBossYazirusi3.h"
+#include"ObjBossYazirusi4.h"
+#include"ObjBossYazirusi5.h"
 
 //-----------------------------------------------
 

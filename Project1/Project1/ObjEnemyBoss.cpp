@@ -42,6 +42,24 @@ void CObjBoss::Action()
         CObjBulletEnemy* obj_b = new CObjBulletEnemy(m_x + 68, m_y + 114);//弾丸敵機オブジェクト作成
         Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
     }
+    if (m_time % 50 == 0)
+    {
+        //弾丸敵機オブジェクト
+        CObjBulletEnemy* obj_b = new CObjBulletEnemy(m_x + 68, m_y + 55);//弾丸敵機オブジェクト作成
+        Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
+    }
+    if (m_time % 50 == 0)
+    {
+        //弾丸敵機オブジェクト
+        CObjBulletEnemy* obj_b = new CObjBulletEnemy(m_x + 68, m_y + 254);//弾丸敵機オブジェクト作成
+        Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
+    }
+    if (m_time % 50 == 0)
+    {
+        //弾丸敵機オブジェクト
+        CObjBulletEnemy* obj_b = new CObjBulletEnemy(m_x + 68, m_y + 355);//弾丸敵機オブジェクト作成
+        Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY, 100);//弾丸敵機オブジェクト登録
+    }
     //360度弾丸発射
     if (m_time % 200 == 0)
     {

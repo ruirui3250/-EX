@@ -57,6 +57,8 @@ void CSceneMain5::InitScene()
 
 	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"BOSSYAZIRUSI.png", 33, TEX_SIZE_512);
+
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
 	//音楽読み込み
 	Audio::LoadAudio(2, L"銃1.wav", EFFECT);
@@ -346,7 +348,12 @@ void CSceneMain5::Scene()
 	ObjBossEffect* obj;
 	obj = new  ObjBossEffect(733.0f, 177);
 	Objs::InsertObj(obj, OBJ_BOSS_EFFECT, 50);
- }
+	}
+	if (m_time == 1700)
+	{
+		ObjBossYazirusi* obj = new ObjBossYazirusi();
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI, 50);
+	}
 
 	else if (m_time == 2000)
 	{

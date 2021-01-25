@@ -49,6 +49,8 @@ void CSceneMain::InitScene()
 
 	Draw::LoadImage(L"ボスエフェクト.png",8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"BOSSYAZIRUSI.png", 33, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
@@ -89,6 +91,7 @@ void CSceneMain::InitScene()
 
 	//タイム初期化
 	m_time = 0;
+
 	Audio::Start(6);
 
 }
@@ -97,7 +100,10 @@ void CSceneMain::InitScene()
 void CSceneMain::Scene()
 {
 	m_time++;
-	//アイテム制御
+
+
+
+//アイテム制御
 	if (m_time == 550)
 	{
 		CObjHidariItem* obj = new CObjHidariItem(799.0f, 600);
@@ -391,15 +397,20 @@ void CSceneMain::Scene()
 	obj = new CObjHomingEnemy(799.0f, 0);
 	Objs::InsertObj(obj, OBJ_HOMING_ENEMY, 50);
 	}
-
+	/*---------------------BOSS----------------------*/
 	else if (m_time == 1200)
 	{
 	ObjBossEffect* obj;
 	obj = new  ObjBossEffect(733.0f, 177);
 	Objs::InsertObj(obj, OBJ_BOSS_EFFECT, 50);
- }
-
-	else if (m_time == 1700)
+     }
+	else if (m_time == 1300)
+	{
+		ObjBossYazirusi* obj = new ObjBossYazirusi();
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI, 50);
+	}
+	if (m_time == 1700)
+	
 	{
 		//音楽チェンジ
 		Audio::Stop(6);//0曲ストップ

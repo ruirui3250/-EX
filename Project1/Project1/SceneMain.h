@@ -15,4 +15,5 @@ public:
 	void Scene();//ゲームメインの実行中メソッド
 private:
 	int m_time;//シーンのタイム(主に敵機出現に使用)
+	int second;//秒数　矢印で使用
 };

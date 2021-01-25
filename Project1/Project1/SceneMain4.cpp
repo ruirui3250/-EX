@@ -52,6 +52,8 @@ void CSceneMain4::InitScene()
 
 	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"BOSSYAZIRUSITATE.png", 34, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
@@ -326,7 +328,11 @@ void CSceneMain4::Scene()
 		obj = new  ObjBossEffect3(150.0f, 500);
 		Objs::InsertObj(obj, OBJ_BOSS_EFFECT3, 50);
 	}
-
+	if (m_time == 2100)
+	{
+		ObjBossYazirusi4* obj = new ObjBossYazirusi4();
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI4, 50);
+	}
 
 	///*-------------------------ボス-------------------------------*/
 	if (m_time == 2500)

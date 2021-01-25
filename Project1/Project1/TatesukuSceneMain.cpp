@@ -50,6 +50,8 @@ void TatesukuSceneMain::InitScene()
 
 	Draw::LoadImage(L"ボスエフェクト.png", 8, TEX_SIZE_512);
 
+	Draw::LoadImage(L"BOSSYAZIRUSITATE.png", 34, TEX_SIZE_512);
+
 	Draw::LoadImage(L"ライフ回復.png", 31, TEX_SIZE_512);
 
 	Draw::LoadImage(L"エナジーチャージ.png", 32, TEX_SIZE_512);
@@ -715,52 +717,18 @@ void TatesukuSceneMain::Scene()
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(0.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 00)
-	{
-		CObjTateKesen* obj = new CObjTateKesen(.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
+	
 	if (m_time == 2000)
 	{
 		CObjSitaItem* obj = new CObjSitaItem(210.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 
+	if (m_time == 2200)
+	{
+		ObjBossYazirusi3* obj = new ObjBossYazirusi3();
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI3, 50);
+	}
 	/*-------------------------ボス-------------------------------*/
 	if (m_time == 2500)
 	{
