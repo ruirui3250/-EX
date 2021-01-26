@@ -66,13 +66,13 @@ void CObjTateEnemy2::Action()
 		return;
 	}
 
-	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
-		return;
-	}
+	////ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
+	//if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
+	//{
+	//	m_del = true; //Á–ÅŽÀs
+	//	hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
+	//	return;
+	//}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
