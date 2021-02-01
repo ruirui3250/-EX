@@ -101,7 +101,7 @@ void ObjBossYazirusi4::Draw()
 	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 500.0f;
+	src.m_right = 200.0f;
 	src.m_bottom = 100.0f;
 
 
@@ -109,10 +109,10 @@ void ObjBossYazirusi4::Draw()
 	if (second % 2 == 0)
 	{
 		//表示位置の設定
-		dst.m_top = 400.0f + m_y;
-		dst.m_left = 200.0f + m_x;
+		dst.m_top = 300.0f + m_y;
+		dst.m_left = 250.0f + m_x;
 		dst.m_right = 600.0f + m_x;
-		dst.m_bottom = 300.0f + m_y;
+		dst.m_bottom = 200.0f + m_y;
 
 		//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 		Draw::Draw(34, &src, &dst, c, 0.0f);

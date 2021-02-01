@@ -94,7 +94,7 @@ void ObjBossYazirusi::Draw()
 	//切り取り位置の設定
 	src.m_top = 0.0f;
 	src.m_left = 0.0f;
-	src.m_right = 64.0f;
+	src.m_right = 60.0f;
 	src.m_bottom = 250.0f;
 
 
@@ -103,8 +103,8 @@ void ObjBossYazirusi::Draw()
 	{
 		//表示位置の設定
 		dst.m_top = 100.0f + m_y;
-		dst.m_left = 500.0f + m_x;
-		dst.m_right = 700.0f + m_x;
+		dst.m_left = 300.0f + m_x;
+		dst.m_right = 500.0f + m_x;
 		dst.m_bottom = 400.0f + m_y;
 
 		//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
