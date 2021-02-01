@@ -79,6 +79,7 @@ void CObjSitaEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
@@ -86,6 +87,7 @@ void CObjSitaEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
@@ -93,6 +95,7 @@ void CObjSitaEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;

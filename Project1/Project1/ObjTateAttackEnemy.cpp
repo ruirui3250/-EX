@@ -81,6 +81,7 @@ void CObjTateAttackEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
@@ -88,6 +89,7 @@ void CObjTateAttackEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
@@ -95,6 +97,7 @@ void CObjTateAttackEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
