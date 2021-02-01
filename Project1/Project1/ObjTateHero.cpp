@@ -52,6 +52,8 @@ void CObjTateHero::Action()
 	{
 		if (m_la >= 0)
 		{
+			//発射音を流す
+			Audio::Start(4);
 			//弾丸オブジェクト作成
 			CObjTateLaserBullet* obj_b = new CObjTateLaserBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_TATE_LASER_BULLET, 100);//作った弾丸オブジェクト
@@ -77,6 +79,9 @@ void CObjTateHero::Action()
 			{
 				m_f = false;
 				
+				//発射音を流す
+				Audio::Start(5);
+
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
