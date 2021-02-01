@@ -591,7 +591,7 @@ void TatesukuSceneMain::Scene()
 		obj = new  ObjBossEffect2(150.0f, 0);
 		Objs::InsertObj(obj, OBJ_BOSS_EFFECT2, 50);
 	}
-	if (m_time == 2200)
+	if (m_time == 2100)
 	{
 		ObjBossYazirusi3* obj = new ObjBossYazirusi3();
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI3, 50);	

@@ -1,8 +1,5 @@
-﻿  SceneMain.cpp
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\SceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\SceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+﻿  ObjBossYazirusi.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi.cpp(90,10): warning C4101: 'str': ローカル変数は 1 度も使われていません。
   コード生成しています。
   1 of 1304 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
