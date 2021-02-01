@@ -152,6 +152,7 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
@@ -164,6 +165,7 @@ void CObjBulletEnemy2::Action()
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
 	}
 }
 
