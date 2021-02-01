@@ -215,11 +215,6 @@ void TatesukuSceneMain::Scene()
 		CObjTateEnemy* obj = new CObjTateEnemy(600.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 30)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(550.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
 	if (m_time == 50)
 	{
 		CObjTateEnemy* obj = new CObjTateEnemy(500.0f, 100);
@@ -283,21 +278,9 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 500)
 	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 500)
-	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(650.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	if (m_time == 500)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-
-	
 	if (m_time == 550)
 	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(575.0f, 10);
@@ -321,17 +304,7 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 700)
 	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 700)
-	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 700)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(400.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 700)
@@ -339,11 +312,6 @@ void TatesukuSceneMain::Scene()
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}	
-	if (m_time == 700)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
 	if (m_time == 700)
 	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(700.0f, 10);
@@ -356,27 +324,12 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 800)
 	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(250.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 800)
-	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(350.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 800)
 	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(450.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 800)
-	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(550.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 800)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(650.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	/*------------------ìGòAçáïîë‡ëÊÇRñhâqÉâÉCÉì----------------------*/
@@ -622,21 +575,6 @@ void TatesukuSceneMain::Scene()
 		CObjTateEnemy* obj = new CObjTateEnemy(100.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 1150)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(200.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1210)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(150.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1220)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(50.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
 	if (m_time == 1200)
 	{
 		CObjTateEnemy* obj = new CObjTateEnemy(120.0f, 10);
@@ -650,17 +588,6 @@ void TatesukuSceneMain::Scene()
 	if (m_time == 1210)
 	{
 		CObjTateEnemy* obj = new CObjTateEnemy(270.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1220)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(230.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-
-	if (m_time == 1200)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(10.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 	if (m_time == 1150)

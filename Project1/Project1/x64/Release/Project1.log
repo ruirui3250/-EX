@@ -1,11 +1,35 @@
-﻿  SceneMain5.cpp
+﻿  CObjMixBoss.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(140,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(273,84): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(273,84): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(278,81): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(278,81): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(283,69): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(283,69): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(288,63): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(288,63): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(293,57): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(293,57): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(298,51): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(298,51): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(303,45): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(303,45): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(308,36): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(308,36): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(313,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(313,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(318,30): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(318,30): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(323,27): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\CObjMixBoss.cpp(323,27): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+  SceneMain5.cpp
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\SceneMain5.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
 C:\Users\GA1A\source\repos\-EX\Project1\Project1\SceneMain5.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
   コード生成しています。
-  1 of 1304 functions (<0.1%) were compiled, the rest were copied from previous compilation.
+  4 of 1304 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    4 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   Project1.vcxproj -> C:\Users\GA1A\source\repos\-EX\Project1\x64\Release\Project1.exe

@@ -67,17 +67,42 @@ void CObjMIXBoss::Action()
 	if (m_time % 40 == 0)
 	{
 	 //弾丸発射オブジェクト
-	 CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 100);
+	 CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 50);
 	 Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
 	 return;
 	}
-	if (m_time % 10 == 0)
+	if (m_time % 40 == 0)
 	{
 		//弾丸発射オブジェクト
+		CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 100);
+		Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+		return;
+	}
+	if (m_time % 40 == 0)
+	{
+		//弾丸発射オブジェクト
+		CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 25);
+		Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+		return;
+	}
+	if (m_time % 40 == 0)
+	{
+		//弾丸発射オブジェクト
+		CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 75);
+		Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+		return;
+	}
+
+	if (m_time % 10 == 0)
+	{
+		//血栓発射オブジェクト
 		CObjYokoKesen* obj_b = new CObjYokoKesen(m_x, m_y+300);
 		Objs::InsertObj(obj_b, OBJ_YOKO_KESEN, 100);
 		return;
 	}
+	
+
+
 	//if (m_time % 50 == 0)
 	//{
 	// //弾丸発射オブジェクト

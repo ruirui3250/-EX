@@ -108,47 +108,52 @@ void CSceneMain4::Scene()
 		CObjSitaAttackEnemy* obj = new CObjSitaAttackEnemy(200.0f, 500);
 		Objs::InsertObj(obj, OBJ_SITA_ATTACK_ENEMY,50);
 	}
-	///*-------------------------回復アイテム出現---------------------------*/
-	if (m_time == 700)
-	{
-		CObjLifeItem* obj = new CObjLifeItem(600.0f, 500);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
+	///*-------------------------ライフ回復アイテム出現---------------------------*/
 	if (m_time == 1000)
 	{
-		CObjLifeItem* obj = new CObjLifeItem(350.0f, 500);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 300)
-	{
-		CObjItem* obj = new CObjItem(550.0f, 500);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1300)
-	{
-		CObjItem* obj = new CObjItem(250.0f, 500);
+		CObjLifeItem* obj = new CObjLifeItem(700.0f, 100);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 	if (m_time == 1500)
 	{
-		CObjLifeItem* obj = new CObjLifeItem(400.0f, 500);
+		CObjLifeItem* obj = new CObjLifeItem(700.0f, 500);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 1750)
+	if (m_time == 2000)
 	{
-		CObjLifeItem* obj = new CObjLifeItem(50.0f, 500);
+		CObjLifeItem* obj = new CObjLifeItem(700.0f, 500);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	if (m_time == 2950)
+	{
+		CObjLifeItem* obj = new CObjLifeItem(700.0f, 100);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+	/*-------------------------弾丸アイテム--------------*/
+	if (m_time == 800)
+	{
+		CObjItem* obj = new CObjItem(700.0f, 400);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 	if (m_time == 1800)
 	{
-		CObjItem* obj = new CObjItem(550.0f, 500);
+		CObjItem* obj = new CObjItem(700.0f, 200);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 1400)
+	
+	if (m_time == 2000)
 	{
-		CObjItem* obj = new CObjItem(350.0f, 500);
+		CObjItem* obj = new CObjItem(700.0f, 300);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
+	if (m_time == 2800)
+	{
+		CObjItem* obj = new CObjItem(700.0f, 200);
+		Objs::InsertObj(obj, OBJ_ITEM, 50);
+	}
+
+
+
 	/////*-------------------------------敵出現タイミング及び位置制御コード-----------------------------------------------*/
 	if (m_time == 30)
 	{
