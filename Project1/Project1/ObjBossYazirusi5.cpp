@@ -28,10 +28,6 @@ void ObjBossYazirusi5::Init()
 void ObjBossYazirusi5::Action()
 {
 	m_time++;
-	if (m_time % 30 == 0)
-	{
-		second++;
-	}
 	////ˆÚ“®•ûŒü
 	//m_vx = 0.0f;
 	//m_vy = 0.0f;
