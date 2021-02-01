@@ -333,7 +333,7 @@ void CSceneMain4::Scene()
 		obj = new  ObjBossEffect3(150.0f, 500);
 		Objs::InsertObj(obj, OBJ_BOSS_EFFECT3, 50);
 	}
-	if (m_time == 2100)
+	if (m_time == 21)
 	{
 		ObjBossYazirusi4* obj = new ObjBossYazirusi4();
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI4, 50);

@@ -162,19 +162,9 @@ void TatesukuSceneMain::Scene()
 		CObjTateEnemy* obj = new CObjTateEnemy(300.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 40)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(400.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
 	if (m_time == 50)
 	{
 		CObjTateEnemy* obj = new CObjTateEnemy(280.0f, 100);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 60)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(250.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
 
@@ -366,21 +356,6 @@ void TatesukuSceneMain::Scene()
 	/*------------------------------------------------------------------------*/
 	if (m_time == 1500)
 	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(100.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 1500)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 1500)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(300.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 1500)
-	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(400.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
@@ -392,21 +367,6 @@ void TatesukuSceneMain::Scene()
 	if (m_time == 1500)
 	{
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(500.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 1500)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(600.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 1580)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(100.0f, 10);
-		Objs::InsertObj(obj, OBJ_ENEMY, 50);
-	}
-	if (m_time == 1580)
-	{
-		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(200.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 1580)
@@ -490,12 +450,7 @@ void TatesukuSceneMain::Scene()
 		CObjTateAttackEnemy* obj = new CObjTateAttackEnemy(150.0f, 0);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
-	if (m_time == 2000)
-	{
-		ObjBossEffect2* obj;
-		obj = new  ObjBossEffect2(150.0f, 0);
-		Objs::InsertObj(obj, OBJ_BOSS_EFFECT2, 50);
-	}
+	
 
 
 
@@ -575,26 +530,6 @@ void TatesukuSceneMain::Scene()
 		CObjTateEnemy* obj = new CObjTateEnemy(100.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-	if (m_time == 1200)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(120.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1150)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(180.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1210)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(270.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
-	if (m_time == 1150)
-	{
-		CObjTateEnemy* obj = new CObjTateEnemy(20.0f, 10);
-		Objs::InsertObj(obj, OBJ_ITEM, 50);
-	}
 	if (m_time == 1210)
 	{
 		CObjTateEnemy* obj = new CObjTateEnemy(30.0f, 10);
@@ -650,19 +585,26 @@ void TatesukuSceneMain::Scene()
 		CObjSitaItem* obj = new CObjSitaItem(210.0f, 10);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
-
+	if (m_time == 2000)
+	{
+		ObjBossEffect2* obj;
+		obj = new  ObjBossEffect2(150.0f, 0);
+		Objs::InsertObj(obj, OBJ_BOSS_EFFECT2, 50);
+	}
 	if (m_time == 2200)
 	{
 		ObjBossYazirusi3* obj = new ObjBossYazirusi3();
-		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI3, 50);
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI3, 50);	
+	
 	}
+	
 	/*-------------------------ボス-------------------------------*/
 	if (m_time == 2500)
-	{
+	{	
 		//音楽チェンジ
 		Audio::Stop(8);//0曲ストップ
 		Audio::Start(13);//1曲目スタート
-		CObjTateBoss* obj = new CObjTateBoss(200.0f, 10);
+		CObjTateBoss* obj = new CObjTateBoss(200.0f, 100);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 
 	}
