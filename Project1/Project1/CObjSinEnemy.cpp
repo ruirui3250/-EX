@@ -71,13 +71,11 @@ void CObjSinEnemy::Action()
 	//ŽålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
 	if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
 	{
-		m_del = true; //Á–ÅŽÀs
-		hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
-		return;
 	}
 	//’eŠÛ‚ÉÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é.
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
@@ -85,6 +83,7 @@ void CObjSinEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;

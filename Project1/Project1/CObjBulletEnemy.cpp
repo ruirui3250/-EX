@@ -4,6 +4,7 @@
 #include "GameHead.h"
 #include "CObjBulletEnemy.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 
 
 
@@ -80,6 +81,7 @@ void CObjBulletEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
@@ -87,6 +89,7 @@ void CObjBulletEnemy::Action()
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
