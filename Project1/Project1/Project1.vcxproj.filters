@@ -252,9 +252,6 @@
     <ClInclude Include="ObjTateHero.h">
       <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
     </ClInclude>
-    <ClInclude Include="ObjTateLaserBullet.h">
-      <Filter>ソース ファイル\基本データ\主人公\3面主人公</Filter>
-    </ClInclude>
     <ClInclude Include="ObjTatekesen.h">
       <Filter>ソース ファイル\基本データ\血栓</Filter>
     </ClInclude>
@@ -518,6 +515,9 @@
     </ClInclude>
     <ClInclude Include="ObjBossYazirusi5.h">
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjTateLaserBullet.h">
+      <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

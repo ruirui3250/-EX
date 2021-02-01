@@ -68,6 +68,12 @@ void CObjSitaBulletEnemy::Action()
 		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
 	}
+	if (hit->CheckObjNameHit(OBJ_SITA_HERO) != nullptr)
+	{
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
+	}
 	//	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{

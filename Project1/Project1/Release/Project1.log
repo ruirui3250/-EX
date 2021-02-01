@@ -1,14 +1,7 @@
-﻿  CObjBulletEnemy2.cpp
-  ObjAttackEnemy2.cpp
-  ObjSitaAttackEnemy2.cpp
-  ObjSitaEnemy2.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\ObjSitaEnemy2.cpp(36,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-  ObjTateAttackEnemy2.cpp
-  ObjTateEnemy2.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\ObjTateEnemy2.cpp(37,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+﻿  CObjTateBulletEnemy.cpp
   コード生成しています。
-  6 of 1283 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+  1 of 1283 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    40 functions had inline decision re-evaluated but remain unchanged
+    10 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Release\Project1.exe
