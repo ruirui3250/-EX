@@ -48,14 +48,6 @@ void CObjYokoKesen::Action()
 		Hits::DeleteHitBox(this);//“G‹@’eŠÛ‚ªŠ—L‚·‚éHitBox‚ðíœ
 		return;
 	}
-
-	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
-	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
-	{
-		this->SetStatus(false);
-		Hits::DeleteHitBox(this);
-		return;
-	}
 	//’eŠÛ‚ÌÚG‚ð’²‚×‚éB
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
