@@ -80,51 +80,50 @@ void CObjTateBullet::Action()
 		return;
 	}
 	//敵機オブジェクトにぶつかったら弾丸削除。
-	
-	
 		//当たり判定を行うオブジェクト情報部
 	int data_base[28] =
 	{
-		//1,2面のやつ
-		OBJ_ENEMY,
-		OBJ_ATTACK_ENEMY,
-		OBJ_HOMING_ENEMY,
-		OBJ_SIN_ENEMY,
-		OBJ_BULLET_ENEMY,
-		//縦スクのやつ
-		OBJ_TATE_ENEMY,
-		OBJ_TATE_BULLET_ENEMY,
-		OBJ_TATE_ATTACK_ENEMY,
-		//下スクロール
-		OBJ_SITA_BULLET_ENEMY,
-		OBJ_SITA_ENEMY,
-		OBJ_SITA_ATTACK_ENEMY,
-		//血栓
-		OBJ_SITA_KESEN,
-		OBJ_TATEKESEN,
-		OBJ_YOKO_KESEN,
-		//ボス
-		OBJ_BOSS_ENEMY,
-		OBJ_BOSS_ENEMY2,
-		OBJ_TATE_BOSS,
-		OBJ_BOSS_ENEMY4,
-		OBJ_BOSS_BULLET_ENEMY2,
-		OBJ_BOSS_BULLET_ENEMY,
-		//5面
-		OBJ_ENEMY2,
-		OBJ_BULLET_ENEMY2,
-		OBJ_ATTACK_ENEMY2,
-		OBJ_SITA_ATTACK_ENEMY2,
-		OBJ_SITA_ENEMY2,
-		OBJ_TATE_ATTACK_ENEMY2,
-		OBJ_TATE_ENEMY2,
-		OBJ_MIX_BOSS,
-	};
+			//1,2面のやつ
+			OBJ_ENEMY,
+			OBJ_ATTACK_ENEMY,
+			OBJ_HOMING_ENEMY,
+			OBJ_SIN_ENEMY,
+			OBJ_BULLET_ENEMY,
+			//縦スクのやつ
+			OBJ_TATE_ENEMY,
+			OBJ_TATE_BULLET_ENEMY,
+			OBJ_TATE_ATTACK_ENEMY,
+			//下スクロール
+			OBJ_SITA_BULLET_ENEMY,
+			OBJ_SITA_ENEMY,
+			OBJ_SITA_ATTACK_ENEMY,
+			//血栓
+			OBJ_SITA_KESEN,
+			OBJ_TATEKESEN,
+			OBJ_YOKO_KESEN,
+			//ボス
+			OBJ_BOSS_ENEMY,
+			OBJ_BOSS_ENEMY2,
+			OBJ_TATE_BOSS,
+			OBJ_BOSS_ENEMY4,
+			OBJ_BOSS_BULLET_ENEMY2,
+			OBJ_BOSS_BULLET_ENEMY,
+			//5面
+			OBJ_ENEMY2,
+			OBJ_BULLET_ENEMY2,
+			OBJ_ATTACK_ENEMY2,
+			OBJ_SITA_ATTACK_ENEMY2,
+			OBJ_SITA_ENEMY2,
+			OBJ_TATE_ATTACK_ENEMY2,
+			OBJ_TATE_ENEMY2,
+			OBJ_MIX_BOSS,
+		};
 	//敵機オブジェクトと接触したら拡散弾丸削除
 	for (int i = 0; i < 28; i++)
 	{
 		if (hit->CheckObjNameHit(data_base[i]) != nullptr)
 		{
+			/*Audio::Start(3);*/
 			Audio::Start(18);
 			this->SetStatus(false);
 			Hits::DeleteHitBox(this);
