@@ -410,6 +410,9 @@ void CSceneMain::Scene()
 		ObjBossYazirusi* obj = new ObjBossYazirusi();
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI, 50);
 	}
+
+
+
 	if (m_time == 1700)
 	
 	{

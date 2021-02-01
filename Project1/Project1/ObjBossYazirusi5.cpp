@@ -76,7 +76,7 @@ void ObjBossYazirusi5::Action()
 	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 	//	return;
 	//}
-	if (m_time == 400)
+	if (m_time == 50)
 
 	{
 		this->SetStatus(false); //自身に削除命令を出す。
@@ -106,8 +106,7 @@ void ObjBossYazirusi5::Draw()
 
 
 
-	if (second % 2 == 0)
-	{
+	
 		//表示位置の設定
 		dst.m_top = 400.0f + m_y;
 		dst.m_left = 200.0f + m_x;
@@ -117,7 +116,7 @@ void ObjBossYazirusi5::Draw()
 		//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 		Draw::Draw(34, &src, &dst, c, 0.0f);
 
-	}
+	
 
 
 }

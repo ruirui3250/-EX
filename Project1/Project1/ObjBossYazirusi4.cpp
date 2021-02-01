@@ -106,8 +106,7 @@ void ObjBossYazirusi4::Draw()
 
 
 
-	if (second % 2 == 0)
-	{
+	
 		//表示位置の設定
 		dst.m_top = 300.0f + m_y;
 		dst.m_left = 250.0f + m_x;
@@ -117,7 +116,7 @@ void ObjBossYazirusi4::Draw()
 		//0番目に登録したグラフィックをsrc.dst.cの情報をもとに描画。
 		Draw::Draw(34, &src, &dst, c, 0.0f);
 
-	}
+	
 
 
 }
