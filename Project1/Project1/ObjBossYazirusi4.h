@@ -8,7 +8,7 @@ using namespace GameL;
 class ObjBossYazirusi4 : public CObj
 {
 public:
-	ObjBossYazirusi4() {};//コンストラクタ位置をもらう
+	ObjBossYazirusi4(float x, float y) ;//コンストラクタ位置をもらう
 	~ObjBossYazirusi4() {};
 	void Init();	//イニシャライズ
 	void Action(); //アクション
@@ -18,6 +18,7 @@ private:
 	float m_y;//敵機のy方向の位置
 	float m_vx;//敵移動のベクトルx
 	float m_vy;//敵移動のベクトルy
+	float m_r;
 	int m_time;
 	int second;
 

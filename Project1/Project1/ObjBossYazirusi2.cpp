@@ -5,17 +5,15 @@
 #include "ObjBossYazirusi2.h"
 #include"UtilityModule.h"
 #include "GameL/DrawFont.h"
-
+#include "SceneMain.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
-//ObjBossYazirusi::ObjBossYazirusi(float x, float y)
-//{
-//	m_x = x;
-//	m_y = y;
-//
-//
-//}
+ObjBossYazirusi2::ObjBossYazirusi2(float x, float y)
+{
+	m_x = x;
+	m_y = y;
+}
 //イニシャライズ
 void ObjBossYazirusi2::Init()
 {
@@ -23,68 +21,49 @@ void ObjBossYazirusi2::Init()
 	m_vy = 0.0f;
 	second = 0;
 	m_time = 0;
+	m_r = 0.0f;
 }
 //アクション
 void ObjBossYazirusi2::Action()
 {
 	m_time++;
-	////移動方向
-	//m_vx = 0.0f;
-	//m_vy = 0.0f;
-
-	////移動ベクトルの正規化
-	//UnitVec(&m_vy, &m_vx);
+	if (m_time % 30 == 0)
+	{
+		second++;
+	}
 
 
-	////領域外に出たら破棄。
-	//bool check = CheckWindow(m_x, m_y, -32.0f, -32.0f, 800.0f, 600.0f);
-	//if (check == false)
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
-	//if (m_time == 1450)
 
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
-	//if (m_time==1550)
+	//角度加算
+	m_r += 2.0f;
 
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
-	//if (m_time == 1650)
-	//
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
-	//if (m_time == 1750)
+	//360で初期値に戻す
+	if (m_r > 360.0f)
+		m_r = 0.0f;
 
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
-	//if (m_time == 1850)
+	//移動方向
+	m_vx = 0.0f;
+	m_vy = sin(3.14 / 180 * m_r);
 
-	//{
-	//	this->SetStatus(false); //自身に削除命令を出す。
-	//	Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
-	//	return;
-	//}
-	if (m_time == 300)
+	//移動ベクトルの正規化
+	UnitVec(&m_vy, &m_vx);
+
+	//移動ベクトルを座標に加算する
+	m_x += m_vx;
+	m_y += m_vy;
+
+
+
+
+
+
+
+	if (m_time == 400)
 	{
 		this->SetStatus(false); //自身に削除命令を出す。
-		Hits::DeleteHitBox(this);//敵機弾丸が所有するHitBoxを削除
 		return;
 	}
+
 }
 
 //ドロー

@@ -1,8 +1,20 @@
 ﻿  ObjBossYazirusi.cpp
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi.cpp(87,10): warning C4101: 'str': ローカル変数は 1 度も使われていません。
-  コード生成しています。
-  1 of 1304 functions (<0.1%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
-  コード生成が終了しました。
-  Project1.vcxproj -> C:\Users\GA1A\source\repos\-EX\Project1\x64\Release\Project1.exe
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi.cpp(13,1): error C2084: 関数 'ObjBossYazirusi::ObjBossYazirusi(float,float)' は既に本体を持っています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi.h(11): message : '{ctor}' の以前の定義を確認してください
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi.cpp(51,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjBossYazirusi2.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi2.cpp(13,1): error C2084: 関数 'ObjBossYazirusi2::ObjBossYazirusi2(float,float)' は既に本体を持っています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi2.h(11): message : '{ctor}' の以前の定義を確認してください
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi2.cpp(50,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjBossYazirusi3.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi3.cpp(13,1): error C2084: 関数 'ObjBossYazirusi3::ObjBossYazirusi3(float,float)' は既に本体を持っています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi3.h(11): message : '{ctor}' の以前の定義を確認してください
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi3.cpp(50,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjBossYazirusi4.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi4.cpp(13,1): error C2084: 関数 'ObjBossYazirusi4::ObjBossYazirusi4(float,float)' は既に本体を持っています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi4.h(11): message : '{ctor}' の以前の定義を確認してください
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi4.cpp(50,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+  ObjBossYazirusi5.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi5.cpp(13,1): error C2084: 関数 'ObjBossYazirusi5::ObjBossYazirusi5(float,float)' は既に本体を持っています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi5.h(11): message : '{ctor}' の以前の定義を確認してください
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjBossYazirusi5.cpp(50,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。

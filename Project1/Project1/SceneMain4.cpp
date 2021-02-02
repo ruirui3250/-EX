@@ -336,7 +336,7 @@ void CSceneMain4::Scene()
 	if (m_time == 2100)
 	{
 		ObjBossYazirusi4* obj;
-		obj = new ObjBossYazirusi4();
+		obj = new ObjBossYazirusi4(10,0.100);
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI4, 50);
 	}
 

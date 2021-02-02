@@ -1,15 +1,12 @@
 ﻿//使用するヘッダーファイル
 #include "GameL/\DrawTexture.h"
 #include "GameL/\HitBoxManager.h"
-
 #include "GameHead.h"
 #include "ObjEnemyBoss.h"
 #include "UtilityModule.h"
 #include "GameL/DrawFont.h"
-
 //使用するネームスペース
 using namespace GameL;
-
 //コンスタラスタ
 CObjBoss::CObjBoss(float x, float y)
 {

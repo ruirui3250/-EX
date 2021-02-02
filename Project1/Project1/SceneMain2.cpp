@@ -565,7 +565,7 @@ void CSceneMain2::Scene()
 
 	{
 		ObjBossYazirusi2* obj;
-		obj = new ObjBossYazirusi2();
+		obj = new ObjBossYazirusi2(100.0f, 80);
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI2, 50);
 
 	}

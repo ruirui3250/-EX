@@ -351,8 +351,9 @@ void CSceneMain5::Scene()
 	}
 	if (m_time == 1600)
 	{
-		ObjBossYazirusi* obj = new ObjBossYazirusi();
-		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI, 50);
+		ObjBossYazirusi5* obj;
+		obj = new ObjBossYazirusi5(50, 100);
+		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI5, 50);
 	}
 
 	else if (m_time == 2000)
