@@ -22,7 +22,7 @@ void CObjGameOver2::Action()
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new CSceneTitle());
+			Scene::SetScene(new TatesukuSceneMain());
 			m_key_flag = false;
 		}
 	}
@@ -36,7 +36,7 @@ void CObjGameOver2::Action()
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new TatesukuSceneMain());
+			Scene::SetScene(new CSceneTitle());
 			m_key_flag = false;
 		}
 	}
