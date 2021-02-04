@@ -1,9 +1,9 @@
-﻿  ObjGameOver.cpp
-  ObjGameOver2.cpp
-  ObjGameOver3.cpp
-  ObjGameOver4.cpp
+﻿  ObjTatesukuSceneMain.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjTatesukuSceneMain.cpp(34,25): warning C4305: '初期化中': 'double' から 'float' へ切り詰めます。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjTatesukuSceneMain.cpp(38,24): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjTatesukuSceneMain.cpp(39,25): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
   コード生成しています。
-  4 of 1283 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+  3 of 1283 functions ( 0.2%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
     1 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。

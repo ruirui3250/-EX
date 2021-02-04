@@ -22,7 +22,7 @@ void CObjGameOver5::Action()
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new CSceneTitle());
+			Scene::SetScene(new CSceneMain2());
 			m_key_flag = false;
 		}
 	}
@@ -36,7 +36,7 @@ void CObjGameOver5::Action()
 	{
 		if (m_key_flag == true)
 		{
-			Scene::SetScene(new CSceneMain2());
+			Scene::SetScene(new CSceneTitle());
 			m_key_flag = false;
 		}
 	}

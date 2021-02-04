@@ -12,20 +12,20 @@ using namespace GameL;
 void CObjSceneMain2::Init()
 {
 	m_x1 = 0.0f;
-	m_x2 = 800.0f;
+	m_x2 = 899.0f;
 }
 //ƒAƒNƒVƒ‡ƒ“
 void CObjSceneMain2::Action()
 {
 	//”wŒi‚P‚Ì‘€ì
 	m_x1 -= 10.0f;
-	if (m_x1 < -800.0f)
-		m_x1 = 800;
+	if (m_x1 < -899.0f)
+		m_x1 = 899;
 
 	//”wŒi2‚Ì‘€ì
 	m_x2 -= 10.0f;
-	if (m_x2 < -800.0f)
-		m_x2 = 800;
+	if (m_x2 < -899.0f)
+		m_x2 = 899;
 
 }
 
@@ -47,7 +47,7 @@ void CObjSceneMain2::Draw()
 	////•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 1000.0f;
+	dst.m_right = 900.0f;
 	dst.m_bottom = 600.0f;
 
 	////‰æ‘œ•\¦
@@ -56,7 +56,7 @@ void CObjSceneMain2::Draw()
 	//”wŒi‚P‚ğİ’è•`‰æ
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f + m_x1;
-	dst.m_right = 1000.0f + m_x1;
+	dst.m_right = 900.0f + m_x1;
 	dst.m_bottom = 600.0f;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æB
@@ -65,7 +65,7 @@ void CObjSceneMain2::Draw()
 	//”wŒi2‚ğİ’è•`‰æ
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f + m_x2;
-	dst.m_right = 1000.0f + m_x2;
+	dst.m_right = 900.0f + m_x2;
 	dst.m_bottom = 600.0f;
 
 	//0”Ô–Ú‚É“o˜^‚µ‚½ƒOƒ‰ƒtƒBƒbƒN‚ğ•`‰æB
