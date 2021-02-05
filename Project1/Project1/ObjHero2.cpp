@@ -41,7 +41,7 @@ void CObjHero2::Init()
 void CObjHero2::Action()
 {
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
-	if (Input::GetVKey('A') == true)
+	if (Input::GetVKey(VK_SPACE) == true)
 	{
 		if (m_la >= 0)
 		{
