@@ -34,6 +34,9 @@ void CSceneTitle::InitScene()
 
 	//音楽読み込み
 	Audio::LoadAudio(1, L"タイトル.wav", BACK_MUSIC);
+
+	float v = Audio::VolumeMaster(0);
+	v = Audio::VolumeMaster((0.8 - v));
 	//クリアオブジェクト登録
 	CObjTitle* obj = new CObjTitle();//クリアオブジェクト作成
 	Objs::InsertObj(obj, OBJ_TITLE, 10);//クリアオブジェクト登録

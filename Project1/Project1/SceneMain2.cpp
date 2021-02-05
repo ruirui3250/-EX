@@ -78,6 +78,9 @@ void CSceneMain2::InitScene()
 
 	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
+	float v = Audio::VolumeMaster(0);
+	v = Audio::VolumeMaster((0.8 - v));
+
 	//主人公オブジェクト作成
 	CObjHero2* obj = new CObjHero2();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
@@ -565,7 +568,7 @@ void CSceneMain2::Scene()
 
 	{
 		ObjBossYazirusi2* obj;
-		obj = new ObjBossYazirusi2(100.0f, 80);
+		obj = new ObjBossYazirusi2(100.0f, 80.0f);
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI2, 50);
 
 	}

@@ -78,6 +78,11 @@ void CSceneMain::InitScene()
 	//音楽読み込み
 	Audio::LoadAudio(11, L"ボス1.wav", BACK_MUSIC);
 
+	float v = Audio::VolumeMaster(0);
+	v = Audio::VolumeMaster((0.8 - v));
+
+	Audio::Start(6);
+
 	//主人公オブジェクト作成
 	CObjHero* obj = new CObjHero();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録
@@ -92,8 +97,6 @@ void CSceneMain::InitScene()
 
 	//タイム初期化
 	m_time = 0;
-
-	Audio::Start(6);
 
 }
 
