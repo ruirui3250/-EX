@@ -1,37 +1,10 @@
-﻿  SceneMain.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain.cpp(82,31): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-  SceneMain2.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain2.cpp(82,31): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-  SceneMain4.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain4.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain4.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain4.cpp(85,31): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain4.cpp(342,39): warning C4305: '引数': 'double' から 'float' へ切り詰めます。
-  SceneMain5.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain5.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain5.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\SceneMain5.cpp(87,31): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
-  TatesukuSceneMain.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\TatesukuSceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
-C:\Users\souhu\Desktop\game3\Project1\Project1\TatesukuSceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
-C:\Users\souhu\Desktop\game3\Project1\Project1\TatesukuSceneMain.cpp(85,31): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
+﻿  CObjBulletEnemy.cpp
+  CObjBulletEnemy2.cpp
+  CObjSitaBulletEnemy.cpp
+  CObjTateBulletEnemy.cpp
   コード生成しています。
-  5 of 1314 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
+  8 of 1314 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+    47 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Release\Project1.exe
