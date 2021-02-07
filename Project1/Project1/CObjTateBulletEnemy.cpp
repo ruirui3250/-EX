@@ -55,8 +55,8 @@ void CObjTateBulletEnemy::Action()
 	}
 	//弾丸実行処理
 	//移動
-	m_x += m_vx * 5.0f;
-	m_y += m_vy * 5.0f;
+	m_x += m_vx * 4.0f;
+	m_y += m_vy * 4.0f;
 
 	//敵機弾丸の交信用ポインターを獲得。
 	CHitBox* hit = Hits::GetHitBox(this);
