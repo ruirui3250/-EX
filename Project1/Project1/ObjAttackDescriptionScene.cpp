@@ -40,7 +40,7 @@ void CObjAttack::Draw()
 	////フォントの表示
 	Font::StrDraw(L"操作方法", 0, 0, 30, c);
 	Font::StrDraw(L"Zキー", 0, 50, 30, c);
-	Font::StrDraw(L"通常弾発射", 0, 80, 30, c);
+	Font::StrDraw(L"通常弾発射　押しながら連続発射可能", 0, 80, 30, c);
 	Font::StrDraw(L"Xキー", 0, 130, 30, c);
 	Font::StrDraw(L"拡散弾発射　障害物を破壊可能　時間経過で回復", 0, 160, 30, c);
 	Font::StrDraw(L"スペースキー", 0, 210, 30, c);

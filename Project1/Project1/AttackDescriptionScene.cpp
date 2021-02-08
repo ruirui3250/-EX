@@ -34,7 +34,7 @@ void CSceneAttack::InitScene()
 
 	Font::SetStrTex(L"操作方法");
 	Font::SetStrTex(L"Zキー");
-	Font::SetStrTex(L"通常弾発射");
+	Font::SetStrTex(L"通常弾発射　押しながら連続発射可能");
 	Font::SetStrTex(L"Xキー");
 	Font::SetStrTex(L"拡散弾発射　障害物を破壊可能　時間経過で回復");
 	Font::SetStrTex(L"スペースキー");
