@@ -42,7 +42,7 @@ void CObjAttack::Draw()
 	Font::StrDraw(L"Zキー", 0, 50, 30, c);
 	Font::StrDraw(L"通常弾発射", 0, 80, 30, c);
 	Font::StrDraw(L"Xキー", 0, 130, 30, c);
-	Font::StrDraw(L"拡散弾発射　障害物を破壊可能", 0, 160, 30, c);
+	Font::StrDraw(L"拡散弾発射　障害物を破壊可能　時間経過で回復", 0, 160, 30, c);
 	Font::StrDraw(L"スペースキー", 0, 210, 30, c);
 	Font::StrDraw(L"レーザー発射　敵を貫いて攻撃できる", 0, 240, 30, c);
 	Font::StrDraw(L"レーザーは左上のゲージがなくなるまで使用可能", 0, 300, 30, c);
