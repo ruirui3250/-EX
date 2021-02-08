@@ -43,11 +43,17 @@ void CObjHero::Init()
 void CObjHero::Action()
 {
 	m_time++;
+	
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey(VK_SPACE) == true)
 	{
+		if (Input::GetVKey('X') == true)
+		{
+			false;
+		}
 		if (m_la >= 0)
 		{
+
 			//発射音を流す
 			Audio::Start(4);
 			//弾丸オブジェクト作成
@@ -68,17 +74,20 @@ void CObjHero::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
-		if (m_f == true)
+		if (m_time % 25 == 0)
 		{
-			//発射音を流す
-			Audio::Start(2);
+			
 
-			//弾丸オブジェクト作成
-			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
-			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
+
+				//発射音を流す
+				Audio::Start(2);
+
+				//弾丸オブジェクト作成
+				CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
+				Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+
+			
 		}
-
 	}
 
 	else
@@ -173,16 +182,14 @@ void CObjHero::Action()
 		return;
 	}
 
-	////ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
-	//if (hit->CheckElementHit(ELEMENT_ITEM) == true)
-	//{
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
 
-	//	Audio::Start(19);
-	//	m_la = 100;//レーザー復活
-	//	m_ka = 3;//拡散弾丸
-	//	//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
-	//	//同様に５にするとのこと
-	//}
+		Audio::Start(19);
+		m_la +=30;//レーザー30回復
+	
+	}
 
 	/*-----------時間経過でアイテム復活-------------------------------------------*/
 	if (m_time == 600)

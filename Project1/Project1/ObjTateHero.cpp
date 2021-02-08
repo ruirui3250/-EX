@@ -30,17 +30,16 @@ void CObjTateHero::Action()
 	m_time++;
 	if (Input::GetVKey('Z') == true)
 	{
-		/*m_vx = 0.0f;
-		m_vy = -1.0f;*/
-		if (m_f == true)
+		if (m_time % 25 == 0)
 		{
+	
 			//発射音を流す
 			Audio::Start(2);
 
 			//弾丸オブジェクト作成
 			CObjTateBullet* obj_b = new CObjTateBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
+		
 		}
 
 	}
@@ -169,6 +168,15 @@ void CObjTateHero::Action()
 
 
 
+
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
+
+		Audio::Start(19);
+		m_la += 30;//レーザー30回復
+
+	}
 
 	/*-----------時間経過でアイテム復活-------------------------------------------*/
 	if (m_time == 600)

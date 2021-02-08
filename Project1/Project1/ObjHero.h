@@ -45,5 +45,7 @@ private:
 	bool m_hit_left;
 	bool m_hit_right;
 	int m_time;
+	int renda=0;
+	int second = 0;
 
 };

@@ -40,16 +40,7 @@ void CObjSitaHero::Init()
 void CObjSitaHero::Action()
 {
 	m_time++;
-	/*-------------------------------タイトル画面に戻る--------------------------*/
-	//if (Input::GetVKey('S') == true)
-	//{
-	//	if (m_key_flag == true)
-	//	{
-	//		Scene::SetScene(new CSceneTitle());
-	//		m_key_flag = false;
-	//	}
-
-	//}
+	
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey(VK_SPACE) == true)
 	{
@@ -69,10 +60,7 @@ void CObjSitaHero::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
-
-		m_vx = 0.0f;
-		m_vy = +1.0f;
-		if (m_f == true)
+		if (m_time % 25 == 0)
 		{
 			//発射音を流す
 			Audio::Start(2);
@@ -80,7 +68,7 @@ void CObjSitaHero::Action()
 			//弾丸オブジェクト作成
 			CObjSitaBullet* obj_b = new CObjSitaBullet(m_x + 3.0f, m_y -= 0.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_SITA_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
+		
 		}
 
 	}
@@ -193,6 +181,15 @@ void CObjSitaHero::Action()
 			Scene::SetScene(new CSceneGameOver3());
 			return;
 		}
+
+	}
+
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
+
+		Audio::Start(19);
+		m_la += 30;//レーザー30回復
 
 	}
 

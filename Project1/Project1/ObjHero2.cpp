@@ -68,7 +68,7 @@ void CObjHero2::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
-		if (m_f == true)
+		if (m_time % 25 == 0)
 		{
 			//発射音を流す
 			Audio::Start(2);
@@ -185,7 +185,21 @@ void CObjHero2::Action()
 		//	Scene::SetScene(new CSceneGameOver());
 		//}
 	//}
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
+
+		Audio::Start(19);
+		m_la += 30;//レーザー30回復
+
+	}
+
 	/*-----------時間経過でアイテム復活-------------------------------------------*/
+	if (m_time == 600)
+	{
+		m_hp = 3;
+
+	}
 	if (m_time == 600)//時間経過により弾回復
 	{
 

@@ -43,36 +43,9 @@ void CObjHero5::Init()
 void CObjHero5::Action()
 {
 	m_time++;
-	/*---------------------主人公通常弾丸-------------------*/
-	if (Input::GetVKey('Z') == true)
-	{
-		/*m_vx = 0.0f;
-		m_vy = -1.0f;*/
-		if (m_f == true)
-		{
-			//発射音を流す
-			Audio::Start(2);
+	
 
-
-					//弾丸オブジェクト作成
-					CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 0.0f);//弾丸オブジェクト
-					Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-					m_f = false;
-					//弾丸オブジェクト作成
-					CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
-					Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
-					m_f = false;
-					//弾丸オブジェクト作成
-					CObjSitaBullet* obj_b3= new CObjSitaBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
-					Objs::InsertObj(obj_b3, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
-		}
-
-	}
-	else
-	{
-		m_f = true;
-	}
+	
 	
 	///*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey(VK_SPACE) == true)
@@ -95,11 +68,38 @@ void CObjHero5::Action()
 			m_la--;
 		}
 
-		
 
 	}
-	///*----------------------主人公機通常弾丸-----------------------------------*/
-	
+	/*---------------------主人公通常弾丸-------------------*/
+	if (Input::GetVKey('Z') == true)
+	{
+		if (m_time % 25 == 0)
+		{
+
+
+
+			//発射音を流す
+			Audio::Start(2);
+
+
+			//弾丸オブジェクト作成
+			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
+		
+			//弾丸オブジェクト作成
+			CObjTateBullet* obj_b2 = new CObjTateBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b2, OBJ_BULLET, 100);//作った弾丸オブジェクト
+		
+			//弾丸オブジェクト作成
+			CObjSitaBullet* obj_b3 = new CObjSitaBullet(m_x + 30.0f, m_y -= 0.0f);//弾丸オブジェクト
+			Objs::InsertObj(obj_b3, OBJ_BULLET, 100);//作った弾丸オブジェクト
+
+		}
+	}
+	else
+	{
+		m_f = true;
+	}
 	
 
 
@@ -187,21 +187,16 @@ void CObjHero5::Action()
 		return;
 	}
 
-	//ELEMENT_ENEMYを持つオブジェクトと接触したら主人公機削除
-	//if (hit->CheckObjNameHit(ELEMENT_ENEMY) != nullptr)
-	//{
-	//	m_hp -= 1;
+	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
+	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	{
 
-		//if (m_hp == 0)
-		//{
-		//	this->SetStatus(false);//自身に削除命令を出す
-		//	Hits::DeleteHitBox(this);//主人公が所有するHitBoxに代入する
+		Audio::Start(19);
+		m_la += 30;//レーザー30回復
 
-		//	//主人公機消滅でシーンをゲームオーバーに移行する
-		//	Scene::SetScene(new CSceneGameOver());
-		//}
-	//}
-		/*-----------時間経過でアイテム復活-------------------------------------------*/
+	}
+
+	/*-----------時間経過でアイテム復活-------------------------------------------*/
 	if (m_time == 600)
 	{
 		m_hp = 3;

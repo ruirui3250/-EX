@@ -108,11 +108,13 @@ void CSceneMain::Scene()
 
 
 //ÉAÉCÉeÉÄêßå‰
-	if (m_time == 550)
+	
+	if (m_time ==400)
 	{
-		CObjHidariItem* obj = new CObjHidariItem(799.0f, 600);
+		CObjHidariItem* obj = new CObjHidariItem(799.0f, 400);
 		Objs::InsertObj(obj, OBJ_ITEM, 50);
 	}
+
 	if (m_time == 650)
 	{
 		CObjHidariLifeItem* obj = new CObjHidariLifeItem(799.0f, 250);
