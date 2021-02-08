@@ -28,6 +28,7 @@ private:
 	int		m_nhp;//Žc‚è•ª
 	int     m_nka;
 	int     m_nla;
+	int m_time;
 
 	bool m_f = true;
 	bool m_key_flag = true;

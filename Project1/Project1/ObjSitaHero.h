@@ -36,4 +36,5 @@ private:
 
 	bool m_f = true;
 	bool m_key_flag = true;
+	int m_time;
 };

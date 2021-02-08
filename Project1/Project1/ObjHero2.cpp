@@ -33,6 +33,7 @@ void CObjHero2::Init()
 	m_ka = 3;
 	m_x = 100;
 	m_y = 300;
+	m_time = 0;
 	//当たり判定用hitboxを作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 100);
 }
@@ -41,6 +42,7 @@ void CObjHero2::Init()
 //アクション
 void CObjHero2::Action()
 {
+	m_time++;
 	/*---------------主人公機のレーザー弾丸発射-------------------------*/
 	if (Input::GetVKey(VK_SPACE) == true)
 	{
@@ -183,18 +185,23 @@ void CObjHero2::Action()
 		//	Scene::SetScene(new CSceneGameOver());
 		//}
 	//}
-	//ELEMENT_ITEMを持つオブジェクトと接触したら拡散弾丸とビーム弾丸の復活
-	if (hit->CheckElementHit(ELEMENT_ITEM) == true)
+	/*-----------時間経過でアイテム復活-------------------------------------------*/
+	if (m_time == 600)//時間経過により弾回復
 	{
-		
-		Audio::Start(19);
-		m_la = 100;//レーザー復活
-		m_ka = 3;//拡散弾丸
-		return;
-		//このオブジェクトに触れたらレーザーを100にする（客観的には元の１００にもどすことをいう）
-		//同様に５にするとのこと
-	}
 
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 1200)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 1800)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	/*------------------------------------------------------*/
 	//ELEMENT_ITEMを持つオブジェクトと接触したらライフ回復
 	if (hit->CheckElementHit(ELEMENT_LIFE_ITEM) == true)
 	{

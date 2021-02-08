@@ -43,6 +43,6 @@ private:
 	bool m_hit_down;
 	bool m_hit_left;
 	bool m_hit_right;
-
+	int m_time;
 
 };
