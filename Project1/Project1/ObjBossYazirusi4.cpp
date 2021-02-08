@@ -35,7 +35,7 @@ void ObjBossYazirusi4::Action()
 
 
 	//Šp“x‰ÁŽZ
-	m_r += 2.0f;
+	m_r += 12.0f;
 
 	//360‚Å‰Šú’l‚É–ß‚·
 	if (m_r > 360.0f)

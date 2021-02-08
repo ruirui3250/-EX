@@ -598,7 +598,6 @@ void TatesukuSceneMain::Scene()
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI3, 50);
 	
 	}
-	
 	/*-------------------------É{ÉX-------------------------------*/
 	if (m_time == 2500)
 	{	
