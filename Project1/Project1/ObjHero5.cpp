@@ -73,7 +73,7 @@ void CObjHero5::Action()
 	/*---------------------主人公通常弾丸-------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
-		if (m_time % 25 == 0)
+		if (m_time % 15 == 0)
 		{
 
 
@@ -104,8 +104,7 @@ void CObjHero5::Action()
 
 
 
-	//主人公機の拡散弾丸弾発射
-	/*------------------------これは一回のみ発射可能------------------*/
+
 	//主人公機の拡散弾丸発射
 	if (Input::GetVKey('X') == true)
 	{
@@ -124,7 +123,10 @@ void CObjHero5::Action()
 					m_f = false;
 				}
 			}
-
+			else
+			{
+				m_f = true;
+			}
 			
 	}
 	//主人公機の移動
@@ -197,11 +199,7 @@ void CObjHero5::Action()
 	}
 
 	/*-----------時間経過でアイテム復活-------------------------------------------*/
-	if (m_time == 600)
-	{
-		m_hp = 3;
 
-	}
 	if (m_time == 600)//時間経過により弾回復
 	{
 
@@ -213,6 +211,21 @@ void CObjHero5::Action()
 		m_ka = 3;//拡散弾丸
 	}
 	if (m_time == 1800)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 2400)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 3000)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 3600)//時間経過により弾回復
 	{
 
 		m_ka = 3;//拡散弾丸
@@ -288,7 +301,7 @@ void CObjHero5::Draw()
 	swprintf_s(str, L"レーザー：", m_hp);
 	Font::StrDraw(str, 20, 110, 30, c);
 	this->SetPrio(50);
-	if (m_la == 100)
+	if (m_la >= 100)
 	{
 		swprintf_s(str, L"■■■■■■■■■■", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);

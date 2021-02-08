@@ -30,7 +30,7 @@ void CObjTateHero::Action()
 	m_time++;
 	if (Input::GetVKey('Z') == true)
 	{
-		if (m_time % 25 == 0)
+		if (m_time % 15 == 0)
 		{
 	
 			//発射音を流す
@@ -73,25 +73,25 @@ void CObjTateHero::Action()
 	if (Input::GetVKey('X') == true)
 	{
 		m_ka -= 1;
-		if (m_f == true)
-		{
-			if (m_ka >= 0)
+		if (m_ka <= 0 == false)
+			if (m_f == true)
 			{
-				m_f = false;
-				
 				//発射音を流す
 				Audio::Start(5);
-
 				//19発同時発射
 				CObjAngleBulletHero* obj_b;
 				for (int i = 0; i < 360; i += 20)
 				{
-					obj_b = new CObjAngleBulletHero(m_x + 30.0f, m_y + 30.0f, i, 7.0f);
+					obj_b = new CObjAngleBulletHero(m_x, m_y, i, 7.0f);
 					Objs::InsertObj(obj_b, OBJ_ANGLE_BULLET_HERO, 100);
+					m_f = false;
 				}
 			}
-		
-		}
+
+			else
+			{
+				m_f = true;
+			}
 	}
 	
 	//主人公機の移動
@@ -179,11 +179,6 @@ void CObjTateHero::Action()
 	}
 
 	/*-----------時間経過でアイテム復活-------------------------------------------*/
-	if (m_time == 600)
-	{
-		m_hp = 3;
-
-	}
 	if (m_time == 600)//時間経過により弾回復
 	{
 
@@ -195,6 +190,11 @@ void CObjTateHero::Action()
 		m_ka = 3;//拡散弾丸
 	}
 	if (m_time == 1800)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 2400)//時間経過により弾回復
 	{
 
 		m_ka = 3;//拡散弾丸
@@ -270,7 +270,7 @@ void CObjTateHero::Draw()
 	swprintf_s(str, L"レーザー：", m_hp);
 	Font::StrDraw(str, 20, 110, 30, c);
 	this->SetPrio(50);
-	if (m_la == 100)
+	if (m_la >= 100)
 	{
 		swprintf_s(str, L"■■■■■■■■■■", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);

@@ -1,49 +1,99 @@
-﻿  ObjHero5.cpp
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(122,48): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(246,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(246,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(252,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(252,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(258,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(258,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(263,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(263,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(268,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(268,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(274,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(274,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(280,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(280,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(287,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(287,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(293,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(293,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(298,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(298,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(304,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(304,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(310,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(310,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(316,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(316,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(322,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(322,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(328,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(328,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(334,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(334,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(340,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(340,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(346,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(346,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(352,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(352,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(358,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(358,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(364,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(364,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(370,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
-C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(370,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+﻿  ObjHero.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(114,48): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(241,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(241,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(247,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(247,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(253,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(253,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(258,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(258,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(263,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(263,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(269,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(269,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(275,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(275,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(282,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(282,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(288,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(288,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(293,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(293,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(299,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(299,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(305,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(305,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(311,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(311,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(317,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(317,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(323,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(323,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(329,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(329,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(335,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(335,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(341,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(341,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(347,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(347,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(353,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(353,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(359,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(359,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(365,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(365,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(372,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(372,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(378,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero.cpp(378,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+  ObjHero5.cpp
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(121,48): warning C4244: '引数': 'int' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(244,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(244,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(250,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(250,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(256,33): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(256,33): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(261,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(261,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(266,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(266,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(272,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(272,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(278,42): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(278,42): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(285,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(285,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(291,38): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(291,38): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(296,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(296,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(302,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(302,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(308,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(308,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(314,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(314,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(320,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(320,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(326,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(326,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(332,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(332,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(338,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(338,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(344,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(344,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(350,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(350,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(356,54): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(356,54): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(362,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(362,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(368,29): warning C4474: 'swprintf_s': 書式文字列に渡された引数の数が多すぎます
+C:\Users\GA1A\source\repos\-EX\Project1\Project1\ObjHero5.cpp(368,29): message : プレースホルダーとそのパラメーターには 0 の可変個引数が必要ですが、1 が指定されています。
   コード生成しています。
   1 of 1311 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation

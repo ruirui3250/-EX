@@ -68,7 +68,7 @@ void CObjHero2::Action()
 	/*----------------------主人公機通常弾丸-----------------------------------*/
 	if (Input::GetVKey('Z') == true)
 	{
-		if (m_time % 25 == 0)
+		if (m_time % 15 == 0)
 		{
 			//発射音を流す
 			Audio::Start(2);
@@ -76,7 +76,7 @@ void CObjHero2::Action()
 			//弾丸オブジェクト作成
 			CObjBullet* obj_b = new CObjBullet(m_x + 30.0f, m_y + 3.0f);//弾丸オブジェクト
 			Objs::InsertObj(obj_b, OBJ_BULLET, 100);//作った弾丸オブジェクト
-			m_f = false;
+
 		}
 
 	}
@@ -195,11 +195,6 @@ void CObjHero2::Action()
 	}
 
 	/*-----------時間経過でアイテム復活-------------------------------------------*/
-	if (m_time == 600)
-	{
-		m_hp = 3;
-
-	}
 	if (m_time == 600)//時間経過により弾回復
 	{
 
@@ -211,6 +206,11 @@ void CObjHero2::Action()
 		m_ka = 3;//拡散弾丸
 	}
 	if (m_time == 1800)//時間経過により弾回復
+	{
+
+		m_ka = 3;//拡散弾丸
+	}
+	if (m_time == 2400)//時間経過により弾回復
 	{
 
 		m_ka = 3;//拡散弾丸
@@ -285,7 +285,7 @@ void CObjHero2::Draw()
 	swprintf_s(str, L"レーザー：", m_hp);
 	Font::StrDraw(str, 20, 110, 30, c);
 	this->SetPrio(50);
-	if (m_la == 100)
+	if (m_la >= 100)
 	{
 		swprintf_s(str, L"■■■■■■■■■■", m_la);
 		Font::StrDraw(str, 150, 110, 40, c);
