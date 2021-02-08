@@ -18,7 +18,6 @@ CObjBulletEnemy2::CObjBulletEnemy2(float x, float y)
 //ƒCƒjƒVƒƒƒ‰ƒCƒY
 void CObjBulletEnemy2::Init()
 {
-	m_hp = 1;
 	m_eff.m_top = 32;
 	m_eff.m_left = 0;
 	m_eff.m_right = 32;
@@ -77,96 +76,67 @@ void CObjBulletEnemy2::Action()
 		Hits::DeleteHitBox(this);
 		return;
 	}
-	//ålŒö‹@object‚ÆÚG‚µ‚½‚ç“G‹@’eŠÛíœB
-	//if (hit->CheckObjNameHit(OBJ_HERO) != nullptr)
-	//{
-	//	m_del = true; //Á–ÅÀs
-	//	hit->SetInvincibility(true);//“–‚½‚è”»’è–³Œø
-	//	return;
-	//}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_BULLET) != nullptr)
 	{
-		m_hp -= 1;
-		return;
-	}
-
-	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
-	if (m_hp <= 0)
-	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
 	}
-	//’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+
+	
+	
+	//ålŒö‹@‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
-		m_hp -= 1;
-		return;
-	}
-
-	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
-	if (m_hp <= 0)
-	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
-
 	}
+
+	
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
 	{
-		m_hp -= 1;
-		return;
-	}
-
-	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
-	if (m_hp <= 0)
-	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
 	}
+
+	
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_TATE_BULLET) != nullptr)
 	{
-		m_hp -= 1;
-		return;
-	}
-
-	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
-	if (m_hp <= 0)
-	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
 	}
+
+
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
 	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
 	{
-		m_hp -= 1;
+		this->SetStatus(false);
+		Hits::DeleteHitBox(this);
+		return;
 	}
 
-	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
-	if (m_hp <= 0)
+
+	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
+	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
 	}
 	// ’eŠÛ‚ÆÚG‚µ‚Ä‚¢‚é‚©‚Ç‚¤‚©’²‚×‚é
-	if (hit->CheckObjNameHit(OBJ_TATE_LASER_BULLET) != nullptr)
-	{
-		m_hp -= 1;
-	}
-
-	//HP‚ª0‚É‚È‚Á‚½‚ç”jŠü
-	if (m_hp <= 0)
+	if (hit->CheckObjNameHit(ELEMENT_BULLET) != nullptr)
 	{
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
 		return;
 	}
+	
 }
 
 //ƒhƒ[
