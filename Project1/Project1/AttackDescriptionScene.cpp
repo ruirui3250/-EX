@@ -37,9 +37,9 @@ void CSceneAttack::InitScene()
 	Font::SetStrTex(L"通常弾発射");
 	Font::SetStrTex(L"Xキー");
 	Font::SetStrTex(L"拡散弾発射　障害物を破壊可能");
-	Font::SetStrTex(L"Aキー");
+	Font::SetStrTex(L"スペースキー");
 	Font::SetStrTex(L"レーザー発射　敵を貫いて攻撃できる");
-	Font::SetStrTex(L"レーザーと拡散弾は左上のゲージがなくなるまで使用可能");
+	Font::SetStrTex(L"レーザ-は左上のゲージがなくなるまで使用可能");
 	Font::SetStrTex(L"エンターで次のページへ");
 
 	//説明オブジェクト登録

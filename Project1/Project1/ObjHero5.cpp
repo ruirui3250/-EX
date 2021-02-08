@@ -31,7 +31,8 @@ void CObjHero5::Init()
 	m_la = 100;
 	m_hp = 3;
 	m_ka = 3;
-	m_x = 6;
+	m_x = 100;
+	m_y = 300;
 	//当たり判定用hitboxを作成
 	Hits::SetHitBox(this, m_x, m_y, 32, 32, ELEMENT_PLAYER, OBJ_HERO, 100);
 }
@@ -72,7 +73,7 @@ void CObjHero5::Action()
 	}
 	
 	///*---------------主人公機のレーザー弾丸発射-------------------------*/
-	if (Input::GetVKey('A') == true)
+	if (Input::GetVKey(VK_SPACE) == true)
 	{
 		if (m_la >= 0)
 		{

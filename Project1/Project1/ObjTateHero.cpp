@@ -48,7 +48,7 @@ void CObjTateHero::Action()
 		m_f = true;
 	}
 	/*---------------主人公機のレーザー弾丸弾丸発射-------------------------*/
-	if (Input::GetVKey('A') == true)
+	if (Input::GetVKey(VK_SPACE) == true)
 	{
 		if (m_la >= 0)
 		{

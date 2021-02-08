@@ -5,7 +5,7 @@
 #include "ObjBossYazirusi5.h"
 #include"UtilityModule.h"
 #include "GameL/DrawFont.h"
-#include "SceneMain.h"
+//#include "SceneMain.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ

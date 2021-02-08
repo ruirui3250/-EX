@@ -83,6 +83,9 @@ void CSceneMain5::InitScene()
 
 	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
+	float v = Audio::VolumeMaster(0);
+	v = Audio::VolumeMaster((0.8 - v));
+
 	//主人公オブジェクト作成
 	CObjHero5* obj = new CObjHero5();//主人公オブジェクト作成
 	Objs::InsertObj(obj, OBJ_HERO, 10);//主人公オブジェクトマネージャーを登録

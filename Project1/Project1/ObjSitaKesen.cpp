@@ -4,6 +4,7 @@
 #include"GameHead.h"
 #include "ObjSitaKesen.h"
 #include"UtilityModule.h"
+#include"GameL/Audio.h"
 //使用するネームスペース
 using namespace GameL;
 //コンストラクタ
@@ -51,8 +52,20 @@ void CObjSitaKesen::Action()
 	//弾丸の接触を調べる。
 	if (hit->CheckObjNameHit(OBJ_ANGLE_BULLET_HERO) != nullptr)
 	{
+		Audio::Start(18);
 		this->SetStatus(false);
 		Hits::DeleteHitBox(this);
+		return;
+	}
+
+	if (hit->CheckObjNameHit(OBJ_SITA_BULLET) != nullptr)
+	{
+		Audio::Start(18);
+		return;
+	}
+	if (hit->CheckObjNameHit(OBJ_SITA_LASER_BULLET) != nullptr)
+	{
+		Audio::Start(18);
 		return;
 	}
 }

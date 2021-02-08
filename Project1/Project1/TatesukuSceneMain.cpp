@@ -81,6 +81,9 @@ void TatesukuSceneMain::InitScene()
 
 	Audio::LoadAudio(20, L"LK.wav", EFFECT);
 
+	float v = Audio::VolumeMaster(0);
+	v = Audio::VolumeMaster((0.8 - v));
+
 	//外部グラフィックファイルを読み込み1番に登録 ボスグラフィックを登録
 	//Draw::LoadImage(L"BossBack.png",,TEX_SIZE_512);
 

@@ -462,9 +462,6 @@
     <ClInclude Include="ObjHero2.h">
       <Filter>ソース ファイル\基本データ\主人公\2面主人公</Filter>
     </ClInclude>
-    <ClInclude Include="ObjGameOver5.h">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
-    </ClInclude>
     <ClInclude Include="SceneGameOver5.h">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
     </ClInclude>
@@ -518,6 +515,9 @@
     </ClInclude>
     <ClInclude Include="ObjTateLaserBullet.h">
       <Filter>ソース ファイル\基本データ\主人公\4面主人公</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjGameOver5.h">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -812,9 +812,6 @@
     <ClCompile Include="SceneGameOver5.cpp">
       <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
     </ClCompile>
-    <ClCompile Include="ObjGameOver5.cpp">
-      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\2面用</Filter>
-    </ClCompile>
     <ClCompile Include="ObjWin6.cpp">
       <Filter>ソース ファイル\基本データ\クリア画面\5面終了\ENDING</Filter>
     </ClCompile>
@@ -862,6 +859,9 @@
     </ClCompile>
     <ClCompile Include="ObjBossYazirusi5.cpp">
       <Filter>ソース ファイル\基本データ\ボスエフェクト</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjGameOver5.cpp">
+      <Filter>ソース ファイル\基本データ\ゲームオーバー画面\ゲームオーバーobject</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

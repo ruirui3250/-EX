@@ -11,20 +11,20 @@ using namespace GameL;
 //ƒCƒjƒVƒƒƒ‰ƒCƒY
 void CObjTatesukuSceneMain::Init()
 {
-	m_y1 = 10.0f;
-	m_y2 = 800.0f;
+	m_y1 = 0.0f;
+	m_y2 = 899.0f;
 }
 //ƒAƒNƒVƒ‡ƒ“
 void CObjTatesukuSceneMain::Action()
 {
 	//”wŒi‚P‚Ì‘€ì
 	m_y1 -= 10.0f;
-	if (m_y1 <-800.0f)
-		m_y1 = 800;
+	if (m_y1 <-899.0f)
+		m_y1 =899;
 	//”wŒi2‚Ì‘€ì
 	m_y2 -= 10.0f;
-	if (m_y2 < -800.0f)
-		m_y2 = 800;
+	if (m_y2 < -899.0f)
+		m_y2 = 899;
 	//‰æ–Ê‚ğ‰ñ“]‚³‚¹‚é
 	float ar = 170.0f;
 
@@ -59,14 +59,14 @@ void CObjTatesukuSceneMain::Draw()
 	////•\¦ˆÊ’u‚Ìİ’è
 	dst.m_top = 0.0f;
 	dst.m_left = 0.0f;
-	dst.m_right = 500.0f;
-	dst.m_bottom = 500.0f;
+	dst.m_right = 900.0f;
+	dst.m_bottom = 1000.0f;
 
 	////‰æ‘œ•\¦
 	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi‚P‚ğİ’è•`‰æ
-	dst.m_top = 1200.0f - m_y2;
+	dst.m_top = 900.0f - m_y2;
 	dst.m_left = 1000.0f;
 	dst.m_right = 0.0f;
 	dst.m_bottom = 0.0f - m_y2;
@@ -75,7 +75,7 @@ void CObjTatesukuSceneMain::Draw()
 	Draw::Draw(5, &src, &dst, c, 0.0f);
 
 	//”wŒi2‚ğİ’è•`‰æ
-	dst.m_top = 1200.0f-m_y1;
+	dst.m_top = 900.0f-m_y1;
 	dst.m_left = 1000.0f ;
 	dst.m_right =0.0f;
 	dst.m_bottom = 0.0f - m_y1;

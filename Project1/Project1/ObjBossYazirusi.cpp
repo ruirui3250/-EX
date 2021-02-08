@@ -3,7 +3,7 @@
 #include"GameL\HitBoxManager.h"
 #include"GameHead.h"
 #include "ObjBossYazirusi.h"
-#include"UtilityModule.h""
+#include"UtilityModule.h"
 #include "GameL/DrawFont.h"
 //使用するネームスペース
 using namespace GameL;
