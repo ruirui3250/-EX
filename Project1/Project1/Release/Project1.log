@@ -1,6 +1,9 @@
-﻿  ObjBossYazirusi2.cpp
-C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBossYazirusi2.cpp(46,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
-C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBossYazirusi2.cpp(78,10): warning C4101: 'str': ローカル変数は 1 度も使われていません。
+﻿  TatesukuSceneMain.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(4,1): warning C4005: '_SECURE_SCL': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\TatesukuSceneMain.cpp(2): message : '_SECURE_SCL' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\GameL\DrawTexture.h(5,1): warning C4005: '_HAS_ITERATOR_DEBUGGING': マクロが再定義されました。
+C:\Users\souhu\Desktop\game3\Project1\Project1\TatesukuSceneMain.cpp(3): message : '_HAS_ITERATOR_DEBUGGING' の以前の定義を確認してください
+C:\Users\souhu\Desktop\game3\Project1\Project1\TatesukuSceneMain.cpp(85,31): warning C4244: '引数': 'double' から 'float' への変換です。データが失われる可能性があります。
   コード生成しています。
   1 of 1314 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation

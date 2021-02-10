@@ -487,7 +487,7 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 500)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(300.0f, 10);
+		CObjTateKesen* obj = new CObjTateKesen(400.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	if (m_time == 500)
@@ -524,7 +524,7 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 1200)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(500.0f, 10);
+		CObjTateKesen* obj = new CObjTateKesen(300.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 	/*-------------------------“G‹@‘}“ü-----------------------*/
@@ -572,13 +572,13 @@ void TatesukuSceneMain::Scene()
 	}
 	if (m_time == 1500)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(290.0f, 10);
+		CObjTateKesen* obj = new CObjTateKesen(250.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 
 	if (m_time == 1500)
 	{
-		CObjTateKesen* obj = new CObjTateKesen(800.0f, 10);
+		CObjTateKesen* obj = new CObjTateKesen(550.0f, 10);
 		Objs::InsertObj(obj, OBJ_ENEMY, 50);
 	}
 
