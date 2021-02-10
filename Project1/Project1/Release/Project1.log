@@ -1,10 +1,9 @@
-﻿  CObjBulletEnemy.cpp
-  CObjBulletEnemy2.cpp
-  CObjSitaBulletEnemy.cpp
-  CObjTateBulletEnemy.cpp
+﻿  ObjBossYazirusi2.cpp
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBossYazirusi2.cpp(46,12): warning C4244: '=': 'double' から 'float' への変換です。データが失われる可能性があります。
+C:\Users\souhu\Desktop\game3\Project1\Project1\ObjBossYazirusi2.cpp(78,10): warning C4101: 'str': ローカル変数は 1 度も使われていません。
   コード生成しています。
-  8 of 1314 functions ( 0.6%) were compiled, the rest were copied from previous compilation.
+  1 of 1314 functions (<0.1%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    47 functions had inline decision re-evaluated but remain unchanged
+    1 functions had inline decision re-evaluated but remain unchanged
   コード生成が終了しました。
   Project1.vcxproj -> C:\Users\souhu\Desktop\game3\Project1\Release\Project1.exe

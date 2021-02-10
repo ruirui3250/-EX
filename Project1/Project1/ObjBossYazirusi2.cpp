@@ -58,7 +58,7 @@ void ObjBossYazirusi2::Action()
 
 
 
-	if (m_time == 400)
+	if (m_time == 313)
 	{
 		this->SetStatus(false); //©g‚Éíœ–½—ß‚ğo‚·B
 		return;

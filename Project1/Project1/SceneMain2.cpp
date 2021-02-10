@@ -568,7 +568,7 @@ void CSceneMain2::Scene()
 
 	{
 		ObjBossYazirusi2* obj;
-		obj = new ObjBossYazirusi2(100.0f, 80.0f);
+		obj = new ObjBossYazirusi2(80.0f, 80.0f);
 		Objs::InsertObj(obj, OBJ_BOSS_YAZIRUSI2, 50);
 
 	}
@@ -579,7 +579,7 @@ void CSceneMain2::Scene()
 		Audio::Start(12);//1曲目スタート
 
 		CObjBoss2* obj;
-		obj = new CObjBoss2(350, 50);
+		obj = new CObjBoss2(450, 50);
 		Objs::InsertObj(obj, OBJ_BOSS_ENEMY2, 50);
 	}
 }
