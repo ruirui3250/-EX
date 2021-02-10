@@ -24,4 +24,8 @@ private:
 	int m_hp;//ボスのヒットポイント
 	float m_w;//移動用サインカーブ用の角度
 	bool m_del;
+	int a;
+	int b;
+	int c;
+	int d;
 };

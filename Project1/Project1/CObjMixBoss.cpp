@@ -1,5 +1,7 @@
 ﻿
 //使用ヘッダー
+#include <stdlib.h>
+#include <time.h>
 #include "GameL\DrawTexture.h"
 #include"GameL\HitBoxManager.h"
 #include"GameHead.h"
@@ -22,8 +24,10 @@ void CObjMIXBoss::Init()
 	m_r = 0.0f;
 	m_vx = 0.0f;
 	m_vy = 0.0f;
-
-
+	int a = 0;
+	int b = 0;
+	int c = 0;
+	int d = 0;
 	//当たり判定用HitBox作成
 	Hits::SetHitBox(this, m_x, m_y, 280, 280, ELEMENT_ENEMY, OBJ_MIX_BOSS, 50);
 }
@@ -31,76 +35,83 @@ void CObjMIXBoss::Init()
 void CObjMIXBoss::Action()
 {
 	m_time++;
+	srand(time(NULL));
+    a = rand() % 300 + 400;//ランダムで出力します
+	srand(time(NULL));
+	b = rand() % 300 + 200;//ランダムで出力します
+	srand(time(NULL));
+	c = rand() % 300 + 400;//ランダムで出力します
+	srand(time(NULL));
+	d = rand() % 300 + 200;//ランダムで出力します
+	////通常弾発射
+	//if (m_time % 50 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x+a , m_y+b);
+	//	Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
+	//	return;
+	//}
+	//if (m_time % 100 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + a, m_y + b);
+	//	Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
+	//	return;
+	//}
+	//if (m_time % 150 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjAttackEnemy2* obj_b = new CObjAttackEnemy2(m_x + a, m_y + b);
+	//	Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY2, 100);
+	//	return;
+	//}
 
-	//通常弾発射
-	if (m_time % 50 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x+100 , m_y+150);
-		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
-		return;
-	}
-	if (m_time % 100 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjBulletEnemy2* obj_b = new CObjBulletEnemy2(m_x + 100, m_y + 150);
-		Objs::InsertObj(obj_b, OBJ_BULLET_ENEMY2, 100);
-		return;
-	}
-	if (m_time % 150 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjAttackEnemy2* obj_b = new CObjAttackEnemy2(m_x + 200, m_y + 100);
-		Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY2, 100);
-		return;
-	}
+	///*------------------------------別のタイミング----------------------------------------------*/
+	///*--------------------------------------bukatouka------------------------*/
+	//if (m_time % 30 == 0)
+	//{
+	// //弾丸発射オブジェクト
+	// CObjAttackEnemy2* obj_b = new CObjAttackEnemy2(m_x + 170, m_y + 400);
+	// Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY2, 100);
+	// return;
+	//}
+	//if (m_time % 40 == 0)
+	//{
+	// //弾丸発射オブジェクト
+	// CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 50);
+	// Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+	// return;
+	//}
+	//if (m_time % 40 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 100);
+	//	Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+	//	return;
+	//}
+	//if (m_time % 40 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 25);
+	//	Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+	//	return;
+	//}
+	//if (m_time % 40 == 0)
+	//{
+	//	//弾丸発射オブジェクト
+	//	CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 75);
+	//	Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
+	//	return;
+	//}
 
-	/*------------------------------別のタイミング----------------------------------------------*/
-	/*--------------------------------------bukatouka------------------------*/
-	if (m_time % 30 == 0)
-	{
-	 //弾丸発射オブジェクト
-	 CObjAttackEnemy2* obj_b = new CObjAttackEnemy2(m_x + 170, m_y + 400);
-	 Objs::InsertObj(obj_b, OBJ_ATTACK_ENEMY2, 100);
-	 return;
-	}
-	if (m_time % 40 == 0)
-	{
-	 //弾丸発射オブジェクト
-	 CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 50);
-	 Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
-	 return;
-	}
-	if (m_time % 40 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 100);
-		Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
-		return;
-	}
-	if (m_time % 40 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 25);
-		Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
-		return;
-	}
-	if (m_time % 40 == 0)
-	{
-		//弾丸発射オブジェクト
-		CObjTateEnemy2* obj_b = new CObjTateEnemy2(m_x + 310, m_y + 75);
-		Objs::InsertObj(obj_b, OBJ_TATE_ENEMY2, 100);
-		return;
-	}
-
-	if (m_time % 10 == 0)
-	{
-		//血栓発射オブジェクト
-		CObjYokoKesen* obj_b = new CObjYokoKesen(m_x, m_y+300);
-		Objs::InsertObj(obj_b, OBJ_YOKO_KESEN, 100);
-		return;
-	}
-	
+	//if (m_time % 10 == 0)
+	//{
+	//	//血栓発射オブジェクト
+	//	CObjYokoKesen* obj_b = new CObjYokoKesen(m_x, m_y+300);
+	//	Objs::InsertObj(obj_b, OBJ_YOKO_KESEN, 100);
+	//	return;
+	//}
+	//
 
 
 	//if (m_time % 50 == 0)
@@ -121,7 +132,64 @@ void CObjMIXBoss::Action()
 	//	CObjSitaEnemy2* obj_b = new CObjSitaEnemy2(m_x + 190, m_y + 100);
 	//	Objs::InsertObj(obj_b, OBJ_SITA_ENEMY2, 100);
 	//}
+	//防衛血栓//横
+	if (m_time % a == 0)
+	{
+		
+		CObjYokoKesen* obj2 = new CObjYokoKesen(600,280);
+		Objs::InsertObj(obj2, OBJ_TATEKESEN, 500);
 
+	}
+	if (m_time % b == 0)
+	{
+
+		CObjYokoKesen* obj2 = new CObjYokoKesen(600, 350);
+		Objs::InsertObj(obj2, OBJ_TATEKESEN, 500);
+
+	}
+	if (m_time % c == 0)
+	{
+
+		CObjYokoKesen* obj2 = new CObjYokoKesen(600, 420);
+		Objs::InsertObj(obj2, OBJ_TATEKESEN, 500);
+
+	}
+	if (m_time % d == 0)
+	{
+
+		CObjYokoKesen* obj2 = new CObjYokoKesen(600, 490);
+		Objs::InsertObj(obj2, OBJ_TATEKESEN, 500);
+
+	}
+	//縦
+	if (m_time % a == 0)
+	{
+
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x +50.0f, 600);
+		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
+
+	}
+	if (m_time % b == 0)
+	{
+
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x +50.0f, 600);
+		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
+
+	}
+	if (m_time % c == 0)
+	{
+
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x+40.0f, 600);
+		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
+
+	}
+	if (m_time % d == 0)
+	{
+
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x+40.0f, 600);
+		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
+
+	}
 	//m_timeの初期化
 	if (m_time > 1000)
 	{
