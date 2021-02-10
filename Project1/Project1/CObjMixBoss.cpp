@@ -165,14 +165,14 @@ void CObjMIXBoss::Action()
 	if (m_time % a == 0)
 	{
 
-		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x +50.0f, 600);
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x -100.0f, 600);
 		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
 
 	}
 	if (m_time % b == 0)
 	{
 
-		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x +50.0f, 600);
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x -30.0f, 600);
 		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
 
 	}
@@ -186,7 +186,14 @@ void CObjMIXBoss::Action()
 	if (m_time % d == 0)
 	{
 
-		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x+40.0f, 600);
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x+110.0f, 600);
+		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
+
+	}
+	if (m_time % a == 0)
+	{
+
+		CObjSitaKesen* obj6 = new CObjSitaKesen(m_x + 180.0f, 600);
 		Objs::InsertObj(obj6, OBJ_SITA_KESEN, 50);
 
 	}
