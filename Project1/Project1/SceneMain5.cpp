@@ -385,8 +385,8 @@ void CSceneMain5::Scene()
 		CObjTateKesen* obj7 = new CObjTateKesen(350, 200);
 		Objs::InsertObj(obj7, OBJ_TATEKESEN, 50);
 
-		CObjEnemyBossBullet4* obj8 = new CObjEnemyBossBullet4(800.0f, 500);
-		Objs::InsertObj(obj8, OBJ_BOSS_BULLET_ENEMY, 50);
+		/*CObjEnemyBossBullet4* obj8 = new CObjEnemyBossBullet4(800.0f, 500);
+		Objs::InsertObj(obj8, OBJ_BOSS_BULLET_ENEMY, 50);*/
 
 
 	}
